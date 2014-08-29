@@ -26,7 +26,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="20" selection-start="2620" selection-end="2946" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="2703">
+            <state line="63" column="54" selection-start="2891" selection-end="2891" vertical-scroll-proportion="-16.76923" vertical-offset="635" max-vertical-offset="2703">
               <folding />
             </state>
           </provider>
@@ -35,17 +35,37 @@
       <file leaf-file-name="news.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="36" selection-start="5911" selection-end="5944" vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="3434">
+            <state line="76" column="48" selection-start="4449" selection-end="4449" vertical-scroll-proportion="-11.115385" vertical-offset="1003" max-vertical-offset="3434">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news-detail.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="news-detail.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-detail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="138" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.34333333" vertical-offset="320" max-vertical-offset="1785">
+            <state line="58" column="50" selection-start="2661" selection-end="2661" vertical-scroll-proportion="-25.615385" vertical-offset="320" max-vertical-offset="1785">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configure-machine.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configure-machine.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="0" selection-start="2165" selection-end="2165" vertical-scroll-proportion="-35.76923" vertical-offset="175" max-vertical-offset="1411">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="46" selection-start="6737" selection-end="6737" vertical-scroll-proportion="-7.923077" vertical-offset="100" max-vertical-offset="1037">
+              <folding>
+                <element signature="tag#li#1;tag#ul#0;tag#div#1;tag#div#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,7 +73,7 @@
       <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="629">
+            <state line="5" column="42" selection-start="191" selection-end="212" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -68,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="marshall.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="marshall.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/marshall.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1167" column="34" selection-start="19470" selection-end="19470" vertical-scroll-proportion="0.0" vertical-offset="19401" max-vertical-offset="20315">
+            <state line="794" column="18" selection-start="14082" selection-end="14082" vertical-scroll-proportion="0.5495208" vertical-offset="12982" max-vertical-offset="21063">
               <folding />
             </state>
           </provider>
@@ -92,12 +112,13 @@
         <option value="$PROJECT_DIR$/js/plugins/bxslider/jquery.bxslider.js" />
         <option value="$PROJECT_DIR$/js/marshall.js" />
         <option value="$PROJECT_DIR$/includes/main-navigation.php" />
-        <option value="$PROJECT_DIR$/includes/header.php" />
+        <option value="$PROJECT_DIR$/news.php" />
         <option value="$PROJECT_DIR$/includes/footer.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/news.php" />
-        <option value="$PROJECT_DIR$/css/marshall.css" />
         <option value="$PROJECT_DIR$/news-detail.php" />
+        <option value="$PROJECT_DIR$/includes/header.php" />
+        <option value="$PROJECT_DIR$/configure-machine.php" />
+        <option value="$PROJECT_DIR$/css/marshall.css" />
       </list>
     </option>
   </component>
@@ -209,14 +230,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1079" y="-8" width="1873" height="1096" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26060605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2633609" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -248,6 +269,48 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="20" selection-start="2620" selection-end="2946" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="2703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="36" selection-start="5911" selection-end="5944" vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="3434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="138" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="21" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/marshall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="18" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="8058">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/marshall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1167" column="34" selection-start="19470" selection-end="19470" vertical-scroll-proportion="0.0" vertical-offset="19401" max-vertical-offset="20315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="20" selection-start="2620" selection-end="2946" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="2703">
@@ -388,6 +451,36 @@
         <state line="147" column="50" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.4685836" vertical-offset="2059" max-vertical-offset="44846" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="54" selection-start="2891" selection-end="2891" vertical-scroll-proportion="-16.76923" vertical-offset="635" max-vertical-offset="2703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="48" selection-start="4449" selection-end="4449" vertical-scroll-proportion="-11.115385" vertical-offset="1003" max-vertical-offset="3434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="46" selection-start="6737" selection-end="6737" vertical-scroll-proportion="-7.923077" vertical-offset="100" max-vertical-offset="1037">
+          <folding>
+            <element signature="tag#li#1;tag#ul#0;tag#div#1;tag#div#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="191" selection-end="212" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/marshall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="18" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="639" max-vertical-offset="3043">
@@ -395,42 +488,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
+    <entry file="file://$PROJECT_DIR$/configure-machine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="508" selection-end="508" vertical-scroll-proportion="0.18619934" vertical-offset="102" max-vertical-offset="2771" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="36" selection-start="5911" selection-end="5944" vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="3434">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="20" selection-start="2620" selection-end="2946" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="2703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/marshall.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1167" column="34" selection-start="19470" selection-end="19470" vertical-scroll-proportion="0.0" vertical-offset="19401" max-vertical-offset="20315">
+        <state line="65" column="0" selection-start="2165" selection-end="2165" vertical-scroll-proportion="-35.76923" vertical-offset="175" max-vertical-offset="1411">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news-detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="138" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.34333333" vertical-offset="320" max-vertical-offset="1785">
+        <state line="58" column="50" selection-start="2661" selection-end="2661" vertical-scroll-proportion="-25.615385" vertical-offset="320" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/marshall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="794" column="18" selection-start="14082" selection-end="14082" vertical-scroll-proportion="0.5495208" vertical-offset="12982" max-vertical-offset="21063">
           <folding />
         </state>
       </provider>

@@ -3,7 +3,7 @@
     <ul class="site">
         <li><a href="index.php" title="Home">Home</a></li>
         <li><a href="/products" title="Products">Products</a></li>
-        <li><a href="/configure-machine" title="Configure a Marshall Machine">Price &amp; Configure</a></li>
+        <li><a href="configure-machine.php" title="Configure a Marshall Machine">Price &amp; Configure</a></li>
         <li><a href="/spares" title="Spares">Spares</a></li>
         <li><a href="/stock-clearance" title="Stock Clearance">Stock Clearance</a></li>
         <li><a href="/downloads" title="Downloads">Downloads</a></li>

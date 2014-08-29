@@ -24,7 +24,7 @@
                 <div class="container">
 
 
-                    <div class="main-heading">
+                    <div class="main-heading hero">
                         <h2>Marshall Trailers</h2>
                         <p>Engineering excellence for 60 years</p>
                     </div>
@@ -61,7 +61,7 @@
                     <div class="mainbox configure">
                         <h2>Configure a Marshall Product now</h2>
                         <p>Use our online configuration tool to design and price your ideal Marshall machine.</p>
-                        <a href="#" class="big-link red-link">Price &amp; Configure</a>
+                        <a href="configure-machine.php" class="big-link red-link">Price &amp; Configure</a>
                     </div>
 
                     <div class="mainbox">
