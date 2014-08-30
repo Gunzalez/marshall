@@ -935,7 +935,7 @@ h1 a {
 /* Configure options, responsive using JS */
 /* ================================================ */
 #config_machine .options {
-    margin: 0;
+    margin: 5px 0 0 0;
     padding: 0;
     list-style: none;
     float: left;
@@ -943,25 +943,58 @@ h1 a {
 
 #config_machine .options li {
     float: left;
-    width: 310px;
+    width: 33.33%;
     background-color: #fff;
     margin-bottom: 15px;
-    display: inline;
+    outline: none;
+    cursor: pointer;
 }
 
+#config_machine .options li:hover h3,
+#config_machine .options li:hover .add {
+    background-color: #c8c8c8;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+#config_machine .options li:hover p {
+    color: #000;
+}
+
+#config_machine .options li.selected h3,
+#config_machine .options li.selected .add {
+    background-color: #0f82ff;
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+
 #config_machine .options li h3 {
-    min-height: 40px;
+    height: 40px;
     padding: 8px 10px;
     background-color: #dcdcdc;
     font-size: 1.1em;
     text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+    overflow: hidden;
+
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
 }
 
 #config_machine .options li .col {
     float: left;
-    width: 50%;
+    width: 55%;
     padding: 10px 0;
-    min-height: 250px;
+    height: 220px;
+    overflow: hidden;
 }
 
 #config_machine .options li .col p {
@@ -969,14 +1002,14 @@ h1 a {
     font-size: 0.9em;
 }
 
-
 #config_machine .options li .col.left {
     padding-top: 0;
+    width: 45%;
 }
 
 #config_machine .options li .col.left img {
     margin-bottom: 10px;
-    width: 96%;
+    width: 98%;
 }
 
 #config_machine .options li .col.left h4,
@@ -989,11 +1022,60 @@ h1 a {
     padding: 8px 15px;
     background-color: #dcdcdc;
     text-align: right;
+
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
 }
 
 #config_machine .options li .add input {
     display: none;
 }
+
+
+/* single column styles */
+#config_machine .options.single-column li {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+}
+
+#config_machine .options.single-column li .col.right {
+    float: left;
+    width: 100%;
+    margin-left: -155px;
+    height: inherit;
+}
+
+#config_machine .options.single-column li .col.right p {
+    padding-right: 15px;
+}
+
+#config_machine .options.single-column li .col.right * {
+    margin-left: 155px;
+}
+
+#config_machine .options.single-column li .col.left {
+    width: 155px;
+    height: inherit;
+}
+
+#config_machine .options.single-column li .col.left img {
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* homepage mini boxes, responsive using JS */

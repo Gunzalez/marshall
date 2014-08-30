@@ -90,7 +90,7 @@ function log(stuff){ // Sheg Todo, remove
 
         marshall.navigation.clearNav();
         marshall.homepage.adjustments();
-        //marshall.configuration.adjustConfigureOptionWidths();
+        marshall.configuration.adjustConfigureOptionWidths();
 		
 
 
@@ -118,20 +118,16 @@ function log(stuff){ // Sheg Todo, remove
                     var $welcomeScreen = $('<div class="empty-configuration"><h3>Please select a machine from the options</h3></div>');
                     self.$configureContent.html($welcomeScreen);
 
-
+                    // Todo: Any other clean ups
 
 
 
 
                 } else {
-                    console.log('Gets content for id ' + value); // Rob Todo
                     this.blur();
                     self.$configureContent.load('ajax/configure-content.php?machineId='+value);
 
-
-
-
-
+                    // Todo: Any other calculations you need to do
 
                 }
             });
@@ -139,34 +135,63 @@ function log(stuff){ // Sheg Todo, remove
 
         adjustConfigureOptionWidths: function(){
             var self = this,
-                currPageWith = $('.page').width(),
+                $optionsList = $('#options', self.$configureForm),
+                $optionsListWidth = $optionsList.width(),
                 marginRight = 15,
                 col, optionWidth;
 
-            if(currPageWith > 959){
+            $optionsList.removeClass('single-column');
+
+            if($optionsListWidth > 849){
                 col = 3;
-                optionWidth = (currPageWith-30)/3;
-            } else if(currPageWith < 960 && currPageWith > 399){
+                optionWidth = ($optionsListWidth-30)/3;
+            } else if($optionsListWidth < 850 && $optionsListWidth > 499){
                 col = 2;
-                optionWidth = (currPageWith-15)/2;
-            } else if(currPageWith < 400){
+                optionWidth = ($optionsListWidth-15)/2;
+            } else if($optionsListWidth < 500){
                 col = 1;
-                optionWidth = '100%';
+                $optionsList.addClass('single-column');
             }
-            log(currPageWith)
-            log(optionWidth)
 
             self.$configureOptions.each(function(i, obj){
-                var optionMarginRight = marginRight;
-                if((i+1) % col == 0){
-                    optionMarginRight = 0;
+                if(col == 1){
+                    $(obj).removeAttr('style');
+                } else {
+                    var optionMarginRight = marginRight;
+                    if((i+1) % col == 0){
+                        optionMarginRight = 0;
+                    }
+                    $(obj).css({
+                        'width': optionWidth,
+                        'margin-right': optionMarginRight
+                    });
                 }
-                $(obj).css({
-                    'width': optionWidth,
-                    'margin-right': optionMarginRight
-                });
-            })
+            });
 
+        },
+
+        attachOptionsAction: function(){
+            var self = this;
+
+            self.$configureOptions.each(function(i, obj){
+                $(obj).on('click', function(){
+                    if($(obj).hasClass('selected')){
+                        $(obj).removeClass('selected');
+
+                        // Todo: Any other calculations or clean up
+
+
+                    } else {
+                        $(obj).addClass('selected');
+
+                        // Todo: Any other calculations you need to do
+
+
+
+
+                    }
+                });
+            });
         },
 
         attachShowHideAction: function(){
@@ -194,6 +219,7 @@ function log(stuff){ // Sheg Todo, remove
             if(self.$configureForm.length > 0){
                 self.attachConfigureAction();
                 self.attachShowHideAction();
+                self.attachOptionsAction();
             }
         }
     };

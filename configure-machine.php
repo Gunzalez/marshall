@@ -111,11 +111,7 @@
                                 <div id="configure-content" class="configure-content">
                                     <div class="empty-configuration">
                                         <h3>Please select a machine from the options</h3>
-                                    </div>
-
-
-
-                                </div>
+                                    </div>                                </div>
                             </div>
                         </div>
 
@@ -141,12 +137,27 @@
                                             <h4>Part No.<br>065/03-0645</h4>
                                             <p class="pricing">£1,648.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Essential for carrying silage. Comes complete with silage attachments for hydraulic door. Cubic capacity: 1013 cu.ft / 28.7 cu.mtrs</p>
                                         </div>
                                         <div class="add">
                                             <label for="option" 41"="">Click to add to my machine</label>
                                             <input type="checkbox" name="option[]" value="41" class="optionCheckbox">
+                                        </div>
+                                    </li>
+                                    <li class="selected">
+                                        <h3>Split Oscillating Suspension</h3>
+                                        <div class="col left">
+                                            <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Rockers.jpg" alt="Split Oscillating Suspension">
+                                            <h4>Part No.<br>085/03-0000</h4>
+                                            <p class="pricing">£0.00</p>
+                                        </div>
+                                        <div class="col right">
+                                            <p>No-cost Option. Reduces lateral movement making high-loads more stable.</p>
+                                        </div>
+                                        <div class="add">
+                                            <label for="option" 51"="">Click to add to my machine</label>
+                                            <input type="checkbox" name="option[]" value="51" class="optionCheckbox">
                                         </div>
                                     </li>
                                     <li>
@@ -156,7 +167,7 @@
                                             <h4>Part No.<br>000/00-000</h4>
                                             <p class="pricing">£96.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Increases silage capacity by extending the height of the trailer front.</p>
                                         </div>
                                         <div class="add">
@@ -171,27 +182,12 @@
                                             <h4>Part No.<br>076/01-0000</h4>
                                             <p class="pricing">£0.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>No-cost Option. Provides excellent performance on the road.</p>
                                         </div>
                                         <div class="add">
                                             <label for="option" 49"="">Click to add to my machine</label>
                                             <input type="checkbox" name="option[]" value="49" class="optionCheckbox">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <h3>Split Oscillating Suspension</h3>
-                                        <div class="col left">
-                                            <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Rockers.jpg" alt="Split Oscillating Suspension">
-                                            <h4>Part No.<br>085/03-0000</h4>
-                                            <p class="pricing">£0.00</p>
-                                        </div>
-                                        <div class="col">
-                                            <p>No-cost Option. Reduces lateral movement making high-loads more stable.</p>
-                                        </div>
-                                        <div class="add">
-                                            <label for="option" 51"="">Click to add to my machine</label>
-                                            <input type="checkbox" name="option[]" value="51" class="optionCheckbox">
                                         </div>
                                     </li>
                                     <li>
@@ -201,7 +197,7 @@
                                             <h4>Part No.<br>000/00-000</h4>
                                             <p class="pricing">£788.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>These tyres offer general all-round performance, effectively reducing ground compaction and performing reasonably well during road use. Please note all prices are in place of standard tyres.</p>
                                         </div>
                                         <div class="add">
@@ -216,7 +212,7 @@
                                             <h4>Part No.<br>000/00-000</h4>
                                             <p class="pricing">£2,205.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>These tyres are excellent in wet conditions and significantly reduce the ground compaction of the machine; ideal if the machine is predominantly used off-road. This price includes the necessary mudguards. Please note all prices are in place of standard tyres.</p>
                                         </div>
                                         <div class="add">
@@ -231,7 +227,7 @@
                                             <h4>Part No.<br>000/00-000</h4>
                                             <p class="pricing">£2,845.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>These tyres excell at both on road performance and off-road performance and are the best all-round tyres we offer. This price includes the necessary mudguards. Please note all prices are in place of standard tyres.</p>
                                         </div>
                                         <div class="add">
@@ -246,7 +242,7 @@
                                             <h4>Part No.<br>083/01-165-70/08</h4>
                                             <p class="pricing">£884.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>These tyres offer general all-round performance, effectively reducing ground compaction and performing reasonably well during road use. Please note all prices are in place of standard tyres.</p>
                                         </div>
                                         <div class="add">
@@ -261,7 +257,7 @@
                                             <h4>Part No.<br>050/01-1076</h4>
                                             <p class="pricing">£1,214.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road. Please note price is for a pair of axles in lieu of 8 stud axles.</p>
                                         </div>
                                         <div class="add">
@@ -276,7 +272,7 @@
                                             <h4>Part No.<br>050/03-1076</h4>
                                             <p class="pricing">£4,870.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road, and provides HGV levels of braking. Please note price is for a pair of axles in lieu of 8 stud axles.</p>
                                         </div>
                                         <div class="add">
@@ -291,7 +287,7 @@
                                             <h4>Part No.<br>050/01-1081</h4>
                                             <p class="pricing">£2,104.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road. Please note price is for a pair of axles in lieu of 8 stud axles.</p>
                                         </div>
                                         <div class="add">
@@ -306,7 +302,7 @@
                                             <h4>Part No.<br>050/11-4000</h4>
                                             <p class="pricing">£1,250.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road, provides improved braking for higher speeds. Automatic load sensing available on springs &amp; manual load sensing available on rockers.</p>
                                         </div>
                                         <div class="add">
@@ -321,7 +317,7 @@
                                             <h4>Part No.<br>082/03-1000</h4>
                                             <p class="pricing">£750.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>This optional extra prevents the trailer wheels from locking up by reducing the flow of oil to the brake rams.  Automatic load sensing available on springs &amp; manual load sensing available on rockers.</p>
                                         </div>
                                         <div class="add">
@@ -336,7 +332,7 @@
                                             <h4>Part No.<br>082/02-3000</h4>
                                             <p class="pricing">£160.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Ensures the hydraulic door of the trailer cannot be opened unless the trailer body is slightly tipped.</p>
                                         </div>
                                         <div class="add">
@@ -351,7 +347,7 @@
                                             <h4>Part No.<br>067/08-0820</h4>
                                             <p class="pricing">£95.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>This rubber seal acts as an extra measure to ensure the rear door securely seals.</p>
                                         </div>
                                         <div class="add">
@@ -366,7 +362,7 @@
                                             <h4>Part No.<br>065/07-8000</h4>
                                             <p class="pricing">£118.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Allows easy discharge of grain, with a simple and reliable design.</p>
                                         </div>
                                         <div class="add">
@@ -381,7 +377,7 @@
                                             <h4>Part No.<br>065/07-1200</h4>
                                             <p class="pricing">£142.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Allows easy discharge of grain, with a simple and reliable design.</p>
                                         </div>
                                         <div class="add">
@@ -396,7 +392,7 @@
                                             <h4>Part No.<br>065/07-1250</h4>
                                             <p class="pricing">£306.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Allows easy discharge of grain, with a simple and reliable design. The additional grain sock ensures the discharge is complete without excessive dust or mess.</p>
                                         </div>
                                         <div class="add">
@@ -411,7 +407,7 @@
                                             <h4>Part No.<br>065/11-0200</h4>
                                             <p class="pricing">£90.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Allows the underside of the trailer to be safely worked on.</p>
                                         </div>
                                         <div class="add">
@@ -426,7 +422,7 @@
                                             <h4>Part No.<br>065/04-5000</h4>
                                             <p class="pricing">£325.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Allows multiple machines to be moved around the farm at once.</p>
                                         </div>
                                         <div class="add">
@@ -441,7 +437,7 @@
                                             <h4>Part No.<br>060/01-0050</h4>
                                             <p class="pricing">£155.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Reduces wear on the tractor pick-up hitch.</p>
                                         </div>
                                         <div class="add">
@@ -456,7 +452,7 @@
                                             <h4>Part No.<br>065/03-6005</h4>
                                             <p class="pricing">£365.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Doubles the floor thickness above the wheels and reduces mud splatter to the rest of the machine.</p>
                                         </div>
                                         <div class="add">
@@ -471,7 +467,7 @@
                                             <h4>Part No.<br>067/06-4000</h4>
                                             <p class="pricing">£125.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Allows a clear view when loading the trailer.</p>
                                         </div>
                                         <div class="add">
@@ -486,7 +482,7 @@
                                             <h4>Part No.<br>067/06-4100</h4>
                                             <p class="pricing">£595.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Provides maximum visibility when loading the trailer. Included with the window is a galavanized grill and blanking plate.</p>
                                         </div>
                                         <div class="add">
@@ -501,7 +497,7 @@
                                             <h4>Part No.<br>057/02-1101</h4>
                                             <p class="pricing">£220.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>A simple 640g PVC cover to protect grain or other valuable loads.</p>
                                         </div>
                                         <div class="add">
@@ -516,7 +512,7 @@
                                             <h4>Part No.<br>057/01-1101</h4>
                                             <p class="pricing">£1,275.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>This heavy-duty 1000g PVC cover allows loads to be quickly covered and protected, ideal when carrying mutliple loads between the fields and farm.</p>
                                         </div>
                                         <div class="add">
@@ -531,7 +527,7 @@
                                             <h4>Part No.<br>057/03-1000</h4>
                                             <p class="pricing">£158.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>This cover that can be used on silage doors to prevent maize and other crops passing through the mesh door.</p>
                                         </div>
                                         <div class="add">
@@ -546,7 +542,7 @@
                                             <h4>Part No.<br>057/01-3001</h4>
                                             <p class="pricing">£3,180.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>This cover electrically deploys from the front of the trailer to the back to quickly cover and protect loads.</p>
                                         </div>
                                         <div class="add">
@@ -561,7 +557,7 @@
                                             <h4>Part No.<br>064/02-8020</h4>
                                             <p class="pricing">£135.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road.</p>
                                         </div>
                                         <div class="add">
@@ -576,7 +572,7 @@
                                             <h4>Part No.<br>064/02-9010</h4>
                                             <p class="pricing">£150.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Improved visibility of the machine and reduces maintenance of lights.</p>
                                         </div>
                                         <div class="add">
@@ -591,7 +587,7 @@
                                             <h4>Part No.<br>064/03-0002</h4>
                                             <p class="pricing">£205.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Provides improved visibility. Machine now has four indicators and four brake lights.</p>
                                         </div>
                                         <div class="add">
@@ -606,7 +602,7 @@
                                             <h4>Part No.<br>064/02-9020</h4>
                                             <p class="pricing">£240.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>These lights are mounted on the top of the door, to further improve visibility</p>
                                         </div>
                                         <div class="add">
@@ -621,7 +617,7 @@
                                             <h4>Part No.<br>000/00-000</h4>
                                             <p class="pricing">£200.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Your Marshall product can receive a bespoke paint finish. Please note paint is not guaranteed to be an exact colour match, although every effort will be made to match the colour as closely as possible.</p>
                                         </div>
                                         <div class="add">
@@ -636,7 +632,7 @@
                                             <h4>Part No.<br>000/00-000</h4>
                                             <p class="pricing">£400.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Your Marshall product can receive a bespoke paint finish. Please note paint is not guaranteed to be an exact colour match, although every effort will be made to match the colour as closely as possible.</p>
                                         </div>
                                         <div class="add">
@@ -651,7 +647,7 @@
                                             <h4>Part No.<br>000/00-000</h4>
                                             <p class="pricing">£135.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>Your Marshall product can have your name or farm name on the rear door.</p>
                                         </div>
                                         <div class="add">
@@ -666,7 +662,7 @@
                                             <h4>Part No.<br>000/00-000</h4>
                                             <p class="pricing">£0.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>If a customer selects four extras it automatically becomes a T4U model, and receives a unique coloured chassis and other special extras.</p>
                                         </div>
                                         <div class="add">
@@ -681,7 +677,7 @@
                                             <h4>Part No.<br>000/00-000</h4>
                                             <p class="pricing">£145.00</p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col right">
                                             <p>This is the standard rate for delivery to a UK mainland address.</p>
                                         </div>
                                         <div class="add">
