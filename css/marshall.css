@@ -625,22 +625,34 @@ h1 a {
 
 .carousel .bx-pager-item a {
     text-indent: -9000px;
-    background-color: #333;
+    background-color: #999;
     display: inline-block;
     width: 20px;
     height: 20px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
 }
 
 .carousel .bx-pager-item a:hover {
     background-color: #666;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
 }
 
 .carousel .bx-pager-item a.active,
 .carousel .bx-pager-item a.active:hover {
     background-color: #217cc9;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
 }
 
 
@@ -931,11 +943,57 @@ h1 a {
 
 #config_machine .options li {
     float: left;
+    width: 310px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    display: inline;
+}
+
+#config_machine .options li h3 {
+    min-height: 40px;
+    padding: 8px 10px;
+    background-color: #dcdcdc;
+    font-size: 1.1em;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+}
+
+#config_machine .options li .col {
+    float: left;
+    width: 50%;
+    padding: 10px 0;
+    min-height: 250px;
+}
+
+#config_machine .options li .col p {
+    padding: 0 10px;
+    font-size: 0.9em;
 }
 
 
+#config_machine .options li .col.left {
+    padding-top: 0;
+}
 
+#config_machine .options li .col.left img {
+    margin-bottom: 10px;
+    width: 96%;
+}
 
+#config_machine .options li .col.left h4,
+#config_machine .options li .col.left p {
+    padding-left: 10px;
+}
+
+#config_machine .options li .add {
+    clear: left;
+    padding: 8px 15px;
+    background-color: #dcdcdc;
+    text-align: right;
+}
+
+#config_machine .options li .add input {
+    display: none;
+}
 
 
 /* homepage mini boxes, responsive using JS */

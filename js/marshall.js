@@ -89,8 +89,8 @@ function log(stuff){ // Sheg Todo, remove
 	marshall.resize = function(){
 
         marshall.navigation.clearNav();
-
-        marshall.homepage.adjustments()
+        marshall.homepage.adjustments();
+        //marshall.configuration.adjustConfigureOptionWidths();
 		
 
 
@@ -107,6 +107,7 @@ function log(stuff){ // Sheg Todo, remove
         $configureForm: $('#config_machine'),
         $configureSelect: $('select', this.$configureForm),
         $configureContent: $('#configure-content', this.$configureForm),
+        $configureOptions: $('#options li', this.$configureForm),
 
         attachConfigureAction: function(){
             var self = this;
@@ -136,6 +137,38 @@ function log(stuff){ // Sheg Todo, remove
             });
         },
 
+        adjustConfigureOptionWidths: function(){
+            var self = this,
+                currPageWith = $('.page').width(),
+                marginRight = 15,
+                col, optionWidth;
+
+            if(currPageWith > 959){
+                col = 3;
+                optionWidth = (currPageWith-30)/3;
+            } else if(currPageWith < 960 && currPageWith > 399){
+                col = 2;
+                optionWidth = (currPageWith-15)/2;
+            } else if(currPageWith < 400){
+                col = 1;
+                optionWidth = '100%';
+            }
+            log(currPageWith)
+            log(optionWidth)
+
+            self.$configureOptions.each(function(i, obj){
+                var optionMarginRight = marginRight;
+                if((i+1) % col == 0){
+                    optionMarginRight = 0;
+                }
+                $(obj).css({
+                    'width': optionWidth,
+                    'margin-right': optionMarginRight
+                });
+            })
+
+        },
+
         attachShowHideAction: function(){
             var self = this,
                 $showHideButtons = $('.show-hide', self.$configureForm);
@@ -151,7 +184,7 @@ function log(stuff){ // Sheg Todo, remove
                         $mainBox.removeClass('closed').addClass('open');
                     }
                 });
-            })
+            });
 
 
         },
