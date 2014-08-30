@@ -23,75 +23,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="marshall.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/marshall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="54" selection-start="2891" selection-end="2891" vertical-scroll-proportion="-16.76923" vertical-offset="635" max-vertical-offset="2703">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="48" selection-start="4449" selection-end="4449" vertical-scroll-proportion="-11.115385" vertical-offset="1003" max-vertical-offset="3434">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news-detail.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-detail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="50" selection-start="2661" selection-end="2661" vertical-scroll-proportion="-25.615385" vertical-offset="320" max-vertical-offset="1785">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configure-machine.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure-machine.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="2165" selection-end="2165" vertical-scroll-proportion="-35.76923" vertical-offset="175" max-vertical-offset="1411">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="46" selection-start="6737" selection-end="6737" vertical-scroll-proportion="-7.923077" vertical-offset="100" max-vertical-offset="1037">
+            <state line="162" column="47" selection-start="4169" selection-end="4169" vertical-scroll-proportion="0.0" vertical-offset="2207" max-vertical-offset="4777">
               <folding>
-                <element signature="tag#li#1;tag#ul#0;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="e#4645#7783#0" expanded="false" />
+                <element signature="e#7813#12110#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="42" selection-start="191" selection-end="212" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="629">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marshall.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/marshall.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="18" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="8058">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marshall.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="marshall.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/marshall.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="794" column="18" selection-start="14082" selection-end="14082" vertical-scroll-proportion="0.5495208" vertical-offset="12982" max-vertical-offset="21063">
+            <state line="911" column="32" selection-start="15953" selection-end="15953" vertical-scroll-proportion="-27.8" vertical-offset="14792" max-vertical-offset="23358">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configure-machine.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/configure-machine.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="133" column="33" selection-start="8012" selection-end="8012" vertical-scroll-proportion="0.17777778" vertical-offset="2101" max-vertical-offset="12308">
               <folding />
             </state>
           </provider>
@@ -110,15 +66,16 @@
         <option value="$PROJECT_DIR$/index.php.html" />
         <option value="$PROJECT_DIR$/css/font-icons.css" />
         <option value="$PROJECT_DIR$/js/plugins/bxslider/jquery.bxslider.js" />
-        <option value="$PROJECT_DIR$/js/marshall.js" />
         <option value="$PROJECT_DIR$/includes/main-navigation.php" />
         <option value="$PROJECT_DIR$/news.php" />
         <option value="$PROJECT_DIR$/includes/footer.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/news-detail.php" />
         <option value="$PROJECT_DIR$/includes/header.php" />
-        <option value="$PROJECT_DIR$/configure-machine.php" />
+        <option value="$PROJECT_DIR$/ajax/configure-content.php" />
         <option value="$PROJECT_DIR$/css/marshall.css" />
+        <option value="$PROJECT_DIR$/js/marshall.js" />
+        <option value="$PROJECT_DIR$/configure-machine.php" />
       </list>
     </option>
   </component>
@@ -183,7 +140,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
+              <option name="myItemId" value="ajax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -196,6 +153,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -300,7 +258,10 @@
     <entry file="file://$PROJECT_DIR$/js/marshall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="18" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="8058">
-          <folding />
+          <folding>
+            <element signature="e#4645#7783#0" expanded="false" />
+            <element signature="e#7813#12110#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -342,7 +303,10 @@
     <entry file="file://$PROJECT_DIR$/js/marshall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="18" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="8058">
-          <folding />
+          <folding>
+            <element signature="e#4645#7783#0" expanded="false" />
+            <element signature="e#7813#12110#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -368,7 +332,10 @@
     <entry file="file://$PROJECT_DIR$/js/marshall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="16" selection-start="2246" selection-end="2246" vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="7820">
-          <folding />
+          <folding>
+            <element signature="e#4645#7783#0" expanded="false" />
+            <element signature="e#7813#12110#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -394,7 +361,10 @@
     <entry file="file://$PROJECT_DIR$/js/marshall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="0" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="8262">
-          <folding />
+          <folding>
+            <element signature="e#4645#7783#0" expanded="false" />
+            <element signature="e#7813#12110#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -420,7 +390,10 @@
     <entry file="file://$PROJECT_DIR$/js/marshall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="7582">
-          <folding />
+          <folding>
+            <element signature="e#4645#7783#0" expanded="false" />
+            <element signature="e#7813#12110#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -458,39 +431,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="48" selection-start="4449" selection-end="4449" vertical-scroll-proportion="-11.115385" vertical-offset="1003" max-vertical-offset="3434">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="120" column="46" selection-start="6737" selection-end="6737" vertical-scroll-proportion="-7.923077" vertical-offset="100" max-vertical-offset="1037">
-          <folding>
-            <element signature="tag#li#1;tag#ul#0;tag#div#1;tag#div#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="42" selection-start="191" selection-end="212" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/marshall.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="18" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="639" max-vertical-offset="3043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configure-machine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2165" selection-end="2165" vertical-scroll-proportion="-35.76923" vertical-offset="175" max-vertical-offset="1411">
           <folding />
         </state>
       </provider>
@@ -502,9 +452,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="48" selection-start="4449" selection-end="4449" vertical-scroll-proportion="-11.115385" vertical-offset="1003" max-vertical-offset="3434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/marshall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="162" column="47" selection-start="4169" selection-end="4169" vertical-scroll-proportion="0.0" vertical-offset="2207" max-vertical-offset="4777">
+          <folding>
+            <element signature="e#4645#7783#0" expanded="false" />
+            <element signature="e#7813#12110#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/marshall.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="794" column="18" selection-start="14082" selection-end="14082" vertical-scroll-proportion="0.5495208" vertical-offset="12982" max-vertical-offset="21063">
+        <state line="911" column="32" selection-start="15953" selection-end="15953" vertical-scroll-proportion="-27.8" vertical-offset="14792" max-vertical-offset="23358">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/configure-content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="56" selection-start="102" selection-end="144" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configure-machine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="33" selection-start="8012" selection-end="8012" vertical-scroll-proportion="0.17777778" vertical-offset="2101" max-vertical-offset="12308">
           <folding />
         </state>
       </provider>

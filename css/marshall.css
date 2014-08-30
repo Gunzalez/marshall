@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #2e2e2e;
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Dosis', 'Tahoma', sans-serif;
 	-webkit-text-size-adjust: none;
     background: url("../images/top-gradient.png") left top repeat-x #ececec;
     font-size: small;
@@ -19,12 +19,35 @@ a:hover {
 }
 
 /* -------------- resets ---------------------- */
-h1, h2, h3, h4, h5 { margin: 0; padding: 0; line-height: 140%; }
-input, select { -webkit-appearance: none; border-radius: 0; }
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    line-height: 140%;
+}
+
+p {
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+input[type="text"],
+select {
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: 'Dosis', 'Tahoma', sans-serif;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+}
+
 * { outline: none; }
-p { line-height: 140%;  margin: 0; padding: 0; -webkit-font-smoothing: antialiased;
-    text-shadow: 0px 1px 0px rgba(255,255,255,0.5); }
-img { border: none; display: block; }
+
 
 
 .text-section h1 {
@@ -154,7 +177,7 @@ h1 a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.0em;
-    padding: 0 15px;
+    padding: 0 14px;
 }
 
 .main-nav ul li.facebook {
@@ -523,7 +546,7 @@ h1 a {
 /* homepage hero heading */
 /* ================================================ */
 .main-heading {
-    background: #dcdcdc;
+    background-color: #dcdcdc;
     color: #444;
     padding: 8px 16px;
     text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
@@ -535,6 +558,7 @@ h1 a {
 
 .main-heading.hero {
     background: url("../images/home_title_grad.png") top right repeat-y #001649;
+    text-shadow: none;
 }
 
 .main-heading.hero h2 {
@@ -789,15 +813,111 @@ h1 a {
 #config_machine .step {
     background: url("../images/heading-pre.png") top left no-repeat #001649;
     padding-left: 49px;
-    height: 36px;
-    line-height: 36px;
+    height: 40px;
+    line-height: 40px;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 #config_machine .step span {
     color: #fff000;
+}
+
+#config_machine .body {
+}
+
+#config_machine .configure {
+    padding: 8px 15px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+#config_machine .configure-content {
+    background: #fff;
+    position: relative;
+    min-height: 240px;
+}
+
+#config_machine .empty-configuration {
+    padding: 15px;
+}
+
+#config_machine .configure-content:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#config_machine .configure-content .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#config_machine .configure-content .content {
+    margin-left: 440px;
+    padding: 12px 15px 18px 15px;
+}
+
+#config_machine .configure-content .content .specs {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#config_machine .configure-content .content .specs li {
+    padding: 8px 15px;
+    margin-top: 2px;
+    background-color: #ececec;
+}
+
+#config_machine .configure-content .content h3 {
     font-size: 1.4em;
+    margin-bottom: 7px;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+}
+
+#config_machine .configure-content .content h4 {
+    font-size: 1.4em;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+    margin-bottom: 40px;
+}
+
+#config_machine .configure-content .content .big-link {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+#config_machine .mainbox .show-hide {
+    text-decoration: none;
+    float: right;
+    margin-right: 10px;
+}
+
+#config_machine .mainbox .show-hide span {
+    color: #ececec;
+    font-weight: normal;
+}
+
+#config_machine .mainbox .show-hide span span {
+    color: #ffffff;
+}
+
+#config_machine .mainbox.open .body {
+    display: block;
+}
+
+#config_machine .mainbox.open .show,
+#config_machine .mainbox.closed .hide {
+    display: none;
+}
+
+
+
+#config_machine .mainbox.closed .body {
+    display: none;
 }
 
 
@@ -934,6 +1054,27 @@ h1 a {
 
 
 
+/* lightbox overrides */
+.fancybox-skin {
+    background: #eaeaea;
+    color: #000;
+    text-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.fancybox-title-inside-wrap {
+    padding: 10px;
+    background-color: #fff;
+    border-top: 10px solid #eaeaea;
+}
+.fancybox-title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
 /* media queries */
 /* ================================================ */
 @media only screen and (max-width: 1000px){
@@ -1005,26 +1146,21 @@ h1 a {
         float: left;
         width: 50%;
     }
-}
 
-/* lightbox overrides */
-.fancybox-skin {
-    background: #eaeaea;
-    color: #000;
-    text-shadow: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
-.fancybox-title-inside-wrap {
-    padding: 10px;
-    background-color: #fff;
-    border-top: 10px solid #eaeaea;
-}
-.fancybox-title {
-    font-family: Arial, Helvetica, sans-serif;
-}
+    #config_machine .configure-content .img {
+        position: static;
+        width: 100%;
+    }
 
+    #config_machine .configure-content .img img {
+        width: 100%;
+    }
+
+    #config_machine .configure-content .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
 
 
 /* tablet portrait and mobile landscape */
@@ -1082,7 +1218,6 @@ h1 a {
 
     .main-heading {
         padding: 8px 12px;
-        background: #001649;
     }
 
     .mainbox.configure {

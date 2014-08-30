@@ -1,5 +1,9 @@
 // JavaScript Document
 
+function log(stuff){ // Sheg Todo, remove
+    console.log(stuff);
+}
+
 (function ($, window) {
 	
 	var marshall = {};
@@ -99,7 +103,69 @@
 
 	};
 
+    marshall.configuration = {
+        $configureForm: $('#config_machine'),
+        $configureSelect: $('select', this.$configureForm),
+        $configureContent: $('#configure-content', this.$configureForm),
 
+        attachConfigureAction: function(){
+            var self = this;
+            self.$configureSelect.on('change', function(){
+
+                var value = $(this).val();
+                if(value.length == '' || isNaN(value)){
+                    var $welcomeScreen = $('<div class="empty-configuration"><h3>Please select a machine from the options</h3></div>');
+                    self.$configureContent.html($welcomeScreen);
+
+
+
+
+
+
+                } else {
+                    console.log('Gets content for id ' + value); // Rob Todo
+                    this.blur();
+                    self.$configureContent.load('ajax/configure-content.php?machineId='+value);
+
+
+
+
+
+
+                }
+            });
+        },
+
+        attachShowHideAction: function(){
+            var self = this,
+                $showHideButtons = $('.show-hide', self.$configureForm);
+
+            $showHideButtons.each(function(){
+
+                $(this).on('click', function(evt){
+                    evt.preventDefault();
+
+                    var $mainBox = $(this).parents('.mainbox');
+                    if($mainBox.hasClass('open')){
+                        $mainBox.removeClass('open').addClass('closed');
+                    } else {
+                        $mainBox.removeClass('closed').addClass('open');
+                    }
+
+                });
+            })
+
+
+        },
+
+        init: function(){
+            var self = this;
+            if(self.$configureForm.length > 0){
+                self.attachConfigureAction();
+                self.attachShowHideAction();
+            }
+        }
+    };
 
 
 	marshall.carousel = {
@@ -439,7 +505,9 @@
 		
 		marshall.carousel.init();
 
-        marshall.contactForm.init();
+        //marshall.contactForm.init();
+
+        marshall.configuration.init();
 		
 		$(window).on('resize',function(){
 			
