@@ -890,6 +890,7 @@ h1 a {
     right: 15px;
 }
 
+/* show and hide */
 #config_machine .mainbox .show-hide {
     text-decoration: none;
     float: right;
@@ -914,14 +915,23 @@ h1 a {
     display: none;
 }
 
-
-
 #config_machine .mainbox.closed .body {
     display: none;
 }
 
 
+/* Configure options, responsive using JS */
+/* ================================================ */
+#config_machine .options {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
 
+#config_machine .options li {
+    float: left;
+}
 
 
 
@@ -1172,6 +1182,10 @@ h1 a {
 
     .main {
         margin-top: 0;
+    }
+
+    .main-heading.hero {
+        background: #001649;
     }
 
     .big-link {

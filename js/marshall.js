@@ -141,7 +141,6 @@ function log(stuff){ // Sheg Todo, remove
                 $showHideButtons = $('.show-hide', self.$configureForm);
 
             $showHideButtons.each(function(){
-
                 $(this).on('click', function(evt){
                     evt.preventDefault();
 
@@ -151,7 +150,6 @@ function log(stuff){ // Sheg Todo, remove
                     } else {
                         $mainBox.removeClass('closed').addClass('open');
                     }
-
                 });
             })
 
