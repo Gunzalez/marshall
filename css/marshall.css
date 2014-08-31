@@ -349,9 +349,9 @@ h1 a {
     font-size: 0.9em;
     font-weight: bold;
     letter-spacing: 2px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
 .red-link {
@@ -380,6 +380,7 @@ h1 a {
 
 .blue-link:hover {
     color: #fff;
+    background: #217cc9;
 }
 
 .read-more {
@@ -505,11 +506,11 @@ h1 a {
     position: absolute;
     width: 60px;
     height: 60px;
-    background: #217cc9;
     top: 50px;
     left: 50%;
     overflow: auto;
     margin: auto;
+    border: 2px solid #fff;
     top: 0;
     left: 0;
     bottom: 0;
@@ -533,7 +534,7 @@ h1 a {
 
 
 .sidebox a.video:hover .play-button {
-    background: #001649;
+    background: #217cc9;
     -webkit-transition: background 0.5s;
     -moz-transition: background 0.5s;
     -o-transition: background 0.5s;
@@ -907,6 +908,7 @@ h1 a {
     text-decoration: none;
     float: right;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #config_machine .mainbox .show-hide span {
@@ -1113,7 +1115,7 @@ h1 a {
 
 #config_machine .basket .cost {
     text-align: right;
-    width: 120px;
+    width: 100px;
 }
 
 #config_machine .basket table thead {
@@ -1375,6 +1377,10 @@ h1 a {
         margin-left: 0;
         padding: 15px;
     }
+
+    #config_machine .options li {
+        width: 50%;
+    }
 }
 
 
@@ -1468,6 +1474,29 @@ h1 a {
     .mainbox .minibox {
         float: left;
         width: 50%;
+    }
+
+    /* configures steps */
+    #config_machine .step {
+        font-size: 1.2em;
+        padding-left: 46px;
+    }
+
+    #config_machine .step > span,
+    #config_machine .step span.text {
+        display: none;
+    }
+
+    #config_machine .step span.fa {
+        font-size: 1.3em;
+    }
+
+    /* table styles */
+    #config_machine .basket table td:nth-child(1),
+    #config_machine .basket table th:nth-child(1) {display: none;}
+
+    #config_machine .basket td {
+        vertical-align: top;
     }
 }
 
@@ -1578,6 +1607,10 @@ h1 a {
     }
 
 
+    /* configures steps */
+    #config_machine .step {
+        font-size: 1.1em;
+    }
 
 
     .news-detail img {

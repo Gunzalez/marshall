@@ -120,14 +120,16 @@
                             <h3 class="step">
                                 <span>Step 2:</span>
                                 Add your options
-                                <a href="#" class="show-hide">
-                                    <span class="show">Show
+                                <div class="show-hide">
+                                    <span class="show">
+                                        <span class="text">Show</span>
                                         <span class="fa fa-chevron-down">&nbsp;</span>
                                     </span>
-                                    <span class="hide">Hide
+                                    <span class="hide">
+                                        <span class="text">Hide</span>
                                         <span class="fa fa-chevron-up">&nbsp;</span>
                                     </span>
-                                </a>
+                                </div>
                             </h3>
                             <div class="body">
                                 <ul id="options" class="options">
@@ -694,14 +696,16 @@
                             <h3 class="step">
                                 <span>Step 3:</span>
                                 Confirm your specifications
-                                <a href="#" class="show-hide">
-                                    <span class="show">Show
+                                <div class="show-hide">
+                                    <span class="show">
+                                        <span class="text">Show</span>
                                         <span class="fa fa-chevron-down">&nbsp;</span>
                                     </span>
-                                    <span class="hide">Hide
+                                    <span class="hide">
+                                        <span class="text">Hide</span>
                                         <span class="fa fa-chevron-up">&nbsp;</span>
                                     </span>
-                                </a>
+                                </div>
                             </h3>
                             <div class="body">
                                 <table cellspacing="0">
@@ -714,7 +718,8 @@
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <td colspan="2" class="total">Retail Price Total ex VAT:</td>
+                                            <td>&nbsp;</td>
+                                            <td class="total">Retail Price Total ex VAT:</td>
                                             <td class="cost">&pound;<span id="total_cost">12,911.00</span></td>
                                         </tr>
                                     </tfoot>

@@ -209,13 +209,14 @@ function log(stuff){ // Sheg Todo, remove
 
         attachShowHideAction: function(){
             var self = this,
-                $showHideButtons = $('.show-hide', self.$configureForm);
+                $showIcons = $('.show-hide', self.$configureForm);
 
-            $showHideButtons.each(function(){
-                $(this).on('click', function(evt){
-                    evt.preventDefault();
+            $showIcons.each(function(i, obj){
 
-                    var $mainBox = $(this).parents('.mainbox');
+                var $showHideButton = $(obj).parents('h3'),
+                    $mainBox = $(obj).parents('.mainbox');
+
+                $showHideButton.on('click', function(){
                     if($mainBox.hasClass('open')){
                         $mainBox.removeClass('open').addClass('closed');
                     } else {
@@ -223,7 +224,6 @@ function log(stuff){ // Sheg Todo, remove
                     }
                 });
             });
-
 
         },
 
