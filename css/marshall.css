@@ -934,8 +934,12 @@ h1 a {
 
 /* Configure options, responsive using JS */
 /* ================================================ */
+.configure-options {
+    margin-bottom: 5px;
+}
+
 #config_machine .options {
-    margin: 5px 0 0 0;
+    margin: 2px 0 0 0;
     padding: 0;
     list-style: none;
     float: left;
@@ -973,7 +977,6 @@ h1 a {
     -o-transition: background 0.5s;
     transition: background 0.5s;
 }
-
 
 #config_machine .options li h3 {
     height: 40px;
@@ -1033,7 +1036,6 @@ h1 a {
     display: none;
 }
 
-
 /* single column styles */
 #config_machine .options.single-column li {
     float: none;
@@ -1067,8 +1069,61 @@ h1 a {
 
 
 
+/* Configure table styles */
+#config_machine .basket table {
+    width: 100%;
+    margin-top: 2px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
 
+#config_machine .basket table tr.even {
+    background: #f8f8f8;
+}
 
+#config_machine .basket td,
+#config_machine .basket th {
+    padding: 7px 16px;
+    text-align: left;
+}
+
+#config_machine .basket th {
+    padding: 10px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+#config_machine .basket td.image {
+    width: 72px;
+}
+
+#config_machine .basket img {
+    width: 70px;
+    height: 55px;
+}
+
+#config_machine .basket .cost {
+    text-align: right;
+    width: 120px;
+}
+
+#config_machine .basket table thead {
+    background-color: #dcdcdc;
+    color: #444;
+    font-size: 1.0em;
+    padding: 4px 16px;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+}
+
+#config_machine .basket tfoot td {
+    border-top: 1px solid #ccc;
+    padding: 16px 16px;
+    text-align: right;
+    font-weight: bold;
+    background: #dcdcdc;
+    color: #000000;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+    font-size: 1.1em;
+}
 
 
 

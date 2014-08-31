@@ -26,10 +26,10 @@
       <file leaf-file-name="marshall.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/marshall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="66" selection-start="3533" selection-end="3533" vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="5746">
+            <state line="171" column="39" selection-start="4906" selection-end="4906" vertical-scroll-proportion="0.0" vertical-offset="2703" max-vertical-offset="5967">
               <folding>
-                <element signature="e#6721#9859#0" expanded="false" />
-                <element signature="e#9889#14186#0" expanded="false" />
+                <element signature="e#7174#10312#0" expanded="false" />
+                <element signature="e#10342#14639#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -38,7 +38,7 @@
       <file leaf-file-name="marshall.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/marshall.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="952" column="21" selection-start="16938" selection-end="16938" vertical-scroll-proportion="-8.08" vertical-offset="15982" max-vertical-offset="25976">
+            <state line="1101" column="1" selection-start="19955" selection-end="19955" vertical-scroll-proportion="-16.84" vertical-offset="18296" max-vertical-offset="26911">
               <folding />
             </state>
           </provider>
@@ -47,8 +47,11 @@
       <file leaf-file-name="configure-machine.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/configure-machine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="452" column="39" selection-start="34059" selection-end="34059" vertical-scroll-proportion="0.9222222" vertical-offset="6854" max-vertical-offset="12240">
-              <folding />
+            <state line="735" column="45" selection-start="55875" selection-end="55875" vertical-scroll-proportion="0.75666666" vertical-offset="628" max-vertical-offset="1955">
+              <folding>
+                <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,9 +76,9 @@
         <option value="$PROJECT_DIR$/news-detail.php" />
         <option value="$PROJECT_DIR$/includes/header.php" />
         <option value="$PROJECT_DIR$/ajax/configure-content.php" />
+        <option value="$PROJECT_DIR$/js/marshall.js" />
         <option value="$PROJECT_DIR$/configure-machine.php" />
         <option value="$PROJECT_DIR$/css/marshall.css" />
-        <option value="$PROJECT_DIR$/js/marshall.js" />
       </list>
     </option>
   </component>
@@ -259,8 +262,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="18" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="8058">
           <folding>
-            <element signature="e#6721#9859#0" expanded="false" />
-            <element signature="e#9889#14186#0" expanded="false" />
+            <element signature="e#7174#10312#0" expanded="false" />
+            <element signature="e#10342#14639#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -304,8 +307,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="18" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="8058">
           <folding>
-            <element signature="e#6721#9859#0" expanded="false" />
-            <element signature="e#9889#14186#0" expanded="false" />
+            <element signature="e#7174#10312#0" expanded="false" />
+            <element signature="e#10342#14639#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -333,8 +336,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="16" selection-start="2246" selection-end="2246" vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="7820">
           <folding>
-            <element signature="e#6721#9859#0" expanded="false" />
-            <element signature="e#9889#14186#0" expanded="false" />
+            <element signature="e#7174#10312#0" expanded="false" />
+            <element signature="e#10342#14639#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -362,8 +365,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="0" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="8262">
           <folding>
-            <element signature="e#6721#9859#0" expanded="false" />
-            <element signature="e#9889#14186#0" expanded="false" />
+            <element signature="e#7174#10312#0" expanded="false" />
+            <element signature="e#10342#14639#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -391,8 +394,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="7582">
           <folding>
-            <element signature="e#6721#9859#0" expanded="false" />
-            <element signature="e#9889#14186#0" expanded="false" />
+            <element signature="e#7174#10312#0" expanded="false" />
+            <element signature="e#10342#14639#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -466,27 +469,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/marshall.css">
+    <entry file="file://$PROJECT_DIR$/js/marshall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="952" column="21" selection-start="16938" selection-end="16938" vertical-scroll-proportion="-8.08" vertical-offset="15982" max-vertical-offset="25976">
-          <folding />
+        <state line="171" column="39" selection-start="4906" selection-end="4906" vertical-scroll-proportion="0.0" vertical-offset="2703" max-vertical-offset="5967">
+          <folding>
+            <element signature="e#7174#10312#0" expanded="false" />
+            <element signature="e#10342#14639#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/marshall.js">
+    <entry file="file://$PROJECT_DIR$/css/marshall.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="66" selection-start="3533" selection-end="3533" vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="5746">
-          <folding>
-            <element signature="e#6721#9859#0" expanded="false" />
-            <element signature="e#9889#14186#0" expanded="false" />
-          </folding>
+        <state line="1101" column="1" selection-start="19955" selection-end="19955" vertical-scroll-proportion="-16.84" vertical-offset="18296" max-vertical-offset="26911">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configure-machine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="452" column="39" selection-start="34059" selection-end="34059" vertical-scroll-proportion="0.9222222" vertical-offset="6854" max-vertical-offset="12240">
-          <folding />
+        <state line="735" column="45" selection-start="55875" selection-end="55875" vertical-scroll-proportion="0.75666666" vertical-offset="628" max-vertical-offset="1955">
+          <folding>
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

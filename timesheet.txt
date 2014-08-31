@@ -1,3 +1,4 @@
 Marshall Timesheet
 Homepage, carousel, header, footer + lightbox = 18hs
 News page + news detail page = 3hrs
+Configure Machine page = 9hrs

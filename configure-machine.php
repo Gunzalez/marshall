@@ -111,11 +111,12 @@
                                 <div id="configure-content" class="configure-content">
                                     <div class="empty-configuration">
                                         <h3>Please select a machine from the options</h3>
-                                    </div>                                </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="mainbox open">
+                        <div class="mainbox configure-options open">
                             <h3 class="step">
                                 <span>Step 2:</span>
                                 Add your options
@@ -135,7 +136,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/QM12SS.jpg" alt="Silage Sides c/w Hyd Door Silage Attachments">
                                             <h4>Part No.<br>065/03-0645</h4>
-                                            <p class="pricing">£1,648.00</p>
+                                            <p class="pricing">&pound;1,648.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Essential for carrying silage. Comes complete with silage attachments for hydraulic door. Cubic capacity: 1013 cu.ft / 28.7 cu.mtrs</p>
@@ -150,7 +151,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Rockers.jpg" alt="Split Oscillating Suspension">
                                             <h4>Part No.<br>085/03-0000</h4>
-                                            <p class="pricing">£0.00</p>
+                                            <p class="pricing">&pound;0.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>No-cost Option. Reduces lateral movement making high-loads more stable.</p>
@@ -165,7 +166,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Top Silage Mesh.jpg" alt="Top Silage Mesh Panel">
                                             <h4>Part No.<br>000/00-000</h4>
-                                            <p class="pricing">£96.00</p>
+                                            <p class="pricing">&pound;96.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Increases silage capacity by extending the height of the trailer front.</p>
@@ -180,7 +181,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Springs.jpg" alt="Spring Suspension">
                                             <h4>Part No.<br>076/01-0000</h4>
-                                            <p class="pricing">£0.00</p>
+                                            <p class="pricing">&pound;0.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>No-cost Option. Provides excellent performance on the road.</p>
@@ -195,7 +196,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/2008-400-60.jpg" alt="NEW 400-60 x 22.5 Wheels">
                                             <h4>Part No.<br>000/00-000</h4>
-                                            <p class="pricing">£788.00</p>
+                                            <p class="pricing">&pound;788.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>These tyres offer general all-round performance, effectively reducing ground compaction and performing reasonably well during road use. Please note all prices are in place of standard tyres.</p>
@@ -210,7 +211,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/2008-550-45.jpg" alt="550-45 x 22.5 Wheels">
                                             <h4>Part No.<br>000/00-000</h4>
-                                            <p class="pricing">£2,205.00</p>
+                                            <p class="pricing">&pound;2,205.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>These tyres are excellent in wet conditions and significantly reduce the ground compaction of the machine; ideal if the machine is predominantly used off-road. This price includes the necessary mudguards. Please note all prices are in place of standard tyres.</p>
@@ -225,7 +226,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/09-12-15 560-45 Wheel.jpg" alt="560-45 x 22.5 Wheels">
                                             <h4>Part No.<br>000/00-000</h4>
-                                            <p class="pricing">£2,845.00</p>
+                                            <p class="pricing">&pound;2,845.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>These tyres excell at both on road performance and off-road performance and are the best all-round tyres we offer. This price includes the necessary mudguards. Please note all prices are in place of standard tyres.</p>
@@ -240,7 +241,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/2008-16.5x70.jpg" alt="16.5 x 70-18ply Wheels">
                                             <h4>Part No.<br>083/01-165-70/08</h4>
-                                            <p class="pricing">£884.00</p>
+                                            <p class="pricing">&pound;884.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>These tyres offer general all-round performance, effectively reducing ground compaction and performing reasonably well during road use. Please note all prices are in place of standard tyres.</p>
@@ -255,7 +256,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/08-06-06 10-stud Commercial Axle (4).jpg" alt="10 Stud Commercial Axles (406 x 120 S Cam)">
                                             <h4>Part No.<br>050/01-1076</h4>
-                                            <p class="pricing">£1,214.00</p>
+                                            <p class="pricing">&pound;1,214.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road. Please note price is for a pair of axles in lieu of 8 stud axles.</p>
@@ -270,7 +271,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/11-07-15 ABS.jpg" alt="10 Stud Commercial Axles c/w ABS Brakes">
                                             <h4>Part No.<br>050/03-1076</h4>
-                                            <p class="pricing">£4,870.00</p>
+                                            <p class="pricing">&pound;4,870.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road, and provides HGV levels of braking. Please note price is for a pair of axles in lieu of 8 stud axles.</p>
@@ -285,7 +286,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/10 Stud Commercial Axle 420x180 S-cam.jpg" alt="10 Stud Commercial Axles (420 x 180 S Cam)">
                                             <h4>Part No.<br>050/01-1081</h4>
-                                            <p class="pricing">£2,104.00</p>
+                                            <p class="pricing">&pound;2,104.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road. Please note price is for a pair of axles in lieu of 8 stud axles.</p>
@@ -300,7 +301,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Air Brakes pg 21.jpg" alt="Air/Oil Brakes c/w Load Sensing (Non ABS)">
                                             <h4>Part No.<br>050/11-4000</h4>
-                                            <p class="pricing">£1,250.00</p>
+                                            <p class="pricing">&pound;1,250.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road, provides improved braking for higher speeds. Automatic load sensing available on springs &amp; manual load sensing available on rockers.</p>
@@ -315,7 +316,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Oil_Load_Sensing_Valve_(web).jpg" alt="Oil Brakes Load Sensing System">
                                             <h4>Part No.<br>082/03-1000</h4>
-                                            <p class="pricing">£750.00</p>
+                                            <p class="pricing">&pound;750.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>This optional extra prevents the trailer wheels from locking up by reducing the flow of oil to the brake rams.  Automatic load sensing available on springs &amp; manual load sensing available on rockers.</p>
@@ -330,7 +331,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/safety_valve.jpg" alt="Hydraulic Door Safety Valve">
                                             <h4>Part No.<br>082/02-3000</h4>
-                                            <p class="pricing">£160.00</p>
+                                            <p class="pricing">&pound;160.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Ensures the hydraulic door of the trailer cannot be opened unless the trailer body is slightly tipped.</p>
@@ -345,7 +346,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/11-07-26 QM Hydraulic Door Seal (2).jpg" alt="Hydraulic Door Seal">
                                             <h4>Part No.<br>067/08-0820</h4>
-                                            <p class="pricing">£95.00</p>
+                                            <p class="pricing">&pound;95.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>This rubber seal acts as an extra measure to ensure the rear door securely seals.</p>
@@ -360,7 +361,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/8 inch Grain Hatch.jpg" alt="8" grain="" hatch"="">
                                             <h4>Part No.<br>065/07-8000</h4>
-                                            <p class="pricing">£118.00</p>
+                                            <p class="pricing">&pound;118.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Allows easy discharge of grain, with a simple and reliable design.</p>
@@ -375,7 +376,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/12 inch Grain Hatch.jpg" alt="12" grain="" hatch"="">
                                             <h4>Part No.<br>065/07-1200</h4>
-                                            <p class="pricing">£142.00</p>
+                                            <p class="pricing">&pound;142.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Allows easy discharge of grain, with a simple and reliable design.</p>
@@ -390,7 +391,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/10-08 T4U Grain Sock.jpg" alt="12" grain="" hatch="" with="" sock"="">
                                             <h4>Part No.<br>065/07-1250</h4>
-                                            <p class="pricing">£306.00</p>
+                                            <p class="pricing">&pound;306.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Allows easy discharge of grain, with a simple and reliable design. The additional grain sock ensures the discharge is complete without excessive dust or mess.</p>
@@ -405,7 +406,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Front Body Prop.jpg" alt="Front Body Prop">
                                             <h4>Part No.<br>065/11-0200</h4>
-                                            <p class="pricing">£90.00</p>
+                                            <p class="pricing">&pound;90.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Allows the underside of the trailer to be safely worked on.</p>
@@ -420,7 +421,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Rear Tow Hitch.jpg" alt="Rear Tow Hitch c/w Lights &amp; Brakes">
                                             <h4>Part No.<br>065/04-5000</h4>
-                                            <p class="pricing">£325.00</p>
+                                            <p class="pricing">&pound;325.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Allows multiple machines to be moved around the farm at once.</p>
@@ -435,7 +436,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Swivel Hitch.jpg" alt="Swivel Hitch">
                                             <h4>Part No.<br>060/01-0050</h4>
-                                            <p class="pricing">£155.00</p>
+                                            <p class="pricing">&pound;155.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Reduces wear on the tractor pick-up hitch.</p>
@@ -450,7 +451,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Mudguards.jpg" alt="Mudguards/Wings">
                                             <h4>Part No.<br>065/03-6005</h4>
-                                            <p class="pricing">£365.00</p>
+                                            <p class="pricing">&pound;365.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Doubles the floor thickness above the wheels and reduces mud splatter to the rest of the machine.</p>
@@ -465,7 +466,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Perspex Window.jpg" alt="Perspex Front Window">
                                             <h4>Part No.<br>067/06-4000</h4>
-                                            <p class="pricing">£125.00</p>
+                                            <p class="pricing">&pound;125.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Allows a clear view when loading the trailer.</p>
@@ -480,7 +481,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/New Full-width Window.jpg" alt="Perspex Front Window - Full Width">
                                             <h4>Part No.<br>067/06-4100</h4>
-                                            <p class="pricing">£595.00</p>
+                                            <p class="pricing">&pound;595.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Provides maximum visibility when loading the trailer. Included with the window is a galavanized grill and blanking plate.</p>
@@ -495,7 +496,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Cover.jpg" alt="Trailer Cover">
                                             <h4>Part No.<br>057/02-1101</h4>
-                                            <p class="pricing">£220.00</p>
+                                            <p class="pricing">&pound;220.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>A simple 640g PVC cover to protect grain or other valuable loads.</p>
@@ -510,7 +511,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Rollover Cover.jpg" alt="Roll Over Cover">
                                             <h4>Part No.<br>057/01-1101</h4>
-                                            <p class="pricing">£1,275.00</p>
+                                            <p class="pricing">&pound;1,275.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>This heavy-duty 1000g PVC cover allows loads to be quickly covered and protected, ideal when carrying mutliple loads between the fields and farm.</p>
@@ -525,7 +526,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Taildoor Cover.jpg" alt="Taildoor Cover">
                                             <h4>Part No.<br>057/03-1000</h4>
-                                            <p class="pricing">£158.00</p>
+                                            <p class="pricing">&pound;158.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>This cover that can be used on silage doors to prevent maize and other crops passing through the mesh door.</p>
@@ -540,7 +541,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/QM14 DOCKS COVERS.jpg" alt="Electric Cover">
                                             <h4>Part No.<br>057/01-3001</h4>
-                                            <p class="pricing">£3,180.00</p>
+                                            <p class="pricing">&pound;3,180.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>This cover electrically deploys from the front of the trailer to the back to quickly cover and protect loads.</p>
@@ -555,7 +556,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/LED Beacon (3).jpg" alt="LED Beacon">
                                             <h4>Part No.<br>064/02-8020</h4>
-                                            <p class="pricing">£135.00</p>
+                                            <p class="pricing">&pound;135.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Ideal if the machine is frequently used on the road.</p>
@@ -570,7 +571,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/LED_lights.jpg" alt="LED Lights">
                                             <h4>Part No.<br>064/02-9010</h4>
-                                            <p class="pricing">£150.00</p>
+                                            <p class="pricing">&pound;150.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Improved visibility of the machine and reduces maintenance of lights.</p>
@@ -585,7 +586,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Dual Lights.jpg" alt="Dual Lights">
                                             <h4>Part No.<br>064/03-0002</h4>
-                                            <p class="pricing">£205.00</p>
+                                            <p class="pricing">&pound;205.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Provides improved visibility. Machine now has four indicators and four brake lights.</p>
@@ -600,7 +601,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/High Level LEDs (1).jpg" alt="High-level Rear LED Lights">
                                             <h4>Part No.<br>064/02-9020</h4>
-                                            <p class="pricing">£240.00</p>
+                                            <p class="pricing">&pound;240.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>These lights are mounted on the top of the door, to further improve visibility</p>
@@ -615,7 +616,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/11-8-1 S5 SS Yellow (9).jpg" alt="Bespoke Colour Finish - Single Colour">
                                             <h4>Part No.<br>000/00-000</h4>
-                                            <p class="pricing">£200.00</p>
+                                            <p class="pricing">&pound;200.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Your Marshall product can receive a bespoke paint finish. Please note paint is not guaranteed to be an exact colour match, although every effort will be made to match the colour as closely as possible.</p>
@@ -630,7 +631,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/12-07-17 QM11SS.jpg" alt="Bespoke Colour Finish - Dual Colour">
                                             <h4>Part No.<br>000/00-000</h4>
-                                            <p class="pricing">£400.00</p>
+                                            <p class="pricing">&pound;400.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Your Marshall product can receive a bespoke paint finish. Please note paint is not guaranteed to be an exact colour match, although every effort will be made to match the colour as closely as possible.</p>
@@ -645,7 +646,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Rear Name QM Range (2).jpg" alt="Rear Name Plate">
                                             <h4>Part No.<br>000/00-000</h4>
-                                            <p class="pricing">£135.00</p>
+                                            <p class="pricing">&pound;135.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>Your Marshall product can have your name or farm name on the rear door.</p>
@@ -660,7 +661,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/tailored_4_you.jpg" alt="T4U Model">
                                             <h4>Part No.<br>000/00-000</h4>
-                                            <p class="pricing">£0.00</p>
+                                            <p class="pricing">&pound;0.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>If a customer selects four extras it automatically becomes a T4U model, and receives a unique coloured chassis and other special extras.</p>
@@ -675,7 +676,7 @@
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/delivery_lorry.jpg" alt="Delivery Charge">
                                             <h4>Part No.<br>000/00-000</h4>
-                                            <p class="pricing">£145.00</p>
+                                            <p class="pricing">&pound;145.00</p>
                                         </div>
                                         <div class="col right">
                                             <p>This is the standard rate for delivery to a UK mainland address.</p>
@@ -689,7 +690,59 @@
                             </div>
                         </div>
 
-
+                        <div class="mainbox basket open">
+                            <h3 class="step">
+                                <span>Step 3:</span>
+                                Confirm your specifications
+                                <a href="#" class="show-hide">
+                                    <span class="show">Show
+                                        <span class="fa fa-chevron-down">&nbsp;</span>
+                                    </span>
+                                    <span class="hide">Hide
+                                        <span class="fa fa-chevron-up">&nbsp;</span>
+                                    </span>
+                                </a>
+                            </h3>
+                            <div class="body">
+                                <table cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="image">Image</th>
+                                            <th class="name">Product name</th>
+                                            <th class="cost">Cost</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2" class="total">Retail Price Total ex VAT:</td>
+                                            <td class="cost">&pound;<span id="total_cost">12,911.00</span></td>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody id="quote">
+                                        <tr>
+                                            <td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/290313-0832-5148.jpg" alt="QM1200 Monocoque Trailer"></td>
+                                            <td class="name">Monocoque Trailers / QM/1200 - Basic price:</td>
+                                            <td class="cost">&pound;12,552.00</td>
+                                        </tr>
+                                        <tr id="211">
+                                            <td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/delivery_lorry.jpg" alt="Delivery Charge"></td>
+                                            <td class="name">Delivery Charge (000/00-000):</td>
+                                            <td class="cost">&pound;145.00</td>
+                                        </tr>
+                                        <tr id="48">
+                                            <td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Top Silage Mesh.jpg" alt="Top Silage Mesh Panel"></td>
+                                            <td class="name">Top Silage Mesh Panel (000/00-000):</td>
+                                            <td class="cost">&pound;96.00</td>
+                                        </tr>
+                                        <tr id="109">
+                                            <td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/8 inch Grain Hatch.jpg" alt="8 grain hatch"></td>
+                                            <td class="name">8" Grain Hatch (065/07-8000):</td>
+                                            <td class="cost">&pound;118.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
 
 

@@ -167,7 +167,18 @@ function log(stuff){ // Sheg Todo, remove
                     });
                 }
             });
+        },
 
+        adjustTableStripes: function(){
+            var self = this,
+                $tableRows = $('#quote tr', self.$configureForm);
+
+            $tableRows.removeAttr('style');
+            $tableRows.each(function(i, obj){
+                if((i+1) % 2 == 0){
+                    $(obj).addClass('even');
+                }
+            })
         },
 
         attachOptionsAction: function(){
@@ -177,12 +188,14 @@ function log(stuff){ // Sheg Todo, remove
                 $(obj).on('click', function(){
                     if($(obj).hasClass('selected')){
                         $(obj).removeClass('selected');
+                        self.adjustTableStripes();
 
                         // Todo: Any other calculations or clean up
 
 
                     } else {
                         $(obj).addClass('selected');
+                        self.adjustTableStripes();
 
                         // Todo: Any other calculations you need to do
 
