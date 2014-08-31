@@ -68,7 +68,7 @@
 
                         <div class="minibox">
                             <h3>Optional extras</h3>
-                            <img src="images/feature-placeholder.png" />
+                            <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/home/11 - QM14SS cw Silage Att, Rear Angled View.jpg" alt="">
                             <div class="more">
                                 <p>Silage sides c/w..</p>
                                 <a href="#" class="big-link blue-link">More</a>
@@ -77,9 +77,9 @@
 
                         <div class="minibox">
                             <h3>Featured product</h3>
-                            <img src="images/feature-placeholder.png" />
+                            <img src="http://www.marshall-trailers.co.uk/uploads/gallery/featured/170513-1652-7094.jpg" alt="Outside Haulier Loaded With Marshall Machines">
                             <div class="more">
-                                <p>Silage sides c/w..</p>
+                                <p> Loaded With Marshall Machines</p>
                                 <a href="#" class="big-link blue-link">More</a>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
                     <h3>Featured video</h3>
                     <a href="https://www.youtube.com/watch?v=uzAX4QCBS0I" class="video">
                         <!--   use a HTML5 plugin, it will make mobile devices use their native video players -->
-                        <img src="images/feature-placeholder.png" />
+                        <img src="http://img.youtube.com/vi/uzAX4QCBS0I/mqdefault.jpg">
                         <span class="play-button fa fa-play"></span>
                     </a>
                 </div>

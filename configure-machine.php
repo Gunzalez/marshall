@@ -142,7 +142,7 @@
                                             <p>Essential for carrying silage. Comes complete with silage attachments for hydraulic door. Cubic capacity: 1013 cu.ft / 28.7 cu.mtrs</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 41"="">Click to add to my machine</label>
+                                            <label for="option 41">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>                                            
                                             <input type="checkbox" name="option[]" value="41" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -157,7 +157,7 @@
                                             <p>No-cost Option. Reduces lateral movement making high-loads more stable.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 51"="">Click to add to my machine</label>
+                                            <label for="option 51">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="51" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -172,7 +172,7 @@
                                             <p>Increases silage capacity by extending the height of the trailer front.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 48"="">Click to add to my machine</label>
+                                            <label for="option 48">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="48" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -187,7 +187,7 @@
                                             <p>No-cost Option. Provides excellent performance on the road.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 49"="">Click to add to my machine</label>
+                                            <label for="option 49">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="49" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -202,7 +202,7 @@
                                             <p>These tyres offer general all-round performance, effectively reducing ground compaction and performing reasonably well during road use. Please note all prices are in place of standard tyres.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 71"="">Click to add to my machine</label>
+                                            <label for="option 71">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="71" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -217,7 +217,7 @@
                                             <p>These tyres are excellent in wet conditions and significantly reduce the ground compaction of the machine; ideal if the machine is predominantly used off-road. This price includes the necessary mudguards. Please note all prices are in place of standard tyres.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 72"="">Click to add to my machine</label>
+                                            <label for="option 72">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="72" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -232,7 +232,7 @@
                                             <p>These tyres excell at both on road performance and off-road performance and are the best all-round tyres we offer. This price includes the necessary mudguards. Please note all prices are in place of standard tyres.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 75"="">Click to add to my machine</label>
+                                            <label for="option 75">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="75" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -247,7 +247,7 @@
                                             <p>These tyres offer general all-round performance, effectively reducing ground compaction and performing reasonably well during road use. Please note all prices are in place of standard tyres.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 88"="">Click to add to my machine</label>
+                                            <label for="option 88">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="88" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -262,7 +262,7 @@
                                             <p>Ideal if the machine is frequently used on the road. Please note price is for a pair of axles in lieu of 8 stud axles.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 90"="">Click to add to my machine</label>
+                                            <label for="option 90">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="90" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -277,7 +277,7 @@
                                             <p>Ideal if the machine is frequently used on the road, and provides HGV levels of braking. Please note price is for a pair of axles in lieu of 8 stud axles.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 91"="">Click to add to my machine</label>
+                                            <label for="option 91">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="91" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -292,7 +292,7 @@
                                             <p>Ideal if the machine is frequently used on the road. Please note price is for a pair of axles in lieu of 8 stud axles.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 93"="">Click to add to my machine</label>
+                                            <label for="option 93">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="93" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -307,7 +307,7 @@
                                             <p>Ideal if the machine is frequently used on the road, provides improved braking for higher speeds. Automatic load sensing available on springs &amp; manual load sensing available on rockers.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 98"="">Click to add to my machine</label>
+                                            <label for="option 98">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="98" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -322,7 +322,7 @@
                                             <p>This optional extra prevents the trailer wheels from locking up by reducing the flow of oil to the brake rams.  Automatic load sensing available on springs &amp; manual load sensing available on rockers.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 99"="">Click to add to my machine</label>
+                                            <label for="option 99">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="99" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -337,7 +337,7 @@
                                             <p>Ensures the hydraulic door of the trailer cannot be opened unless the trailer body is slightly tipped.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 107"="">Click to add to my machine</label>
+                                            <label for="option 107">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="107" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -352,14 +352,14 @@
                                             <p>This rubber seal acts as an extra measure to ensure the rear door securely seals.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 108"="">Click to add to my machine</label>
+                                            <label for="option 108">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="108" class="optionCheckbox">
                                         </div>
                                     </li>
                                     <li>
                                         <h3>8" Grain Hatch</h3>
                                         <div class="col left">
-                                            <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/8 inch Grain Hatch.jpg" alt="8" grain="" hatch"="">
+                                            <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/8 inch Grain Hatch.jpg" alt="8" grain="" hatch">
                                             <h4>Part No.<br>065/07-8000</h4>
                                             <p class="pricing">&pound;118.00</p>
                                         </div>
@@ -367,14 +367,14 @@
                                             <p>Allows easy discharge of grain, with a simple and reliable design.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 109"="">Click to add to my machine</label>
+                                            <label for="option 109">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="109" class="optionCheckbox">
                                         </div>
                                     </li>
                                     <li>
                                         <h3>12" Grain Hatch</h3>
                                         <div class="col left">
-                                            <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/12 inch Grain Hatch.jpg" alt="12" grain="" hatch"="">
+                                            <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/12 inch Grain Hatch.jpg" alt="12" grain="" hatch">
                                             <h4>Part No.<br>065/07-1200</h4>
                                             <p class="pricing">&pound;142.00</p>
                                         </div>
@@ -382,14 +382,14 @@
                                             <p>Allows easy discharge of grain, with a simple and reliable design.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 110"="">Click to add to my machine</label>
+                                            <label for="option 110">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="110" class="optionCheckbox">
                                         </div>
                                     </li>
                                     <li>
                                         <h3>12" Grain Hatch with Sock</h3>
                                         <div class="col left">
-                                            <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/10-08 T4U Grain Sock.jpg" alt="12" grain="" hatch="" with="" sock"="">
+                                            <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/10-08 T4U Grain Sock.jpg" alt="12" grain="" hatch="" with="" sock">
                                             <h4>Part No.<br>065/07-1250</h4>
                                             <p class="pricing">&pound;306.00</p>
                                         </div>
@@ -397,7 +397,7 @@
                                             <p>Allows easy discharge of grain, with a simple and reliable design. The additional grain sock ensures the discharge is complete without excessive dust or mess.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 111"="">Click to add to my machine</label>
+                                            <label for="option 111">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="111" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -412,7 +412,7 @@
                                             <p>Allows the underside of the trailer to be safely worked on.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 116"="">Click to add to my machine</label>
+                                            <label for="option 116">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="116" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -427,7 +427,7 @@
                                             <p>Allows multiple machines to be moved around the farm at once.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 117"="">Click to add to my machine</label>
+                                            <label for="option 117">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="117" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -442,7 +442,7 @@
                                             <p>Reduces wear on the tractor pick-up hitch.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 118"="">Click to add to my machine</label>
+                                            <label for="option 118">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="118" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -457,7 +457,7 @@
                                             <p>Doubles the floor thickness above the wheels and reduces mud splatter to the rest of the machine.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 120"="">Click to add to my machine</label>
+                                            <label for="option 120">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="120" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -472,7 +472,7 @@
                                             <p>Allows a clear view when loading the trailer.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 123"="">Click to add to my machine</label>
+                                            <label for="option 123">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="123" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -487,7 +487,7 @@
                                             <p>Provides maximum visibility when loading the trailer. Included with the window is a galavanized grill and blanking plate.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 125"="">Click to add to my machine</label>
+                                            <label for="option 125">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="125" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -502,7 +502,7 @@
                                             <p>A simple 640g PVC cover to protect grain or other valuable loads.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 134"="">Click to add to my machine</label>
+                                            <label for="option 134">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="134" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -517,7 +517,7 @@
                                             <p>This heavy-duty 1000g PVC cover allows loads to be quickly covered and protected, ideal when carrying mutliple loads between the fields and farm.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 144"="">Click to add to my machine</label>
+                                            <label for="option 144">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="144" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -532,7 +532,7 @@
                                             <p>This cover that can be used on silage doors to prevent maize and other crops passing through the mesh door.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 148"="">Click to add to my machine</label>
+                                            <label for="option 148">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="148" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -547,7 +547,7 @@
                                             <p>This cover electrically deploys from the front of the trailer to the back to quickly cover and protect loads.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 149"="">Click to add to my machine</label>
+                                            <label for="option 149">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="149" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -562,7 +562,7 @@
                                             <p>Ideal if the machine is frequently used on the road.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 200"="">Click to add to my machine</label>
+                                            <label for="option 200">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="200" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -577,7 +577,7 @@
                                             <p>Improved visibility of the machine and reduces maintenance of lights.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 201"="">Click to add to my machine</label>
+                                            <label for="option 201">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="201" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -592,7 +592,7 @@
                                             <p>Provides improved visibility. Machine now has four indicators and four brake lights.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 203"="">Click to add to my machine</label>
+                                            <label for="option 203">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="203" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -607,7 +607,7 @@
                                             <p>These lights are mounted on the top of the door, to further improve visibility</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 206"="">Click to add to my machine</label>
+                                            <label for="option 206">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="206" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -622,7 +622,7 @@
                                             <p>Your Marshall product can receive a bespoke paint finish. Please note paint is not guaranteed to be an exact colour match, although every effort will be made to match the colour as closely as possible.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 207"="">Click to add to my machine</label>
+                                            <label for="option 207">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="207" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -637,7 +637,7 @@
                                             <p>Your Marshall product can receive a bespoke paint finish. Please note paint is not guaranteed to be an exact colour match, although every effort will be made to match the colour as closely as possible.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 208"="">Click to add to my machine</label>
+                                            <label for="option 208">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="208" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -652,7 +652,7 @@
                                             <p>Your Marshall product can have your name or farm name on the rear door.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 209"="">Click to add to my machine</label>
+                                            <label for="option 209">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="209" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -667,7 +667,7 @@
                                             <p>If a customer selects four extras it automatically becomes a T4U model, and receives a unique coloured chassis and other special extras.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 210"="">Click to add to my machine</label>
+                                            <label for="option 210">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="210" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -682,7 +682,7 @@
                                             <p>This is the standard rate for delivery to a UK mainland address.</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option" 211"="">Click to add to my machine</label>
+                                            <label for="option 211">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="211" class="optionCheckbox" checked="checked">
                                         </div>
                                     </li>

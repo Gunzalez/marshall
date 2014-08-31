@@ -978,6 +978,16 @@ h1 a {
     transition: background 0.5s;
 }
 
+#config_machine .options li .remove-option,
+#config_machine .options li.selected .add-option {
+    display: none;
+}
+
+#config_machine .options li .add-option,
+#config_machine .options li.selected .remove-option {
+    display: inline-block;
+}
+
 #config_machine .options li h3 {
     height: 40px;
     padding: 8px 10px;
