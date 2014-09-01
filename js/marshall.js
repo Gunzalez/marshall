@@ -115,19 +115,29 @@ function log(stuff){ // Sheg Todo, remove
 
                 var value = $(this).val();
                 if(value.length == '' || isNaN(value)){
-                    var $welcomeScreen = $('<div class="empty-configuration"><h3>Please select a machine from the options</h3></div>');
-                    self.$configureContent.html($welcomeScreen);
 
                     // Todo: Any other clean ups
+
+                    var $welcomeScreen = $('<div class="empty-configuration"><h3>Select a machine from the options</h3></div>');
+                    self.$configureContent.html($welcomeScreen);
+                    self.toggleStepsDisplay('hide');
 
 
 
 
                 } else {
                     this.blur();
-                    self.$configureContent.load('ajax/configure-content.php?machineId='+value);
 
                     // Todo: Any other calculations you need to do
+                    // e.g Resetting selected options
+                    // e.g Clearing the quote table
+
+                    self.$configureContent.load('ajax/configure-content.php?machineId='+value, function(){
+                        $('#btnConfigure', self.$configureContent).on('click', function(evt){
+                            evt.preventDefault();
+                            self.toggleStepsDisplay('show');
+                        });
+                    });
 
                 }
             });
@@ -169,6 +179,19 @@ function log(stuff){ // Sheg Todo, remove
             });
         },
 
+        toggleStepsDisplay: function(toggleValue){
+            var self = this,
+                $stepsWeCanHide = $('.can-hide', self.$configureForm);
+
+            if(toggleValue == 'hide'){
+                $stepsWeCanHide.addClass('displayNone');
+            } else {
+                $stepsWeCanHide.removeClass('displayNone');
+                self.adjustConfigureOptionWidths();
+                self.adjustTableStripes();
+            }
+        },
+
         adjustTableStripes: function(){
             var self = this,
                 $tableRows = $('#quote tr', self.$configureForm);
@@ -188,16 +211,22 @@ function log(stuff){ // Sheg Todo, remove
                 $(obj).on('click', function(){
                     if($(obj).hasClass('selected')){
                         $(obj).removeClass('selected');
-                        self.adjustTableStripes();
 
+                        self.adjustTableStripes();
                         // Todo: Any other calculations or clean up
+                        // e.g re-adjusting table stripes
+                        // e.g removing price from total cost
+
+
 
 
                     } else {
                         $(obj).addClass('selected');
-                        self.adjustTableStripes();
 
+                        self.adjustTableStripes();
                         // Todo: Any other calculations you need to do
+                        // e.g re-adjusting table stripes
+                        // e.g adding price to total cost
 
 
 

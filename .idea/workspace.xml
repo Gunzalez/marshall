@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3f63afc-ff88-41a5-ada5-7dbd526ab0ad" name="Default" comment="" />
+    <list default="true" id="c3f63afc-ff88-41a5-ada5-7dbd526ab0ad" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bg-select-schveron.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure-machine.php" afterPath="$PROJECT_DIR$/configure-machine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/marshall.css" afterPath="$PROJECT_DIR$/css/marshall.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/marshall.js" afterPath="$PROJECT_DIR$/js/marshall.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Marshall.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,25 +32,25 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="34" selection-start="3496" selection-end="3496" vertical-scroll-proportion="-0.0" vertical-offset="1258" max-vertical-offset="2703">
+            <state line="74" column="34" selection-start="3496" selection-end="3496" vertical-scroll-proportion="-39.23077" vertical-offset="238" max-vertical-offset="2703">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="marshall.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="marshall.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/marshall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="213" column="45" selection-start="6089" selection-end="6089" vertical-scroll-proportion="0.0" vertical-offset="3583" max-vertical-offset="10404">
+            <state line="186" column="56" selection-start="5536" selection-end="5536" vertical-scroll-proportion="0.64090174" vertical-offset="2764" max-vertical-offset="10897">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="marshall.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="marshall.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/marshall.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1378" column="5" selection-start="24287" selection-end="24287" vertical-scroll-proportion="0.65426695" vertical-offset="22828" max-vertical-offset="27642">
+            <state line="854" column="20" selection-start="15167" selection-end="15167" vertical-scroll-proportion="-11.28" vertical-offset="13954" max-vertical-offset="27795">
               <folding />
             </state>
           </provider>
@@ -53,9 +59,10 @@
       <file leaf-file-name="configure-machine.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configure-machine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="720" column="54" selection-start="56933" selection-end="56933" vertical-scroll-proportion="-11.653846" vertical-offset="2179" max-vertical-offset="3468">
+            <state line="694" column="51" selection-start="55510" selection-end="55518" vertical-scroll-proportion="-10.038462" vertical-offset="1779" max-vertical-offset="2992">
               <folding>
                 <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,9 +88,9 @@
         <option value="$PROJECT_DIR$/includes/header.php" />
         <option value="$PROJECT_DIR$/ajax/configure-content.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/marshall.js" />
         <option value="$PROJECT_DIR$/configure-machine.php" />
         <option value="$PROJECT_DIR$/css/marshall.css" />
+        <option value="$PROJECT_DIR$/js/marshall.js" />
       </list>
     </option>
   </component>
@@ -94,7 +101,7 @@
     <option name="width" value="1873" />
     <option name="height" value="1096" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -186,6 +193,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c3f63afc-ff88-41a5-ada5-7dbd526ab0ad" name="Default" comment="" />
@@ -196,9 +220,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1079" y="-8" width="1873" height="1096" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -261,6 +285,7 @@
         <state line="150" column="62" selection-start="9700" selection-end="9700" vertical-scroll-proportion="0.0" vertical-offset="2420" max-vertical-offset="13141">
           <folding>
             <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -474,32 +499,33 @@
         <state line="2" column="4" selection-start="43" selection-end="62" vertical-scroll-proportion="0.03723987" vertical-offset="0" max-vertical-offset="913" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/configure-machine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="694" column="51" selection-start="55510" selection-end="55518" vertical-scroll-proportion="-10.038462" vertical-offset="1779" max-vertical-offset="2992">
+          <folding>
+            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="34" selection-start="3496" selection-end="3496" vertical-scroll-proportion="0.0" vertical-offset="1258" max-vertical-offset="2703">
+        <state line="74" column="34" selection-start="3496" selection-end="3496" vertical-scroll-proportion="-39.23077" vertical-offset="238" max-vertical-offset="2703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/marshall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="854" column="20" selection-start="15167" selection-end="15167" vertical-scroll-proportion="-11.28" vertical-offset="13954" max-vertical-offset="27795">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/marshall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="45" selection-start="6089" selection-end="6089" vertical-scroll-proportion="0.0" vertical-offset="3583" max-vertical-offset="10404">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configure-machine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="720" column="54" selection-start="56933" selection-end="56933" vertical-scroll-proportion="-11.653846" vertical-offset="2179" max-vertical-offset="3468">
-          <folding>
-            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/marshall.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1378" column="5" selection-start="24287" selection-end="24287" vertical-scroll-proportion="0.65426695" vertical-offset="22828" max-vertical-offset="27642">
+        <state line="186" column="56" selection-start="5536" selection-end="5536" vertical-scroll-proportion="0.64090174" vertical-offset="2764" max-vertical-offset="10897">
           <folding />
         </state>
       </provider>

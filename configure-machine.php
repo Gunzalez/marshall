@@ -35,9 +35,9 @@
                             </h3>
                             <div class="body">
                                 <div id="configure-machine" class="configure">
-                                    <label>Choose machine to configure</label>
+                                    <!--<label>Choose machine to configure</label>-->
                                     <select id="machine" name="machine" required="required">
-                                        <option value="">Please select...</option>
+                                        <option value="NaN">Choose machine to configure</option>
                                         <optgroup label="Monocoque Trailers">
                                             <option value="4">QM/6</option>
                                             <option value="6">QM/8</option>
@@ -110,13 +110,13 @@
                                 </div>
                                 <div id="configure-content" class="configure-content">
                                     <div class="empty-configuration">
-                                        <h3>Please select a machine from the options</h3>
+                                        <h3>Select a machine from the options</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mainbox configure-options open">
+                        <div class="mainbox configure-options can-hide displayNone open">
                             <h3 class="step">
                                 <span>Step 2:</span>
                                 Add your options
@@ -692,7 +692,7 @@
                             </div>
                         </div>
 
-                        <div class="mainbox basket open">
+                        <div class="mainbox basket can-hide displayNone open">
                             <h3 class="step">
                                 <span>Step 3:</span>
                                 Confirm your specifications
@@ -749,7 +749,34 @@
                             </div>
                         </div>
 
+                        <div class="mainbox can-hide displayNone">
+                            <textarea>
+                                Stuff and nonsense
+                            </textarea>
+                        </div>
 
+                        <div class="mainbox can-hide displayNone open">
+                            <h3 class="step">
+                                <span>Step 4:</span>
+                                Save, print or order your machine
+                                <div class="show-hide">
+                                    <span class="show">
+                                        <span class="text">Show</span>
+                                        <span class="fa fa-chevron-down">&nbsp;</span>
+                                    </span>
+                                    <span class="hide">
+                                        <span class="text">Hide</span>
+                                        <span class="fa fa-chevron-up">&nbsp;</span>
+                                    </span>
+                                </div>
+                            </h3>
+                            <div class="body">
+                                2 big links and more stuff and nonsense
+                                <a href="#" class="big-link blue-link">Emails</a>
+                                <a href="#" class="big-link blue-link">PDF it baby!</a>
+
+                            </div>
+                        </div>
 
                     </div>
 

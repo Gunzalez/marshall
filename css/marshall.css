@@ -37,13 +37,20 @@ img {
     display: block;
 }
 
+textarea,
 input[type="text"],
 select {
     border-radius: 4px;
     background-color: #fff;
     font-family: 'Dosis', 'Tahoma', sans-serif;
-    padding: 4px 8px;
-    border: 1px solid #ccc;
+    padding: 5px 8px;
+    border: 1px solid #999;
+    -webkit-appearance: none;
+}
+
+select {
+    padding-right: 30px;
+    background: url("../images/bg-select-schveron.jpg") center right no-repeat;
 }
 
 * { outline: none; }
@@ -426,6 +433,9 @@ h1 a {
 
 .mainbox {
     margin-bottom: 20px;
+    /*-webkit-box-shadow: 0 8px 6px -6px #ccc;*/
+    /*-moz-box-shadow: 0 8px 6px -6px #ccc;*/
+    /*box-shadow: 0 8px 6px -6px #ccc;*/
 }
 
 .mainbox:after {
@@ -495,7 +505,7 @@ h1 a {
 }
 
 .sidebox.news ul li.even {
-    background-color: #dcdcdc;
+    background-color: #dedede;
 }
 
 .sidebox .video {
@@ -616,7 +626,7 @@ h1 a {
 }
 
 .carousel .bx-controls {
-    background-color: #dcdcdc;
+    background-color: #dedede;
     padding: 10px 15px;
 }
 .carousel .bx-pager-item {
@@ -842,7 +852,7 @@ h1 a {
 #config_machine .configure {
     padding: 8px 15px;
     background: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #config_machine .configure-content {
@@ -941,7 +951,7 @@ h1 a {
 }
 
 #config_machine .options {
-    margin: 2px 0 0 0;
+    margin: 1px 0 0 0;
     padding: 0;
     list-style: none;
     float: left;
@@ -1090,7 +1100,7 @@ h1 a {
 }
 
 #config_machine .basket table tr.even {
-    background: #f8f8f8;
+    background: #f2f2f2;
 }
 
 #config_machine .basket td,
@@ -1165,7 +1175,6 @@ h1 a {
 }
 
 .minibox .more {
-    background-color: #dcdcdc;
     padding: 7px 12px;
     min-height: 37px;
     position: relative;
