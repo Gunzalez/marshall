@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f63afc-ff88-41a5-ada5-7dbd526ab0ad" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\wamp\www\websites\Marshall\images\carousel-placeholder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\websites\Marshall\images\logo-print.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\websites\Marshall\images\priceconfigure-btn.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure-machine.php" afterPath="$PROJECT_DIR$/configure-machine.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/marshall.css" afterPath="$PROJECT_DIR$/css/marshall.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/marshall.js" afterPath="$PROJECT_DIR$/js/marshall.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timesheet.txt" afterPath="$PROJECT_DIR$/timesheet.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Marshall.iws" />
@@ -33,7 +35,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="34" selection-start="3496" selection-end="3496" vertical-scroll-proportion="-39.23077" vertical-offset="238" max-vertical-offset="2703">
+            <state line="32" column="45" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2703">
               <folding />
             </state>
           </provider>
@@ -42,7 +44,7 @@
       <file leaf-file-name="marshall.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/marshall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="48" selection-start="3006" selection-end="3006" vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="10914">
+            <state line="121" column="0" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="10914">
               <folding />
             </state>
           </provider>
@@ -51,7 +53,7 @@
       <file leaf-file-name="marshall.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/marshall.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1178" column="1" selection-start="21637" selection-end="21637" vertical-scroll-proportion="0.28528973" vertical-offset="19834" max-vertical-offset="28577">
+            <state line="62" column="16" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.33084947" vertical-offset="832" max-vertical-offset="31195">
               <folding />
             </state>
           </provider>
@@ -60,10 +62,8 @@
       <file leaf-file-name="configure-machine.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configure-machine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="775" column="34" selection-start="60913" selection-end="60913" vertical-scroll-proportion="-27.0" vertical-offset="11436" max-vertical-offset="12631">
-              <folding>
-                <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="837" column="101" selection-start="65320" selection-end="65320" vertical-scroll-proportion="0.0" vertical-offset="13617" max-vertical-offset="14824">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -223,20 +223,23 @@
       <created>1409535366780</created>
       <updated>1409535366780</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finishes Steps 3 and 4">
+      <created>1409619305239</created>
+      <updated>1409619305239</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1079" y="-8" width="1873" height="1096" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27564767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2777202" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4787565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26887053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27162534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -245,10 +248,11 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4787565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -264,12 +268,41 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Added in Step 4, and started styling form fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in Step 4, and started styling form fields" />
+    <MESSAGE value="Finishes Steps 3 and 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishes Steps 3 and 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="45" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/marshall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="0" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="10914">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/marshall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="90" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="31195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configure-machine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="837" column="101" selection-start="65320" selection-end="65320" vertical-scroll-proportion="0.0" vertical-offset="13617" max-vertical-offset="14824">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="34" selection-start="3496" selection-end="3496" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2703">
@@ -294,9 +327,7 @@
     <entry file="file://$PROJECT_DIR$/configure-machine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="694" column="51" selection-start="55510" selection-end="55518" vertical-scroll-proportion="0.0" vertical-offset="11798" max-vertical-offset="13685">
-          <folding>
-            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -324,9 +355,7 @@
     <entry file="file://$PROJECT_DIR$/configure-machine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="150" column="62" selection-start="9700" selection-end="9700" vertical-scroll-proportion="0.0" vertical-offset="2420" max-vertical-offset="13141">
-          <folding>
-            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -525,32 +554,30 @@
         <state line="2" column="4" selection-start="43" selection-end="62" vertical-scroll-proportion="0.03723987" vertical-offset="0" max-vertical-offset="913" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/marshall.js">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="48" selection-start="3006" selection-end="3006" vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="10914">
+        <state line="32" column="45" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2703">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/js/marshall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="34" selection-start="3496" selection-end="3496" vertical-scroll-proportion="-39.23077" vertical-offset="238" max-vertical-offset="2703">
+        <state line="121" column="0" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="10914">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configure-machine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="775" column="34" selection-start="60913" selection-end="60913" vertical-scroll-proportion="-27.0" vertical-offset="11436" max-vertical-offset="12631">
-          <folding>
-            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0;tag#form#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state line="837" column="101" selection-start="65320" selection-end="65320" vertical-scroll-proportion="0.0" vertical-offset="13617" max-vertical-offset="14824">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/marshall.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1178" column="1" selection-start="21637" selection-end="21637" vertical-scroll-proportion="0.28528973" vertical-offset="19834" max-vertical-offset="28577">
+        <state line="62" column="16" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.33084947" vertical-offset="832" max-vertical-offset="31195">
           <folding />
         </state>
       </provider>

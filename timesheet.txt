@@ -4,3 +4,4 @@ News page + news detail page = 3hrs
 Configure Machine page = 9hrs
 Configure Machine page = 3.5hrs (Sunday night)
 Configure Machine page = 2hrs (Monday night)
+Configure Machine page = 4hrs (Tuesday morning)

@@ -105,7 +105,7 @@ function log(stuff){ // Sheg Todo, remove
 
     marshall.configuration = {
         $configureForm: $('#config_machine'),
-        $configureSelect: $('select', this.$configureForm),
+        $configureSelect: $('#machine', this.$configureForm),
         $configureContent: $('#configure-content', this.$configureForm),
         $configureOptions: $('#options li', this.$configureForm),
 

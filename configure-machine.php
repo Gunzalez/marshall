@@ -772,8 +772,76 @@
                             </h3>
                             <div class="body">
                                 <p>Now you can save, print or order your machine, simply pick from the following options</p>
-                                <p><a href="#" class="big-link red-link">Email enquiry to Marshall</a><br />(A copy will be sent to you)</p>
-                                <p><a href="#" class="big-link red-link">Download a PDF of your quote</a><br />(May require apps on mobile devices)</p>
+                                <p><a href="#" id="email-option" class="big-link red-link">Email enquiry to Marshall</a><br />(A copy will be sent to you)</p>
+                                <p><a href="#" id="pdf-option" class="big-link red-link">Download a PDF of your quote</a><br />(May require an app if on a mobile device)</p>
+                            </div>
+                        </div>
+
+                        <div class="mainbox email-option can-hide displayNone open">
+                            <h3 class="step">
+                                <span>Step 5:</span>
+                                Email enquiry to Marshall
+                                <div class="show-hide">
+                                    <span class="show">
+                                        <span class="text">Show</span>
+                                        <span class="fa fa-chevron-down">&nbsp;</span>
+                                    </span>
+                                    <span class="hide">
+                                        <span class="text">Hide</span>
+                                        <span class="fa fa-chevron-up">&nbsp;</span>
+                                    </span>
+                                </div>
+                            </h3>
+                            <div class="body">
+                                <div class="column left-column">
+                                    <p class="error">
+                                        <label for="title">Title *</label>
+                                        <select id="title" name="title" required="required">
+                                            <option value="NaN">Select... *</option>
+                                            <option value="Mr">Mr</option>
+                                            <option value="Mrs">Mrs</option>
+                                            <option value="Ms">Ms</option>
+                                            <option value="Miss">Miss</option>
+                                            <option value="Dr">Dr</option>
+                                            <option value="Prof">Prof</option>
+                                            <option value="Rev">Rev</option>
+                                            <option value="Sir">Sir</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <span class="error">Please pick an option</span>
+                                    </p>
+                                    <p>
+                                        <label for="firstname">Firstname</label>
+                                        <input type="text" id="firstname" name="firstname" placeholder="First name">
+                                    </p>
+                                    <p class="error">
+                                        <label for="lastname">Lastname *</label>
+                                        <input type="text" id="lastname" name="lastname" required="required" placeholder="Last name *">
+                                        <span class="error">Please pick an option</span>
+                                    </p>
+                                    <p>
+                                        <label for="address">Address</label>
+                                        <textarea id="address" name="address" placeholder="Address details"></textarea>
+                                    </p>
+                                </div>
+                                <div class="column right-column">
+                                    <p class="error">
+                                        <label for="telephone">Telephone *</label><input type="number" id="telephone" name="telephone" required="required" placeholder="Phone number *">
+                                        <span class="error">Please pick an option</span>
+                                    </p>
+                                    <p class="error">
+                                        <label for="email">Email *</label><input type="email" id="email" name="email" required="required" placeholder="Email address *">
+                                        <span class="error">Please pick an option</span>
+                                    </p>
+                                    <p>
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" placeholder="Additional message"></textarea>
+                                    </p>
+                                </div>
+                                <div class="foot">
+                                    <p>* Denotes mandatory fields</p>
+                                    <input type="submit" id="go" class="big-link red-link" value="Send email">
+                                </div>
                             </div>
                         </div>
 
