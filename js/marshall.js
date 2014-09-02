@@ -113,6 +113,8 @@ function log(stuff){ // Sheg Todo, remove
             var self = this;
             self.$configureSelect.on('change', function(){
 
+                self.toggleStepsDisplay('hide');
+
                 var value = $(this).val();
                 if(value.length == '' || isNaN(value)){
 
@@ -120,7 +122,6 @@ function log(stuff){ // Sheg Todo, remove
 
                     var $welcomeScreen = $('<div class="empty-configuration"><h3>Select a machine from the options</h3></div>');
                     self.$configureContent.html($welcomeScreen);
-                    self.toggleStepsDisplay('hide');
 
 
 

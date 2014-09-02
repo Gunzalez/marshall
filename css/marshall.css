@@ -44,8 +44,12 @@ select {
     background-color: #fff;
     font-family: 'Dosis', 'Tahoma', sans-serif;
     padding: 5px 8px;
-    border: 1px solid #999;
+    border: 1px solid #ccc;
     -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
 }
 
 select {
@@ -71,6 +75,9 @@ select {
 	display: none !important;
 }
 
+.general-padding {
+    padding: 15px;
+}
 
 /* site */
 /* ================================================ */
@@ -946,10 +953,6 @@ h1 a {
 
 /* Configure options, responsive using JS */
 /* ================================================ */
-.configure-options {
-    margin-bottom: 5px;
-}
-
 #config_machine .options {
     margin: 1px 0 0 0;
     padding: 0;
@@ -1033,9 +1036,11 @@ h1 a {
 }
 
 #config_machine .options li .col.left img {
-    margin-bottom: 10px;
-    width: 98%;
+    width: 90%;
+    margin: 10px 5px 10px 10px;
+    border: 1px solid #ccc;
 }
+
 
 #config_machine .options li .col.left h4,
 #config_machine .options li .col.left p {
@@ -1086,7 +1091,7 @@ h1 a {
 }
 
 #config_machine .options.single-column li .col.left img {
-    width: 150px;
+    width: 140px;
 }
 
 
@@ -1139,13 +1144,50 @@ h1 a {
 #config_machine .basket tfoot td {
     border-top: 1px solid #ccc;
     padding: 16px 16px;
-    text-align: right;
     font-weight: bold;
     background: #dcdcdc;
     color: #000000;
     text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
     font-size: 1.1em;
 }
+
+#config_machine .basket .body {
+    background-color: #fff;
+}
+
+#config_machine .basket .body label {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    display: block;
+}
+
+#config_machine .basket .body textarea {
+    width: 100%;
+    height: 120px;
+}
+
+
+#config_machine .save-print-order .body {
+    background: #fff;
+    padding: 15px;
+}
+
+#config_machine .save-print-order .body p {
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+#config_machine .save-print-order .body p a {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -1615,10 +1657,14 @@ h1 a {
         margin-bottom: 5px;
     }
 
+    #configure-machine select {
+        width: 100%;
+    }
+
 
     /* configures steps */
     #config_machine .step {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
 

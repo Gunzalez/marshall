@@ -148,7 +148,7 @@
                                             <input type="checkbox" name="option[]" value="41" class="optionCheckbox">
                                         </div>
                                     </li>
-                                    <li class="selected">
+                                    <li>
                                         <h3>Split Oscillating Suspension</h3>
                                         <div class="col left">
                                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Rockers.jpg" alt="Split Oscillating Suspension">
@@ -746,19 +746,19 @@
                                         </tr>
                                     </tbody>
                                 </table>
+
+                                <div class="general-padding">
+                                    <label for="notes">Additional information</label>
+                                    <textarea id="notes" name="notes" placeholder="For example, add order notes / numbers to this box"></textarea>
+                                </div>
+
                             </div>
                         </div>
 
-                        <div class="mainbox can-hide displayNone">
-                            <textarea>
-                                Stuff and nonsense
-                            </textarea>
-                        </div>
-
-                        <div class="mainbox can-hide displayNone open">
+                        <div class="mainbox save-print-order can-hide displayNone open">
                             <h3 class="step">
                                 <span>Step 4:</span>
-                                Save, print or order your machine
+                                Order your machine
                                 <div class="show-hide">
                                     <span class="show">
                                         <span class="text">Show</span>
@@ -771,10 +771,9 @@
                                 </div>
                             </h3>
                             <div class="body">
-                                2 big links and more stuff and nonsense
-                                <a href="#" class="big-link blue-link">Emails</a>
-                                <a href="#" class="big-link blue-link">PDF it baby!</a>
-
+                                <p>Now you can save, print or order your machine, simply pick from the following options</p>
+                                <p><a href="#" class="big-link red-link">Email enquiry to Marshall</a><br />(A copy will be sent to you)</p>
+                                <p><a href="#" class="big-link red-link">Download a PDF of your quote</a><br />(May require apps on mobile devices)</p>
                             </div>
                         </div>
 
