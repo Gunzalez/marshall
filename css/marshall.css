@@ -878,13 +878,13 @@ h1 a {
 #config_machine .configure {
     padding: 8px 15px;
     background: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 #config_machine .configure-content {
     background: #fff;
     position: relative;
-    min-height: 240px;
+    min-height: 270px;
 }
 
 #config_machine .empty-configuration {
@@ -901,10 +901,20 @@ h1 a {
     position: absolute;
     top: 0;
     left: 0;
+    padding: 15px;
+
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#config_machine .configure-content .img img {
+    border: 1px solid #ccc;
 }
 
 #config_machine .configure-content .content {
-    margin-left: 440px;
+    margin-left: 460px;
     padding: 12px 15px 18px 15px;
 }
 
@@ -1539,7 +1549,7 @@ h1 a {
 
     #config_machine .configure-content .content {
         margin-left: 0;
-        padding: 15px;
+        padding: 0 15px 15px 15px;
     }
 
     #config_machine .options li {

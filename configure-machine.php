@@ -25,7 +25,7 @@
                     <div class="container">
 
                         <div class="main-heading">
-                            <h2>Price & Configure a Marshall Machine</h2>
+                            <h2>Price &amp; Configure a Marshall Machine</h2>
                         </div>
 
                         <div class="mainbox">
@@ -748,8 +748,8 @@
                                 </table>
 
                                 <div class="general-padding">
-                                    <label for="notes">Additional information</label>
-                                    <textarea id="notes" name="notes" placeholder="For example, add order notes / numbers to this box"></textarea>
+                                    <label for="notes">Notes</label>
+                                    <textarea id="notes" name="notes" placeholder="Add order notes / numbers to this box"></textarea>
                                 </div>
 
                             </div>
@@ -777,20 +777,20 @@
                             </div>
                         </div>
 
-                        <div class="mainbox email-option can-hide displayNone open">
+                        <div class="mainbox email-option displayNone">
                             <h3 class="step">
                                 <span>Step 5:</span>
                                 Email enquiry to Marshall
-                                <div class="show-hide">
-                                    <span class="show">
-                                        <span class="text">Show</span>
-                                        <span class="fa fa-chevron-down">&nbsp;</span>
-                                    </span>
-                                    <span class="hide">
-                                        <span class="text">Hide</span>
-                                        <span class="fa fa-chevron-up">&nbsp;</span>
-                                    </span>
-                                </div>
+<!--                                <div class="show-hide">-->
+<!--                                    <span class="show">-->
+<!--                                        <span class="text">Show</span>-->
+<!--                                        <span class="fa fa-chevron-down">&nbsp;</span>-->
+<!--                                    </span>-->
+<!--                                    <span class="hide">-->
+<!--                                        <span class="text">Hide</span>-->
+<!--                                        <span class="fa fa-chevron-up">&nbsp;</span>-->
+<!--                                    </span>-->
+<!--                                </div>-->
                             </h3>
                             <div class="body">
                                 <div class="column left-column">

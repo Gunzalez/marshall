@@ -46,10 +46,7 @@ function log(stuff){ // Sheg Todo, remove
 
     marshall.homepage = {
 
-
-
-
-        adjustments: function(){
+        resize: function(){
             var $minibox = $('.minibox'),
                 mainboxWidth = $minibox.parent().width(),
                 mainWindowWidth = $(window).width(),
@@ -89,17 +86,8 @@ function log(stuff){ // Sheg Todo, remove
 	marshall.resize = function(){
 
         marshall.navigation.clearNav();
-        marshall.homepage.adjustments();
-        marshall.configuration.adjustConfigureOptionWidths();
-		
-
-
-
-
-
-
-
-
+        marshall.homepage.resize();
+        marshall.configuration.resize();
 
 	};
 
@@ -118,33 +106,27 @@ function log(stuff){ // Sheg Todo, remove
                 var value = $(this).val();
                 if(value.length == '' || isNaN(value)){
 
-                    // Todo: Any other clean ups
-
                     var $welcomeScreen = $('<div class="empty-configuration"><h3>Select a machine from the options</h3></div>');
                     self.$configureContent.html($welcomeScreen);
 
-
-
-
                 } else {
-                    this.blur();
-
-                    // Todo: Any other calculations you need to do
-                    // e.g Resetting selected options
-                    // e.g Clearing the quote table
 
                     self.$configureContent.load('ajax/configure-content.php?machineId='+value, function(){
                         $('#btnConfigure', self.$configureContent).on('click', function(evt){
                             evt.preventDefault();
-                            self.toggleStepsDisplay('show');
+                            if(!$(this).hasClass('disabled')){
+                                self.toggleStepsDisplay('show');
+                                $(this).addClass('disabled'); // TODO Segun, css for this
+                            }
                         });
                     });
-
                 }
+
+                this.blur();
             });
         },
 
-        adjustConfigureOptionWidths: function(){
+        fixOptionWidths: function(){
             var self = this,
                 $optionsList = $('#options', self.$configureForm),
                 $optionsListWidth = $optionsList.width(),
@@ -185,15 +167,37 @@ function log(stuff){ // Sheg Todo, remove
                 $stepsWeCanHide = $('.can-hide', self.$configureForm);
 
             if(toggleValue == 'hide'){
+                // Hides steps 2 - 5
                 $stepsWeCanHide.addClass('displayNone');
+                $('.email-option', self.$configureForm).addClass('displayNone');
             } else {
-                $stepsWeCanHide.removeClass('displayNone');
-                self.adjustConfigureOptionWidths();
-                self.adjustTableStripes();
+                // Reset
+                // - clear options
+                // - empty the table
+                // - hide
+
+
+
+
+
+
+
+
+
+
+
+
+                $stepsWeCanHide.removeClass('displayNone'); // show steps 2 - 4
+                self.fixOptionWidths();
+                self.applyTableStripes();
+
+                $('html, body').animate({
+                    scrollTop: $(".configure-options").offset().top - 30
+                }, 500);
             }
         },
 
-        adjustTableStripes: function(){
+        applyTableStripes: function(){
             var self = this,
                 $tableRows = $('#quote tr', self.$configureForm);
 
@@ -211,27 +215,20 @@ function log(stuff){ // Sheg Todo, remove
             self.$configureOptions.each(function(i, obj){
                 $(obj).on('click', function(){
                     if($(obj).hasClass('selected')){
-                        $(obj).removeClass('selected');
-
-                        self.adjustTableStripes();
                         // Todo: Any other calculations or clean up
-                        // e.g re-adjusting table stripes
                         // e.g removing price from total cost
 
 
-
-
+                        $(obj).removeClass('selected');
+                        self.applyTableStripes();
                     } else {
-                        $(obj).addClass('selected');
-
-                        self.adjustTableStripes();
                         // Todo: Any other calculations you need to do
-                        // e.g re-adjusting table stripes
                         // e.g adding price to total cost
 
 
 
-
+                        $(obj).addClass('selected');
+                        self.applyTableStripes();
                     }
                 });
             });
@@ -243,10 +240,10 @@ function log(stuff){ // Sheg Todo, remove
 
             $showIcons.each(function(i, obj){
 
-                var $showHideButton = $(obj).parents('h3'),
+                var $showHideHeader = $(obj).parents('h3'),
                     $mainBox = $(obj).parents('.mainbox');
 
-                $showHideButton.on('click', function(){
+                $showHideHeader.on('click', function(){
                     if($mainBox.hasClass('open')){
                         $mainBox.removeClass('open').addClass('closed');
                     } else {
@@ -257,16 +254,32 @@ function log(stuff){ // Sheg Todo, remove
 
         },
 
+        attachStep5: function(){
+            var self = this;
+
+            $('#email-option', self.$configureForm).on('click', function(evt){
+                evt.preventDefault();
+
+                $('.email-option', self.$configureForm).removeClass('displayNone');
+            })
+        },
+
+        resize: function(){
+            var self = this;
+
+            self.fixOptionWidths();
+        },
+
         init: function(){
             var self = this;
             if(self.$configureForm.length > 0){
                 self.attachConfigureAction();
                 self.attachShowHideAction();
                 self.attachOptionsAction();
+                self.attachStep5();
             }
         }
     };
-
 
 	marshall.carousel = {
 		init: function(){
@@ -448,7 +461,7 @@ function log(stuff){ // Sheg Todo, remove
         switchFormType: function(button){
 
             var self = this,
-                activeClass = $(button).attr('data-id'),
+                activeClass = $(button).prop('data-id'),
                 $buttonList = $(button).parents('ul');
 
             $('a', $buttonList).removeAttr('class');
@@ -504,7 +517,7 @@ function log(stuff){ // Sheg Todo, remove
                 self.$spinnerDiv.removeClass('displayNone');
                 $form.addClass('displayNone');
 
-                var url = $form.attr('action'),
+                var url = $form.prop('action'),
                     posting = $.post(url, $form.serialize());
 
                 posting.done(function(data) {
@@ -576,13 +589,13 @@ function log(stuff){ // Sheg Todo, remove
                     var $li = $(this).parent();
                     if($li.find('ul').length > 0){
                         if($li.hasClass('hover')){
-                            location.href = $(this).attr('href');
+                            location.href = $(this).prop('href');
                         } else {
                             self.clearNav();
                             $li.addClass('hover').parents('li').addClass('hover');
                         }
                     } else {
-                        location.href = $(this).attr('href');
+                        location.href = $(this).prop('href');
                     }
                 });
             } else {
