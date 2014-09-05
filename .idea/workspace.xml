@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3f63afc-ff88-41a5-ada5-7dbd526ab0ad" name="Default" comment="Refactors JS, Starts floating basket">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Gunzalez.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Gunzalez.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure-machine.php" afterPath="$PROJECT_DIR$/configure-machine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/marshall.css" afterPath="$PROJECT_DIR$/css/marshall.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/marshall.js" afterPath="$PROJECT_DIR$/js/marshall.js" />
+    <list default="true" id="c3f63afc-ff88-41a5-ada5-7dbd526ab0ad" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timesheet.txt" afterPath="$PROJECT_DIR$/timesheet.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Marshall.iws" />
@@ -55,7 +52,7 @@
       <file leaf-file-name="configure-machine.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/configure-machine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="536" column="30" selection-start="42437" selection-end="42437" vertical-scroll-proportion="0.5432937" vertical-offset="8792" max-vertical-offset="14620">
+            <state line="524" column="41" selection-start="41547" selection-end="41547" vertical-scroll-proportion="0.19694397" vertical-offset="8792" max-vertical-offset="14620">
               <folding />
             </state>
           </provider>
@@ -239,14 +236,19 @@
       <created>1409653224076</created>
       <updated>1409653224076</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactors JS, Starts floating basket">
+      <created>1409876739552</created>
+      <updated>1409876739553</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1079" y="-8" width="1873" height="1096" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32227978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32227978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -261,7 +263,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3357513" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -282,7 +283,8 @@
     <MESSAGE value="Added in Step 4, and started styling form fields" />
     <MESSAGE value="Finishes Steps 3 and 4" />
     <MESSAGE value="Finishes Steps 5, all of CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishes Steps 5, all of CSS" />
+    <MESSAGE value="Refactors JS, Starts floating basket" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactors JS, Starts floating basket" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -633,7 +635,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configure-machine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="536" column="30" selection-start="42437" selection-end="42437" vertical-scroll-proportion="0.5432937" vertical-offset="8792" max-vertical-offset="14620">
+        <state line="524" column="41" selection-start="41547" selection-end="41547" vertical-scroll-proportion="0.19694397" vertical-offset="8792" max-vertical-offset="14620">
           <folding />
         </state>
       </provider>
