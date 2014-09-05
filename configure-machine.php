@@ -723,28 +723,7 @@
                                             <td class="cost">&pound;<span id="total_cost">12,911.00</span></td>
                                         </tr>
                                     </tfoot>
-                                    <tbody id="quote">
-                                        <tr>
-                                            <td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/290313-0832-5148.jpg" alt="QM1200 Monocoque Trailer"></td>
-                                            <td class="name">Monocoque Trailers / QM/1200 - Basic price:</td>
-                                            <td class="cost">&pound;12,552.00</td>
-                                        </tr>
-                                        <tr id="211">
-                                            <td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/delivery_lorry.jpg" alt="Delivery Charge"></td>
-                                            <td class="name">Delivery Charge (000/00-000):</td>
-                                            <td class="cost">&pound;145.00</td>
-                                        </tr>
-                                        <tr id="48">
-                                            <td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/Top Silage Mesh.jpg" alt="Top Silage Mesh Panel"></td>
-                                            <td class="name">Top Silage Mesh Panel (000/00-000):</td>
-                                            <td class="cost">&pound;96.00</td>
-                                        </tr>
-                                        <tr id="109">
-                                            <td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/8 inch Grain Hatch.jpg" alt="8 grain hatch"></td>
-                                            <td class="name">8" Grain Hatch (065/07-8000):</td>
-                                            <td class="cost">&pound;118.00</td>
-                                        </tr>
-                                    </tbody>
+                                    <tbody id="quote"></tbody>
                                 </table>
 
                                 <div class="general-padding">
@@ -781,6 +760,7 @@
                             <h3 class="step">
                                 <span>Step 5:</span>
                                 Email enquiry to Marshall
+                                <!-- No need to hide just because user clicks on PDF, me thinks -->
 <!--                                <div class="show-hide">-->
 <!--                                    <span class="show">-->
 <!--                                        <span class="text">Show</span>-->
@@ -855,6 +835,14 @@
 
         <?php include_once('includes/footer.php'); ?>
         <div id="mobile-nav"></div>
+    </div>
+    <div id="basket">
+        <a href="#" class="show-hide">Your Marshall</a>
+        <form id="summary_box">
+            <h3>Summary</h3>
+            <strong>£<span id="basket_total">0</span> </strong>ex VAT<br>
+            <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">
+        </form>
     </div>
 
     <script src="js/jquery-1.9.1.min.js"></script>

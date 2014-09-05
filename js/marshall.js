@@ -8,10 +8,7 @@ function log(stuff){ // Sheg Todo, remove
 	
 	var marshall = {};
 
-    marshall.utilities = utilities || {};
-
 	marshall.properties = {
-		widthThresshold: 1000,
 		isMobile: false,
 		windowWidth: ''
 	};
@@ -26,8 +23,7 @@ function log(stuff){ // Sheg Todo, remove
 		
 		marshall.properties.windowWidth = $(window).width();
 
-
-
+        // overlays, I left these for you
         $(".fancybox").fancybox({
             openEffect  : 'none',
             closeEffect : 'none',
@@ -43,9 +39,8 @@ function log(stuff){ // Sheg Todo, remove
 	};
 
 
-
     marshall.homepage = {
-
+        // Yes, a bit messy I know, may refactor if time allows
         resize: function(){
             var $minibox = $('.minibox'),
                 mainboxWidth = $minibox.parent().width(),
@@ -84,11 +79,10 @@ function log(stuff){ // Sheg Todo, remove
     };
 
 	marshall.resize = function(){
-
         marshall.navigation.clearNav();
         marshall.homepage.resize();
         marshall.configuration.resize();
-
+        marshall.mobile.resize();
 	};
 
     marshall.configuration = {
@@ -96,6 +90,7 @@ function log(stuff){ // Sheg Todo, remove
         $configureSelect: $('#machine', this.$configureForm),
         $configureContent: $('#configure-content', this.$configureForm),
         $configureOptions: $('#options li', this.$configureForm),
+        $configureTable: $('#quote', this.$configureForm),
 
         attachConfigureAction: function(){
             var self = this;
@@ -114,10 +109,31 @@ function log(stuff){ // Sheg Todo, remove
                     self.$configureContent.load('ajax/configure-content.php?machineId='+value, function(){
                         $('#btnConfigure', self.$configureContent).on('click', function(evt){
                             evt.preventDefault();
-                            if(!$(this).hasClass('disabled')){
-                                self.toggleStepsDisplay('show');
-                                $(this).addClass('disabled'); // TODO Segun, css for this
-                            }
+
+                            self.toggleStepsDisplay('show');
+
+                            // add main product and delivery cost to table - fake of course, for illustration
+                            var $newRow = $('<tr></tr>');
+                            $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/290313-0832-5148.jpg" alt="QM1200 Monocoque Trailer"></td>');
+                            $newRow.append('<td class="name">Monocoque Trailers / QM/1200 - Basic price:</td>');
+                            $newRow.append('<td class="cost">&pound;12,552.00</td>');
+                            self.$configureTable.append($newRow);
+                            $newRow = $('<tr id="211"></tr>');
+                            $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/delivery_lorry.jpg" alt="Delivery Charge"></td>');
+                            $newRow.append('<td class="name">Delivery Charge (000/00-000):</td>');
+                            $newRow.append('<td class="cost">&pound;145.00</td>');
+                            self.$configureTable.append($newRow);
+
+                            // visually selecting delivery option in table
+                            self.$configureOptions.eq(self.$configureOptions.length - 1).addClass('selected');
+
+
+
+
+
+
+
+                            self.applyTableStripes();
                         });
                     });
                 }
@@ -164,33 +180,29 @@ function log(stuff){ // Sheg Todo, remove
 
         toggleStepsDisplay: function(toggleValue){
             var self = this,
-                $stepsWeCanHide = $('.can-hide', self.$configureForm);
+                $collapsibleSteps = $('.can-hide', self.$configureForm);
 
             if(toggleValue == 'hide'){
+
                 // Hides steps 2 - 5
-                $stepsWeCanHide.addClass('displayNone');
+                $collapsibleSteps.addClass('displayNone');
                 $('.email-option', self.$configureForm).addClass('displayNone');
+
             } else {
-                // Reset
-                // - clear options
-                // - empty the table
-                // - hide
 
-
-
-
-
-
-
-
-
-
-
-
-                $stepsWeCanHide.removeClass('displayNone'); // show steps 2 - 4
+                // e.g, clear options, empty the table, reset floating price, reopen all collapsible panels
+                self.$configureOptions.removeClass('selected'); // clears options
+                self.$configureTable.empty(); // empties the table
+                $collapsibleSteps.removeClass('closed').addClass('open'); // resets collapsible (need for resizing)
+                $collapsibleSteps.removeClass('displayNone'); // show steps 2 - 4
                 self.fixOptionWidths();
-                self.applyTableStripes();
+                // TODO reset floating price
 
+
+
+
+
+                // some fancy slide to options panel
                 $('html, body').animate({
                     scrollTop: $(".configure-options").offset().top - 30
                 }, 500);
@@ -199,7 +211,7 @@ function log(stuff){ // Sheg Todo, remove
 
         applyTableStripes: function(){
             var self = this,
-                $tableRows = $('#quote tr', self.$configureForm);
+                $tableRows = $('tr', self.$configureTable);
 
             $tableRows.removeAttr('style');
             $tableRows.each(function(i, obj){
@@ -216,14 +228,35 @@ function log(stuff){ // Sheg Todo, remove
                 $(obj).on('click', function(){
                     if($(obj).hasClass('selected')){
                         // Todo: Any other calculations or clean up
-                        // e.g removing price from total cost
+                        // e.g removing price from total cost, remove row from table
+
+
+
+
+
+
+
 
 
                         $(obj).removeClass('selected');
                         self.applyTableStripes();
                     } else {
                         // Todo: Any other calculations you need to do
-                        // e.g adding price to total cost
+                        // e.g adding price to total cost, and a row to table, maybe pulled in by ajax
+
+                        // e.g fake new row
+                        var $newRow = $('<tr id="119"></tr>');
+                        $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/8 inch Grain Hatch.jpg" alt="8 grain hatch"></td>');
+                        $newRow.append('<td class="name">8" Grain Hatch (065/07-8000):</td>');
+                        $newRow.append('<td class="cost">&pound;118.00</td>');
+                        self.$configureTable.append($newRow);
+
+
+
+
+
+
+
 
 
 
@@ -254,29 +287,70 @@ function log(stuff){ // Sheg Todo, remove
 
         },
 
-        attachStep5: function(){
+        setLinksInStepFour: function(){
             var self = this;
 
             $('#email-option', self.$configureForm).on('click', function(evt){
                 evt.preventDefault();
 
                 $('.email-option', self.$configureForm).removeClass('displayNone');
+
+                $('html, body').animate({
+                    scrollTop: $(".email-option").offset().top - 30
+                }, 500);
             })
+
+            $('#pdf-option', self.$configureForm).on('click', function(evt){
+                evt.preventDefault();
+            });
+        },
+
+        setUpConfigurationEmail: function(){
+            var self = this,
+                $formFieldsBox = $('.email-option', self.$configureForm);
+
+            self.$configureForm.on('submit', function(){
+                var returnValue = true;
+                // ROBCURLE - TODO, validation, just add .error to parent p tag of offending form field
+
+
+
+
+
+
+
+
+
+
+                return returnValue; // for normal post if true
+            });
+
+            // cosmetic, clears error when suer clicks on field
+            $('input', $formFieldsBox).on('focus', function(){
+                $(this).parents('.error').removeClass('error');
+            });
+
+            $('select', $formFieldsBox).on('change', function(){
+                $(this).parents('.error').removeClass('error');
+            });
+
         },
 
         resize: function(){
             var self = this;
-
             self.fixOptionWidths();
         },
 
         init: function(){
             var self = this;
             if(self.$configureForm.length > 0){
+
                 self.attachConfigureAction();
                 self.attachShowHideAction();
                 self.attachOptionsAction();
-                self.attachStep5();
+                self.setLinksInStepFour();
+                self.setUpConfigurationEmail();
+
             }
         }
     };
@@ -285,24 +359,17 @@ function log(stuff){ // Sheg Todo, remove
 		init: function(){
 
             var $slider = $('.bxslider');
+
 			if($slider.length > 0){
-
                 $slider.bxSlider({
-					
-					onSliderLoad: function(){						
-						
-
-						
+					onSliderLoad: function(){
+                        // nothing for now
 					},
-					
 					onSlideAfter: function(){
-						
-						// Does nowt
-						
+                        // nothing for now
 					}
-								
-				});			
-				
+				});
+
 			}
 		}
 	};
@@ -449,129 +516,6 @@ function log(stuff){ // Sheg Todo, remove
 		
 	};
 
-    marshall.contactForm = {
-
-        $contactForm: $('#contact-form'),
-        $selectField: $('#contact-type', this.$contactForm),
-        $retryButton: $('#retryButton'),
-        $spinnerDiv: $('#spinSpinSugar'),
-        $sendError: $('#sendError'),
-        $thankingYou: $('#thanks'),
-
-        switchFormType: function(button){
-
-            var self = this,
-                activeClass = $(button).prop('data-id'),
-                $buttonList = $(button).parents('ul');
-
-            $('a', $buttonList).removeAttr('class');
-            $(button).addClass('active');
-            self.$selectField.val(activeClass);
-            self.$selectField.change();
-        },
-
-        slowAppear: function($obj){
-            $obj.removeClass('displayNone').css('opacity','0').animate({ opacity: 1 }, 250);
-        },
-
-        validateForm: function($form){
-            var self = this,
-                isValid = true,
-                $name = $('#name', $form),
-                $company = $('#company', $form),
-                $email = $('#email', $form),
-                $phone = $('#phone', $form),
-                $contactType = $('#contact-type', $form),
-                errorClass = '.row';
-
-            $(errorClass, $form).removeClass('error');
-
-            if(marshall.utilities.isEmptyInputField($name)){
-                marshall.utilities.reportError($name, errorClass);
-                isValid = false;
-            }
-
-            if(marshall.utilities.isEmptyInputField($company)){
-                marshall.utilities.reportError($company, errorClass);
-                isValid = false;
-            }
-
-            if(!marshall.utilities.isValidEmailAddress($email)){
-                marshall.utilities.reportError($email, errorClass);
-                isValid = false;
-            }
-
-            if(marshall.utilities.isEmptyInputField($phone)){
-                marshall.utilities.reportError($phone, errorClass);
-                isValid = false;
-            }
-
-            var $enquiry = $('#'+$contactType.val()+'.textarea');
-            if(marshall.utilities.isEmptyInputField($enquiry)){
-                marshall.utilities.reportError($enquiry, errorClass);
-                isValid = false;
-            }
-
-            if(isValid){
-
-                self.$spinnerDiv.removeClass('displayNone');
-                $form.addClass('displayNone');
-
-                var url = $form.prop('action'),
-                    posting = $.post(url, $form.serialize());
-
-                posting.done(function(data) {
-                    setTimeout(function(){
-                        self.$spinnerDiv.addClass('displayNone');
-                        if(data == 'error'){
-                            self.slowAppear(self.$sendError);
-                        } else {
-                            self.slowAppear(self.$thankingYou);
-                        }
-                    }, 250);
-                });
-
-//                posting.fail(function(data){
-//                    // Not used for now.
-//                });
-            }
-        },
-
-        init: function(){
-
-            var self = this;
-            if(self.$contactForm.length > 0){
-                var $switcherButtons = $('#contact-type-switcher a', self.$contactForm);
-                $switcherButtons.on('click', function(evt){
-                    evt.preventDefault();
-                    if(!$(evt.target).hasClass('active')){
-                        self.switchFormType(evt.target);
-                    }
-                });
-
-                self.$selectField.on('change', function(){
-                    var currVal = $(this).val();
-                    self.$contactForm.removeClass('brief meeting general').addClass(currVal);
-                });
-
-                self.$contactForm.on('submit', function(evt){
-                    evt.preventDefault();
-                    self.validateForm(self.$contactForm);
-                });
-
-                $('input, .textarea', self.$contactForm).on('focus', function(){
-                    $(this).parents('.row').removeClass('error');
-                });
-
-                self.$retryButton.on('click', function(evt){
-                    evt.preventDefault();
-                    self.slowAppear(self.$contactForm);
-                    self.$sendError.addClass('displayNone');
-                });
-            }
-        }
-    };
-
     marshall.navigation = {
 
         $html: $('.main-nav'),
@@ -618,8 +562,6 @@ function log(stuff){ // Sheg Todo, remove
 		
 		marshall.carousel.init();
 
-        //marshall.contactForm.init();
-
         marshall.configuration.init();
 		
 		$(window).on('resize',function(){
@@ -629,8 +571,6 @@ function log(stuff){ // Sheg Todo, remove
 			if(marshall.properties.windowWidth != theWidthNow){
 				
 				marshall.resize();
-				
-				marshall.mobile.resize();
 						
 				marshall.properties.windowWidth = theWidthNow;
 			
