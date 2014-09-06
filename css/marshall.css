@@ -1440,24 +1440,24 @@ h1 a {
 
 
 #basket {
-    position: fixed;
-    top: 159px;
+    position: absolute;
+    top: 0;
     right: 0;
     width: 200px;
     border: 1px solid #fff;
     border-right: 0;
     background-color: #bb1f1d;
+    margin-top: 159px;
     color: #fff;
     padding: 10px;
     -webkit-appearance: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*-webkit-transition: top 0.5s;*/
-    /*-moz-transition: top 0.5s;*/
-    /*-o-transition: top 0.5s;*/
-    /*transition: top 0.5s;*/
+    transition: margin 0.75s ease;
 }
+
+
 
 
 

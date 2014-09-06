@@ -196,6 +196,7 @@ function log(stuff){ // Sheg Todo, remove
                 $collapsibleSteps.removeClass('closed').addClass('open'); // resets collapsible (need for resizing)
                 $collapsibleSteps.removeClass('displayNone'); // show steps 2 - 4
                 self.fixOptionWidths();
+
                 // TODO reset floating price
 
 
@@ -227,6 +228,10 @@ function log(stuff){ // Sheg Todo, remove
             self.$configureOptions.each(function(i, obj){
                 $(obj).on('click', function(){
                     if($(obj).hasClass('selected')){
+
+                        $(obj).removeClass('selected');
+                        self.applyTableStripes();
+
                         // Todo: Any other calculations or clean up
                         // e.g removing price from total cost, remove row from table
 
@@ -238,9 +243,12 @@ function log(stuff){ // Sheg Todo, remove
 
 
 
-                        $(obj).removeClass('selected');
-                        self.applyTableStripes();
+
                     } else {
+
+                        $(obj).addClass('selected');
+                        self.applyTableStripes();
+
                         // Todo: Any other calculations you need to do
                         // e.g adding price to total cost, and a row to table, maybe pulled in by ajax
 
@@ -260,8 +268,6 @@ function log(stuff){ // Sheg Todo, remove
 
 
 
-                        $(obj).addClass('selected');
-                        self.applyTableStripes();
                     }
                 });
             });
@@ -298,7 +304,7 @@ function log(stuff){ // Sheg Todo, remove
                 $('html, body').animate({
                     scrollTop: $(".email-option").offset().top - 30
                 }, 500);
-            })
+            });
 
             $('#pdf-option', self.$configureForm).on('click', function(evt){
                 evt.preventDefault();
@@ -310,8 +316,10 @@ function log(stuff){ // Sheg Todo, remove
                 $formFieldsBox = $('.email-option', self.$configureForm);
 
             self.$configureForm.on('submit', function(){
+
                 var returnValue = true;
-                // ROBCURLE - TODO, validation, just add .error to parent p tag of offending form field
+
+                // ROBCURLE - TODO, validation, just add .error to parent p tag of the offending form field
 
 
 
@@ -322,7 +330,7 @@ function log(stuff){ // Sheg Todo, remove
 
 
 
-                return returnValue; // for normal post if true
+                return returnValue; // for normal post
             });
 
             // cosmetic, clears error when suer clicks on field
@@ -334,6 +342,20 @@ function log(stuff){ // Sheg Todo, remove
                 $(this).parents('.error').removeClass('error');
             });
 
+        },
+
+        setUpStickyBasket: function(){
+            var initialPos = 159,
+                stickyPos = 20,
+                $stickyBasket = $('#basket');
+
+            $(window).scroll(function() {
+                if( $(this).scrollTop() > initialPos ) {
+                    $stickyBasket.css('margin-top', $(this).scrollTop() + stickyPos);
+                } else {
+                    $stickyBasket.css('margin-top', $(this).scrollTop() + initialPos);
+                }
+            });
         },
 
         resize: function(){
@@ -350,6 +372,9 @@ function log(stuff){ // Sheg Todo, remove
                 self.attachOptionsAction();
                 self.setLinksInStepFour();
                 self.setUpConfigurationEmail();
+                self.setUpStickyBasket();
+
+
 
             }
         }
