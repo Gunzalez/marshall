@@ -8,6 +8,7 @@ body {
 	-webkit-text-size-adjust: none;
     background: url("../images/top-gradient.png") left top repeat-x #ececec;
     font-size: small;
+    overflow-x: hidden;
 }
 
 a {
@@ -1442,20 +1443,59 @@ h1 a {
 #basket {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 200px;
-    border: 1px solid #fff;
-    border-right: 0;
-    background-color: #bb1f1d;
-    margin-top: 159px;
-    color: #fff;
-    padding: 10px;
+    right: -129px;
+    width: 164px;
+    margin-top: 153px;
+    border: 2px solid #bb1f1d;
+    color: #444;
     -webkit-appearance: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    transition: margin 0.75s ease;
+    transition: all 0.75s ease;
+    background: #fff;
 }
+
+#basket.stick-out {
+    right: -2px;
+    transition: all 0.5s ease;
+}
+
+#basket .show-hide {
+    float: left;
+    width: 34px;
+    height: 93px;
+    background: url("../images/your-marshall.png") top left no-repeat #bb1f1d;
+    text-indent: -9000px;
+}
+
+#basket .summary-box {
+    background: #fff;
+    padding-bottom: 8px;
+    float: left;
+    width: 126px;
+}
+
+#basket .summary-box h3 {
+    background: #bb1f1d;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+#basket .summary-box .detail {
+    padding: 5px 10px;
+    font-size: 1.1em;
+    line-height: 140%;
+}
+
+#basket .summary-box strong {
+    color: #000;
+}
+
+
+
+
+
 
 
 

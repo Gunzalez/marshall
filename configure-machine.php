@@ -838,11 +838,13 @@
     </div>
     <div id="basket">
         <a href="#" class="show-hide">Your Marshall</a>
-        <form id="summary_box">
+        <div class="summary-box">
             <h3>Summary</h3>
-            <strong>£<span id="basket_total">0</span> </strong>ex VAT<br>
-            <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">
-        </form>
+            <div class="detail">
+                <strong>&pound;<span class="total">0.00</span> </strong>ex&nbsp;VAT<br>
+                <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">
+            </div>
+        </div>
     </div>
 
     <script src="js/jquery-1.9.1.min.js"></script>

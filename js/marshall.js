@@ -107,15 +107,24 @@ function log(stuff){ // Sheg Todo, remove
                 } else {
 
                     self.$configureContent.load('ajax/configure-content.php?machineId='+value, function(){
-                        $('#btnConfigure', self.$configureContent).on('click', function(evt){
-                            evt.preventDefault();
 
+                        // Add cost to basket, and stick it out
+                        var $stickyBasket = $('#basket');
+                        $('.total', $stickyBasket).text('12,552.00');
+                        $stickyBasket.addClass('stick-out');
+
+                        // Attach action to open options
+                        $('#btnConfigure', self.$configureContent).on('click', function(evt){
+
+                            evt.preventDefault();
                             self.toggleStepsDisplay('show');
+
+                            var $detail = $('.content', self.$configureContent);
 
                             // add main product and delivery cost to table - fake of course, for illustration
                             var $newRow = $('<tr></tr>');
                             $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/290313-0832-5148.jpg" alt="QM1200 Monocoque Trailer"></td>');
-                            $newRow.append('<td class="name">Monocoque Trailers / QM/1200 - Basic price:</td>');
+                            $newRow.append('<td class="name">' +  $('h3', $detail).text()  + ' - Basic price:</td>');
                             $newRow.append('<td class="cost">&pound;12,552.00</td>');
                             self.$configureTable.append($newRow);
                             $newRow = $('<tr id="211"></tr>');
@@ -123,18 +132,12 @@ function log(stuff){ // Sheg Todo, remove
                             $newRow.append('<td class="name">Delivery Charge (000/00-000):</td>');
                             $newRow.append('<td class="cost">&pound;145.00</td>');
                             self.$configureTable.append($newRow);
-
-                            // visually selecting delivery option in table
-                            self.$configureOptions.eq(self.$configureOptions.length - 1).addClass('selected');
-
-
-
-
-
-
-
                             self.applyTableStripes();
+
+                            // visually selecting delivery option in list
+                            self.$configureOptions.eq(self.$configureOptions.length - 1).addClass('selected');
                         });
+
                     });
                 }
 
@@ -288,6 +291,7 @@ function log(stuff){ // Sheg Todo, remove
                     } else {
                         $mainBox.removeClass('closed').addClass('open');
                     }
+                    self.fixOptionWidths();
                 });
             });
 
@@ -345,7 +349,7 @@ function log(stuff){ // Sheg Todo, remove
         },
 
         setUpStickyBasket: function(){
-            var initialPos = 159,
+            var initialPos = 153,
                 stickyPos = 20,
                 $stickyBasket = $('#basket');
 
@@ -356,6 +360,16 @@ function log(stuff){ // Sheg Todo, remove
                     $stickyBasket.css('margin-top', $(this).scrollTop() + initialPos);
                 }
             });
+
+            $('.show-hide', $stickyBasket).on('click',function(evt){
+                evt.preventDefault();
+                if($stickyBasket.hasClass('stick-out')){
+                   $stickyBasket.removeClass('stick-out');
+                } else {
+                   $stickyBasket.addClass('stick-out');
+                }
+            });
+
         },
 
         resize: function(){

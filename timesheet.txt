@@ -10,4 +10,5 @@ Configure Machine page = 2hrs (Monday night)
 Configure Machine page = 3hrs (Tuesday morning)
 Configure JS refactor and clean up = 2hrs (Tuesday night)
 Configure CSS refactor + Basket = 2hrs (Thursday night)
-Sticky header (Saturday 5am) = 1.5hrs
+Sticky basket (Saturday 5am) = 1.5hrs
+Sticky basket detail (Saturday evening) = 1.5hrs
