@@ -67,7 +67,7 @@
                     <div class="mainbox">
 
                         <div class="minibox">
-                            <h3>Optional extras</h3>
+                            <h3>Optional extras:</h3>
                             <img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/home/11 - QM14SS cw Silage Att, Rear Angled View.jpg" alt="">
                             <div class="more">
                                 <p>Silage sides c/w..</p>
@@ -76,7 +76,7 @@
                         </div>
 
                         <div class="minibox">
-                            <h3>Featured product</h3>
+                            <h3>Featured product:</h3>
                             <img src="http://www.marshall-trailers.co.uk/uploads/gallery/featured/170513-1652-7094.jpg" alt="Outside Haulier Loaded With Marshall Machines">
                             <div class="more">
                                 <p> Loaded With Marshall Machines</p>
@@ -85,7 +85,7 @@
                         </div>
 
                         <div class="minibox">
-                            <h3>Order spares online</h3>
+                            <h3>Order spares online:</h3>
                             <div class="copy">
                                 <p>Use the Marshall spare parts filter to quickly identify and order the necessary spare parts to keep your Marshall product operating at peak performance.</p>
                             </div>
@@ -99,27 +99,23 @@
             </div>
             <div class="sidebar">
 
-                <div class="sidebox">
-                    <h3>Featured video</h3>
-                    <a href="https://www.youtube.com/watch?v=uzAX4QCBS0I" class="video">
-                        <!--   use a HTML5 plugin, it will make mobile devices use their native video players -->
-                        <img src="http://img.youtube.com/vi/uzAX4QCBS0I/mqdefault.jpg">
-                        <span class="play-button fa fa-play"></span>
-                    </a>
+                <div class="sidebox video">
+                    <iframe src="http://www.youtube.com/embed/A1P2FTMM6PI?rel=0&amp;wmode=transparent&amp;html5=1"
+                            frameborder="0" width="100%" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                 </div>
 
                 <div class="sidebox">
-                    <h3>Featured image</h3>
-                    <a href="images/lightbox-1.jpg" title="Welsh Show Load 2012s" class="fancybox"><img src="images/thumb-lightbox-1.jpg" /></a>
+                    <h3>Featured Image:</h3>
+                    <a href="images/lightbox-1.jpg" title="Welsh Show Load 2012s" class="fancybox" rel="gallery"><img src="images/thumb-lightbox-1.jpg" /></a>
                 </div>
 
                 <div class="sidebox">
-                    <h3>Bespoke gallery</h3>
-                    <a href="images/lightbox-2.jpg" title="Marshall BC/27 Bale Trailer, Newholland Blue, 420x180 10stud Axles" class="fancybox"><img src="images/thumb-lightbox-2.jpg" /></a>
+                    <h3>Bespoke Gallery:</h3>
+                    <a href="images/lightbox-2.jpg" title="Marshall BC/27 Bale Trailer, Newholland Blue, 420x180 10stud Axles" class="fancybox" rel="gallery"><img src="images/thumb-lightbox-2.jpg" /></a>
                 </div>
 
                 <div class="sidebox news">
-                    <h3>Recent news</h3>
+                    <h3>Recent news:</h3>
                     <ul>
                         <li>
                             <h4><a href="/news/qm14-grain-trailer-at-newholland-demo-day" title="Click here to read more...">QM/14 Grain Trailer At Newholland Demo Day</a></h4>

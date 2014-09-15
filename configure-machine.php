@@ -837,12 +837,14 @@
         <div id="mobile-nav"></div>
     </div>
     <div id="basket">
-        <a href="#" class="show-hide">Your Marshall</a>
-        <div class="summary-box">
-            <h3>Summary</h3>
-            <div class="detail">
-                <strong>&pound;<span class="total">0.00</span> </strong>ex&nbsp;VAT<br>
-                <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">
+        <div class="container">
+            <a href="#" class="show-hide">Your Marshall</a>
+            <div class="summary-box">
+                <h3>Summary</h3>
+                <div class="detail">
+                    <strong>&pound;<span class="total">0.00</span> </strong>ex&nbsp;VAT<br>
+                    <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">
+                </div>
             </div>
         </div>
     </div>

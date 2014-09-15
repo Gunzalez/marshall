@@ -4,11 +4,10 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #2e2e2e;
-    font-family: 'Tahoma', Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 	-webkit-text-size-adjust: none;
     background: url("../images/top-gradient.png") left top repeat-x #ececec;
     font-size: small;
-    overflow-x: hidden;
 }
 
 a {
@@ -23,14 +22,15 @@ a:hover {
 h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
-    line-height: 140%;
+    /*line-height: 140%;*/
 }
 
 p {
-    line-height: 140%;
+    line-height: 17px;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+    font-size: 12px;
 }
 
 img {
@@ -204,21 +204,26 @@ h1 a {
     display: block;
     height: 33px;
     line-height: 33px;
-    color: #ccc;
+    color: #a4a4a4;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.0em;
-    padding: 0 14px;
+    font-size: 14px;
+    padding: 0 12px;
+}
+
+.main-nav ul li.search {
+    width: 89px;
 }
 
 .main-nav ul li.facebook {
-    width: 40px;
+    width: 32px;
+    float: right;
 }
 
 .main-nav ul li.facebook a {
     text-indent: -9000px;
     background: url("../images/fb-icon.png") center center no-repeat;
-    width: 16px;
+    width: 32px;
 }
 
 .main-nav ul li.hover a,
@@ -238,11 +243,15 @@ h1 a {
     float: none;
     position: relative;
     background: none;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #ccc;
 }
 
 .main-nav ul ul li a {
     background-color: #001848;
+    font-size: 12px;
+    padding: 8px 16px;
+    height: auto;
+    line-height: inherit;
 }
 
 .main-nav ul ul li a.has-child {
@@ -265,6 +274,7 @@ h1 a {
 .main-nav ul li.hover ul li.hover ul {
     display: block;
     margin-top: -1px;
+    margin-left: -1px;
 }
 
 .main-nav ul ul ul {
@@ -412,7 +422,6 @@ h1 a {
 
 .blue-link:hover {
     color: #fff;
-    background: #217cc9;
 }
 
 .read-more {
@@ -430,7 +439,7 @@ h1 a {
 /* main */
 /* ================================================ */
 .main {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-right: -246px;
     width: 100%;
     float: left;
@@ -481,7 +490,7 @@ h1 a {
 /* sidebar */
 /* ================================================ */
 .sidebar {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 226px;
     float: left;
     margin-left: 20px;
@@ -493,10 +502,10 @@ h1 a {
 }
 
 .sidebox h3 {
-    background-color: #001649;
     color: #fff;
-    padding: 7px 12px;
-    font-size: 1.0em;
+    background: #001748;
+    padding: 8px 10px;
+    font-size: 15px;
 }
 
 .sidebox a {
@@ -518,63 +527,32 @@ h1 a {
     background-color: #fff;
 }
 
+.sidebox.news ul li h4 {
+    font-size: 12px;
+    line-height: 17px;
+}
+
 .sidebox.news ul li a {
     color: #217cc9;
-    text-decoration: none;
     display: inline;
     text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
 }
 
 .sidebox.news ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .sidebox.news ul li.even {
     background-color: #dedede;
 }
 
-.sidebox .video {
-    position: relative;
+.sidebox.video {
+    background-color: #000;
 }
-
-.sidebox .video .play-button {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 50px;
-    left: 50%;
-    overflow: auto;
-    margin: auto;
-    border: 2px solid #fff;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: inline-block;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    transition: background 0.5s;
-}
-
-.play-button:before {
-    padding: 15px 0 0 20px;
-    color: #fff;
-    font-size: 2.4em;
+.sidebox.video iframe {
     display: block;
 }
 
-
-.sidebox a.video:hover .play-button {
-    background: #217cc9;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    transition: background 0.5s;
-}
 
 
 
@@ -584,8 +562,9 @@ h1 a {
 .main-heading {
     background-color: #dcdcdc;
     color: #444;
-    padding: 8px 16px;
+    /*padding: 8px 16px;*/
     text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+    height: 60px;
 }
 
 .main-heading h2 {
@@ -600,13 +579,19 @@ h1 a {
 .main-heading.hero h2 {
     color: #fff000;
     text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    margin: 0;
+    padding: 5px 10px 0 10px;
+    color: #fff000;
+    font-size: 25px;
 }
 
 .main-heading p {
+    margin: 0;
+    padding: 3px 10px 5px 10px;
     color: #fff;
-    font-size: 1.3em;
+    font-size: 20px;
+    font-weight: bold;
 }
-
 
 /* carousel */
 /* ================================================ */
@@ -625,7 +610,7 @@ h1 a {
 }
 
 .carousel .copy {
-    padding: 10px 15px;
+    padding: 10px;
     background-color: #fff;
     position: relative;
 }
@@ -636,27 +621,41 @@ h1 a {
     clear: both;
 }
 
-
-.carousel .copy h2,
+.carousel .copy h2 {
+    margin: 0;
+    padding: 0 90px 5px 0;
+    color: #000;
+    font-size: 25px;
+}
 .carousel .copy p {
     padding-right: 90px;
     padding-bottom: 5px;
-    text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+    color: #4b4b4a;
+    font-weight: bold;
 }
 
 .carousel .copy .big-link {
     position: absolute;
-    right: 15px;
+    right: 20px;
     top: 15px;
 }
 
 .carousel .bx-controls {
-    background-color: #dedede;
-    padding: 10px 15px;
+    padding: 0 15px 15px 0;
 }
+.carousel .bx-controls:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.carousel .bx-pager {
+    float: right;
+}
+
 .carousel .bx-pager-item {
-    display: inline;
-    padding-right: 12px;
+    display: inline-block;
+    padding-left: 12px;
 }
 
 .carousel .bx-pager-item a {
@@ -684,7 +683,7 @@ h1 a {
 
 .carousel .bx-pager-item a.active,
 .carousel .bx-pager-item a.active:hover {
-    background-color: #217cc9;
+    background-color: #bb1f1d;
     -webkit-transition: background 0.5s;
     -moz-transition: background 0.5s;
     -o-transition: background 0.5s;
@@ -1302,10 +1301,12 @@ h1 a {
 }
 
 .minibox h3 {
-    background-color: #001649;
     color: #fff;
-    padding: 7px 12px;
-    font-size: 1.0em;
+    background-color: #001e5a;
+    margin: 0;
+    padding: 7px 10px;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 .minibox img {
@@ -1316,6 +1317,7 @@ h1 a {
     padding: 7px 12px;
     min-height: 37px;
     position: relative;
+    background: #dcdcdc;
 }
 
 .minibox .copy p {
@@ -1420,21 +1422,14 @@ h1 a {
 
 /* lightbox overrides */
 .fancybox-skin {
-    background: #eaeaea;
-    color: #000;
-    text-shadow: none;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
 }
-.fancybox-title-inside-wrap {
-    padding: 10px;
-    background-color: #fff;
-    border-top: 10px solid #eaeaea;
-}
 .fancybox-title {
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
+
 
 
 
@@ -1443,8 +1438,8 @@ h1 a {
 #basket {
     position: absolute;
     top: 0;
-    right: -129px;
-    width: 164px;
+    right: 0;
+    width: 38px;
     margin-top: 153px;
     border: 2px solid #bb1f1d;
     color: #444;
@@ -1454,16 +1449,31 @@ h1 a {
     box-sizing: border-box;
     transition: all 0.75s ease;
     background: #fff;
+    height: 97px;
+    overflow: hidden;
+}
+
+#basket .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 164px;
+}
+
+#basket .container:after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 #basket.stick-out {
-    right: -2px;
+    width: 168px;
     transition: all 0.5s ease;
 }
 
 #basket .show-hide {
     float: left;
-    width: 34px;
+    width: 38px;
     height: 93px;
     background: url("../images/your-marshall.png") top left no-repeat #bb1f1d;
     text-indent: -9000px;
@@ -1486,6 +1496,7 @@ h1 a {
     padding: 5px 10px;
     font-size: 1.1em;
     line-height: 140%;
+    min-height: 50px;
 }
 
 #basket .summary-box strong {
@@ -1616,16 +1627,17 @@ h1 a {
         width: 50%;
     }
 
-
-
-    #basket {
-        top: inherit;
-        left: 0;
-        bottom: 0;
-        border: none;
-        border-top: 1px solid #fff;
-        width: 100%;
+    .sidebox.news ul li h4 {
+        font-size: 1.1em;
+        line-height: 140%;
     }
+
+    p {
+        font-size: 1.0em;
+        line-height: 140%;
+    }
+
+
 }
 
 
@@ -1770,6 +1782,15 @@ h1 a {
         border-top: none;
     }
 
+    .carousel .bx-controls {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .carousel .bx-pager {
+        float: none;
+    }
+
 
 }
 
@@ -1781,6 +1802,14 @@ h1 a {
 
     body {
         background: url("../images/top-gradient.png") left -25px repeat-x #ececec;
+    }
+
+
+
+
+
+    p {
+        font-size: 1.1em;
     }
 
     .header,
@@ -1816,6 +1845,7 @@ h1 a {
         float: none;
     }
 
+    .carousel .copy h2,
     .mainbox h2 {
         font-size: 1.2em;
     }
@@ -1825,7 +1855,7 @@ h1 a {
     }
 
     .main-heading p {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .mainbox.configure {
@@ -1895,8 +1925,82 @@ h1 a {
     }
 
 
+    #basket {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border: none;
+        background-color: #bb1f1d;
+        width: 100%;
+        height: 71px;
+        margin-top: -71px;
+        position: fixed;
+        transition: margin 0.5s ease 0s;
+    }
+
+    #basket .summary-box h3 {
+        background: none repeat scroll 0 0 #bb1f1d;
+        color: #fff;
+        padding: 5px 10px;
+    }
+
+    #basket .summary-box {
+        float: none;
+        padding-bottom: 8px;
+        width: 100%;
+    }
+
+    #basket .container {
+        width: 100%;
+    }
+
+    #basket a {
+        display: none;
+    }
+
+    #basket .summary-box .detail {
+        min-height: inherit;
+        border: 5px solid #bb1f1d;
+    }
 
 
+
+    #basket.stick-out {
+        width: 100%;
+    }
+
+    #basket.stick-out {
+        -webkit-animation: peakingBasket 3s normal ease-out;
+        animation: peakingBasket 3s normal ease-out;
+    }
+    @-webkit-keyframes peakingBasket {
+        0% {
+            margin-top: -71px;
+        }
+        25% {
+            margin-top: 0;
+        }
+        75% {
+            margin-top: 0;
+        }
+        100% {
+            margin-top: -71px;
+        }
+    }
+    @keyframes peakingBasket {
+        0% {
+            margin-top: -71px;
+        }
+        25% {
+            margin-top: 0;
+        }
+        75% {
+            margin-top: 0;
+        }
+        100% {
+            margin-top: -71px;
+        }
+    }
 
 }
 	

@@ -25,6 +25,8 @@ function log(stuff){ // Sheg Todo, remove
 
         // overlays, I left these for you
         $(".fancybox").fancybox({
+            'nextEffect': 'fade',
+            'prevEffect': 'fade',
             openEffect  : 'none',
             closeEffect : 'none',
             padding: 10,
@@ -45,7 +47,10 @@ function log(stuff){ // Sheg Todo, remove
             var $minibox = $('.minibox'),
                 mainboxWidth = $minibox.parent().width(),
                 mainWindowWidth = $(window).width(),
-                miniboxWidth = 0;
+                miniboxWidth = 0,
+                $sideBar = $('.sidebar'),
+                $videoBox = $('.video', $sideBar),
+                $videoIframe = $('iframe', $videoBox);
 
             $minibox.removeAttr('style');
             $minibox.find('.copy').removeAttr('style');
@@ -75,6 +80,12 @@ function log(stuff){ // Sheg Todo, remove
                 $minibox.eq('2').find('.more').css('background-color','#fff');
             }
 
+
+
+            // video sidebox
+            var sideBoxHeight = $('.sidebox', $sideBar).eq('1').height();
+            $videoIframe.height(sideBoxHeight);
+
         }
     };
 
@@ -85,12 +96,34 @@ function log(stuff){ // Sheg Todo, remove
         marshall.mobile.resize();
 	};
 
+
     marshall.configuration = {
         $configureForm: $('#config_machine'),
         $configureSelect: $('#machine', this.$configureForm),
         $configureContent: $('#configure-content', this.$configureForm),
         $configureOptions: $('#options li', this.$configureForm),
         $configureTable: $('#quote', this.$configureForm),
+        basketActions: {
+            $stickyBasket: $('#basket'),
+            pushOut: function(){
+
+                this.$stickyBasket.addClass('stick-out');
+                if($(window).width() < 401){
+                    this.$stickyBasket.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+                        function(e) {
+                            this.$stickyBasket.removeClass('stick-out');
+                        });
+
+//                    var timer = setTimeout(function(){
+//                        marshall.configuration.basketActions.$stickyBasket.removeClass('stick-out');
+//                        clearTimeout(timer);
+//                    }, 3000);
+                }
+            },
+            pushIn: function(){
+                this.$stickyBasket.removeClass('stick-out');
+            }
+        },
 
         attachConfigureAction: function(){
             var self = this;
@@ -104,14 +137,19 @@ function log(stuff){ // Sheg Todo, remove
                     var $welcomeScreen = $('<div class="empty-configuration"><h3>Select a machine from the options</h3></div>');
                     self.$configureContent.html($welcomeScreen);
 
+                    // Add cost to basket, and stick it out
+                    var $stickyBasket = $('#basket');
+                    $('.total', $stickyBasket).text('0.00');
+                    self.basketActions.pushIn();
+
                 } else {
 
                     self.$configureContent.load('ajax/configure-content.php?machineId='+value, function(){
 
-                        // Add cost to basket, and stick it out
+                        // Add cost to basket, and push it out
                         var $stickyBasket = $('#basket');
                         $('.total', $stickyBasket).text('12,552.00');
-                        $stickyBasket.addClass('stick-out');
+                        self.basketActions.pushOut();
 
                         // Attach action to open options
                         $('#btnConfigure', self.$configureContent).on('click', function(evt){
@@ -121,12 +159,14 @@ function log(stuff){ // Sheg Todo, remove
 
                             var $detail = $('.content', self.$configureContent);
 
-                            // add main product and delivery cost to table - fake of course, for illustration
+                            // FAKE main product entry
                             var $newRow = $('<tr></tr>');
                             $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/290313-0832-5148.jpg" alt="QM1200 Monocoque Trailer"></td>');
                             $newRow.append('<td class="name">' +  $('h3', $detail).text()  + ' - Basic price:</td>');
                             $newRow.append('<td class="cost">&pound;12,552.00</td>');
                             self.$configureTable.append($newRow);
+
+                            // FAKE delivery cost entry
                             $newRow = $('<tr id="211"></tr>');
                             $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/delivery_lorry.jpg" alt="Delivery Charge"></td>');
                             $newRow.append('<td class="name">Delivery Charge (000/00-000):</td>');
@@ -134,7 +174,7 @@ function log(stuff){ // Sheg Todo, remove
                             self.$configureTable.append($newRow);
                             self.applyTableStripes();
 
-                            // visually selecting delivery option in list
+                            // visually selecting delivery cost option in list
                             self.$configureOptions.eq(self.$configureOptions.length - 1).addClass('selected');
                         });
 
@@ -193,20 +233,13 @@ function log(stuff){ // Sheg Todo, remove
 
             } else {
 
-                // e.g, clear options, empty the table, reset floating price, reopen all collapsible panels
-                self.$configureOptions.removeClass('selected'); // clears options
-                self.$configureTable.empty(); // empties the table
-                $collapsibleSteps.removeClass('closed').addClass('open'); // resets collapsible (need for resizing)
-                $collapsibleSteps.removeClass('displayNone'); // show steps 2 - 4
-                self.fixOptionWidths();
+                // Shows steps 2 - 4
+                self.$configureOptions.removeClass('selected');                         // clears options
+                self.$configureTable.empty();                                           // clears the table
+                $collapsibleSteps.removeClass('closed, displayNone').addClass('open');  // resets collapsible panels
+                self.fixOptionWidths();                                                 // adjusts options layout
 
-                // TODO reset floating price
-
-
-
-
-
-                // some fancy slide to options panel
+                // Some fancy slide to options panel
                 $('html, body').animate({
                     scrollTop: $(".configure-options").offset().top - 30
                 }, 500);
@@ -232,12 +265,12 @@ function log(stuff){ // Sheg Todo, remove
                 $(obj).on('click', function(){
                     if($(obj).hasClass('selected')){
 
-                        $(obj).removeClass('selected');
-                        self.applyTableStripes();
-
                         // Todo: Any other calculations or clean up
                         // e.g removing price from total cost, remove row from table
 
+                        //var $stickyBasket = $('#basket');
+                        //$('.total', $stickyBasket).text('X.XX');
+                        self.basketActions.pushOut();
 
 
 
@@ -246,11 +279,10 @@ function log(stuff){ // Sheg Todo, remove
 
 
 
+                        $(obj).removeClass('selected');
+                        self.applyTableStripes();
 
                     } else {
-
-                        $(obj).addClass('selected');
-                        self.applyTableStripes();
 
                         // Todo: Any other calculations you need to do
                         // e.g adding price to total cost, and a row to table, maybe pulled in by ajax
@@ -263,6 +295,9 @@ function log(stuff){ // Sheg Todo, remove
                         self.$configureTable.append($newRow);
 
 
+                        //var $stickyBasket = $('#basket');
+                        //$('.total', $stickyBasket).text('X.XX');
+                        self.basketActions.pushOut();
 
 
 
@@ -270,6 +305,11 @@ function log(stuff){ // Sheg Todo, remove
 
 
 
+
+
+
+                        $(obj).addClass('selected');
+                        self.applyTableStripes();
 
                     }
                 });
@@ -348,25 +388,31 @@ function log(stuff){ // Sheg Todo, remove
 
         },
 
+
         setUpStickyBasket: function(){
-            var initialPos = 153,
+            var self = this,
+                initialPos = 153,
                 stickyPos = 20,
                 $stickyBasket = $('#basket');
 
-            $(window).scroll(function() {
-                if( $(this).scrollTop() > initialPos ) {
-                    $stickyBasket.css('margin-top', $(this).scrollTop() + stickyPos);
-                } else {
-                    $stickyBasket.css('margin-top', $(this).scrollTop() + initialPos);
+            $(window).scroll(function(){
+
+                if($(window).width() > 400){
+                    if( $(this).scrollTop() > initialPos ) {
+                        $stickyBasket.css('margin-top', $(this).scrollTop() + stickyPos);
+                    } else {
+                        $stickyBasket.css('margin-top', $(this).scrollTop() + initialPos);
+                    }
                 }
+
             });
 
             $('.show-hide', $stickyBasket).on('click',function(evt){
                 evt.preventDefault();
                 if($stickyBasket.hasClass('stick-out')){
-                   $stickyBasket.removeClass('stick-out');
+                    self.basketActions.pushIn();
                 } else {
-                   $stickyBasket.addClass('stick-out');
+                    self.basketActions.pushOut();
                 }
             });
 
@@ -485,12 +531,14 @@ function log(stuff){ // Sheg Todo, remove
 		_hideMobileNav: function(){
 			
 			var self = this,
-				$slidingContainer = $('#sliding-container');
+				$slidingContainer = $('#sliding-container'),
+                $stickyBasket = $('#basket');
 			
 			$slidingContainer.animate({
 				left:0	
 			}, self.slideSpeed, self.easing, function(){
 					self._destroyMobileNav();
+                    $stickyBasket.removeClass('displayNone');
 				});
 		},
 		
@@ -535,16 +583,18 @@ function log(stuff){ // Sheg Todo, remove
 		init: function(){
 			
 			var self = this,
-                $menu = $('#menu-icon');
+                $menu = $('#menu-icon'),
+                $stickyBasket = $('#basket');
 			
 			if($menu.length > 0){
 
                 $menu.on('click',function(evt){
 					evt.preventDefault();
 					if($('#the-stage').length > 0){						
-						self._hideMobileNav();						
+						self._hideMobileNav();
 					} else {						
-						self._launchMobileNav();						
+						self._launchMobileNav();
+                        $stickyBasket.addClass('displayNone');
 					}
 				});
 				

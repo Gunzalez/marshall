@@ -148,7 +148,7 @@
                 </ul>
             </li>
             <li><a href="#" title="Contact">Contact</a></li>
-            <li class="last-child"><a href="#" title="Search the our site">Search</a></li>
+            <li class="last-child search"><a href="#" title="Search the our site">Search</a></li>
             <li class="last-child facebook"><a href="https://www.facebook.com/marshalltrailers" title="Our Facebook page..." target="_blank">Facebook</a></li>
         </ul>
     </div>
