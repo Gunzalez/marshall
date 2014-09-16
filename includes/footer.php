@@ -13,15 +13,15 @@
         <li><a href="/search" title="Search the our site">Search</a></li>
     </ul>
 
-    <ul>
+    <ul class="aux">
         <li><a href="/site-map" title="Site Map">Site Map</a></li>
         <li><a href="/privacy-policy" title="Privacy and Cookie policies">Privacy &amp; Cookies</a></li>
         <li><a href="/terms-conditions" title="T&amp;C">T&amp;C</a></li>
     </ul>
 
     <div class="address">
-        <p>Charles J Marshall (Aberdeen) Limited, Chapel Works, Bucksburn, Aberdeen, AB21 9TL</p>
-        <p>Tel:&nbsp;<a href="tel:+441224722777">(01224) 722777</a>, Fax:&nbsp;(01224) 724034, Email:&nbsp;<a href="mailto:charles@marshall-trailers.co.uk">charles@marshall-trailers.co.uk</a></p>
+        <p>Charles J Marshall (Aberdeen) Limited, <span>Chapel Works, Bucksburn, Aberdeen, AB21&nbsp;9TL</span></p>
+        <p>Tel:&nbsp;<a href="tel:+441224722777">(01224) 722777</a>, <span>Fax:&nbsp;(01224) 724034,</span> Email:&nbsp;<a href="mailto:charles@marshall-trailers.co.uk">charles@marshall-trailers.co.uk</a></p>
         <p>Registration Number: SC064659</p>
     </div>
 

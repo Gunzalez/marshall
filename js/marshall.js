@@ -10,35 +10,55 @@ function log(stuff){ // Sheg Todo, remove
 
 	marshall.properties = {
 		isMobile: false,
-		windowWidth: ''
+		windowWidth: '',
+        mobileThreshold: 768,
+        desktopThreshold: 960
 	};
 
-	marshall.environment = function(){
-        if(Modernizr.touch){
-			marshall.properties.isMobile = true;
-            $('html').addClass('mobile');
-		} else {
-            $('html').addClass('desktop');
-        }
-		
-		marshall.properties.windowWidth = $(window).width();
+    marshall.environment = {
 
-        // overlays, I left these for you
-        $(".fancybox").fancybox({
-            'nextEffect': 'fade',
-            'prevEffect': 'fade',
-            openEffect  : 'none',
-            closeEffect : 'none',
-            padding: 10,
-            helpers : {
-                title: {
-                    type: 'inside',
-                    media: {}
-                }
+        init: function(){
+            if(Modernizr.touch){
+                marshall.properties.isMobile = true;
+                $('html').addClass('mobile');
+            } else {
+                $('html').addClass('desktop');
             }
-        });
 
-	};
+            marshall.properties.windowWidth = $(window).width();
+
+            // overlays, I left these for you
+            $(".fancybox").fancybox({
+                'nextEffect': 'fade',
+                'prevEffect': 'fade',
+                openEffect  : 'none',
+                closeEffect : 'none',
+                padding: 10,
+                helpers : {
+                    title: {
+                        type: 'inside',
+                        media: {}
+                    }
+                }
+            });
+        },
+
+        resize: function(){
+            if(marshall.properties.windowWidth > marshall.properties.mobileThreshold){
+                $('html').removeClass('mobile').addClass('desktop');
+            } else {
+                $('html').removeClass('desktop').addClass('mobile');
+            };
+
+
+            if(marshall.properties.windowWidth < marshall.properties.desktopThreshold){
+                $('.footer').removeClass('wide');
+            } else {
+                $('.footer').addClass('wide');
+            };
+        }
+
+    };
 
 
     marshall.homepage = {
@@ -90,6 +110,7 @@ function log(stuff){ // Sheg Todo, remove
     };
 
 	marshall.resize = function(){
+        marshall.environment.resize();
         marshall.navigation.clearNav();
         marshall.homepage.resize();
         marshall.configuration.resize();
@@ -643,7 +664,7 @@ function log(stuff){ // Sheg Todo, remove
 	
 	marshall.init = function(){
 
-        marshall.environment();
+        marshall.environment.init();
 
         marshall.navigation.init();
 		
@@ -662,9 +683,7 @@ function log(stuff){ // Sheg Todo, remove
 				marshall.resize();
 						
 				marshall.properties.windowWidth = theWidthNow;
-			
 			}
-			
 		});
 		
 		marshall.resize();
