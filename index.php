@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sidebar">
+            <div class="sidebar sidebox-3">
 
                 <div class="sidebox video">
                     <iframe src="http://www.youtube.com/embed/A1P2FTMM6PI?rel=0&amp;wmode=transparent&amp;html5=1"

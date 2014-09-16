@@ -12,7 +12,8 @@ function log(stuff){ // Sheg Todo, remove
 		isMobile: false,
 		windowWidth: '',
         mobileThreshold: 768,
-        desktopThreshold: 960
+        desktopThreshold: 960,
+        handHeldThreshold: 400
 	};
 
     marshall.environment = {
@@ -44,18 +45,30 @@ function log(stuff){ // Sheg Todo, remove
         },
 
         resize: function(){
+
             if(marshall.properties.windowWidth > marshall.properties.mobileThreshold){
                 $('html').removeClass('mobile').addClass('desktop');
             } else {
                 $('html').removeClass('desktop').addClass('mobile');
             };
 
-
             if(marshall.properties.windowWidth < marshall.properties.desktopThreshold){
                 $('.footer').removeClass('wide');
             } else {
                 $('.footer').addClass('wide');
             };
+
+            $('.sidebox-2').each(function(){
+                var $sidebox1 = $('.sidebox', $(this)).eq(0),
+                    $sidebox2 = $('.sidebox', $(this)).eq(1);
+
+                if(marshall.properties.windowWidth < marshall.properties.mobileThreshold && marshall.properties.windowWidth > marshall.properties.handHeldThreshold){
+                    $sidebox1.height($sidebox2.height());
+                } else {
+                    $sidebox1.removeAttr('style');
+                    $sidebox2.removeAttr('style');
+                };
+            })
         }
 
     };

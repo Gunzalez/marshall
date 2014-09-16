@@ -19,6 +19,12 @@
 
         <div class="content">
 
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="index.php" title="Home">Home</a> &gt; </li>
+                    <li>News</li>
+                </ul>
+            </div>
 
             <div class="main">
                 <div class="container">
@@ -148,12 +154,14 @@
 
                 </div>
             </div>
-            <div class="sidebar">
+            <div class="sidebar sidebox-2">
 
                 <div class="sidebox configure">
-                    <h3>Price &amp; Configure</h3>
+                    <h3>Price &amp; Configure:</h3>
                     <p>Use our online configuration tool to design and price your ideal Marshall machine.</p>
-                    <a href="#" class="big-link red-link">Price &amp; Configure</a>
+                    <div class="more">
+                        <a href="#" class="big-link red-link configure-btn small-btn">Price &amp; Configure</a>
+                    </div>
                 </div>
 
                 <div class="sidebox">
