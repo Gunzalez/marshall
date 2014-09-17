@@ -12,3 +12,43 @@ Configure JS refactor and clean up = 2hrs (Tuesday night)
 Configure CSS refactor + Basket = 2hrs (Thursday night)
 Sticky basket (Saturday 5am) = 1.5hrs
 Sticky basket detail (Saturday evening) = 1.5hrs
+
+Done so far - 42 hrs
+===========================
+
+
+
+
+
+
+Converting previous styles to look like live, another 4hrs, not added in
+. Converted so far -
+Home page, news landing
+
+. Still to do -
+New detail, configure
+
+
+
+
+
+
+
+
+
+
+Guesstimates
+Gallery page = 4hrs
+Bespoke specifications = 4hrs
+Product page = 5hrs
+Product range page = 1.5hr
+Spare parts page = 8hrs
+Peripherals (social, breadcrums, other bits found after testing) = 2hrs
+
+Guestimation - plus 25 hrs
+===========================
+
+
+Makes a total of 67 hrs (42 + 25)
+
+
