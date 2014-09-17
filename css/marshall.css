@@ -819,7 +819,7 @@ h1 a {
   margin-bottom: 20px;
 }
 
-.desktop .news-page-navigation.bottom ul {
+.news-page-navigation.bottom ul {
   display: none;
 }
 
@@ -850,16 +850,6 @@ h1 a {
   text-align: center;
   text-decoration: none;
   font-size: 11px;
-}
-
-.mobile .news-page-navigation ul li a {
-  border: 1px solid #ccc;
-  padding: 0 10px;
-  line-height: 28px;
-  text-decoration: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
 }
 
 .news-page-navigation ul li a:hover {
@@ -927,20 +917,61 @@ h1 a {
   font-style: italic;
 }
 
-.news-detail {
-  background-color: #fff;
-  padding: 15px;
-}
-
 .news-detail .date {
   font-size: 1.1em;
 }
 
-.news-detail p {
-  padding-bottom: 10px;
+/* -- */
+.content-detail {
+  background-color: #fff;
+  padding: 15px;
 }
 
-/* -- */
+.content-detail p {
+  padding-bottom: 10px;
+  line-height: 150%;
+  font-size: 12px;
+}
+.content-detail a {
+  color: #4b4b4a;
+  font-size: 12px;
+}
+.content-detail a:hover {
+  text-decoration: none;
+}
+.content-detail .bullets {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 20px;
+}
+.content-detail .bullets li {
+  background: url("../images/bullet_point.png") no-repeat 0 0;
+  padding-left: 25px;
+  margin: 3px 0;
+  font-size: 12px;
+  padding-bottom: 3px;
+}
+
+.gallery h2 {
+  font-size: 18px;
+  color: #001748;
+  margin: 0 0 10px 0;
+  padding: 0 0 5px 0;
+  border-bottom: solid 1px #ccc;
+}
+.gallery ol {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 25px 0;
+  float: left;
+}
+.gallery ol li {
+  float: left;
+  width: 70px;
+  height: 55px;
+  margin: 5px;
+}
+
 /* Price & Configure styles */
 /* ================================================ */
 #config_machine .step {
@@ -1703,6 +1734,16 @@ h1 a {
     box-sizing: border-box;
   }
 
+  .news-page-navigation ul li a {
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    line-height: 28px;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
   .sidebox.news {
     clear: left;
     float: none;
@@ -1740,6 +1781,10 @@ h1 a {
   p {
     font-size: 1.0em;
     line-height: 140%;
+  }
+
+  .news-page-navigation.bottom ul {
+    display: block;
   }
 }
 /* tablet portrait and mobile landscape */

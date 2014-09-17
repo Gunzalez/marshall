@@ -29,7 +29,7 @@ function log(stuff){ // Sheg Todo, remove
             marshall.properties.windowWidth = $(window).width();
 
             // overlays, I left these for you
-            $(".fancybox").fancybox({
+            var fancyBoxOptions = {
                 'nextEffect': 'fade',
                 'prevEffect': 'fade',
                 openEffect  : 'none',
@@ -41,7 +41,10 @@ function log(stuff){ // Sheg Todo, remove
                         media: {}
                     }
                 }
-            });
+            }
+
+            $(".fancybox").fancybox(fancyBoxOptions);
+            $('.gallery a').fancybox(fancyBoxOptions);
         },
 
         resize: function(){
@@ -50,32 +53,35 @@ function log(stuff){ // Sheg Todo, remove
                 $('html').removeClass('mobile').addClass('desktop');
             } else {
                 $('html').removeClass('desktop').addClass('mobile');
-            };
+            }
 
             if(marshall.properties.windowWidth < marshall.properties.desktopThreshold){
                 $('.footer').removeClass('wide');
             } else {
                 $('.footer').addClass('wide');
-            };
+            }
 
+            // TODO, does not work on iPad
             $('.sidebox-2').each(function(){
                 var $sidebox1 = $('.sidebox', $(this)).eq(0),
                     $sidebox2 = $('.sidebox', $(this)).eq(1);
 
                 if(marshall.properties.windowWidth < marshall.properties.mobileThreshold && marshall.properties.windowWidth > marshall.properties.handHeldThreshold){
-                    $sidebox1.height($sidebox2.height());
+                    var timer = setTimeout(function(){
+                        $sidebox1.height($sidebox2.height());
+                        clearTimeout(timer);
+                    }, 100);
                 } else {
                     $sidebox1.removeAttr('style');
                     $sidebox2.removeAttr('style');
-                };
+                }
             })
         }
-
     };
-
 
     marshall.homepage = {
         // Yes, a bit messy I know, may refactor if time allows
+        // TODO, clean up
         resize: function(){
             var $minibox = $('.minibox'),
                 mainboxWidth = $minibox.parent().width(),
@@ -121,15 +127,6 @@ function log(stuff){ // Sheg Todo, remove
 
         }
     };
-
-	marshall.resize = function(){
-        marshall.environment.resize();
-        marshall.navigation.clearNav();
-        marshall.homepage.resize();
-        marshall.configuration.resize();
-        marshall.mobile.resize();
-	};
-
 
     marshall.configuration = {
         $configureForm: $('#config_machine'),
@@ -672,19 +669,29 @@ function log(stuff){ // Sheg Todo, remove
                     $(this).removeClass('hover');
                 });
             }
+        },
+
+        resize: function(){
+            var self = this;
+            self.clearNav();
         }
+    };
+
+    marshall.resize = function(){
+        // All resize adjustments
+        marshall.environment.resize();
+        marshall.navigation.resize();
+        marshall.homepage.resize();
+        marshall.configuration.resize();
+        marshall.mobile.resize();
     };
 	
 	marshall.init = function(){
-
+        // All initialisations
         marshall.environment.init();
-
         marshall.navigation.init();
-		
 		marshall.mobile.init();
-		
 		marshall.carousel.init();
-
         marshall.configuration.init();
 		
 		$(window).on('resize',function(){
@@ -692,17 +699,15 @@ function log(stuff){ // Sheg Todo, remove
 			var theWidthNow = $(window).width();
 			
 			if(marshall.properties.windowWidth != theWidthNow){
-				
 				marshall.resize();
-						
 				marshall.properties.windowWidth = theWidthNow;
 			}
 		});
-		
+
+        // Do initial resize, just incase
 		marshall.resize();
 		$(window).trigger('resize');		
 	};
-	
 	
 	$(window).load(function(){
 		marshall.init();

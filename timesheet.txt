@@ -52,3 +52,8 @@ Guestimation - plus 25 hrs
 Makes a total of 67 hrs (42 + 25)
 
 
+
+TODO:
+Same height issue on news landing page
+
+

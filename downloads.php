@@ -22,7 +22,7 @@
             <div class="breadcrumb">
                 <ul>
                     <li><a href="index.php" title="Home">Home</a> &gt; </li>
-                    <li>News</li>
+                    <li>Downloads</li>
                 </ul>
             </div>
 
@@ -31,25 +31,24 @@
                 <div class="container">
 
                     <div class="main-heading">
-                        <h2>Bespoke OMD/10 Dump Trailer</h2>
+                        <h2>Downloads</h2>
                     </div>
 
-                    <div class="mainbox news-detail content-detail">
-                        <p class="date">25th Aug 2014</p>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        <p>Kalesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-                        <p><img src="images/news-image.jpg" /></p>
-
-                        <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ant pink llentestique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Maursque habitant morbi triis csan.</p>
-                        <a href="news.php" class="big-link blue-link">Back</a>
+                    <div class="mainbox content-detail">
+                        <p>This section allows customers to download our price list, handbooks and a number of other useful resources. In addition all the photos and videos that feature on the website are consolidated in one place to allow easy browsing.</p>
+                        <p>This section includes:</p>
+                        <ul class="bullets">
+                            <li><a href="#">Owners Manuals</a> - downloadable owners manuals for some of our machines</li>
+                            <li><a href="#">Videos</a> - linked to Marshall products featured on YouTube</li>
+                            <li><a href="image-gallery.php">Image Gallery</a> - of all product related images on the site, available for downloading</li>
+                            <li><a href="#">General documents</a> - including Marshall logo's, product leaflets and the latest Marshall pricelist</li>
+                        </ul>
                     </div>
 
                     <div class="mainbox configure">
                         <h2>Configure a Marshall Product now</h2>
                         <p>Use our online configuration tool to design and price your ideal Marshall machine.</p>
-                        <a href="configure-machine.php" class="big-link red-link">Price &amp; Configure</a>
+                        <a href="configure-machine.php" class="big-link red-link configure-btn">Price &amp; Configure</a>
                     </div>
 
 
