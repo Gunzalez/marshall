@@ -21,7 +21,7 @@
 
             <div class="breadcrumb">
                 <ul>
-                    <li><a href="/" title="Home">Home</a> &gt; </li>
+                    <li><a href="index.php" title="Home">Home</a> &gt; </li>
                     <li><a href="downloads.php" title="Downloads">Downloads</a> &gt; </li>
                     <li>Image Gallery</li>
                 </ul>

@@ -125,8 +125,8 @@
                 <ul>
                     <li><a href="#" title="Owners Manuals">Owners Manuals</a></li>
                     <li><a href="#" title="General Documents">General Documents</a></li>
-                    <li><a href="#" title="Product Image Gallery">Product Gallery</a></li>
-                    <li><a href="#" title="Featured Image Gallery">Featured Images</a></li>
+                    <li><a href="product-gallery.php" title="Product Image Gallery">Product Gallery</a></li>
+                    <li><a href="image-gallery.php" title="Featured Image Gallery">Featured Images</a></li>
                     <li><a href="#" title="Videos">Videos</a></li>
 
                 </ul>
