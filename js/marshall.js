@@ -44,13 +44,15 @@
 
         resize: function(){
 
-            if(marshall.properties.windowWidth > marshall.properties.mobileThreshold){
+            var newWindowWith = $(window).width();
+
+            if(newWindowWith > marshall.properties.mobileThreshold){
                 $('html').removeClass('mobile').addClass('desktop');
             } else {
                 $('html').removeClass('desktop').addClass('mobile');
             }
 
-            if(marshall.properties.windowWidth < marshall.properties.desktopThreshold){
+            if(newWindowWith < marshall.properties.desktopThreshold){
                 $('.footer').removeClass('wide');
             } else {
                 $('.footer').addClass('wide');
@@ -61,7 +63,7 @@
                 var $sidebox1 = $('.sidebox', $(this)).eq(0),
                     $sidebox2 = $('.sidebox', $(this)).eq(1);
 
-                if(marshall.properties.windowWidth < marshall.properties.mobileThreshold && marshall.properties.windowWidth > marshall.properties.handHeldThreshold){
+                if(newWindowWith < marshall.properties.mobileThreshold && newWindowWith > marshall.properties.handHeldThreshold){
                     var timer = setTimeout(function(){
                         $sidebox1.height($sidebox2.height());
                         clearTimeout(timer);
@@ -460,8 +462,6 @@
                 self.setUpConfigurationEmail();
                 self.setUpStickyBasket();
 
-
-
             }
         }
     };
@@ -484,40 +484,40 @@
 			}
 		}
 	};
-	
-	marshall.mobile = {		
-		
+
+	marshall.mobile = {
+
 		/* properties */
 		isBusy: false,
 		slideSpeed: 250,
-		easing: 'swing',		
+		easing: 'swing',
 		$mobileNavBtn: $('#menu-icon'),
-		
+
 		/* methods */
 		_launchMobileNav: function(){
-			
+
 			var self = this,
 				$mainPage = $('.page'),
 				$mobileNav = $('#mobile-nav'),
-				$theStage = $('<div id="the-stage" />'),				
+				$theStage = $('<div id="the-stage" />'),
 				$fakeWrapper = $('<div id="fake-wrapper" />'),
 				$slidingContainer = $('<div id="sliding-container" />'),
 				stageWidth = $(window).width(),
 				peakThrough = $(window).width()/4,
 				stageHeight = $(window).height(),
 				mobileNavHeight = $mobileNav.height();
-				
+
 			if(mobileNavHeight > stageHeight){
 				stageHeight = mobileNavHeight;
 			}
-				
+
 			$theStage.css({
 				width: stageWidth,
 				height: stageHeight,
 				position: 'relative',
 				overflow: 'hidden'
 			});
-			
+
 			$fakeWrapper.css({
 				width: stageWidth,
 				height: stageHeight,
@@ -525,7 +525,7 @@
 				top: 0,
 				left: 0
 			});
-			
+
 			$mobileNav.css({
 				width: stageWidth - peakThrough + 'px',
 				position: 'absolute',
@@ -533,102 +533,102 @@
 				left: stageWidth + 'px',
 				height: stageHeight,
 				display: 'block'
-			});			
-			
+			});
+
 			$slidingContainer.css({
 				width: (stageWidth * 2) - peakThrough + 'px',
-				height: stageHeight,					
+				height: stageHeight,
 				position: 'absolute',
 				top: 0,
 				left: 0
 			});
-			
+
 			$fakeWrapper.append($mainPage);
 			$slidingContainer.append($fakeWrapper).append($mobileNav);
 			$theStage.append($slidingContainer);
 			$('body').prepend($theStage);
-			
-			$slidingContainer.animate({				
-				left:'-'+(stageWidth-peakThrough)+'px'	
+
+			$slidingContainer.animate({
+				left:'-'+(stageWidth-peakThrough)+'px'
 			}, self.slideSpeed, self.easing);
-			
+
 		},
-		
+
 		_hideMobileNav: function(){
-			
+
 			var self = this,
 				$slidingContainer = $('#sliding-container'),
                 $stickyBasket = $('#basket');
-			
+
 			$slidingContainer.animate({
-				left:0	
+				left:0
 			}, self.slideSpeed, self.easing, function(){
 					self._destroyMobileNav();
                     $stickyBasket.removeClass('displayNone');
 				});
 		},
-		
+
 		_destroyMobileNav: function(){
-			
+
 			var	$mainPage = $('.page'),
 				$mobileNav = $('#mobile-nav'),
 				$theStage = $('#the-stage');
-				
+
 			$mobileNav.css({
 				display:'none'
 			}).removeAttr('style');
-			
+
 			$mainPage.removeAttr('style');
 			$('body').prepend($mobileNav).prepend($mainPage);
             $theStage.remove();
-			
+
 		},
-		
+
 		_cloneNavigation: function(){
-			
+
 			var $mobileNav = $('#mobile-nav'),
                 $mainNav = $('.main-nav'),
 				$header = $('<div class="header"><span class="fa fa-times">&nbsp;</span></div>');
-									
-			$header.on('click', function(){			
-				$('#menu-icon').trigger('click');							
+
+			$header.on('click', function(){
+				$('#menu-icon').trigger('click');
 			});
-			
+
 			$mobileNav.append($header);
             var tempVar = $mainNav.clone(true);
             $('ul', tempVar).not(".root-ul").remove();
             $mobileNav.append(tempVar.html());
-			
+
 		},
-		
+
 		resize: function(){
 			var self = this;
 			self._destroyMobileNav();
 		},
-		
+
 		init: function(){
-			
+
 			var self = this,
                 $menu = $('#menu-icon'),
                 $stickyBasket = $('#basket');
-			
+
 			if($menu.length > 0){
 
                 $menu.on('click',function(evt){
 					evt.preventDefault();
-					if($('#the-stage').length > 0){						
+					if($('#the-stage').length > 0){
 						self._hideMobileNav();
-					} else {						
+					} else {
 						self._launchMobileNav();
                         $stickyBasket.addClass('displayNone');
 					}
 				});
-				
+
 				self._cloneNavigation();
-			}	
-			
+			}
+
 		}
-		
+
 	};
 
     marshall.navigation = {
@@ -681,7 +681,7 @@
         marshall.configuration.resize();
         marshall.mobile.resize();
     };
-	
+
 	marshall.init = function(){
 
         // All initialisations
