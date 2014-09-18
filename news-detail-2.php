@@ -31,24 +31,19 @@
                 <div class="container">
 
                     <div class="main-heading">
-                        <h2>Bespoke OMD/10 Dump Trailer</h2>
+                        <h2>Our Latest Marshall Fan...</h2>
                     </div>
 
                     <div class="mainbox news-detail content-detail">
-
                         <div class="content-copy">
-                            <p class="date">25th Aug 2014</p>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                            <p>Kalesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-                            <img src="images/news-image.jpg" class="responsive" />
-
-                            <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ant pink llentestique senectus et netus et malesuada fames ac turpis egestas.</p>
-                            <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Maursque habitant morbi triis csan.</p>
+                            <p class="date">11th Aug 2014</p>
+                            <p>Our deputy foreman, Gordon Farquhar, recently became a grandfather and has already made sure his grand-daughter Emma knows who makes the best trailers! Congratulations to Gordon and his family!</p>
+                            <img alt="Marshalls Latest Fan" class="responsive" src="http://www.marshall-trailers.co.uk/uploads/images/14_08_11 Gordon Farquhar Grand-daughter Emma.jpg" title="Marshalls Latest Fan">
                         </div>
-
                         <a href="news.php" class="big-link blue-link">Back</a>
                     </div>
+
+
 
                     <div class="mainbox configure">
                         <h2>Configure a Marshall Product now</h2>

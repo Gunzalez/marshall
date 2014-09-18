@@ -389,9 +389,11 @@ h1 a {
         cursor: pointer;
         text-align: left;
         text-decoration: none;
+        display: block;
+        clear: both;
 
         &.blue-link {
-            background: url('../images/btn-more.png') no-repeat;
+            background: url('../images/btn-more.png') 0 0 no-repeat;
 
 
             &:hover {
@@ -452,6 +454,7 @@ h1 a {
         -moz-border-radius: 6px;
         border-radius: 6px;
         cursor: pointer;
+        clear: both;
     }
 
     .red-link {
@@ -473,7 +476,6 @@ h1 a {
     }
 
     .blue-link {
-        padding: 5px 8px;
         background: #001649;
         color: #fff000;
     }
@@ -1038,7 +1040,8 @@ h1 a {
 }
 
 .news-detail .date {
-    font-size: 1.1em;
+    font-size: 12px;
+    font-weight: bold;
 }
 /* -- */
 
@@ -1055,6 +1058,32 @@ h1 a {
     line-height: 150%;
     font-size: 12px;
   }
+  img {
+    &.responsive {
+      margin-bottom: 15px;
+    }
+    &.float-left {
+      float: left;
+    }
+    &.float-right {
+      float: right;
+    }
+    &.shadow {
+      -webkit-box-shadow: 0px 6px 5px -2px rgba(87,86,87,1);
+      -moz-box-shadow: 0px 6px 5px -2px rgba(87,86,87,1);
+      box-shadow: 0px 6px 5px -2px rgba(87,86,87,1);
+    }
+    &.set-of-two {
+      width: 45% !important;
+    }
+  }
+
+  .content-copy:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
   a {
     color: #4b4b4a;
@@ -1091,6 +1120,7 @@ h1 a {
     list-style: none;
     margin: 0;
     padding: 0 0 25px 0;
+    width: 100%;
     float: left;
 
     li {
@@ -2269,6 +2299,9 @@ h1 a {
         float: right;
     }
 
+
+
+
     /* news */
     .news-items ol li .thumb {
         display: none;
@@ -2297,6 +2330,30 @@ h1 a {
         margin-bottom: 5px;
     }
 
+    /* news detail */
+    .content-detail {
+        img {
+            &.responsive {
+                width: 100% !important;
+            }
+            &.float-left {
+                float: none;
+            }
+            &.float-right {
+                float: none;
+            }
+            &.set-of-two {
+                width: 100% !important;
+            }
+        }
+    }
+
+
+
+
+
+
+
     #configure-machine select {
         width: 100%;
     }
@@ -2307,10 +2364,6 @@ h1 a {
         font-size: 1.2em;
     }
 
-
-    .news-detail img {
-        width: 100%;
-    }
 
 
     #basket {

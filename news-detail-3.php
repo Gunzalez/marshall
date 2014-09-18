@@ -31,24 +31,20 @@
                 <div class="container">
 
                     <div class="main-heading">
-                        <h2>Bespoke OMD/10 Dump Trailer</h2>
+                        <h2>Double Retirement</h2>
                     </div>
 
                     <div class="mainbox news-detail content-detail">
-
                         <div class="content-copy">
-                            <p class="date">25th Aug 2014</p>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                            <p>Kalesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-                            <img src="images/news-image.jpg" class="responsive" />
-
-                            <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ant pink llentestique senectus et netus et malesuada fames ac turpis egestas.</p>
-                            <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Maursque habitant morbi triis csan.</p>
+                            <p class="date">11th September 2014</p>
+                            <p>Marshalls have had two long-standing employees retire in the last few months. Sandy Singer had been with the company for fifteen years and was in charge of operating our two press brakes. The other long-standing employee to retire was our factory foreman, Ian Ross. Ian started with Marshalls in 1976 and spent thirty-eight years in charge of the factory, designing and building our products. We would like to wish both Sandy and Ian all the best from everyone at Marshalls with their retirements.</p>
+                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/110914-1554-6720.jpg" title="Factory Foreman Clive Woods Shaking Hands With Sandy Singer" class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/110914-1554-6720.jpg" alt="Factory Foreman Clive Woods Shaking Hands With Sandy Singer" class="responsive float-left shadow set-of-two"></a>
+                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/110914-1556-8149.jpg" title="Ian Ross and David Marshall"  class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/110914-1556-8149.jpg" alt="Ian Ross and David Marshall" class="responsive float-right shadow set-of-two"></a>
                         </div>
-
                         <a href="news.php" class="big-link blue-link">Back</a>
                     </div>
+
+
 
                     <div class="mainbox configure">
                         <h2>Configure a Marshall Product now</h2>

@@ -36,7 +36,7 @@
                     </div>
                     <div class="mainbox content-detail gallery">
                     <h2>Monocoque Agricultural Trailers</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/120914-1159-7421.jpg" title="QM/6B Monocoque Trailer, Hydraulic Door, 15-55x17 Wheels" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/120914-1159-7421.jpg" alt="QM/6B Monocoque Trailer, Hydraulic Door, 15-55x17 Wheels"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/120914-1159-5593.jpg" title="QM/6B Monocoque Trailer, Hydraulic Door, 15-55x17 Wheels" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/120914-1159-5593.jpg" alt="QM/6B Monocoque Trailer, Hydraulic Door, 15-55x17 Wheels"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/110914-1728-3096.jpg" title="QM/6 Monocoque Trailer, Roll-over Cover, Barn Doors" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/110914-1728-3096.jpg" alt="QM/6 Monocoque Trailer, Roll-over Cover, Barn Doors"></a></li>
@@ -120,7 +120,7 @@
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/160513-1545-1588.jpg" title="Marshall QM/1600 Monocoque Trailer - Has a deeper body than our standard QM Range" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/160513-1545-1588.jpg" alt="Marshall QM/1600 Monocoque Trailer - Has a deeper body than our standard QM Range"></a></li>
                     </ol>
                     <h2>Drop-Side Agricultural Trailers</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1039-7333.jpg" title="The Marshall S2 drop side tipping trailer" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1039-7333.jpg" alt="The Marshall S2 drop side tipping trailer"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1041-2337.jpg" title="Marshall S2 drop side tipping trailer carries 2 tonnes." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1041-2337.jpg" alt="Marshall S2 drop side tipping trailer carries 2 tonnes."></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1042-7972.jpg" title="Marshall S2 drop side tipping trailer showing the rear swing door." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1042-7972.jpg" alt="Marshall S2 drop side tipping trailer showing the rear swing door."></a></li>
@@ -159,7 +159,7 @@
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/201211-1657-1608.jpg" title="Marshall S10 drop side 10.5 tonne tipping trailer with silage sides." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/201211-1657-1608.jpg" alt="Marshall S10 drop side 10.5 tonne tipping trailer with silage sides."></a></li>
                     </ol>
                     <h2>Agricultural Flat / Bale trailers</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/170613-1555-1241.jpg" title="Marshall BC/18 Bale/Flat Trailer" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/170613-1555-1241.jpg" alt="Marshall BC/18 Bale/Flat Trailer"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/170613-1555-6092.jpg" title="Marshall BC/18 Bale/Flat Trailer" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/170613-1555-6092.jpg" alt="Marshall BC/18 Bale/Flat Trailer"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/170613-1556-3764.jpg" title="Marshall BC/18 Bale/Flat Trailer" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/170613-1556-3764.jpg" alt="Marshall BC/18 Bale/Flat Trailer"></a></li>
@@ -195,7 +195,7 @@
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/070113-1006-3904.jpg" title="BC/32 Bale Trailer Front" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/070113-1006-3904.jpg" alt="BC/32 Bale Trailer Front"></a></li>
                     </ol>
                     <h2>Agricultural Dumper Trailers</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1214-4660.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1214-4660.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1211-5411.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1211-5411.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1212-7810.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1212-7810.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
@@ -226,7 +226,7 @@
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/100512-1205-4019.jpg" title="QMD/10H 10 ton dump trailer from Marshall Trailers showing the rear hydraulic door and light guards." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/100512-1205-4019.jpg" alt="QMD/10H 10 ton dump trailer from Marshall Trailers showing the rear hydraulic door and light guards."></a></li>
                     </ol>
                     <h2>Agricultural Feed Trailers</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/301012-1149-3500.jpg" title="Feed Trailer - Front" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/301012-1149-3500.jpg" alt="Feed Trailer - Front"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/291012-1615-7628.jpg" title="Marshall livestock feed trailer with timber floor and sides." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/291012-1615-7628.jpg" alt="Marshall livestock feed trailer with timber floor and sides."></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/301012-1149-7022.jpg" title="Feed Trailer - Rear" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/301012-1149-7022.jpg" alt="Feed Trailer - Rear"></a></li>
@@ -246,7 +246,7 @@
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/280414-1754-6953.jpg" title="Removable Seating Option" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/280414-1754-6953.jpg" alt="Removable Seating Option"></a></li>
                     </ol>
                     <h2>Agricultural Livestock Trailers</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/161211-1330-6701.jpg" title="Marshall 21' steel livestock container on BC21 bale trailer" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/161211-1330-6701.jpg" alt="Marshall 21' steel livestock container on BC21 bale trailer"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/161211-1318-6515.jpg" title="Marshall 21' aluminium livestock container on BC21 bale trailer" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/161211-1318-6515.jpg" alt="Marshall 21' aluminium livestock container on BC21 bale trailer"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/161211-1408-8727.jpg" title="Sheep decks in a Marshall livestock trailer" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/161211-1408-8727.jpg" alt="Sheep decks in a Marshall livestock trailer"></a></li>
@@ -276,7 +276,7 @@
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/080113-1703-3335.jpg" title="BC/32 c/w 32' Livestock Container - Rear" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/080113-1703-3335.jpg" alt="BC/32 c/w 32' Livestock Container - Rear"></a></li>
                     </ol>
                     <h2>Muck Spreaders</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/161112-1135-2410.jpg" title="The Marshall MS45 side discharge muck spreader with a capacity of 4.5 cu.yds" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/161112-1135-2410.jpg" alt="The Marshall MS45 side discharge muck spreader with a capacity of 4.5 cu.yds"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/161211-1748-8819.jpg" title="The Marshall MS45 side discharge muck spreader with a capacity of 4.5 cu.yds" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/161211-1748-8819.jpg" alt="The Marshall MS45 side discharge muck spreader with a capacity of 4.5 cu.yds"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/070113-1026-5895.jpg" title="MS45 Muckspreader Rear" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/070113-1026-5895.jpg" alt="MS45 Muckspreader Rear"></a></li>
@@ -303,7 +303,7 @@
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/161211-1927-6387.jpg" title="The Marshall MS105 side discharge muck spreader with a capacity of 10.5 cu.yds and a galvanised finish." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/161211-1927-6387.jpg" alt="The Marshall MS105 side discharge muck spreader with a capacity of 10.5 cu.yds and a galvanised finish."></a></li>
                     </ol>
                     <h2>Rear Discharge Muck Spreaders</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/161211-2115-2049.jpg" title="Marshall Vesuvius Vantage VES 1500 rear discharge spreader" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/161211-2115-2049.jpg" alt="Marshall Vesuvius Vantage VES 1500 rear discharge spreader"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1755-1785.jpg" title="The VES 1500 rear discharge spreader." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1755-1785.jpg" alt="The VES 1500 rear discharge spreader."></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/161211-2115-3390.jpg" title="Vantage VES 1500 rear discharge spreader" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/161211-2115-3390.jpg" alt="Vantage VES 1500 rear discharge spreader"></a></li>
@@ -323,7 +323,7 @@
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1808-4225.jpg" title="The VES 2500 rear discharge spreader." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1808-4225.jpg" alt="The VES 2500 rear discharge spreader."></a></li>
                     </ol>
                     <h2>Slurry Tankers</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1743-3588.jpg" title="The Marshall ST1200 tanker." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1743-3588.jpg" alt="The Marshall ST1200 tanker."></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/171211-1612-5153.jpg" title="The Marshall ST1200 slurry tanker holds 1220 gal / 5500 litres." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/171211-1612-5153.jpg" alt="The Marshall ST1200 slurry tanker holds 1220 gal / 5500 litres."></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/171211-1614-4498.jpg" title="The Marshall ST1200 slurry tanker with standard wheels." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/171211-1614-4498.jpg" alt="The Marshall ST1200 slurry tanker with standard wheels."></a></li>
@@ -365,7 +365,7 @@
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/171211-1911-1031.jpg" title="The Marshall ST2550 slurry tanker discharging slurry." class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/171211-1911-1031.jpg" alt="The Marshall ST2550 slurry tanker discharging slurry."></a></li>
                     </ol>
                     <h2>Feed Barriers</h2>
-                    <ol class="padding_bot">
+                    <ol>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/201113-1025-3069.jpg" title="FB/6 Feed Barrier" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/201113-1025-3069.jpg" alt="FB/6 Feed Barrier"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/201113-1023-2441.jpg" title="30mm Treated Pine Sides and Floor" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/201113-1023-2441.jpg" alt="30mm Treated Pine Sides and Floor"></a></li>
                         <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/201113-1024-3190.jpg" title="FB/6 Feed Barriers in Stock" class="enlarge" rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/201113-1024-3190.jpg" alt="FB/6 Feed Barriers in Stock"></a></li>

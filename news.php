@@ -61,26 +61,26 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-2.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
+                                    <h3><a href="news-detail-2.php">Bespoke QMD/10 Dump Trailer</a></h3>
                                     <p class="date">25th Aug 2014</p>
                                     <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-2.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
+                                    <h3><a href="news-detail-2.php">Bespoke QMD/10 Dump Trailer</a></h3>
                                     <p class="date">25th Aug 2014</p>
                                     <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-3.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
-                                    <p class="date">25th Aug 2014</p>
+                                    <h3><a href="news-detail-3.php">Double Retirement</a></h3>
+                                    <p class="date">11th September 2014</p>
                                     <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>

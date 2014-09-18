@@ -1,9 +1,4 @@
 // JavaScript Document
-
-function log(stuff){ // Sheg Todo, remove
-    console.log(stuff);
-}
-
 (function ($, window) {
 	
 	var marshall = {};
@@ -28,7 +23,7 @@ function log(stuff){ // Sheg Todo, remove
 
             marshall.properties.windowWidth = $(window).width();
 
-            // overlays, I left these for you
+            // Overlays
             var fancyBoxOptions = {
                 'nextEffect': 'fade',
                 'prevEffect': 'fade',
@@ -678,6 +673,7 @@ function log(stuff){ // Sheg Todo, remove
     };
 
     marshall.resize = function(){
+
         // All resize adjustments
         marshall.environment.resize();
         marshall.navigation.resize();
@@ -687,13 +683,15 @@ function log(stuff){ // Sheg Todo, remove
     };
 	
 	marshall.init = function(){
+
         // All initialisations
         marshall.environment.init();
         marshall.navigation.init();
 		marshall.mobile.init();
 		marshall.carousel.init();
         marshall.configuration.init();
-		
+
+        // Resize triggers
 		$(window).on('resize',function(){
 			
 			var theWidthNow = $(window).width();
@@ -706,9 +704,10 @@ function log(stuff){ // Sheg Todo, remove
 
         // Do initial resize, just incase
 		marshall.resize();
-		$(window).trigger('resize');		
+		$(window).trigger('resize');
 	};
-	
+
+    // Main init
 	$(window).load(function(){
 		marshall.init();
 	});
