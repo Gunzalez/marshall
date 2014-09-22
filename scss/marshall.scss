@@ -181,6 +181,7 @@ h1 a {
     padding: 0;
     list-style: none;
     float: left;
+    width: 100%;
 }
 
 .main-nav ul:after {
@@ -195,8 +196,7 @@ h1 a {
     background: url("../images/nav-divider.png") bottom right no-repeat;
 }
 
-.main-nav ul li.last-child {
-    padding-right: 0;
+.main-nav ul li.no-bg {
     background: none;
 }
 
@@ -211,12 +211,7 @@ h1 a {
     padding: 0 12px;
 }
 
-.main-nav ul li.search {
-    width: 89px;
-}
-
 .main-nav ul li.facebook {
-    width: 32px;
     float: right;
 }
 
@@ -224,6 +219,8 @@ h1 a {
     text-indent: -9000px;
     background: url("../images/fb-icon.png") center center no-repeat;
     width: 32px;
+    padding: 0;
+    margin-right: 4px;
 }
 
 .main-nav ul li.hover a,
@@ -641,6 +638,7 @@ h1 a {
     background: url("../images/home_title_grad.png") top right repeat-y #001649;
     text-shadow: none;
     height: 60px;
+    padding: 0;
 }
 
 .main-heading.hero h2 {
@@ -1750,10 +1748,16 @@ h1 a {
 
 .made-by {
     clear: both;
-    background-color: #dcdcdc;
+    background-color: #ececec;
     padding: 10px;
     margin-top: 10px;
     color: #407f12;
+}
+
+.mobile {
+    .made-by {
+        background-color: #dcdcdc;
+    }
 }
 
 .made-by p {
@@ -2031,6 +2035,10 @@ h1 a {
     p {
         font-size: 1.0em;
         line-height: 140%;
+    }
+
+    .main-heading.hero {
+        height: auto;
     }
 
   .news-page-navigation.bottom {
