@@ -115,7 +115,7 @@
                             <li><a href="#" title="Addtional Equipment">Addtional Equipment</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" title="Bespoke">Bespoke</a></li>
+                    <li><a href="bespoke.php" title="Bespoke">Bespoke</a></li>
                 </ul>
             </li>
             <li><a href="configure-machine.php" title="Configure a Marshall Machine">Price &amp; Configure</a></li>

@@ -599,6 +599,11 @@
             $('ul', tempVar).not(".root-ul").remove();
             $mobileNav.append(tempVar.html());
 
+            $($mobileNav).on('click', 'a', function(){
+                $('a', $mobileNav).removeAttr('class');
+                $(this).addClass('active');
+            });
+
 		},
 
 		resize: function(){
