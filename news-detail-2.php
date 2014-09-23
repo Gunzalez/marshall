@@ -22,7 +22,8 @@
             <div class="breadcrumb">
                 <ul>
                     <li><a href="index.php" title="Home">Home</a> &gt; </li>
-                    <li>News</li>
+                    <li><a href="news.php">News</a> &gt; </li>
+                    <li>Our Latest Marshall Fan...</li>
                 </ul>
             </div>
 

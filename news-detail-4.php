@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="index.php" title="Home">Home</a> &gt; </li>
                     <li><a href="news.php">News</a> &gt; </li>
-                    <li>Double Retirement</li>
+                    <li>Marshall Lorry Feature</li>
                 </ul>
             </div>
 
@@ -32,15 +32,15 @@
                 <div class="container">
 
                     <div class="main-heading">
-                        <h2>Double Retirement</h2>
+                        <h2>Marshall Lorry Feature</h2>
                     </div>
 
                     <div class="mainbox news-detail content-detail">
                         <div class="content-copy">
                             <p class="date">11th September 2014</p>
-                            <p>Marshalls have had two long-standing employees retire in the last few months. Sandy Singer had been with the company for fifteen years and was in charge of operating our two press brakes. The other long-standing employee to retire was our factory foreman, Ian Ross. Ian started with Marshalls in 1976 and spent thirty-eight years in charge of the factory, designing and building our products. We would like to wish both Sandy and Ian all the best from everyone at Marshalls with their retirements.</p>
-                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/110914-1554-6720.jpg" title="Factory Foreman Clive Woods Shaking Hands With Sandy Singer" class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/110914-1554-6720.jpg" alt="Factory Foreman Clive Woods Shaking Hands With Sandy Singer" class="responsive float-left shadow set-of-two"></a>
-                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/110914-1556-8149.jpg" title="Ian Ross and David Marshall"  class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/110914-1556-8149.jpg" alt="Ian Ross and David Marshall" class="responsive float-right shadow set-of-two"></a>
+                            <p>The new Marshall DAF XF510 was featured in the Transport News magazine last month.</p>
+                            <p>To see more pictures of our lorries in action, visit: http://www.marshall-trailers.co.uk/downloads/image-gallery</p>
+                            <img alt="Marshalls Latest Fan" class="responsive" src="http://www.marshall-trailers.co.uk/uploads/images/photo%201(7).JPG" title="Marshall Lorry Feature">
                         </div>
                         <a href="news.php" class="big-link blue-link">Back</a>
                     </div>

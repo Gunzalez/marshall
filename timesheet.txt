@@ -55,10 +55,16 @@ Makes a total of 67 hrs (42 + 25)
 
 TODO:
 Same height issue on news landing page
+Middle configure div not on mobile, tablet?
+Breadcrumb, site wide!
+Social media nav in side bar
+What's this sub nav on Bespoke page?
+All buttons on right in mobile
 
 
 WORK
 ===================
 Refactor Header and Footer
+espoke Specifications done
 
 

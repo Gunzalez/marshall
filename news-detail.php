@@ -22,7 +22,8 @@
             <div class="breadcrumb">
                 <ul>
                     <li><a href="index.php" title="Home">Home</a> &gt; </li>
-                    <li>News</li>
+                    <li><a href="news.php">News</a> &gt; </li>
+                    <li>Lackham College Trailers 2</li>
                 </ul>
             </div>
 
@@ -31,20 +32,20 @@
                 <div class="container">
 
                     <div class="main-heading">
-                        <h2>Bespoke OMD/10 Dump Trailer</h2>
+                        <h2>Lackham College Trailers 2</h2>
                     </div>
 
                     <div class="mainbox news-detail content-detail">
 
                         <div class="content-copy">
-                            <p class="date">25th Aug 2014</p>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                            <p>Kalesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-                            <img src="images/news-image.jpg" class="responsive" />
-
-                            <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ant pink llentestique senectus et netus et malesuada fames ac turpis egestas.</p>
-                            <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Maursque habitant morbi triis csan.</p>
+                            <p class="date">18th September 2014</p>
+                            <p>Three QM/14SS monocoque trailers sold by one of our dealers Chippenham Farm Sales to Lackham College in Wilthshire...</p>
+                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/180914-0838-7364.jpg" title="QM/14SS Lackham College Farm" class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/180914-0838-7364.jpg" alt="QM/14SS Lackham College Farm" class="float-left shadow set-of-two"></a>
+                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/180914-0839-8345.jpg" title="QM/14SS Lackham College Farm" class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/180914-0839-8345.jpg" alt="QM/14SS Lackham College Farm" class="float-right shadow set-of-two"></a>
+                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/180914-0839-3680.jpg" title="QM/14SS Lackham College Farm" class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/180914-0839-3680.jpg" alt="QM/14SS Lackham College Farm" class="float-left shadow set-of-two"></a>
+                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/180914-0839-2759.jpg" title="QM/14SS Lackham College Farm" class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/180914-0839-2759.jpg" alt="QM/14SS Lackham College Farm" class="float-right shadow set-of-two"></a>
+                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/180914-0840-9596.jpg" title="QM/14SS Lackham College Farm" class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/180914-0840-9596.jpg" alt="QM/14SS Lackham College Farm" class="float-left shadow set-of-two""></a>
+                            <a href="http://www.marshall-trailers.co.uk/uploads/news/large/180914-0838-1897.jpg" title="QM/14SS Lackham College Farm" class="fancybox" rel="news_gallery"><img src="http://www.marshall-trailers.co.uk/uploads/news/medium/180914-0838-1897.jpg" alt="QM/14SS Lackham College Farm" class="float-right shadow set-of-two"></a>
                         </div>
 
                         <a href="news.php" class="big-link blue-link">Back</a>
@@ -74,7 +75,7 @@
 
                 <div class="sidebox">
                     <h3>Bespoke gallery</h3>
-                    <a href="images/lightbox-2.jpg" title="Marshall BC/27 Bale Trailer, Newholland Blue, 420x180 10stud Axles" class="fancybox"><img src="images/thumb-lightbox-2.jpg" /></a>
+                    <a href="http://www.marshall-trailers.co.uk/uploads/gallery/231112-0906-1422.jpg" title="QMD/14H Bespoke Yellow Paint Finish" class="fancybox"><img src="http://www.marshall-trailers.co.uk/uploads/gallery/featured/231112-0906-1422.jpg" /></a>
                 </div>
 
                 <div class="sidebox news">

@@ -1043,9 +1043,27 @@ h1 a {
     font-style: italic;
 }
 
-.news-detail .date {
-    font-size: 12px;
-    font-weight: bold;
+.news-detail{
+    .date {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .big-link {
+        margin-top: 30px;
+    }
+}
+.mobile {
+    .news-detail {
+        text-align: right;
+
+        .content-copy {
+            text-align: left;
+        }
+
+        .big-link {
+            margin-top: 10px;
+        }
+    }
 }
 /* -- */
 

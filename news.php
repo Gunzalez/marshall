@@ -53,83 +53,83 @@
                     <div class="mainbox news-items">
                         <ol>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail.php" class="thumb"><img src="http://www.marshall-trailers.co.uk/uploads/thumbs/180914-0837-3054.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
-                                    <p class="date">25th Aug 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <h3><a href="news-detail.php">Lackham College Trailers 2</a></h3>
+                                    <p class="date">18th Sep 2014</p>
+                                    <p>Three QM/14SS monocoque trailers sold by one of our dealers Chippenham Farm Sales to Lackham College in Wilthshire... <a href="news-detail.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail-2.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-2.php" class="thumb"><img src="http://www.marshall-trailers.co.uk/uploads/thumbs/110814-1633-6678.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail-2.php">Bespoke QMD/10 Dump Trailer</a></h3>
+                                    <h3><a href="news-detail-2.php">Our Latest Marshall Fan...</a></h3>
                                     <p class="date">25th Aug 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <p>Our deputy foreman, Gordon Farquhar, recently became a grandfather and has already made sure his grand-daughter Emma knows who makes the best trailers! Congratulations to Gordon and his... <a href="news-detail-2.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail-2.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-4.php" class="thumb"><img src="http://www.marshall-trailers.co.uk/uploads/thumbs/150914-1245-4931.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail-2.php">Bespoke QMD/10 Dump Trailer</a></h3>
-                                    <p class="date">25th Aug 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <h3><a href="news-detail-4.php">Marshall Lorry Feature</a></h3>
+                                    <p class="date">15th Sep 2014</p>
+                                    <p>The new Marshall DAF XF510 was featured in the Transport News magazine last month. To see more pictures of our lorries in action... <a href="news-detail-4.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail-3.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-3.php" class="thumb"><img src="http://www.marshall-trailers.co.uk/uploads/thumbs/110914-1555-6470.jpg" alt=""></a>
                                 <div class="detail">
                                     <h3><a href="news-detail-3.php">Double Retirement</a></h3>
                                     <p class="date">11th September 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <p>Marshalls have had two long-standing employees retire in the last few months. Sandy Singer had been with the company for fifteen years and was in charge of operating our two press brakes. The... <a href="news-detail-3.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-x.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
+                                    <h3><a href="news-detail-x.php">Bespoke QMD/10 Dump Trailer</a></h3>
                                     <p class="date">25th Aug 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="news-detail-x.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-x.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
+                                    <h3><a href="news-detail-x.php">Bespoke QMD/10 Dump Trailer</a></h3>
                                     <p class="date">25th Aug 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="news-detail-x.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-x.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
+                                    <h3><a href="news-detail-x.php">Bespoke QMD/10 Dump Trailer</a></h3>
                                     <p class="date">25th Aug 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="news-detail-x.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-x.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
+                                    <h3><a href="news-detail-x.php">Bespoke QMD/10 Dump Trailer</a></h3>
                                     <p class="date">25th Aug 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="news-detail-x.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-x.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
+                                    <h3><a href="news-detail-x.php">Bespoke QMD/10 Dump Trailer</a></h3>
                                     <p class="date">25th Aug 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="news-detail-x.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                             <li>
-                                <a href="news-detail.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
+                                <a href="news-detail-x.php" class="thumb"><img src="images/thumb-news-1.jpg" alt=""></a>
                                 <div class="detail">
-                                    <h3><a href="news-detail.php">Bespoke QMD/10 Dump Trailer</a></h3>
+                                    <h3><a href="news-detail-x.php">Bespoke QMD/10 Dump Trailer</a></h3>
                                     <p class="date">25th Aug 2014</p>
-                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="#" class="read-more">read&nbsp;more</a></p>
+                                    <p>We recently finished building a bespoke QMD/10 dumper trailer, sold by one of our dealers Halse of Honiton. The trailer was modified to have a swinging rear tailgate rather than the standard... <a href="news-detail-x.php" class="read-more">read&nbsp;more</a></p>
                                 </div>
                             </li>
                         </ol>
