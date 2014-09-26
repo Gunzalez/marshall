@@ -40,7 +40,7 @@ New detail, configure
 Guesstimates
 Gallery page = 4hrs
 Bespoke specifications = 4hrs
-Product page = 5hrs
+Product page = 5hrs (5hrs passed only 60-70% done, bad estimation)
 Product range page = 1.5hr
 Spare parts page = 8hrs
 Peripherals (social, breadcrums, other bits found after testing) = 2hrs
