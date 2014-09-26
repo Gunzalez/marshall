@@ -456,6 +456,7 @@ h1 a {
   float: none;
 }
 
+.container:after,
 .content:after {
   content: "";
   display: table;
@@ -1492,6 +1493,164 @@ h1 a {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+/* Product page */
+/* ================================================ */
+.container.product {
+  background-color: #fff;
+}
+.container.product .main-heading {
+  background-color: #ececec;
+}
+.container.product .product-image {
+  margin-right: -246px;
+  width: 100%;
+  float: left;
+}
+.container.product .product-image .container {
+  margin-right: 246px !important;
+}
+.container.product .product-image .container img {
+  border-top: 15px solid #001649;
+  width: 100%;
+}
+.container.product .product-details {
+  width: 246px;
+  float: left;
+  font-size: 12px;
+  line-height: 130%;
+}
+.container.product .product-details h3 {
+  color: #fff000;
+  background: #001748;
+  padding: 8px 10px 8px 20px;
+  font-size: 15px;
+}
+.container.product .product-details ul {
+  margin: 5px 5px 2px 20px;
+  padding: 0;
+  list-style: none;
+}
+.container.product .product-details ul li {
+  padding: 5px 8px;
+  background-color: #ececec;
+  margin-bottom: 1px;
+}
+.container.product .product-details table {
+  margin: 10px 12px 0 20px;
+  font-size: 11px;
+}
+.container.product .product-details table td, .container.product .product-details table th {
+  text-align: right;
+  vertical-align: top;
+  padding: 0 0 3px 10px;
+}
+.container.product .product-details .button {
+  text-align: right;
+  padding: 10px;
+}
+.container.product .product-details .button:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.container.product .product-details .button a {
+  float: right;
+}
+.container .tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  width: 100%;
+  background: url("../images/bg-tabs.png") bottom left repeat-x;
+}
+.container .tabs li {
+  float: left;
+  padding: 0 1px 0 0;
+}
+.container .tabs li a {
+  display: block;
+  float: left;
+  padding: 10px 15px;
+  background: #fff;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  position: relative;
+  bottom: 1px;
+  margin-top: 8px;
+  font-size: 12px;
+  background-color: #fff;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.container .tabs li a:hover {
+  background-color: #f7f7f7;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.container .tabs li a.active {
+  background-color: #fff;
+  position: relative;
+  bottom: 0;
+  padding: 14px 18px;
+  background: #fff;
+  color: #000;
+  margin-top: 0;
+  cursor: default;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.container .tabs li a.active:hover {
+  background-color: #fff;
+}
+.container .tabs-content {
+  background-color: #fff;
+  padding: 15px;
+  clear: left;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.container .tabs-content .copy-block {
+  min-height: 290px;
+}
+.container .tabs-content .copy-block .feature-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container .tabs-content .copy-block .feature-list li {
+  position: relative;
+  padding-bottom: 10px;
+}
+.container .tabs-content .copy-block .feature-list li:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.container .tabs-content .copy-block .feature-list li .thumb {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.container .tabs-content .copy-block .feature-list li .thumb img {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.container .tabs-content .copy-block .feature-list li .detail {
+  margin-left: 125px;
+  min-height: 80px;
+  font-size: 12px;
+  line-height: 140%;
 }
 
 /* footer */

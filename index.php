@@ -32,27 +32,27 @@
                     <div class="mainbox carousel">
                         <ul class="bxslider">
                             <li>
-                                <img src="images/slide-1.jpg" />
+                                <img src="http://www.marshall-trailers.co.uk/uploads/homepage/050514-1244-8399.jpg" />
                                 <div class="copy">
                                     <h2>The Marshall BC Range</h2>
                                     <p>The best bale trailers on the market for real dawg, I ain't playing!</p>
-                                    <a href="#" class="big-link blue-link">More</a>
+                                    <a href="product.php" class="big-link blue-link">More</a>
                                 </div>
                             </li>
                             <li>
-                                <img src="images/slide-3.jpg" />
+                                <img src="http://www.marshall-trailers.co.uk/uploads/homepage/200814-0912-8170.jpg" />
                                 <div class="copy">
                                     <h2>Marshall VES Rear-discharge Spreader Range</h2>
                                     <p>No Floor Chains = No Trouble...</p>
-                                    <a href="#" class="big-link blue-link">More</a>
+                                    <a href="product.php" class="big-link blue-link">More</a>
                                 </div>
                             </li>
                             <li>
-                                <img src="images/slide-2.jpg" />
+                                <img src="http://www.marshall-trailers.co.uk/uploads/homepage/270614-1609-1591.jpg" />
                                 <div class="copy">
                                     <h2>New 2014 Silage Sides</h2>
                                     <p>Updated, improved and ready for the silage season...</p>
-                                    <a href="#" class="big-link blue-link">More</a>
+                                    <a href="product.php" class="big-link blue-link">More</a>
                                 </div>
                             </li>
                         </ul>

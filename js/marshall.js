@@ -677,6 +677,35 @@
         }
     };
 
+    marshall.tabs = {
+
+        $html: {
+            controls: $('.tabs'),
+            content: $('.tabs-content')
+        },
+
+        init: function(){
+            var self = this;
+
+            $('a', self.$html.controls).each(function(i, obj){
+                $(obj).on('click', function(evt){
+
+                    evt.preventDefault();
+                    $('a', self.$html.controls).removeClass('active');
+                    $(this).addClass('active').siblings('a');
+
+                    var index = $('a', self.$html.controls).index($(this));
+                    $('.copy-block', self.$html.content).addClass('displayNone');
+                    $('.copy-block', self.$html.content).eq(index).removeClass('displayNone');
+                });
+            });
+
+        },
+        resize: function(){
+
+        }
+    };
+
     marshall.resize = function(){
 
         // All resize adjustments
@@ -685,6 +714,7 @@
         marshall.homepage.resize();
         marshall.configuration.resize();
         marshall.mobile.resize();
+        marshall.tabs.resize();
     };
 
 	marshall.init = function(){
@@ -695,6 +725,12 @@
 		marshall.mobile.init();
 		marshall.carousel.init();
         marshall.configuration.init();
+        marshall.tabs.init();
+
+
+
+
+
 
         // Resize triggers
 		$(window).on('resize',function(){
