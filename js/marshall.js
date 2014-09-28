@@ -687,18 +687,30 @@
         init: function(){
             var self = this;
 
-            $('a', self.$html.controls).each(function(i, obj){
+            $('li', self.$html.controls).each(function(i, obj){
                 $(obj).on('click', function(evt){
 
                     evt.preventDefault();
-                    $('a', self.$html.controls).removeClass('active');
-                    $(this).addClass('active').siblings('a');
+                    $('li', self.$html.controls).removeClass('active');
+                    $(this).addClass('active');
 
-                    var index = $('a', self.$html.controls).index($(this));
-                    $('.copy-block', self.$html.content).addClass('displayNone');
-                    $('.copy-block', self.$html.content).eq(index).removeClass('displayNone');
+                    var $clonedCopy = $('.copy-block',$(this)).clone();
+                    self.$html.content.html($clonedCopy);
+
+                    if($(window).width() < 679){
+                        $('html, body').animate({
+                            scrollTop: $(obj).offset().top - 30
+                        }, 500);
+                    }
+
                 });
             });
+
+            var $firstLi = $('li', self.$html.controls).eq(0),
+                $clonedCopy = $('.copy-block', $firstLi).clone();
+
+            $firstLi.addClass('active');
+            self.$html.content.html($clonedCopy);
 
         },
         resize: function(){

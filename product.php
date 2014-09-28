@@ -77,48 +77,55 @@
             <div class="main">
                 <div class="container">
 
-                    <div class="mainbox">
+                    <div class="mainbox padded">
 
                         <ul class="tabs">
-                            <li class="first-child"><a href="#" class="active">Features</a></li>
-                            <li><a href="#">Overview</a></li>
-                            <li><a href="#">Machine &amp; Prices</a></li>
-                            <li><a href="#">Owners Info</a></li>
-                            <li class="last-child"><a href="#">FAQ's</a></li>
+                            <li class="first-child active">
+                                <a href="#">Features</a>
+                                <div class="copy-block">
+                                    <ul class="feature-list">
+                                        <li>
+                                            <div class="thumb"><img src="images/features-imagery.jpg" alt=""></div>
+                                            <div class="detail"><strong>Body Design</strong> &ndash; the floors of the entire range are 5mm thick and the sides are either 3.5mm or 4mm thick, ensuring an extended service life. Every model also benefits from a fully welded construction with a substantial number of floor and side bearers to improve overall rigidity and strength.</div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb"><img src="images/features-imagery-1.jpg" alt=""></div>
+                                            <div class="detail"><strong>Chassis Design</strong> &ndash; the QM/11 model upwards uses a unique chassis design that is formed from heavy duty channels with 8mm or 10mm reinforcing plates stitch welded to the channels. This set-up provides unrivalled strength, while also allowing the chassis to flex when required; if the chassis is too rigid then it can become prone to cracking and premature failure.</div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb"><img src="images/features-imagery-2.jpg" alt=""></div>
+                                            <div class="detail"><strong>Tipping Mechanism</strong> &ndash; the tipping points on our QM/6 and QM/8 models use a toughened 24mm bolt and on our QM/11 model upwards, a fully bushed 50mm solid steel bar is used to eliminate any potential weak link in the design. Similarly our QM/11 model upwards also benefits from twin industrial chrome rams, which are comparable to the rams used on construction excavators; this prevents any harmful corrosion and provides years of trouble free operation.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Overview</a>
+                                <div class="copy-block">
+                                    <p>2 Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat elei</p>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Machine &amp; Prices</a>
+                                <div class="copy-block">
+                                    <p>3 bi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                </div></li>
+                            <li>
+                                <a href="#">Owners Info</a>
+                                <div class="copy-block">
+                                    <p>4  44444get, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat elei</p>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                </div></li>
+                            <li class="last-child">
+                                <a href="#">FAQ's</a>
+                                <div class="copy-block">
+                                    <p>5. abitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                </div>
+                            </li>
                         </ul>
 
-                        <div class="tabs-content">
-                            <div class="copy-block">
-                                <ul class="feature-list">
-                                    <li>
-                                        <div class="thumb"><img src="images/features-imagery.jpg" alt=""></div>
-                                        <div class="detail"><strong>Body Design</strong> – the floors of the entire range are 5mm thick and the sides are either 3.5mm or 4mm thick, ensuring an extended service life. Every model also benefits from a fully welded construction with a substantial number of floor and side bearers to improve overall rigidity and strength.</div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb"><img src="images/features-imagery-1.jpg" alt=""></div>
-                                        <div class="detail"><strong>Chassis Design</strong> – the QM/11 model upwards uses a unique chassis design that is formed from heavy duty channels with 8mm or 10mm reinforcing plates stitch welded to the channels. This set-up provides unrivalled strength, while also allowing the chassis to flex when required; if the chassis is too rigid then it can become prone to cracking and premature failure.</div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb"><img src="images/features-imagery-2.jpg" alt=""></div>
-                                        <div class="detail"><strong>Tipping Mechanism</strong> – the tipping points on our QM/6 and QM/8 models use a toughened 24mm bolt and on our QM/11 model upwards, a fully bushed 50mm solid steel bar is used to eliminate any potential weak link in the design. Similarly our QM/11 model upwards also benefits from twin industrial chrome rams, which are comparable to the rams used on construction excavators; this prevents any harmful corrosion and provides years of trouble free operation.</div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="copy-block displayNone">
-                                <p>2 Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat elei</p>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                            </div>
-                            <div class="copy-block displayNone">
-                                <p>3 bi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                            </div>
-                            <div class="copy-block displayNone">
-                                <p>4  44444get, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat elei</p>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                            </div>
-                            <div class="copy-block displayNone">
-                                <p>5. abitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                            </div>
-                        </div>
+                        <div class="tabs-content"></div>
 
                     </div>
 
@@ -128,22 +135,23 @@
 
             <div class="sidebar">
 
-                <div class="sidebox news">
-                    <h3>Recent news</h3>
+                <div class="sidebox gallery">
+                    <h3>Product gallery</h3>
                     <ul>
-                        <li>
-                            <h4><a href="/news/qm14-grain-trailer-at-newholland-demo-day" title="Click here to read more...">QM/14 Grain Trailer At Newholland Demo Day</a></h4>
-                            <p>One of our QM/14 grain trailers was on show at... <a href="#" class="read-more">read&nbsp;more</a></p>
-                        </li>
-                        <li class="even">
-                            <h4><a href="/news/deliveries" title="Click here to read more...">Deliveries</a></h4>
-                            <p>Another few loads of machinery on their way to customers... <a href="#" class="read-more">read&nbsp;more</a></p>
-                        </li>
-                        <li>
-                            <h4><a href="/news/bespoke-livestock-container-and-bale-trailer" title="Click here to read more...">Bespoke Livestock Container and Bale Trailer</a></h4>
-                            <p>Marshalls recently finished another bespoke build, this... <a href="#" class="read-more">read&nbsp;more</a></p>
-                        </li>
+                        <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1214-4660.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1214-4660.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
+                        <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1211-5411.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1211-5411.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
+                        <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1212-7810.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1212-7810.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
+                        <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1213-4494.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1213-4494.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
+                        <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1215-9277.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1215-9277.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
+                        <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1215-1067.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1215-1067.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
+                        <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/140312-1216-3377.jpg" title="The QMD/6 6 ton dump trailer from Marshall Trailers." rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/140312-1216-3377.jpg" alt="The QMD/6 6 ton dump trailer from Marshall Trailers."></a></li>
+                        <li><a href="http://www.marshall-trailers.co.uk/uploads/products/images/171211-2130-7211.jpg" title="Marshall QMD/6 dump trailer with floatation tyres." rel="gallery"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/171211-2130-7211.jpg" alt="Marshall QMD/6 dump trailer with floatation tyres."></a></li>
                     </ul>
+                </div>
+
+                <div class="sidebox video">
+                    <iframe src="http://www.youtube.com/embed/A1P2FTMM6PI?rel=0&amp;wmode=transparent&amp;html5=1"
+                            frameborder="0" width="100%" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                 </div>
 
             </div>

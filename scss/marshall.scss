@@ -6,6 +6,13 @@
     transition: all 0.2s;
 }
 
+@mixin transition-background($speed: 0.2s){
+    -webkit-transition: background $speed;
+    -moz-transition: background $speed;
+    -o-transition: background $speed;
+    transition: background $speed;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -15,6 +22,9 @@ body {
     background: url("../images/top-gradient.png") left top repeat-x #ececec;
     font-size: small;
 }
+
+// Variables
+$darkblue: #001e5a;
 
 a {
 
@@ -538,20 +548,18 @@ h1 a {
     /*-webkit-box-shadow: 0 8px 6px -6px #ccc;*/
     /*-moz-box-shadow: 0 8px 6px -6px #ccc;*/
     /*box-shadow: 0 8px 6px -6px #ccc;*/
+
+    &:after {
+    }
+
+    h2 {
+        font-size: 1.3em;
+        line-height: 110%;
+        padding-bottom: 5px;
+        text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+    }
 }
 
-.mainbox:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.mainbox h2 {
-    font-size: 1.3em;
-    line-height: 110%;
-    padding-bottom: 5px;
-    text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
-}
 
 
 
@@ -567,6 +575,12 @@ h1 a {
 .sidebox  {
     margin-bottom: 20px;
     background-color: #fff;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .sidebox h3 {
@@ -580,7 +594,7 @@ h1 a {
     display: block;
 }
 
-.sidebox img {
+.sidebox > img {
     width: 100%;
 }
 
@@ -1659,7 +1673,7 @@ h1 a {
 
 .minibox h3 {
     color: #fff;
-    background-color: #001e5a;
+    background-color: $darkblue;
     margin: 0;
     padding: 7px 10px;
     font-size: 18px;
@@ -1800,7 +1814,6 @@ h1 a {
                 display: block;
                 float: left;
                 padding: 10px 15px;
-                background: #fff;
                 text-decoration: none;
                 color: #000;
                 border: 1px solid #ccc;
@@ -1810,23 +1823,23 @@ h1 a {
                 margin-top: 8px;
                 font-size: 12px;
                 background-color: #fff;
-                @include transitions();
+                @include transition-background(0.2s);
 
                 &:hover {
                     background-color: #f7f7f7;
-                    @include transitions();
+                    @include transition-background(0.2s);
                 }
+            }
 
-                &.active {
+            &.active {
+                a {
                     background-color: #fff;
                     position: relative;
                     bottom: 0;
                     padding: 14px 18px;
-                    background: #fff;
                     color: #000;
                     margin-top: 0;
                     cursor: default;
-                    @include transitions();
 
                     &:hover {
                         background-color: #fff;
@@ -1835,57 +1848,76 @@ h1 a {
             }
         }
 
-    }
+        .copy-block {
+            display: none;
+        }
 
-    .tabs-content {
+    }
+    .copy-block {
         background-color: #fff;
         padding: 15px;
-        clear: left;
+        min-height: 290px;
+        box-sizing: content-box;
         border: 1px solid #ccc;
         border-top: none;
 
-        .copy-block {
-            min-height: 290px;
+        .feature-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
 
-            .feature-list {
-                margin: 0;
-                padding: 0;
-                list-style: none;
+            li {
+                position: relative;
+                padding-bottom: 10px;
 
-                li {
-                    position: relative;
-                    padding-bottom: 10px;
+                &:after {
+                    content: "";
+                    clear: both;
+                    display: block;
+                }
+                .thumb {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
 
-                    &:after {
-                        content: "";
-                        clear: both;
-                        display: block;
-                    }
-                    .thumb {
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-
-                        img {
-                           border: 1px solid #ccc;
-                            margin-bottom: 10px;
-                        }
-                    }
-                    .detail {
-                        margin-left: 125px;
-                        min-height: 80px;
-
-                        font-size: 12px;
-                        line-height: 140%;
-
+                    img {
+                        border: 1px solid #ccc;
+                        margin-bottom: 10px;
                     }
                 }
+                .detail {
+                    margin-left: 115px;
+                    min-height: 80px;
 
+                    font-size: 12px;
+                    line-height: 140%;
+
+                }
+            }
+
+        }
+    }
+
+    .tabs-content {
+        clear: left;
+    }
+}
+
+.sidebox {
+    &.gallery {
+        ul {
+            margin: 0;
+            padding: 0 0 0 2px;
+            list-style: none;
+            float: left;
+
+            li {
+                float: left;
+                padding: 0 2px 4px 2px;
             }
         }
     }
 }
-
 
 
 
@@ -2274,13 +2306,99 @@ h1 a {
         height: auto;
     }
 
-  .news-page-navigation.bottom {
-    ul {
-        display: block;
+    .news-page-navigation.bottom {
+        ul {
+            display: block;
+        }
     }
-  }
 
 
+
+    .container {
+        &.product {
+
+            .product-image {
+                margin-right: 0;
+                width: 100%;
+                float: none;
+
+                .container {
+                    margin-right: 0 !important;
+
+                    img {
+                        border-top: none;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .product-details {
+                width: inherit;
+                float: none;
+                font-size: 12px;
+                line-height: 130%;
+
+                h3 {
+                    color: #fff000;
+                    background: #001748;
+                    padding: 8px 10px;
+                    font-size: 15px;
+                }
+
+                ul {
+                    margin: 12px;
+
+                    li {
+                        padding: 5px 8px;
+                        background-color: #ececec;
+                        margin-bottom: 3px;
+                    }
+                }
+
+                table {
+                    margin: 0;
+                    font-size: 12px;
+                    width: 100%;
+                    text-align: right;
+
+                    td, th {
+                        text-align: right;
+                        vertical-align: top;
+                        padding: 0 15px 5px 10px;
+                    }
+
+                }
+
+                .button {
+                    text-align: right;
+                    padding: 10px;
+
+                    &:after {
+                        content: "";
+                        clear: both;
+                        display: block;
+                    }
+
+                    a {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .sidebox {
+        &.gallery {
+            ul {
+                padding: 8px 0 0 8px;
+
+                li {
+                    padding: 0 8px 8px 0;
+                }
+            }
+        }
+    }
 }
 
 
@@ -2327,10 +2445,10 @@ h1 a {
         width: 50%;
     }
 
-  .sidebox-3 .sidebox.news,
-  .sidebox-2 .sidebox.news {
-    width: 100%;
-  }
+    .sidebox-3 .sidebox.news,
+    .sidebox-2 .sidebox.news {
+        width: 100%;
+    }
 
     .main-heading {
         padding: 8px 12px;
@@ -2425,10 +2543,84 @@ h1 a {
         float: none;
     }
 
+    .mainbox {
+        &.padded {
+            margin-top: 20px;
+        }
+    }
 
+
+    /* product page */
+    .container {
+
+        .tabs {
+            float: none;
+            width: 100%;
+            background: none;
+
+            li {
+                float: none;
+                padding: 0;
+
+                a {
+                    float: none;
+                    padding: 10px 15px;
+                    text-decoration: none;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    position: relative;
+                    bottom: 0;
+                    margin-top: 0;
+                    font-size: 12px;
+                    background-color: #dedede;
+                }
+
+                &.first-child {
+                    a {
+
+                        &:hover {
+
+                        }
+                    }
+                }
+
+                &.active {
+                    a {
+                        padding: 8px 10px;
+                        color: #fff;
+                        font-weight:  bold;
+                        background-color: $darkblue;
+                        border: none;
+                        font-size: 15px;
+
+                        &:hover {
+                            color: #fff;
+                            font-weight:  bold;
+                            background-color: $darkblue;
+                        }
+                    }
+                    .copy-block {
+                        display: block;
+                    }
+                }
+            }
+
+            .copy-block {
+                display: none;
+            }
+        }
+
+        .copy-block {
+            padding: 15px;
+            border: none;
+
+        }
+
+        .tabs-content {
+            display: none;
+        }
+    }
 }
-
-
 
 
 /* mobile portrait */
