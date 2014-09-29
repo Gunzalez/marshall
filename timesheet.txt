@@ -45,12 +45,11 @@ Product range page = 1.5hr
 Spare parts page = 8hrs
 Peripherals (social, breadcrumbs, other bits found after testing) = 2hrs
 
-Guestimation - plus 25 hrs
+Guesstimation - plus 25 hrs
 ===========================
 
 
 Makes a total of 67 hrs (42 + 25)
-
 
 
 TODO:
@@ -60,6 +59,9 @@ Breadcrumb, site wide!
 Social media nav in side bar
 What's this sub nav on Bespoke page?
 All buttons on right in mobile
+
+See broken configure button - DONE
+See broken sidebox image, use class - DONE
 
 
 WORK

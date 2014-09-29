@@ -477,6 +477,11 @@ h1 a {
   /*-moz-box-shadow: 0 8px 6px -6px #ccc;*/
   /*box-shadow: 0 8px 6px -6px #ccc;*/
 }
+.mainbox:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .mainbox h2 {
   font-size: 1.3em;
   line-height: 110%;
@@ -492,67 +497,55 @@ h1 a {
   float: left;
   margin-left: 20px;
 }
-
-.sidebox {
+.sidebar .sidebox {
   margin-bottom: 20px;
   background-color: #fff;
 }
-.sidebox:after {
+.sidebar .sidebox:after {
   content: "";
   display: table;
   clear: both;
 }
-
-.sidebox h3 {
+.sidebar .sidebox h3 {
   color: #fff;
   background: #001748;
   padding: 8px 10px;
   font-size: 15px;
 }
-
-.sidebox a {
+.sidebar .sidebox a {
   display: block;
 }
-
-.sidebox > img {
+.sidebar .sidebox .responsive {
   width: 100%;
 }
-
-.sidebox.news ul {
+.sidebar .sidebox.news ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-.sidebox.news ul li {
+.sidebar .sidebox.news ul li {
   padding: 8px 12px;
   background-color: #fff;
 }
-
-.sidebox.news ul li h4 {
+.sidebar .sidebox.news ul li h4 {
   font-size: 12px;
   line-height: 17px;
 }
-
-.sidebox.news ul li a {
+.sidebar .sidebox.news ul li a {
   color: #217cc9;
   display: inline;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
 }
-
-.sidebox.news ul li a:hover {
+.sidebar .sidebox.news ul li a:hover {
   text-decoration: none;
 }
-
-.sidebox.news ul li.even {
+.sidebar .sidebox.news ul li.even {
   background-color: #dedede;
 }
-
-.sidebox.video {
+.sidebar .sidebox.video {
   background-color: #000;
 }
-
-.sidebox.video iframe {
+.sidebar .sidebox.video iframe {
   display: block;
 }
 
@@ -616,27 +609,23 @@ h1 a {
   background-color: #fff;
   position: relative;
 }
-
-.carousel .copy:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.carousel .copy h2 {
-  margin: 0;
-  padding: 0 90px 5px 0;
-  color: #000;
-  font-size: 25px;
-}
-
 .carousel .copy p {
   padding-right: 90px;
   padding-bottom: 5px;
   color: #4b4b4a;
   font-weight: bold;
 }
-
+.carousel .copy h2 {
+  margin: 0;
+  padding: 0 90px 5px 0;
+  color: #000;
+  font-size: 25px;
+}
+.carousel .copy:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .carousel .copy .big-link {
   position: absolute;
   right: 10px;
@@ -759,12 +748,11 @@ h1 a {
   float: none;
   width: inherit;
 }
-
-.mainbox.configure h2,
-.mainbox.configure p {
-  padding-right: 200px;
+.mainbox.configure .copy-block {
+  min-height: inherit;
+  padding: 0 200px 0 0;
+  border: none;
 }
-
 .mainbox.configure .big-link {
   position: absolute;
   right: 15px;
@@ -950,7 +938,7 @@ h1 a {
   font-size: 12px;
 }
 .content-detail img.responsive {
-  margin-bottom: 15px;
+  margin: 10px;
 }
 .content-detail img.float-left {
   float: left;
@@ -1931,30 +1919,33 @@ h1 a {
   }
 
   .sidebar {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 100%;
     float: none;
     margin-left: 0;
   }
-
-  .sidebox-3 .sidebox {
+  .sidebar.sidebox-3 .sidebox {
     float: left;
     width: 33.33%;
   }
-
-  .sidebox-2 .sidebox {
+  .sidebar.sidebox-2 .sidebox {
     float: left;
     width: 50%;
   }
-  .sidebox-2 .sidebox.configure {
-    position: relative;
-  }
-  .sidebox-2 .sidebox.configure .more {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  .sidebar .sidebox.news {
+    clear: left;
+    float: none;
     width: 100%;
-    box-sizing: border-box;
+  }
+  .sidebar .sidebox.news ul li h4 {
+    font-size: 1.1em;
+    line-height: 140%;
+  }
+  .sidebar .sidebox.gallery ul {
+    padding: 8px 0 0 8px;
+  }
+  .sidebar .sidebox.gallery ul li {
+    padding: 0 8px 8px 0;
   }
 
   .news-page-navigation ul li a {
@@ -1965,12 +1956,6 @@ h1 a {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-  }
-
-  .sidebox.news {
-    clear: left;
-    float: none;
-    width: 100%;
   }
 
   .mainbox .minibox {
@@ -1996,13 +1981,16 @@ h1 a {
     width: 50%;
   }
 
-  .sidebox.news ul li h4 {
-    font-size: 1.1em;
-    line-height: 140%;
-  }
-
   .main-heading.hero {
     height: auto;
+  }
+  .main-heading.hero h2 {
+    padding: 8px 15px 5px 15px;
+    font-size: 22px;
+  }
+  .main-heading.hero p {
+    padding: 0 15px 15px 15px;
+    font-size: 16px;
   }
 
   .news-page-navigation.bottom ul {
@@ -2064,13 +2052,6 @@ h1 a {
   .container.product .product-details .button a {
     float: right;
   }
-
-  .sidebox.gallery ul {
-    padding: 8px 0 0 8px;
-  }
-  .sidebox.gallery ul li {
-    padding: 0 8px 8px 0;
-  }
 }
 /* tablet portrait and mobile landscape */
 @media only screen and (max-width: 679px) {
@@ -2105,16 +2086,10 @@ h1 a {
     font-size: 3.5em;
   }
 
-  .sidebox-3 .sidebox {
+  .sidebar.sidebox-3 .sidebox, .sidebar.sidebox-2 .sidebox {
     width: 50%;
   }
-
-  .sidebox-2 .sidebox {
-    width: 50%;
-  }
-
-  .sidebox-3 .sidebox.news,
-  .sidebox-2 .sidebox.news {
+  .sidebar.sidebox-3 .sidebox.news, .sidebar.sidebox-2 .sidebox.news {
     width: 100%;
   }
 
@@ -2123,29 +2098,24 @@ h1 a {
   }
 
   .mainbox.configure {
-    background: url("../images/logo-on-white.png") 12px 12px no-repeat white;
-    min-height: 65px;
-    padding: 10px 20px 20px 100px;
-    position: relative;
+    padding: 10px 15px 15px 100px;
+    text-align: right;
   }
-
-  .mainbox.configure h2,
-  .mainbox.configure p {
-    padding-right: 0;
+  .mainbox.configure .copy-block {
+    min-height: inherit;
+    padding: 0;
+    border: none;
+    text-align: left;
   }
-
-  .mainbox.configure h2 {
+  .mainbox.configure .copy-block h2 {
     line-height: 110%;
     padding-bottom: 5px;
   }
-
-  .mainbox.configure p {
+  .mainbox.configure .copy-block p {
     padding-bottom: 10px;
   }
-
   .mainbox.configure .big-link {
     position: static;
-    float: right;
   }
 
   .mainbox .minibox {
@@ -2213,6 +2183,10 @@ h1 a {
 
   .mainbox.padded {
     margin-top: 20px;
+  }
+
+  .carousel .copy h2 {
+    font-size: 16px;
   }
 
   /* product page */
@@ -2294,16 +2268,17 @@ h1 a {
     font-size: 2.5em;
   }
 
-  .sidebox-3 .sidebox,
-  .sidebox-2 .sidebox {
+  .sidebar.sidebox-3 .sidebox, .sidebar.sidebox-2 .sidebox {
     width: 100%;
     float: none;
   }
-
-  .sidebox-2 .sidebox.configure {
+  .sidebar.sidebox-3 .sidebox.news, .sidebar.sidebox-2 .sidebox.news {
+    width: 100%;
+  }
+  .sidebar .sidebox.configure {
     position: relative;
   }
-  .sidebox-2 .sidebox.configure .more {
+  .sidebar .sidebox.configure .more {
     position: static;
     width: 100%;
     box-sizing: border-box;

@@ -59,20 +59,20 @@
             }
 
             // TODO, does not work on iPad
-            $('.sidebox-2').each(function(){
-                var $sidebox1 = $('.sidebox', $(this)).eq(0),
-                    $sidebox2 = $('.sidebox', $(this)).eq(1);
-
-                if(newWindowWith < marshall.properties.mobileThreshold && newWindowWith > marshall.properties.handHeldThreshold){
-                    var timer = setTimeout(function(){
-                        $sidebox1.height($sidebox2.height());
-                        clearTimeout(timer);
-                    }, 100);
-                } else {
-                    $sidebox1.removeAttr('style');
-                    $sidebox2.removeAttr('style');
-                }
-            })
+//            $('.sidebox-2').each(function(){
+//                var $sidebox1 = $('.sidebox', $(this)).eq(0),
+//                    $sidebox2 = $('.sidebox', $(this)).eq(1);
+//
+//                if(newWindowWith < marshall.properties.mobileThreshold && newWindowWith > marshall.properties.handHeldThreshold){
+//                    var timer = setTimeout(function(){
+//                        $sidebox1.height($sidebox2.height());
+//                        clearTimeout(timer);
+//                    }, 100);
+//                } else {
+//                    $sidebox1.removeAttr('style');
+//                    $sidebox2.removeAttr('style');
+//                }
+//            })
         }
     };
 
@@ -107,7 +107,7 @@
                 $minibox.eq(0).css('margin-right','15px');
                 $minibox.eq(0).css('margin-bottom','15px');
                 $minibox.eq(1).css('margin-bottom','15px');
-                $minibox.eq(2).width('100%');
+                $minibox.eq(2).width('100%').css('margin-bottom','15px');
             }
 
             if(mainWindowWidth <= 399){

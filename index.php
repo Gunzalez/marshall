@@ -58,11 +58,7 @@
                         </ul>
                     </div>
 
-                    <div class="mainbox configure">
-                        <h2>Configure a Marshall Product now</h2>
-                        <p>Use our online configuration tool to design and price your ideal Marshall machine.</p>
-                        <a href="configure-machine.php" class="big-link red-link configure-btn">Price &amp; Configure</a>
-                    </div>
+                    <?php include_once('includes/mainbox-configure.php'); ?>
 
                     <div class="mainbox">
 
@@ -99,38 +95,13 @@
             </div>
             <div class="sidebar sidebox-3">
 
-                <div class="sidebox video">
-                    <iframe src="http://www.youtube.com/embed/A1P2FTMM6PI?rel=0&amp;wmode=transparent&amp;html5=1"
-                            frameborder="0" width="100%" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-                </div>
+                <?php include_once('includes/sidebox-video.php'); ?>
 
-                <div class="sidebox">
-                    <h3>Featured Image:</h3>
-                    <a href="images/lightbox-1.jpg" title="Welsh Show Load 2012s" class="fancybox" rel="gallery"><img src="images/thumb-lightbox-1.jpg" /></a>
-                </div>
+                <?php include_once('includes/sidebox-featured-image.php'); ?>
 
-                <div class="sidebox">
-                    <h3>Bespoke Gallery:</h3>
-                    <a href="images/lightbox-2.jpg" title="Marshall BC/27 Bale Trailer, Newholland Blue, 420x180 10stud Axles" class="fancybox" rel="gallery"><img src="images/thumb-lightbox-2.jpg" /></a>
-                </div>
+                <?php include_once('includes/sidebox-gallery-image.php'); ?>
 
-                <div class="sidebox news">
-                    <h3>Recent news:</h3>
-                    <ul>
-                        <li>
-                            <h4><a href="/news/qm14-grain-trailer-at-newholland-demo-day" title="Click here to read more...">QM/14 Grain Trailer At Newholland Demo Day</a></h4>
-                            <p>One of our QM/14 grain trailers was on show at... <a href="#" class="read-more">read&nbsp;more</a></p>
-                        </li>
-                        <li class="even">
-                            <h4><a href="/news/deliveries" title="Click here to read more...">Deliveries</a></h4>
-                            <p>Another few loads of machinery on their way to customers at this very moment! <a href=#" class="read-more">read&nbsp;more</a></p>
-                        </li>
-                        <li>
-                            <h4><a href="/news/bespoke-livestock-container-and-bale-trailer" title="Click here to read more...">Bespoke Livestock Container and Bale Trailer</a></h4>
-                            <p>Marshalls recently finished another bespoke build, this... <a href="#" class="read-more">read&nbsp;more</a></p>
-                        </li>
-                    </ul>
-                </div>
+                <?php include_once('includes/sidebox-news.php'); ?>
 
             </div>
 

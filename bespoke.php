@@ -38,7 +38,7 @@
                         <div class="content-copy">
                             <p>The Marshall Monocoque Trailers have been extremely popular over the years and with the success of this range, our customers started looking for increased specifications.</p>
                             <h2>Tailored 4 You</h2>
-                            <p><img alt="Marshall Trailers Tailored 4 You logo" class="responsive" src="http://www.marshall-trailers.co.uk/uploads/images/tailored_4_you.jpg"> To give you, the customer, what you want we developed the Tailored 4 You model (T4U). Effectively this is any one of our QM models with four extras added, giving you that little more attention to details. On the configurator page you will see a comprehensive options list, simply select at least 4 options and your QM Model becomes a T4U Model.</p>
+                            <p><img alt="Marshall Trailers Tailored 4 You logo" class="responsive" style="float: right;" src="http://www.marshall-trailers.co.uk/uploads/images/tailored_4_you.jpg"> To give you, the customer, what you want we developed the Tailored 4 You model (T4U). Effectively this is any one of our QM models with four extras added, giving you that little more attention to details. On the configurator page you will see a comprehensive options list, simply select at least 4 options and your QM Model becomes a T4U Model.</p>
                             <p>In addition, there are a few extras that we supply free of charge, when your trailer becomes a T4U,&nbsp;namely; personalised transfers, brass name plates and a few other touches that have been well appreciated. The T4U is effectively designed to meet your exact requirements and we are more than happy to discuss this with you as you place your order.</p>
                             <p>Our experience of over 60 years means that we have the knowledge and experience to assist in your selection. With an extremely reliable and popular model that has been given an enhanced status to match its market place, we are sure this will please you for many years.</p>
 
@@ -121,52 +121,17 @@
                         
                     </div>
 
-
-
-                    <div class="mainbox configure">
-                        <h2>Configure a Marshall Product now</h2>
-                        <p>Use our online configuration tool to design and price your ideal Marshall machine.</p>
-                        <a href="configure-machine.php" class="big-link red-link configure-btn">Price &amp; Configure</a>
-                    </div>
-
-
-
-
+                    <?php include_once('includes/mainbox-configure.php'); ?>
 
                 </div>
             </div>
             <div class="sidebar sidebox-2">
 
-                <div class="sidebox configure">
-                    <h3>Price &amp; Configure:</h3>
-                    <p>Use our online configuration tool to design and price your ideal Marshall machine.</p>
-                    <div class="more">
-                        <a href="#" class="big-link red-link configure-btn small-btn">Price &amp; Configure</a>
-                    </div>
-                </div>
+                <?php include_once('includes/sidebox-configure.php'); ?>
 
-                <div class="sidebox">
-                    <h3>Bespoke gallery</h3>
-                    <a href="images/lightbox-2.jpg" title="Marshall BC/27 Bale Trailer, Newholland Blue, 420x180 10stud Axles" class="fancybox"><img src="images/thumb-lightbox-2.jpg" /></a>
-                </div>
+                <?php include_once('includes/sidebox-gallery-image.php'); ?>
 
-                <div class="sidebox news">
-                    <h3>Recent news</h3>
-                    <ul>
-                        <li>
-                            <h4><a href="/news/qm14-grain-trailer-at-newholland-demo-day" title="Click here to read more...">QM/14 Grain Trailer At Newholland Demo Day</a></h4>
-                            <p>One of our QM/14 grain trailers was on show at... <a href="#" class="read-more">read&nbsp;more</a></p>
-                        </li>
-                        <li class="even">
-                            <h4><a href="/news/deliveries" title="Click here to read more...">Deliveries</a></h4>
-                            <p>Another few loads of machinery on their way to customers... <a href="#" class="read-more">read&nbsp;more</a></p>
-                        </li>
-                        <li>
-                            <h4><a href="/news/bespoke-livestock-container-and-bale-trailer" title="Click here to read more...">Bespoke Livestock Container and Bale Trailer</a></h4>
-                            <p>Marshalls recently finished another bespoke build, this... <a href="#" class="read-more">read&nbsp;more</a></p>
-                        </li>
-                    </ul>
-                </div>
+                <?php include_once('includes/sidebox-news.php'); ?>
 
             </div>
 
