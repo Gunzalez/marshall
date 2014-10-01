@@ -38,11 +38,11 @@ New detail, configure
 
 
 Guesstimates
-Gallery page = 4hrs
-Bespoke specifications = 4hrs
+Gallery page = 4hrs (Done)
+Bespoke specifications = 4hrs (Done)
 Product page = 5hrs (5hrs passed only 60-70% done, bad estimation) + another 2.5hrs to complete
 Product range page = 1.5hr
-Spare parts page = 8hrs
+Spare parts page = 8hrs (Started on this)
 Peripherals (social, breadcrumbs, other bits found after testing) = 2hrs
 
 Guesstimation - plus 25 hrs
@@ -67,6 +67,6 @@ See broken sidebox image, use class - DONE
 WORK
 ===================
 Refactor Header and Footer
-espoke Specifications done
+Bespoke Specifications page done
 
 

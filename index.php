@@ -20,7 +20,7 @@
         <div class="content">
 
 
-            <div class="main">
+            <div class="main homepage">
                 <div class="container">
 
 

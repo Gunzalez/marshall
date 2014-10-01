@@ -419,7 +419,7 @@
 
         setUpStickyBasket: function(){
             var self = this,
-                initialPos = 153,
+                initialPos = 176,
                 stickyPos = 20,
                 $stickyBasket = $('#basket');
 
@@ -718,6 +718,36 @@
         }
     };
 
+
+    marshall.spares = {
+
+        $html: $('ol.filters'),
+
+        init: function(){
+            var self = this;
+
+            $('#filter1', self.$html).on('change', function(){
+                // TODO Ajax
+                //
+                //
+                $('#range', self.$html).removeClass('displayNone');
+            });
+
+            $('#range', self.$html).on('change', function(){
+                // TODO Ajax
+                //
+                //
+                //
+                $('#model', self.$html).removeClass('displayNone');
+            });
+
+        },
+        resize: function(){
+
+        }
+
+    }
+
     marshall.resize = function(){
 
         // All resize adjustments
@@ -738,11 +768,7 @@
 		marshall.carousel.init();
         marshall.configuration.init();
         marshall.tabs.init();
-
-
-
-
-
+        marshall.spares.init();
 
         // Resize triggers
 		$(window).on('resize',function(){
@@ -756,13 +782,18 @@
 		});
 
         // Do initial resize, just incase
-		marshall.resize();
-		$(window).trigger('resize');
+        // marshall.resize();
+        // $(window).trigger('resize');
 	};
 
     // Main init
-	$(window).load(function(){
+	$(document).ready(function(){
 		marshall.init();
 	});
+
+    $(window).load(function(){
+        marshall.resize();
+        $(window).trigger('resize');
+    });
 
 }(jQuery, window));

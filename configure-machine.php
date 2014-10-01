@@ -18,8 +18,15 @@
         <?php include_once('includes/header.php'); ?>
 
 
-        <form id="config_machine" name="config_machine" class="validator" action="/configure_pdf.php" method="post" novalidate="novalidate" autocomplete="off">
+        <form id="config_machine" name="config_machine" action="/configure_pdf.php" method="post" novalidate="novalidate" autocomplete="off">
         <div class="content full-width">
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="index.php" title="Home">Home</a> &gt; </li>
+                <li>Price &amp; Configure a Marshall Machine</li>
+            </ul>
+        </div>
+
             <div class="main">
 
                     <div class="container">

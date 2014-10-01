@@ -119,7 +119,7 @@
                 </ul>
             </li>
             <li><a href="configure-machine.php" title="Configure a Marshall Machine">Price &amp; Configure</a></li>
-            <li><a href="#" title="Spares">Spares</a></li>
+            <li><a href="spares.php" title="Spares">Spares</a></li>
             <li><a href="#" title="Stock Clearance">Stock Clearance</a></li>
             <li><a href="downloads.php" title="Downloads">Downloads</a>
                 <ul>
