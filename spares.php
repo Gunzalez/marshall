@@ -32,7 +32,7 @@
                     <div class="container">
 
                         <div class="main-heading">
-                            <h2>Order spare parts online</h2>
+                            <h2>Order spare parts online.</h2>
                         </div>
 
                         <ol class="filters">
@@ -41,7 +41,8 @@
                                 <form id="search-filter" method="post">
                                     <fieldset id="fields">
                                         <h4>Select part category:</h4>
-                                        <select id="filter1"><option value=""> Select a component </option>
+                                        <select id="filter1">
+                                            <option value="">Select a component </option>
                                             <option value="1"> Axles </option>
                                             <option value="356"> Bearings </option>
                                             <option value="399"> Bolts, Nuts, Fasteners &amp; Washers </option>
@@ -200,48 +201,33 @@
                                     </fieldset>
                                 </form>
                             </li>
-                            <li class="selected">
+                            <li>
                                 <h3>Filter 2:</h3>
-                                <ol id="filter2" class="filterList" data-level="2">
-                                    <li><a href="#" data-cid="182" class="filter">Brake Shoes &amp; Accessories</a></li>
-                                    <li><a href="#" data-cid="4" class="filter">Complete Axles</a></li>
-                                    <li><a href="#" data-cid="2" class="filter">Half Axles</a></li>
-                                    <li><a href="#" data-cid="302" class="filter">Hub Additional Parts</a></li>
-                                    <li><a href="#" data-cid="81" class="filter">Hub Caps</a></li>
-                                    <li><a href="#" data-cid="105" class="filter">Hub Seals</a></li>
-                                    <li><a href="#" data-cid="41" class="filter">Hubs</a></li>
-                                    <li><a href="#" data-cid="350" class="filter">Steering Axle Parts</a></li>
-                                    <li><a href="#" data-cid="140" class="filter">Wheel Studs &amp; Nuts</a></li>
-                                </ol>
+                                <ol id="filter2" class="filterList" data-level="2"></ol>
                             </li>
                             <li>
                                 <h3>Filter 3:</h3>
-                                <ol id="filter3" class="filterList" data-level="3">
-                                </ol>
+                                <ol id="filter3" class="filterList" data-level="3"></ol>
                             </li>
                             <li>
                                 <h3>Filter 4:</h3>
-                                <ol id="filter4" class="filterList" data-level="4">
-                                </ol>
+                                <ol id="filter4" class="filterList" data-level="4"></ol>
                             </li>
                             <li>
                                 <h3>Filter 5:</h3>
-                                <ol id="filter5" class="filterList" data-level="5">
-                                </ol>
+                                <ol id="filter5" class="filterList" data-level="5"></ol>
                             </li>
-                            <li>
+                            <li class="displayNone">
                                 <h3>Filter 6:</h3>
-                                <ol id="filter6" class="filterList" data-level="6">
-                                </ol>
+                                <ol id="filter6" class="filterList" data-level="6"></ol>
                             </li>
-                            <li>
+                            <li class="displayNone">
                                 <h3>Filter 7:</h3>
-                                <ol id="filter7" class="filterList" data-level="7">
-                                </ol>
+                                <ol id="filter7" class="filterList" data-level="7"></ol>
                             </li>
                         </ol>
 
-                        <div class="step" id="results"><h2><strong>Your search has returned:</strong> <span>10 results.</span></h2>
+                        <div class="step displayNone" id="results"><h2><strong>Your search has returned:</strong> <span>10 results.</span></h2>
                         <form>
                         <ol>
 
@@ -250,7 +236,7 @@
                                 <strong>Part no: 050/11-3000</strong>
                                 Description: Hydraulic Brakes Kit (S/2 &amp; MS45)	</h3>
 
-                            <img src="/uploads/spares/blank.gif" alt="Image coming soon...">
+                            <img src="http://www.marshall-trailers.co.uk/uploads/spares/blank.gif" alt="Image coming soon...">
                             <ul class="pricing">
                                 <li>Unit weight: <strong>10.00kg</strong></li>
                                 <li>Cost per item: <strong>£235.00</strong></li>
@@ -408,7 +394,7 @@
                                 <strong>Part no: 050/11-4000</strong>
                                 Description: Air/Oil Brakes c/w Load Sensing Valve (Non ABS)	</h3>
 
-                            <img src="/uploads/spares/blank.gif" alt="Image coming soon...">
+                            <img src="http://www.marshall-trailers.co.uk/uploads/spares/blank.gif" alt="Image coming soon...">
                             <ul class="pricing">
                                 <li>Unit weight: <strong>30.00kg</strong></li>
                                 <li>Cost per item: <strong>£1500.00</strong></li>
@@ -578,7 +564,7 @@
                                 <strong>Part no: 050/11-4050</strong>
                                 Description: Air Brake Kit	</h3>
 
-                            <img src="/uploads/spares/blank.gif" alt="Image coming soon...">
+                            <img src="http://www.marshall-trailers.co.uk/uploads/spares/blank.gif" alt="Image coming soon...">
                             <ul class="pricing">
                                 <li>Unit weight: <strong>30.00kg</strong></li>
                                 <li>Cost per item: <strong>£1250.00</strong></li>
@@ -769,7 +755,7 @@
                                 <strong>Part no: 050/11-4100</strong>
                                 Description: Air Brake Kit Sensor and Bush	</h3>
 
-                            <img src="/uploads/spares/blank.gif" alt="Image coming soon...">
+                            <img src="http://www.marshall-trailers.co.uk/uploads/spares/blank.gif" alt="Image coming soon...">
                             <ul class="pricing">
                                 <li>Unit weight: <strong>8.00kg</strong></li>
                                 <li>Cost per item: <strong>£150.00</strong></li>
@@ -960,7 +946,7 @@
                                 <strong>Part no: 050/11-4390</strong>
                                 Description: Air Brake Kit Mounting Bracket for Load Sense	</h3>
 
-                            <img src="/uploads/spares/blank.gif" alt="Image coming soon...">
+                            <img src="http://www.marshall-trailers.co.uk/uploads/spares/blank.gif" alt="Image coming soon...">
                             <ul class="pricing">
                                 <li>Unit weight: <strong>2.00kg</strong></li>
                                 <li>Cost per item: <strong>£19.50</strong></li>
@@ -1151,8 +1137,8 @@
                                 <strong>Part no: 082/03-1000</strong>
                                 Description: Oil Brakes Load Sensing System	</h3>
 
-                            <a href="/uploads/spares/large/082-03-1000.jpg" title="Oil Brakes Load Sensing System" class="enlargeImage">
-                                <img src="/uploads/spares/082-03-1000.jpg" alt="Oil Brakes Load Sensing System">
+                            <a href="http://www.marshall-trailers.co.uk/uploads/spares/large/082-03-1000.jpg" title="Oil Brakes Load Sensing System" class="enlargeImage">
+                                <img src="http://www.marshall-trailers.co.uk/uploads/spares/082-03-1000.jpg" alt="Oil Brakes Load Sensing System">
                             </a>
                             <ul class="pricing">
                                 <li>Unit weight: <strong>2.00kg</strong></li>
@@ -1318,7 +1304,7 @@
                                 <strong>Part no: 082/03-1010</strong>
                                 Description: Adaptor Valve	</h3>
 
-                            <img src="/uploads/spares/blank.gif" alt="Image coming soon...">
+                            <img src="http://www.marshall-trailers.co.uk/uploads/spares/blank.gif" alt="Image coming soon...">
                             <ul class="pricing">
                                 <li>Unit weight: <strong>2.00kg</strong></li>
                                 <li>Cost per item: <strong>£285.00</strong></li>
@@ -1483,8 +1469,8 @@
                                 <strong>Part no: 082/03-1200</strong>
                                 Description: Drain Valve	</h3>
 
-                            <a href="/uploads/spares/large/082-03-1200.jpg" title="Drain Valve" class="enlargeImage">
-                                <img src="/uploads/spares/082-03-1200.jpg" alt="Drain Valve">
+                            <a href="http://www.marshall-trailers.co.uk/uploads/spares/large/082-03-1200.jpg" title="Drain Valve" class="enlargeImage">
+                                <img src="http://www.marshall-trailers.co.uk/uploads/spares/082-03-1200.jpg" alt="Drain Valve">
                             </a>
                             <ul class="pricing">
                                 <li>Unit weight: <strong>2.00kg</strong></li>
@@ -1651,8 +1637,8 @@
                                 <strong>Part no: 082/03-1205</strong>
                                 Description: Air Shunt Valve	</h3>
 
-                            <a href="/uploads/spares/large/082-03-1205.jpg" title="Air Shunt Valve" class="enlargeImage">
-                                <img src="/uploads/spares/082-03-1205.jpg" alt="Air Shunt Valve">
+                            <a href="http://www.marshall-trailers.co.uk/uploads/spares/large/082-03-1205.jpg" title="Air Shunt Valve" class="enlargeImage">
+                                <img src="http://www.marshall-trailers.co.uk/uploads/spares/082-03-1205.jpg" alt="Air Shunt Valve">
                             </a>
                             <ul class="pricing">
                                 <li>Unit weight: <strong>2.00kg</strong></li>
@@ -1819,8 +1805,8 @@
                                 <strong>Part no: 082/03-1300</strong>
                                 Description: Load Sensing emergency Relay Valve	</h3>
 
-                            <a href="/uploads/spares/large/082-03-1300.jpg" title="Load Sensing emergency Relay Valve" class="enlargeImage">
-                                <img src="/uploads/spares/082-03-1300.jpg" alt="Load Sensing emergency Relay Valve">
+                            <a href="http://www.marshall-trailers.co.uk/uploads/spares/large/082-03-1300.jpg" title="Load Sensing emergency Relay Valve" class="enlargeImage">
+                                <img src="http://www.marshall-trailers.co.uk/uploads/spares/082-03-1300.jpg" alt="Load Sensing emergency Relay Valve">
                             </a>
                             <ul class="pricing">
                                 <li>Unit weight: <strong>5.00kg</strong></li>
@@ -1997,18 +1983,18 @@
         <?php include_once('includes/footer.php'); ?>
         <div id="mobile-nav"></div>
     </div>
-    <div id="basket">
-        <div class="container">
-            <a href="#" class="show-hide">Your Marshall</a>
-            <div class="summary-box">
-                <h3>Summary</h3>
-                <div class="detail">
-                    <strong>&pound;<span class="total">0.00</span> </strong>ex&nbsp;VAT<br>
-                    <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <div id="basket">-->
+<!--        <div class="container">-->
+<!--            <a href="#" class="show-hide">Your Marshall</a>-->
+<!--            <div class="summary-box">-->
+<!--                <h3>Summary</h3>-->
+<!--                <div class="detail">-->
+<!--                    <strong>&pound;<span class="total">0.00</span> </strong>ex&nbsp;VAT<br>-->
+<!--                    <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/plugins/bxslider/jquery.bxslider.js"></script>

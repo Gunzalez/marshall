@@ -722,27 +722,132 @@
     marshall.spares = {
 
         $html: $('ol.filters'),
+        $filterContainer2: $('#filter2', this.$html),
+        $filterContainer3: $('#filter3', this.$html),
+        $filterContainer4: $('#filter4', this.$html),
+        $filterContainer5: $('#filter5', this.$html),
+        $filterContainer6: $('#filter6', this.$html),
+        $filterContainer7: $('#filter7', this.$html),
 
         init: function(){
             var self = this;
 
+            // Select boxes
             $('#filter1', self.$html).on('change', function(){
-                // TODO Ajax
+                // TODO Ajax for results
                 //
                 //
                 $('#range', self.$html).removeClass('displayNone');
             });
 
             $('#range', self.$html).on('change', function(){
-                // TODO Ajax
+                // TODO Ajax for results
                 //
                 //
                 //
                 $('#model', self.$html).removeClass('displayNone');
             });
 
+            $('#model', self.$html).on('change', function(){
+                // TODO Ajax for results
+                //
+                //
+                self.$filterContainer2.load('ajax/filters.php', function(){
+                    self.$filterContainer2.parents('li').addClass('selected');
+                    self.adjustFilterHeights();
+                });
+            });
+
+            // Link delegates
+            $(self.$filterContainer2).on('click', 'a', function(evt){
+                evt.preventDefault();
+                $('a', self.$filterContainer2).removeClass('selected');
+                $(this).addClass('selected');
+                // TODO Ajax for results
+                //
+                //
+                self.$filterContainer3.load('ajax/filters.php', function(){
+                    self.$filterContainer3.parents('li').addClass('selected');
+                    self.adjustFilterHeights();
+                });
+            });
+
+
+            $(self.$filterContainer3).on('click', 'a', function(evt){
+                $('a', self.$filterContainer3).removeClass('selected');
+                $(this).addClass('selected');
+                evt.preventDefault();
+                // TODO Ajax for results
+                //
+                //
+                self.$filterContainer4.load('ajax/filters-tall.php', function(){
+                    self.$filterContainer4.parents('li').addClass('selected');
+                    self.adjustFilterHeights();
+                });
+            });
+
+            $(self.$filterContainer4).on('click', 'a', function(evt){
+                evt.preventDefault();
+                $('a', self.$filterContainer4).removeClass('selected');
+                $(this).addClass('selected');
+                // TODO Ajax for results
+                //
+                //
+                self.$filterContainer5.load('ajax/filters.php', function(){
+                    self.$filterContainer5.parents('li').addClass('selected');
+                    self.adjustFilterHeights();
+                });
+            });
+
+            $(self.$filterContainer5).on('click', 'a', function(evt){
+                evt.preventDefault();
+                $('a', self.$filterContainer5).removeClass('selected');
+                $(this).addClass('selected');
+                // TODO Ajax for results
+                //
+                //
+                self.$filterContainer6.load('ajax/filters.php', function(){
+                    self.$filterContainer6.parents('li').addClass('selected').removeClass('displayNone');
+                    self.adjustFilterHeights();
+                });
+            });
+
+            $(self.$filterContainer6).on('click', 'a', function(evt){
+                evt.preventDefault();
+                $('a', self.$filterContainer7).removeClass('selected');
+                $(this).addClass('selected');
+                // TODO Ajax for results
+                //
+                //
+                self.$filterContainer7.load('ajax/filters.php', function(){
+                    self.$filterContainer7.parents('li').addClass('selected').removeClass('displayNone');
+                });
+            });
         },
+
+        adjustFilterHeights: function(){
+            var self = this,
+                initialHeight = 375,
+                filterListHeights = [];
+
+            $('.filterList', self.$html).each(function(i, obj){
+                filterListHeights.push($(obj).height() + 34); // + 34 header height
+            });
+
+            var tallestLi = Math.max.apply( null, filterListHeights );
+            if(tallestLi > initialHeight){
+                $('.filterList', self.$html).parents('li').height(tallestLi).siblings().height(tallestLi);
+            } else {
+                $('.filterList', self.$html).parents('li').removeAttr('style').siblings().removeAttr('style');
+            }
+
+
+
+        },
+
         resize: function(){
+            var self = this;
+            self.adjustFilterHeights();
 
         }
 

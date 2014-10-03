@@ -540,14 +540,10 @@ h1 a {
 /* main */
 /* ================================================ */
 .main {
-    margin-top: 5px;
+    margin-top: 30px;
     margin-right: -246px;
     width: 100%;
     float: left;
-
-    &.homepage {
-        margin-top: 30px;
-    }
 }
 
 .content.full-width .main {
@@ -952,50 +948,51 @@ h1 a {
 }
 
 
-
-
 .breadcrumb {
     width: 960px;
     margin: 0 auto;
+    margin-bottom: -25px;
 
-  &:after {
-      content: "";
-      display: table;
-      clear: both;
-  }
-
-
-  ul {
-
-    float: right;
-    margin: 0;
-    padding: 10px 0 0 0;
-    list-style: none;
-
-
-
-    li {
-      float: left;
-      color: #88898b;
-      font-weight: bold;
-      font-size: 12px;
-      padding: 0 3px;
-
-      a {
-        text-decoration: none;
-        color: #88898b;
-        font-size: 12px;
-        font-weight: bold;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-      }
-
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
     }
-  }
+
+
+    ul {
+
+        float: right;
+        margin: 0;
+        padding: 9px 0 0 0;
+        list-style: none;
+
+
+
+        li {
+            float: left;
+            color: #88898b;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 0 0 0 3px;
+
+            a {
+                text-decoration: none;
+                color: #88898b;
+                font-size: 12px;
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+            }
+
+        }
+    }
 }
+
+
 
 
 
@@ -1145,6 +1142,7 @@ h1 a {
     padding: 15px;
 }
 
+
 .content-detail {
     p {
         padding-bottom: 10px;
@@ -1190,28 +1188,33 @@ h1 a {
     }
 
 
-  a {
-    color: #4b4b4a;
-    font-size: 12px;
+    a {
+        color: #4b4b4a;
+        font-size: 12px;
 
-    &:hover {
-      text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
     }
-  }
+}
 
-  .bullets {
+
+
+
+.bullets {
     list-style: none;
     margin: 0 0 10px 0;
     padding: 0 0 0 20px;
-      li {
+    li {
         background: url('../images/bullet_point.png') no-repeat 0 0;
         padding-left: 25px;
         margin: 3px 0;
         font-size: 12px;
         padding-bottom: 3px;
-      }
-  }
+    }
 }
+
+
 
 .gallery {
     h2 {
@@ -1372,6 +1375,15 @@ h1 a {
                     &:hover {
                         background: #888;
                         color: #EEE;
+                    }
+
+                    &.selected {
+                        background: #555;
+                        color: #EEE;
+
+                        &:hover {
+                            background: #888;
+                        }
                     }
                 }
             }
@@ -2482,14 +2494,20 @@ h1 a {
         }
     }
 
-    .news-page-navigation ul li a {
-          border: 1px solid #ccc;
-          padding: 0 10px;
-          line-height: 28px;
-          text-decoration: none;
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
+    .news-page-navigation {
+        ul {
+            li {
+                a {
+                    border: 1px solid #ccc;
+                    padding: 0 10px;
+                    line-height: 28px;
+                    text-decoration: none;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                }
+            }
+        }
     }
 
     .mainbox .minibox {
@@ -2620,6 +2638,10 @@ h1 a {
 
     .content {
         padding: 0;
+
+        .filters {
+            margin: 0;
+        }
     }
 
     .main {

@@ -19,12 +19,22 @@
 
 
         <div class="content full-width">
+
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="index.php" title="Home">Home</a> &gt; </li>
+                    <li><a href="#" title="Flat / Bale Trailers">Flat / Bale Trailers</a> &gt; </li>
+                    <li>BC/21</li>
+                </ul>
+            </div>
+
+
             <div class="main">
 
                 <div class="container product">
 
                     <div class="main-heading">
-                        <h2>Rear Discharge Muck Spreaders / VES1500</h2>
+                        <h2>Agricultural Flat / Bale trailers / BC/21</h2>
                     </div>
 
                     <div class="product-image">
@@ -83,6 +93,7 @@
                             <li class="first-child active">
                                 <a href="#">Features</a>
                                 <div class="copy-block">
+
                                     <ul class="feature-list">
                                         <li>
                                             <div class="thumb"><img src="images/features-imagery.jpg" alt=""></div>
@@ -97,13 +108,22 @@
                                             <div class="detail"><strong>Tipping Mechanism</strong> &ndash; the tipping points on our QM/6 and QM/8 models use a toughened 24mm bolt and on our QM/11 model upwards, a fully bushed 50mm solid steel bar is used to eliminate any potential weak link in the design. Similarly our QM/11 model upwards also benefits from twin industrial chrome rams, which are comparable to the rams used on construction excavators; this prevents any harmful corrosion and provides years of trouble free operation.</div>
                                         </li>
                                     </ul>
+
                                 </div>
                             </li>
                             <li>
                                 <a href="#">Overview</a>
                                 <div class="copy-block">
-                                    <p>2 Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat elei</p>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+                                    <ul class="bullets">
+                                        <li>Box section side rails and bearers</li>
+                                        <li>Rolled chanel, square design chassis (eliminates the potential of material fatigue due to flexing)</li>
+                                        <li>Rigid 21" fixed headboard (allows harvest ladders to be held rigidly and increases overall rigidity)</li>
+                                        <li>Choice of harvest ladder designs: straight or angled</li>
+                                        <li>The quality split oscillating rocker tandem with its Devlon bushes only adds to the overall level of stability required for this type of work; spring suspension is also offered as a no cost option</li>
+                                        <li>Genuine Marshall Spares &ndash; a full collection of spares are available for all models in the range</li>
+                                    </ul>
+
                                 </div>
                             </li>
                             <li>

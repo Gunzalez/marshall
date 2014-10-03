@@ -449,13 +449,10 @@ h1 a {
 /* main */
 /* ================================================ */
 .main {
-  margin-top: 5px;
+  margin-top: 30px;
   margin-right: -246px;
   width: 100%;
   float: left;
-}
-.main.homepage {
-  margin-top: 30px;
 }
 
 .content.full-width .main {
@@ -779,6 +776,7 @@ h1 a {
 .breadcrumb {
   width: 960px;
   margin: 0 auto;
+  margin-bottom: -25px;
 }
 .breadcrumb:after {
   content: "";
@@ -788,7 +786,7 @@ h1 a {
 .breadcrumb ul {
   float: right;
   margin: 0;
-  padding: 10px 0 0 0;
+  padding: 9px 0 0 0;
   list-style: none;
 }
 .breadcrumb ul li {
@@ -796,7 +794,7 @@ h1 a {
   color: #88898b;
   font-weight: bold;
   font-size: 12px;
-  padding: 0 3px;
+  padding: 0 0 0 3px;
 }
 .breadcrumb ul li a {
   text-decoration: none;
@@ -982,12 +980,13 @@ h1 a {
 .content-detail a:hover {
   text-decoration: none;
 }
-.content-detail .bullets {
+
+.bullets {
   list-style: none;
   margin: 0 0 10px 0;
   padding: 0 0 0 20px;
 }
-.content-detail .bullets li {
+.bullets li {
   background: url("../images/bullet_point.png") no-repeat 0 0;
   padding-left: 25px;
   margin: 3px 0;
@@ -1129,6 +1128,13 @@ h1 a {
 .filters li .filterList li a:hover {
   background: #888;
   color: #EEE;
+}
+.filters li .filterList li a.selected {
+  background: #555;
+  color: #EEE;
+}
+.filters li .filterList li a.selected:hover {
+  background: #888;
 }
 
 /* Price & Configure styles */
@@ -2180,6 +2186,9 @@ h1 a {
 @media only screen and (max-width: 679px) {
   .content {
     padding: 0;
+  }
+  .content .filters {
+    margin: 0;
   }
 
   .main {
