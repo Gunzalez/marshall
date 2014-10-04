@@ -353,7 +353,7 @@ h1 a {
 
 /* buttons */
 /* ================================================ */
-.desktop .big-link {
+.big-link {
   border: 0;
   padding: 0 19px 0 15px;
   font-size: 13px;
@@ -366,36 +366,38 @@ h1 a {
   display: block;
   clear: both;
 }
-.desktop .big-link.blue-link {
+.big-link.blue-link {
   background: url("../images/btn-more.png") 0 0 no-repeat;
 }
-.desktop .big-link.blue-link:hover {
+.big-link.blue-link:hover {
   color: #fff;
 }
-.desktop .red-link {
+
+.red-link {
   width: 167px;
   height: 43px;
 }
-.desktop .configure-btn {
+
+.configure-btn {
   display: block;
   background: url("../images/priceconfigure-btn.png") left top no-repeat;
   text-indent: -999em;
   width: 129px;
   height: 43px;
 }
-.desktop .configure-btn:hover {
+.configure-btn:hover {
   background: url("../images/priceconfigure-btn.png") left bottom no-repeat;
 }
-.desktop .configure-btn.small-btn {
+.configure-btn.small-btn {
   width: 167px;
   height: 33px;
   background: url("../images/priceconfigure-small-btn.png") left top no-repeat;
 }
-.desktop .configure-btn.small-btn:hover {
+.configure-btn.small-btn:hover {
   background: url("../images/priceconfigure-small-btn.png") left bottom no-repeat;
 }
 
-.mobile .big-link {
+.old-mobile .big-link {
   position: relative;
   display: inline-block;
   color: #fff;
@@ -414,7 +416,7 @@ h1 a {
   clear: both;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
 }
-.mobile .red-link {
+.old-mobile .red-link {
   background: #BB1F1D;
   background-image: -webkit-linear-gradient(top, #bb1f1d, #d20805);
   background-image: -moz-linear-gradient(top, #bb1f1d, #d20805);
@@ -422,7 +424,7 @@ h1 a {
   background-image: -o-linear-gradient(top, #bb1f1d, #d20805);
   background-image: linear-gradient(to bottom, #bb1f1d, #d20805);
 }
-.mobile .red-link:active, .mobile .red-link:hover {
+.old-mobile .red-link:active, .old-mobile .red-link:hover {
   background: #F20E08;
   background-image: -webkit-linear-gradient(top, #f20e08, #f71102);
   background-image: -moz-linear-gradient(top, #f20e08, #f71102);
@@ -430,11 +432,11 @@ h1 a {
   background-image: -o-linear-gradient(top, #f20e08, #f71102);
   background-image: linear-gradient(to bottom, #f20e08, #f71102);
 }
-.mobile .blue-link {
+.old-mobile .blue-link {
   background: #001649;
   color: #fff;
 }
-.mobile .blue-link:active, .mobile .blue-link:hover {
+.old-mobile .blue-link:active, .old-mobile .blue-link:hover {
   background: #0f82ff;
 }
 
@@ -464,8 +466,8 @@ h1 a {
 .container:after,
 .content:after {
   content: "";
-  display: table;
   clear: both;
+  display: block;
 }
 
 .main .container {
@@ -484,8 +486,8 @@ h1 a {
 }
 .mainbox:after {
   content: "";
-  display: table;
   clear: both;
+  display: block;
 }
 .mainbox h2 {
   font-size: 1.3em;
@@ -508,8 +510,8 @@ h1 a {
 }
 .sidebar .sidebox:after {
   content: "";
-  display: table;
   clear: both;
+  display: block;
 }
 .sidebar .sidebox h3 {
   color: #fff;
@@ -628,8 +630,8 @@ h1 a {
 }
 .carousel .copy:after {
   content: "";
-  display: table;
   clear: both;
+  display: block;
 }
 .carousel .copy .big-link {
   position: absolute;
@@ -645,8 +647,8 @@ h1 a {
 /* carousel controls */
 .carousel .bx-controls:after {
   content: "";
-  display: table;
   clear: both;
+  display: block;
 }
 
 .carousel .bx-pager {
@@ -780,8 +782,8 @@ h1 a {
 }
 .breadcrumb:after {
   content: "";
-  display: table;
   clear: both;
+  display: block;
 }
 .breadcrumb ul {
   float: right;
@@ -822,8 +824,8 @@ h1 a {
 
 .news-page-navigation:after {
   content: "";
-  display: table;
   clear: both;
+  display: block;
 }
 
 .news-page-navigation ul {
@@ -963,8 +965,8 @@ h1 a {
 }
 .content-detail .content-copy:after {
   content: "";
-  display: table;
   clear: both;
+  display: block;
 }
 .content-detail .content-copy h2 {
   font-size: 18px;
@@ -1135,6 +1137,168 @@ h1 a {
 }
 .filters li .filterList li a.selected:hover {
   background: #888;
+}
+
+#results {
+  clear: left;
+}
+#results h2 {
+  background: url("../images/heading-pre.png") top left no-repeat #001649;
+  padding-left: 49px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 1.4em;
+}
+#results ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#results ol > li {
+  background-color: #FFF;
+  overflow: hidden;
+  margin: 0 0 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+#results ol > li h3 {
+  background: #DDD;
+  padding: 8px 10px;
+  color: #555;
+  font-size: 16px;
+}
+#results ol > li img {
+  float: left;
+}
+#results ol > li .container {
+  float: left;
+  width: 100%;
+  margin-left: -150px;
+}
+#results ol > li .container .stretch {
+  margin-left: 150px;
+  padding: 0;
+  content: "";
+  clear: both;
+  display: block;
+}
+#results ol > li .container .stretch .pricing {
+  margin: 0;
+  padding: 5px 0 0 0;
+  list-style: none;
+  width: 200px;
+  float: right;
+  font-weight: bold;
+  color: #444;
+  font-size: 13px;
+}
+#results ol > li .container .stretch .pricing li {
+  padding: 5px 15px;
+}
+#results ol > li .container .stretch .pricing li .quantity {
+  width: 50px;
+}
+#results ol > li .container .stretch .pricing li .btn_addBasket {
+  background: url("../images/btn-bgs.png") no-repeat;
+  padding: 9px 13px 9px;
+  display: block;
+  color: #FFF000;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  border: 0;
+  text-align: left;
+  width: 91px;
+  text-decoration: none;
+}
+#results ol > li .container .stretch .info {
+  font-weight: bold;
+  font-size: 13px;
+  color: #444;
+  float: left;
+  width: 100%;
+  margin-right: -200px;
+}
+#results ol > li .container .stretch .info .machines {
+  margin-right: 200px;
+  padding: 10px;
+  position: relative;
+}
+#results ol > li .container .stretch .info .machines > .title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#results ol > li .container .stretch .info .machines > ul {
+  margin: 0 0 20px 75px;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+#results ol > li .container .stretch .info .machines > ul li {
+  float: left;
+  padding: 0 5px 5px 0;
+}
+#results ol > li .container .stretch .info .machines > ul li a {
+  background: #DDD;
+  padding: 3px 10px;
+  margin: 0;
+  display: block;
+  text-decoration: none;
+  color: #555;
+}
+#results ol > li .container .stretch .info .machines > ul li a:hover {
+  background: #BBB;
+  color: #333;
+}
+#results ol > li .container .stretch .info .categories {
+  clear: left;
+}
+#results ol > li .container .stretch .info .related {
+  padding-top: 20px;
+}
+#results ol > li .container .stretch .info .related ul {
+  margin: 0;
+  padding: 2px 0 0 0;
+  list-style: none;
+}
+#results ol > li .container .stretch .info .related ul li {
+  margin-bottom: 3px;
+  position: relative;
+  padding-right: 40px;
+}
+#results ol > li .container .stretch .info .related ul li div {
+  display: inline-block;
+}
+#results ol > li .container .stretch .info .related ul li div.part {
+  background: #DDD;
+  color: #555;
+  padding: 3px 10px;
+}
+#results ol > li .container .stretch .info .related ul li div.part a {
+  text-decoration: none;
+  color: #444;
+}
+#results ol > li .container .stretch .info .related ul li div.part:hover {
+  background: #BBB;
+  color: #333;
+}
+#results ol > li .container .stretch .info .related ul li div.add {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#results ol > li .container .stretch .info .related ul li div.add a {
+  color: #FFF000;
+  background-color: #01205a;
+  margin: 5px;
+  padding: 3px 5px;
+  text-decoration: none;
+}
+#results ol > li .container .stretch .info .related ul li div.add a:hover {
+  color: #fff;
 }
 
 /* Price & Configure styles */
@@ -2180,6 +2344,144 @@ h1 a {
   }
   .container.product .product-details .button a {
     float: right;
+  }
+
+  /* spares results */
+  #results ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #results ol > li {
+    background-color: #FFF;
+    overflow: hidden;
+    margin: 0 0 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  #results ol > li h3 {
+    background: #DDD;
+    padding: 8px 10px;
+    color: #555;
+    font-size: 16px;
+  }
+  #results ol > li img {
+    float: left;
+  }
+  #results ol > li .container {
+    float: left;
+    width: 100%;
+    margin-left: -150px;
+  }
+  #results ol > li .container .stretch {
+    margin-left: 150px;
+    padding: 0;
+    content: "";
+    clear: both;
+    display: block;
+  }
+  #results ol > li .container .stretch .pricing {
+    margin: 0;
+    padding: 5px 0 0 0;
+    list-style: none;
+    width: inherit;
+    float: none;
+    font-weight: bold;
+    color: #444;
+    font-size: 13px;
+  }
+  #results ol > li .container .stretch .pricing li {
+    padding: 5px 15px;
+  }
+  #results ol > li .container .stretch .pricing li .quantity {
+    width: 90px;
+  }
+  #results ol > li .container .stretch .info {
+    font-weight: bold;
+    font-size: 13px;
+    color: #444;
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  #results ol > li .container .stretch .info .machines {
+    margin-right: 0;
+    padding: 10px;
+    position: relative;
+  }
+  #results ol > li .container .stretch .info .machines > .title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  #results ol > li .container .stretch .info .machines > ul {
+    margin: 0 0 20px 75px;
+    padding: 0;
+    list-style: none;
+    float: left;
+  }
+  #results ol > li .container .stretch .info .machines > ul li {
+    float: left;
+    padding: 0 5px 5px 0;
+  }
+  #results ol > li .container .stretch .info .machines > ul li a {
+    background: #DDD;
+    padding: 3px 10px;
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    color: #555;
+  }
+  #results ol > li .container .stretch .info .machines > ul li a:hover {
+    background: #BBB;
+    color: #333;
+  }
+  #results ol > li .container .stretch .info .categories {
+    clear: left;
+  }
+  #results ol > li .container .stretch .info .related {
+    padding-top: 20px;
+  }
+  #results ol > li .container .stretch .info .related ul {
+    margin: 0;
+    padding: 2px 0 0 0;
+    list-style: none;
+  }
+  #results ol > li .container .stretch .info .related ul li {
+    margin-bottom: 3px;
+    position: relative;
+    padding-right: 40px;
+  }
+  #results ol > li .container .stretch .info .related ul li div {
+    display: inline-block;
+  }
+  #results ol > li .container .stretch .info .related ul li div.part {
+    background: #DDD;
+    color: #555;
+    padding: 3px 10px;
+  }
+  #results ol > li .container .stretch .info .related ul li div.part a {
+    text-decoration: none;
+    color: #444;
+  }
+  #results ol > li .container .stretch .info .related ul li div.part:hover {
+    background: #BBB;
+    color: #333;
+  }
+  #results ol > li .container .stretch .info .related ul li div.add {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #results ol > li .container .stretch .info .related ul li div.add a {
+    color: #FFF000;
+    background-color: #01205a;
+    margin: 5px;
+    padding: 3px 5px;
+    text-decoration: none;
+  }
+  #results ol > li .container .stretch .info .related ul li div.add a:hover {
+    color: #fff;
   }
 }
 /* tablet portrait and mobile landscape */

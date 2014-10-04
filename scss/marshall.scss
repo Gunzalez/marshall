@@ -13,6 +13,12 @@
     transition: background $speed;
 }
 
+@mixin clearfix {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 // Variables
 $darkblue: #001e5a;
 $darkerblue: #001848;
@@ -225,9 +231,7 @@ h1 a {
 }
 
 .main-nav ul:after {
-    content: "";
-    clear: both;
-    display: block;
+    @include clearfix;
 }
 
 .main-nav ul li {
@@ -420,60 +424,60 @@ h1 a {
 
 /* buttons */
 /* ================================================ */
-.desktop {
-
-    .big-link {
-        border: 0;
-        padding: 0 19px 0 15px;
-        font-size: 13px;
-        line-height: 35px;
-        font-weight: bold;
-        color: #fff000;
-        cursor: pointer;
-        text-align: left;
-        text-decoration: none;
-        display: block;
-        clear: both;
-
-        &.blue-link {
-            background: url('../images/btn-more.png') 0 0 no-repeat;
 
 
-            &:hover {
-                color: #fff;
-            }
-        }
-    }
+.big-link {
+    border: 0;
+    padding: 0 19px 0 15px;
+    font-size: 13px;
+    line-height: 35px;
+    font-weight: bold;
+    color: #fff000;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    clear: both;
 
-    .red-link {
-        width: 167px;
-        height: 43px;
-    }
+    &.blue-link {
+        background: url('../images/btn-more.png') 0 0 no-repeat;
 
-    .configure-btn {
-        display: block;
-        background: url('../images/priceconfigure-btn.png') left top no-repeat;
-        text-indent: -999em;
-        width: 129px;
-        height: 43px;
 
         &:hover {
-            background: url('../images/priceconfigure-btn.png') left bottom no-repeat;
-        }
-
-        &.small-btn {
-            width: 167px;
-            height: 33px;
-            background: url('../images/priceconfigure-small-btn.png') left top no-repeat;
-
-            &:hover {
-                background: url('../images/priceconfigure-small-btn.png') left bottom no-repeat;
-            }
+            color: #fff;
         }
     }
 }
 
-.mobile {
+.red-link {
+    width: 167px;
+    height: 43px;
+}
+
+.configure-btn {
+    display: block;
+    background: url('../images/priceconfigure-btn.png') left top no-repeat;
+    text-indent: -999em;
+    width: 129px;
+    height: 43px;
+
+    &:hover {
+        background: url('../images/priceconfigure-btn.png') left bottom no-repeat;
+    }
+
+    &.small-btn {
+        width: 167px;
+        height: 33px;
+        background: url('../images/priceconfigure-small-btn.png') left top no-repeat;
+
+        &:hover {
+            background: url('../images/priceconfigure-small-btn.png') left bottom no-repeat;
+        }
+    }
+}
+
+
+.old-mobile {
     .big-link {
         position: relative;
         display: inline-block;
@@ -554,9 +558,7 @@ h1 a {
 
 .container:after,
 .content:after {
-    content: "";
-    display: table;
-    clear: both;
+    @include clearfix;
 }
 
 .main .container {
@@ -574,9 +576,7 @@ h1 a {
     /*box-shadow: 0 8px 6px -6px #ccc;*/
 
     &:after {
-        content: "";
-        display: table;
-        clear: both;
+        @include clearfix;
     }
 
     h2 {
@@ -603,9 +603,7 @@ h1 a {
         background-color: #fff;
 
         &:after {
-            content: "";
-            display: table;
-            clear: both;
+            @include clearfix;
         }
 
         h3 {
@@ -754,9 +752,7 @@ h1 a {
         }
 
         &:after {
-            content: "";
-            display: table;
-            clear: both;
+            @include clearfix;
         }
 
         .big-link {
@@ -780,9 +776,7 @@ h1 a {
 
 /* carousel controls */
 .carousel .bx-controls:after {
-    content: "";
-    display: table;
-    clear: both;
+    @include clearfix;
 }
 
 .carousel .bx-pager {
@@ -954,9 +948,7 @@ h1 a {
     margin-bottom: -25px;
 
     &:after {
-        content: "";
-        display: table;
-        clear: both;
+        @include clearfix;
     }
 
 
@@ -1013,9 +1005,7 @@ h1 a {
 }
 
 .news-page-navigation:after {
-    content: "";
-    display: table;
-    clear: both;
+    @include clearfix;
 }
 
 .news-page-navigation ul {
@@ -1172,10 +1162,7 @@ h1 a {
 
     .content-copy {
         &:after {
-            content: "";
-            display: table;
-            clear: both;
-
+            @include clearfix;
         }
 
         h2 {
@@ -1388,11 +1375,197 @@ h1 a {
                 }
             }
         }
-
-
     }
 }
 
+#results {
+    clear: left;
+
+    h2 {
+        background: url("../images/heading-pre.png") top left no-repeat #001649;
+        padding-left: 49px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 1.4em;
+    }
+    ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        > li {
+            background-color: #FFF;
+            overflow: hidden;
+            margin: 0 0 20px;
+            position: relative;
+            padding-bottom: 10px;
+
+            h3 {
+                background: #DDD;
+                padding: 8px 10px;
+                color: #555;
+                font-size: 16px;
+            }
+
+            img {
+                float: left;
+            }
+
+            .container {
+                float: left;
+                width: 100%;
+                margin-left: -150px;
+
+                .stretch {
+                    margin-left: 150px;
+                    padding: 0;
+                    @include clearfix;
+
+                    .pricing {
+                        margin: 0;
+                        padding: 5px 0 0 0;
+                        list-style: none;
+                        width: 200px;
+                        float: right;
+
+                        font-weight: bold;
+                        color: #444;
+                        font-size: 13px;
+
+                        li {
+                            padding: 5px 15px;
+
+                            .quantity {
+                                width: 50px;
+                            }
+
+                            .btn_addBasket {
+                                background: url('../images/btn-bgs.png') no-repeat;
+                                padding: 9px 13px 9px;
+                                display: block;
+                                color: #FFF000;
+                                font-family: Arial;
+                                font-weight: bold;
+                                font-size: 13px;
+                                line-height: 15px;
+                                border: 0;
+                                text-align: left;
+                                width: 91px;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+
+                    .info {
+                        font-weight: bold;
+                        font-size: 13px;
+                        color: #444;
+                        float: left;
+                        width: 100%;
+                        margin-right: -200px;
+
+                        .machines {
+                            margin-right: 200px;
+                            padding: 10px;
+                            position: relative;
+
+                            > .title {
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                            }
+
+                            > ul {
+                                margin: 0 0 20px 75px;
+                                padding: 0;
+                                list-style: none;
+                                float: left;
+
+                                li {
+                                    float: left;
+                                    padding: 0 5px 5px 0;
+
+                                    a {
+                                        background: #DDD;
+                                        padding: 3px 10px;
+                                        margin: 0;
+                                        display: block;
+                                        text-decoration: none;
+                                        color: #555;
+
+                                        &:hover {
+                                            background: #BBB;
+                                            color: #333;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .categories {
+                            clear: left;
+                        }
+
+                        .related {
+                            padding-top: 20px;
+
+                            ul {
+                                margin: 0;
+                                padding: 2px 0 0 0;
+                                list-style: none;
+
+                                li {
+                                    margin-bottom: 3px;
+                                    position: relative;
+                                    padding-right: 40px;
+
+                                    div {
+                                        display: inline-block;
+
+                                        &.part {
+                                            background: #DDD;
+                                            color: #555;
+                                            padding: 3px 10px;
+
+                                            a {
+                                                text-decoration: none;
+                                                color: #444;
+                                            }
+
+                                            &:hover {
+                                                background: #BBB;
+                                                color: #333;
+                                            }
+                                        }
+
+                                        &.add {
+                                            position: absolute;
+                                            right: 0;
+                                            top: 0;
+
+                                            a {
+                                                color: #FFF000;
+                                                background-color: #01205a;
+                                                margin: 5px;
+                                                padding: 3px 5px;
+                                                text-decoration: none;
+
+                                                &:hover {
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -1469,9 +1642,7 @@ h1 a {
 }
 
 #config_machine .configure-content:after {
-    content: "";
-    clear: both;
-    display: block;
+    @include clearfix;
 }
 
 #config_machine .configure-content .img {
@@ -1992,9 +2163,7 @@ h1 a {
                 padding: 10px;
 
                 &:after {
-                    content: "";
-                    clear: both;
-                    display: block;
+                    @include clearfix;
                 }
 
                 a {
@@ -2077,9 +2246,7 @@ h1 a {
                 padding-bottom: 10px;
 
                 &:after {
-                    content: "";
-                    clear: both;
-                    display: block;
+                    @include clearfix;
                 }
                 .thumb {
                     position: absolute;
@@ -2299,9 +2466,7 @@ h1 a {
 }
 
 #basket .container:after {
-    content: "";
-    clear: both;
-    display: block;
+    @include clearfix;
 }
 
 #basket.stick-out {
@@ -2618,13 +2783,180 @@ h1 a {
                     padding: 10px;
 
                     &:after {
-                        content: "";
-                        clear: both;
-                        display: block;
+                        @include clearfix;
                     }
 
                     a {
                         float: right;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* spares results */
+    #results {
+
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            > li {
+                background-color: #FFF;
+                overflow: hidden;
+                margin: 0 0 20px;
+                position: relative;
+                padding-bottom: 10px;
+
+                h3 {
+                    background: #DDD;
+                    padding: 8px 10px;
+                    color: #555;
+                    font-size: 16px;
+                }
+
+                img {
+                    float: left;
+                }
+
+                .container {
+                    float: left;
+                    width: 100%;
+                    margin-left: -150px;
+
+                    .stretch {
+                        margin-left: 150px;
+                        padding: 0;
+                        @include clearfix;
+
+                        .pricing {
+                            margin: 0;
+                            padding: 5px 0 0 0;
+                            list-style: none;
+                            width: inherit;
+                            float: none;
+
+                            font-weight: bold;
+                            color: #444;
+                            font-size: 13px;
+
+                            li {
+                                padding: 5px 15px;
+
+                                .quantity {
+                                    width: 90px;
+                                }
+
+
+                            }
+                        }
+
+                        .info {
+                            font-weight: bold;
+                            font-size: 13px;
+                            color: #444;
+                            float: none;
+                            width: 100%;
+                            margin-right: 0;
+
+                            .machines {
+                                margin-right: 0;
+                                padding: 10px;
+                                position: relative;
+
+                                > .title {
+                                    position: absolute;
+                                    top: 10px;
+                                    left: 10px;
+                                }
+
+                                > ul {
+                                    margin: 0 0 20px 75px;
+                                    padding: 0;
+                                    list-style: none;
+                                    float: left;
+
+                                    li {
+                                        float: left;
+                                        padding: 0 5px 5px 0;
+
+                                        a {
+                                            background: #DDD;
+                                            padding: 3px 10px;
+                                            margin: 0;
+                                            display: block;
+                                            text-decoration: none;
+                                            color: #555;
+
+                                            &:hover {
+                                                background: #BBB;
+                                                color: #333;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .categories {
+                                clear: left;
+                            }
+
+                            .related {
+                                padding-top: 20px;
+
+                                ul {
+                                    margin: 0;
+                                    padding: 2px 0 0 0;
+                                    list-style: none;
+
+                                    li {
+                                        margin-bottom: 3px;
+                                        position: relative;
+                                        padding-right: 40px;
+
+                                        div {
+                                            display: inline-block;
+
+                                            &.part {
+                                                background: #DDD;
+                                                color: #555;
+                                                padding: 3px 10px;
+
+                                                a {
+                                                    text-decoration: none;
+                                                    color: #444;
+                                                }
+
+                                                &:hover {
+                                                    background: #BBB;
+                                                    color: #333;
+                                                }
+                                            }
+
+                                            &.add {
+                                                position: absolute;
+                                                right: 0;
+                                                top: 0;
+
+                                                a {
+                                                    color: #FFF000;
+                                                    background-color: #01205a;
+                                                    margin: 5px;
+                                                    padding: 3px 5px;
+                                                    text-decoration: none;
+
+                                                    &:hover {
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

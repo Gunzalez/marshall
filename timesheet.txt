@@ -42,7 +42,7 @@ Gallery page = 4hrs (Done)
 Bespoke specifications = 4hrs (Done)
 Product page = 5hrs (5hrs passed only 60-70% done, bad estimation) + another 2.5hrs to complete
 Product range page = 1.5hr
-Spare parts page = 8hrs (Started on this)
+Spare parts page = 8hrs (Started on this 2hr), 4th of October another 4hrs
 Peripherals (social, breadcrumbs, other bits found after testing) = 2hrs
 
 Guesstimation - plus 25 hrs
