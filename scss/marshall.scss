@@ -1408,6 +1408,8 @@ h1 a {
                 font-size: 16px;
             }
 
+
+
             img {
                 float: left;
             }
@@ -1474,6 +1476,7 @@ h1 a {
                                 position: absolute;
                                 top: 10px;
                                 left: 10px;
+                                padding-bottom: 10px;
                             }
 
                             > ul {
@@ -1547,9 +1550,9 @@ h1 a {
                                             a {
                                                 color: #FFF000;
                                                 background-color: #01205a;
-                                                margin: 5px;
                                                 padding: 3px 5px;
                                                 text-decoration: none;
+                                                display: inline-block;
 
                                                 &:hover {
                                                     color: #fff;
@@ -2799,163 +2802,31 @@ h1 a {
     #results {
 
         ol {
-            margin: 0;
-            padding: 0;
-            list-style: none;
 
             > li {
-                background-color: #FFF;
-                overflow: hidden;
-                margin: 0 0 20px;
-                position: relative;
-                padding-bottom: 10px;
-
-                h3 {
-                    background: #DDD;
-                    padding: 8px 10px;
-                    color: #555;
-                    font-size: 16px;
-                }
-
-                img {
-                    float: left;
-                }
 
                 .container {
-                    float: left;
-                    width: 100%;
-                    margin-left: -150px;
 
                     .stretch {
-                        margin-left: 150px;
-                        padding: 0;
-                        @include clearfix;
 
                         .pricing {
-                            margin: 0;
-                            padding: 5px 0 0 0;
-                            list-style: none;
                             width: inherit;
                             float: none;
 
-                            font-weight: bold;
-                            color: #444;
-                            font-size: 13px;
-
                             li {
-                                padding: 5px 15px;
-
                                 .quantity {
                                     width: 90px;
                                 }
-
-
                             }
                         }
 
                         .info {
-                            font-weight: bold;
-                            font-size: 13px;
-                            color: #444;
-                            float: none;
-                            width: 100%;
                             margin-right: 0;
 
                             .machines {
                                 margin-right: 0;
-                                padding: 10px;
-                                position: relative;
-
-                                > .title {
-                                    position: absolute;
-                                    top: 10px;
-                                    left: 10px;
-                                }
-
-                                > ul {
-                                    margin: 0 0 20px 75px;
-                                    padding: 0;
-                                    list-style: none;
-                                    float: left;
-
-                                    li {
-                                        float: left;
-                                        padding: 0 5px 5px 0;
-
-                                        a {
-                                            background: #DDD;
-                                            padding: 3px 10px;
-                                            margin: 0;
-                                            display: block;
-                                            text-decoration: none;
-                                            color: #555;
-
-                                            &:hover {
-                                                background: #BBB;
-                                                color: #333;
-                                            }
-                                        }
-                                    }
-                                }
                             }
 
-                            .categories {
-                                clear: left;
-                            }
-
-                            .related {
-                                padding-top: 20px;
-
-                                ul {
-                                    margin: 0;
-                                    padding: 2px 0 0 0;
-                                    list-style: none;
-
-                                    li {
-                                        margin-bottom: 3px;
-                                        position: relative;
-                                        padding-right: 40px;
-
-                                        div {
-                                            display: inline-block;
-
-                                            &.part {
-                                                background: #DDD;
-                                                color: #555;
-                                                padding: 3px 10px;
-
-                                                a {
-                                                    text-decoration: none;
-                                                    color: #444;
-                                                }
-
-                                                &:hover {
-                                                    background: #BBB;
-                                                    color: #333;
-                                                }
-                                            }
-
-                                            &.add {
-                                                position: absolute;
-                                                right: 0;
-                                                top: 0;
-
-                                                a {
-                                                    color: #FFF000;
-                                                    background-color: #01205a;
-                                                    margin: 5px;
-                                                    padding: 3px 5px;
-                                                    text-decoration: none;
-
-                                                    &:hover {
-                                                        color: #fff;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
                         }
                     }
                 }
@@ -3258,6 +3129,62 @@ h1 a {
         }
     }
 
+    /* filers */
+    .filters {
+        float: left;
+        margin: 0 -10px 0 -10px;
+        padding: 0;
+        list-style: none;
+
+        li {
+            width: 100%;
+            margin: 0 0 10px 0;
+            float: none;
+            height: inherit;
+
+            .filterList {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                float: none;
+
+                li {
+                    width: auto;
+                    height: inherit;
+                    background: transparent;
+                    margin: 0;
+                    float: none;
+
+                    a {
+                        text-decoration: none;
+                        padding: 5px 12px;
+                        line-height: 14px;
+                        display: block;
+                        font-weight: bold;
+                        font-size: 13px;
+                        color: #444;
+                        background: #d4d4d4;
+                        border-top: 1px solid #fff;
+
+                        &:hover {
+                            background: #888;
+                            color: #EEE;
+                        }
+
+                        &.selected {
+                            background: #555;
+                            color: #EEE;
+
+                            &:hover {
+                                background: #888;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 
 
@@ -3348,10 +3275,58 @@ h1 a {
         }
     }
 
+    #results {
 
+        ol {
 
+            > li {
 
+                img {
+                    float: none;
+                    width: 100%;
+                }
 
+                .container {
+
+                    float: none;
+                    margin-left: 0;
+
+                    .stretch {
+
+                        margin-left: 0;
+
+                        .pricing {
+                            width: inherit;
+                            float: none;
+
+                            li {
+                                .quantity {
+                                    width: 90px;
+                                }
+                            }
+                        }
+
+                        .info {
+                            margin-right: 0;
+
+                            .machines {
+                                margin-right: 0;
+
+                                .title {
+                                    position: static;
+                                }
+
+                                > ul {
+                                    margin: 0 0 20px 0;
+                                    float: left;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
     #configure-machine select {
