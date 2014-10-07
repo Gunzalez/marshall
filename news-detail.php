@@ -55,7 +55,7 @@
 
                 </div>
             </div>
-            <div class="sidebar">
+            <div class="sidebar sidebox-2">
 
                 <?php include_once('includes/sidebox-configure.php'); ?>
 

@@ -1023,13 +1023,11 @@ h1 a {
     }
 }
 
-
-
-
 .bullets {
     list-style: none;
     margin: 0 0 10px 0;
     padding: 0 0 0 20px;
+
     li {
         background: url('../images/bullet_point.png') no-repeat 0 0;
         padding-left: 25px;
@@ -1038,8 +1036,6 @@ h1 a {
         padding-bottom: 3px;
     }
 }
-
-
 
 .gallery {
     h2 {
@@ -1139,7 +1135,16 @@ h1 a {
                 padding: 3px;
                 border: 0;
                 float: right;
+
+                &.blue-link {
+                    padding: 0 0 0 15px;
+                    width: 100px;
+                    background: url("../images/btn-bgs.png") left bottom no-repeat;
+                    margin: 0;
+                }
             }
+
+
         }
 
         #part_no {
@@ -1226,7 +1231,12 @@ h1 a {
         line-height: 40px;
         color: #fff;
         font-size: 1.4em;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
+
     ol {
         margin: 0;
         padding: 0;
@@ -1236,7 +1246,6 @@ h1 a {
             background-color: #FFF;
             overflow: hidden;
             margin: 0 0 20px;
-            position: relative;
             padding-bottom: 10px;
 
             h3 {
@@ -1246,157 +1255,115 @@ h1 a {
                 font-size: 16px;
             }
 
-            img {
-                float: left;
-            }
-
             .container {
                 float: left;
+                position: relative;
                 width: 100%;
-                margin-left: -150px;
+                min-height: 170px;
 
-                .stretch {
+                .spare-thumbnail {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 150px;
+                }
+
+                .info {
+                    font-weight: bold;
+                    font-size: 13px;
+                    color: #444;
+                    float: left;
                     margin-left: 150px;
-                    padding: 0;
-                    @include clearfix;
+                    margin-right: 200px;
 
-                    .pricing {
-                        margin: 0;
-                        padding: 5px 0 0 0;
-                        list-style: none;
-                        width: 200px;
-                        float: right;
+                    .machines {
+                        padding: 10px;
+                        position: relative;
 
-                        font-weight: bold;
-                        color: #444;
-                        font-size: 13px;
+                        > .title {
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            padding-bottom: 10px;
+                        }
 
-                        li {
-                            padding: 5px 15px;
+                        > ul {
+                            margin: 0 0 20px 75px;
+                            padding: 0;
+                            list-style: none;
+                            float: left;
 
-                            .quantity {
-                                width: 50px;
-                            }
+                            li {
+                                float: left;
+                                padding: 0 5px 5px 0;
 
-                            .btn_addBasket {
-                                background: url('../images/btn-bgs.png') no-repeat;
-                                padding: 9px 13px 9px;
-                                display: block;
-                                color: #FFF000;
-                                font-family: Arial;
-                                font-weight: bold;
-                                font-size: 13px;
-                                line-height: 15px;
-                                border: 0;
-                                text-align: left;
-                                width: 91px;
-                                text-decoration: none;
+                                a {
+                                    background: #DDD;
+                                    padding: 3px 10px;
+                                    margin: 0;
+                                    display: block;
+                                    text-decoration: none;
+                                    color: #555;
 
-                                &:hover {
-                                    color: #fff;
+                                    &:hover {
+                                        background: #BBB;
+                                        color: #333;
+                                    }
                                 }
                             }
                         }
                     }
 
-                    .info {
-                        font-weight: bold;
-                        font-size: 13px;
-                        color: #444;
-                        float: left;
-                        width: 100%;
-                        margin-right: -200px;
+                    .categories {
+                        clear: left;
+                    }
 
-                        .machines {
-                            margin-right: 200px;
-                            padding: 10px;
-                            position: relative;
+                    .related {
+                        padding-top: 20px;
 
-                            > .title {
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                padding-bottom: 10px;
-                            }
+                        ul {
+                            margin: 0;
+                            padding: 2px 0 0 0;
+                            list-style: none;
 
-                            > ul {
-                                margin: 0 0 20px 75px;
-                                padding: 0;
-                                list-style: none;
-                                float: left;
+                            li {
+                                margin-bottom: 3px;
+                                position: relative;
+                                padding-right: 40px;
 
-                                li {
-                                    float: left;
-                                    padding: 0 5px 5px 0;
+                                div {
+                                    display: inline-block;
 
-                                    a {
+                                    &.part {
                                         background: #DDD;
-                                        padding: 3px 10px;
-                                        margin: 0;
-                                        display: block;
-                                        text-decoration: none;
                                         color: #555;
+                                        padding: 3px 10px;
+
+                                        a {
+                                            text-decoration: none;
+                                            color: #444;
+                                        }
 
                                         &:hover {
                                             background: #BBB;
                                             color: #333;
                                         }
                                     }
-                                }
-                            }
-                        }
 
-                        .categories {
-                            clear: left;
-                        }
+                                    &.add {
+                                        position: absolute;
+                                        right: 0;
+                                        top: 0;
 
-                        .related {
-                            padding-top: 20px;
-
-                            ul {
-                                margin: 0;
-                                padding: 2px 0 0 0;
-                                list-style: none;
-
-                                li {
-                                    margin-bottom: 3px;
-                                    position: relative;
-                                    padding-right: 40px;
-
-                                    div {
-                                        display: inline-block;
-
-                                        &.part {
-                                            background: #DDD;
-                                            color: #555;
-                                            padding: 3px 10px;
-
-                                            a {
-                                                text-decoration: none;
-                                                color: #444;
-                                            }
+                                        a {
+                                            color: #FFF000;
+                                            background-color: #01205a;
+                                            padding: 3px 5px;
+                                            text-decoration: none;
+                                            display: inline-block;
 
                                             &:hover {
-                                                background: #BBB;
-                                                color: #333;
-                                            }
-                                        }
-
-                                        &.add {
-                                            position: absolute;
-                                            right: 0;
-                                            top: 0;
-
-                                            a {
-                                                color: #FFF000;
-                                                background-color: #01205a;
-                                                padding: 3px 5px;
-                                                text-decoration: none;
-                                                display: inline-block;
-
-                                                &:hover {
-                                                    color: #fff;
-                                                }
+                                                color: #fff;
                                             }
                                         }
                                     }
@@ -1405,45 +1372,57 @@ h1 a {
                         }
                     }
                 }
+
+                .pricing {
+                    margin: 0;
+                    padding: 5px 0 0 0;
+                    list-style: none;
+                    width: 200px;
+
+                    font-weight: bold;
+                    color: #444;
+                    font-size: 13px;
+
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+
+                    li {
+                        padding: 5px 15px;
+
+                        &.quantity {
+                            select {
+                                width: 50px;
+                            }
+                        }
+
+                        .btn_addBasket {
+                            background: url('../images/btn-bgs.png') no-repeat;
+                            padding: 9px 13px 9px;
+                            display: inline-block;
+                            color: #FFF000;
+                            font-family: Arial;
+                            font-weight: bold;
+                            font-size: 13px;
+                            line-height: 15px;
+                            border: 0;
+                            text-align: left;
+                            width: 91px;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
             }
+
+
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2688,33 +2667,26 @@ h1 a {
 
     /* spares results */
     #results {
-
         ol {
-
             > li {
-
                 .container {
 
-                    .stretch {
+                    .info {
+                        margin-right: 0;
 
-                        .pricing {
-                            width: inherit;
-                            float: none;
-
-                            li {
-                                .quantity {
-                                    width: 90px;
-                                }
-                            }
+                        .machines {
+                            margin-right: 0;
                         }
 
-                        .info {
-                            margin-right: 0;
+                    }
 
-                            .machines {
-                                margin-right: 0;
-                            }
+                    .pricing {
+                        position: static;
+                        margin-left: 150px;
+                        width: inherit;
 
+                        .add-to-basket {
+                            text-align: right;
                         }
                     }
                 }
@@ -2893,6 +2865,15 @@ h1 a {
             float: none;
             width: 100%;
             background: none;
+
+            .bullets {
+                padding: 0;
+
+                li {
+                    padding: 0 0 5px 25px;
+                    float: none;
+                }
+            }
 
             li {
                 float: none;
@@ -3164,10 +3145,6 @@ h1 a {
         }
     }
 
-
-
-
-
     .carousel .copy h2,
     .mainbox h2 {
         font-size: 1.2em;
@@ -3263,53 +3240,64 @@ h1 a {
     }
 
 
+    /* spares results */
     #results {
-
         ol {
-
             > li {
-
-                img {
-                    float: none;
-                    width: 100%;
-                }
-
                 .container {
 
-                    float: none;
-                    margin-left: 0;
+                    .spare-thumbnail {
+                        position: static;
 
-                    .stretch {
+                        img {
+                            width: 100%;
+                        }
+                    }
 
+                    .info {
+                        margin: 0;
+
+                        .machines {
+                            .title {
+                                position: static;
+                                padding-left: 0;
+                            }
+
+                            .related {
+                                h4 {
+                                    text-decoration: underline;
+                                    margin-bottom: 5px;
+                                    padding-bottom: 5px;
+                                }
+                            }
+
+                            > ul {
+                                margin: 0 0 20px 0;
+                            }
+
+                        }
+
+                    }
+
+                    .pricing {
+                        position: static;
                         margin-left: 0;
+                        width: inherit;
 
-                        .pricing {
-                            width: inherit;
-                            float: none;
+                        .add-to-basket {
+                            text-align: right;
+                        }
 
-                            li {
-                                .quantity {
-                                    width: 90px;
+                        li {
+                            &.quantity {
+                                select {
+                                    width: 100%;
+                                    margin-top: 10px;
                                 }
                             }
                         }
 
-                        .info {
-                            margin-right: 0;
 
-                            .machines {
-                                margin-right: 0;
-
-                                .title {
-                                    position: static;
-                                }
-
-                                > ul {
-                                    margin: 0 0 20px 0;
-                                    float: left;
-                                }
-                            }
-                        }
                     }
                 }
             }
