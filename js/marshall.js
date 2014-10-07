@@ -116,8 +116,6 @@
                 $minibox.eq('2').find('.more').css('background-color','#fff');
             }
 
-
-
             // video sidebox
             var sideBoxHeight = $('.sidebox', $sideBar).eq('1').height();
             $videoIframe.height(sideBoxHeight);
@@ -753,8 +751,14 @@
                 //
                 //
                 self.$filterContainer2.load('ajax/filters.php', function(){
-                    self.$filterContainer2.parents('li').addClass('selected');
-                    self.adjustFilterHeights();
+                    var $nextHeader = self.$filterContainer2;
+                    $nextHeader.parents('li').addClass('selected');
+                    if($(window).width() < 400){
+                        $('html, body').animate({
+                            scrollTop: $($nextHeader).offset().top - 30
+                        }, 500);
+                        self.adjustFilterHeights();
+                    }
                 });
             });
 
@@ -767,8 +771,14 @@
                 //
                 //
                 self.$filterContainer3.load('ajax/filters.php', function(){
-                    self.$filterContainer3.parents('li').addClass('selected');
-                    self.adjustFilterHeights();
+                    var $nextHeader = self.$filterContainer3;
+                    $nextHeader.parents('li').addClass('selected');
+                    if($(window).width() < 400){
+                        $('html, body').animate({
+                            scrollTop: $($nextHeader).offset().top - 30
+                        }, 500);
+                        self.adjustFilterHeights();
+                    }
                 });
             });
 
@@ -781,8 +791,14 @@
                 //
                 //
                 self.$filterContainer4.load('ajax/filters-tall.php', function(){
-                    self.$filterContainer4.parents('li').addClass('selected');
-                    self.adjustFilterHeights();
+                    var $nextHeader = self.$filterContainer4;
+                    $nextHeader.parents('li').addClass('selected');
+                    if($(window).width() < 400){
+                        $('html, body').animate({
+                            scrollTop: $($nextHeader).offset().top - 30
+                        }, 500);
+                        self.adjustFilterHeights();
+                    }
                 });
             });
 
@@ -794,8 +810,14 @@
                 //
                 //
                 self.$filterContainer5.load('ajax/filters.php', function(){
-                    self.$filterContainer5.parents('li').addClass('selected');
-                    self.adjustFilterHeights();
+                    var $nextHeader = self.$filterContainer5;
+                    $nextHeader.parents('li').addClass('selected');
+                    if($(window).width() < 400){
+                        $('html, body').animate({
+                            scrollTop: $($nextHeader).offset().top - 30
+                        }, 500);
+                        self.adjustFilterHeights();
+                    }
                 });
             });
 
@@ -807,8 +829,14 @@
                 //
                 //
                 self.$filterContainer6.load('ajax/filters.php', function(){
-                    self.$filterContainer6.parents('li').addClass('selected').removeClass('displayNone');
-                    self.adjustFilterHeights();
+                    var $nextHeader = self.$filterContainer6;
+                    $nextHeader.parents('li').addClass('selected').removeClass('displayNone');
+                    if($(window).width() < 400){
+                        $('html, body').animate({
+                            scrollTop: $($nextHeader).offset().top - 30
+                        }, 500);
+                        self.adjustFilterHeights();
+                    }
                 });
             });
 
@@ -820,7 +848,14 @@
                 //
                 //
                 self.$filterContainer7.load('ajax/filters.php', function(){
-                    self.$filterContainer7.parents('li').addClass('selected').removeClass('displayNone');
+                    var $nextHeader = self.$filterContainer7;
+                    $nextHeader.parents('li').addClass('selected').removeClass('displayNone');
+                    if($(window).width() < 400){
+                        $('html, body').animate({
+                            scrollTop: $('#results').offset().top - 30
+                        }, 500);
+                        self.adjustFilterHeights();
+                    }
                 });
             });
         },

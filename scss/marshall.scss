@@ -2868,6 +2868,7 @@ h1 a {
 
             .bullets {
                 padding: 0;
+                margin: 0;
 
                 li {
                     padding: 0 0 5px 25px;
@@ -2918,6 +2919,7 @@ h1 a {
                     }
                     .copy-block {
                         display: block;
+                        min-height: inherit;
                     }
                 }
             }
@@ -3289,6 +3291,8 @@ h1 a {
                         }
 
                         li {
+                            padding: 5px 10px;
+
                             &.quantity {
                                 select {
                                     width: 100%;
