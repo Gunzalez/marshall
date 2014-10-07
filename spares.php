@@ -196,8 +196,8 @@
                                         <p><label for="part_no">Part no:</label><input id="part_no" type="text" name="part_no"></p>
                                         <p><label for="keyword">Keyword:</label><input id="keyword" type="text" name="keyword"></p>
 
-                                        <p class="print-hide"><input type="submit" id="find" value="Search"></p>
-                                        <p class="print-hide"><input type="button" id="reset" value="Reset" onclick="location.href='/spares'"></p>
+                                        <p class="print-hide"><input type="submit" id="find" value="Search" class="big-link blue-link"></p>
+                                        <p class="print-hide"><input type="button" id="reset" value="Reset" class="big-link blue-link" onclick="location.href='spares.php'"></p>
                                     </fieldset>
                                 </form>
                             </li>
@@ -307,7 +307,7 @@
                                             </div>
                                                 <ul class="pricing">
                                                     <li>Unit weight: <strong>10.00kg</strong></li>
-                                                    <li>Cost per item: <strong>£235.00</strong></li>
+                                                    <li>Cost per item: <strong>&pound;235.00</strong></li>
                                                     <li class="print-hide">
                                                         Quantity required:
                                                         <select class="quantity">
@@ -441,76 +441,20 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <h3><strong>Part no: 052/01-12x45</strong> Description: M12 x 45 Hex Bolt c/w Nyloc Nut BZP (Brake Ram/Timber Flange/MS60, MS75 Flail Chains)</h3>
-                                        <img src="http://www.marshall-trailers.co.uk/uploads/spares/blank.gif" alt="Image coming soon...">
+                                        <h3>
+                                            <strong>Part no: 064/03-6113</strong> Description: 13m loom (no markers, all associated clips, couplings)	</h3>
+                                        <img src="http://www.marshall-trailers.co.uk/uploads/spares/064-03-6113.jpg" alt="Image coming soon...">
                                         <div class="container">
                                             <div class="stretch">
                                                 <div class="info">
                                         <div class="machines">
                                             <div class="title">Machines:</div>
                                             <ul>
-                                                <li><a href="/monocoque-trailers/qm6" title="QM/6">QM/6</a></li>
-                                                <li><a href="/monocoque-trailers/qm8" title="QM/8">QM/8</a></li>
-                                                <li><a href="/monocoque-trailers/qm11" title="QM/11">QM/11</a></li>
-                                                <li><a href="/monocoque-trailers/qm12" title="QM/12">QM/12</a></li>
-                                                <li><a href="/monocoque-trailers/qm1200" title="QM/1200">QM/1200</a></li>
-                                                <li><a href="/monocoque-trailers/qm14" title="QM/14">QM/14</a></li>
-                                                <li><a href="/monocoque-trailers/qm1400" title="QM/1400">QM/1400</a></li>
-                                                <li><a href="/monocoque-trailers/qm16" title="QM/16">QM/16</a></li>
-                                                <li><a href="/monocoque-trailers/qm1600" title="QM/1600">QM/1600</a></li>
-                                                <li><a href="/dropside-trailers/s2" title="S/2">S/2</a></li>
-                                                <li><a href="/dropside-trailers/s4" title="S/4">S/4</a></li>
-                                                <li><a href="/dropside-trailers/s5" title="S/5">S/5</a></li>
-                                                <li><a href="/dropside-trailers/s6" title="S/6">S/6</a></li>
-                                                <li><a href="/dropside-trailers/s85" title="S/85">S/85</a></li>
-                                                <li><a href="/dropside-trailers/s10" title="S/10">S/10</a></li>
-                                                <li><a href="/flat-bale-trailers/bc18" title="BC/18">BC/18</a></li>
-                                                <li><a href="/flat-bale-trailers/bc21" title="BC/21">BC/21</a></li>
-                                                <li><a href="/flat-bale-trailers/bc2510ton" title="BC/25-10ton">BC/25-10ton</a></li>
-                                                <li><a href="/flat-bale-trailers/bc2512ton" title="BC/25-12ton">BC/25-12ton</a></li>
-                                                <li><a href="/flat-bale-trailers/bc28" title="BC/28">BC/28</a></li>
-                                                <li><a href="/flat-bale-trailers/bc32" title="BC/32">BC/32</a></li>
-                                                <li><a href="/dumper-trailers/qmd6" title="QMD/6">QMD/6</a></li>
-                                                <li><a href="/dumper-trailers/qmd8" title="QMD/8">QMD/8</a></li>
-                                                <li><a href="/dumper-trailers/qmd12h" title="QMD/12H">QMD/12H</a></li>
-                                                <li><a href="/dumper-trailers/qmd14h" title="QMD/14H">QMD/14H</a></li>
-                                                <li><a href="/dumper-trailers/qmd10h" title="QMD/10H">QMD/10H</a></li>
-                                                <li><a href="/muck-spreaders/ms45" title="MS45">MS45</a></li>
-                                                <li><a href="/muck-spreaders/ms60" title="MS60">MS60</a></li>
-                                                <li><a href="/muck-spreaders/ms75" title="MS75">MS75</a></li>
-                                                <li><a href="/muck-spreaders/ms90" title="MS90">MS90</a></li>
-                                                <li><a href="/muck-spreaders/ms105" title="MS105">MS105</a></li>
                                                 <li><a href="/rear-discharge-muck-spreaders/ves-1500" title="VES1500">VES1500</a></li>
                                                 <li><a href="/rear-discharge-muck-spreaders/ves-2000" title="VES2000">VES2000</a></li>
                                                 <li><a href="/rear-discharge-muck-spreaders/ves-2500" title="VES2500">VES2500</a></li>
-                                                <li><a href="/tankers/st1200" title="ST1200">ST1200</a></li>
-                                                <li><a href="/tankers/st1400" title="ST1400">ST1400</a></li>
-                                                <li><a href="/tankers/st1600" title="ST1600">ST1600</a></li>
-                                                <li><a href="/tankers/st1800" title="ST1800">ST1800</a></li>
-                                                <li><a href="/tankers/st2000" title="ST2000">ST2000</a></li>
-                                                <li><a href="/tankers/st2300" title="ST2300">ST2300</a></li>
-                                                <li><a href="/tankers/st2550" title="ST2550">ST2550</a></li>
                                             </ul>
-                                            <p class="categories">Component categories: <strong>Braking Systems &gt; Hydraulic System</strong></p>
-                                            <div class="related">
-                                                <h4>Related Items:</h4>
-                                                <ul>
-                                                    <li data-sid="1155" data-price="40.00" class="cf">
-                                                        <div class="part">
-                                                            <a href="http://www.marshall-trailers.co.uk/uploads/spares/large/070-08-0005.jpg" title="Brake Ram (25mm diameter) 2010 onwards" class="enlargeImage">070/08-0005</a>
-                                                        </div>
-                                                        <div class="title">Brake Ram (25mm diameter) 2010 onwards</div>
-                                                        <div class="add"><a href="/basket" title="Add this item to the basket...." class="btn_addBasketRelated print-hide">Add</a></div>
-                                                    </li>
-                                                    <li data-sid="1154" data-price="35.00" class="cf">
-                                                        <div class="part">
-                                                            <a href="http://www.marshall-trailers.co.uk/uploads/spares/large/070-08-0001.jpg" title="Brake Ram (20mm diameter)" class="enlargeImage">070/08-0001</a>
-                                                        </div>
-                                                        <div class="title">Brake Ram (20mm diameter)</div>
-                                                        <div class="add"><a href="/basket" title="Add this item to the basket...." class="btn_addBasketRelated print-hide">Add</a></div>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            <p class="categories">Component categories: <strong>Lights &gt; Wiring &gt; Full Wiring Loom</strong></p>
                                         </div>
                                     </div>
                                         <ul class="pricing">

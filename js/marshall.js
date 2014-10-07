@@ -827,30 +827,32 @@
 
         adjustFilterHeights: function(){
             var self = this,
+                $html = $('.filters'),
                 initialHeight = 375,
-                filterListHeights = [];
+                filterListHeights = [],
+                windowWidth = $(window).width();
 
-            $('.filterList', self.$html).each(function(i, obj){
-                filterListHeights.push($(obj).height() + 34); // + 34 header height
-            });
+            // clear all styles
+            $('.filterList', $html).parents('li').removeAttr('style').siblings().removeAttr('style');
 
-            var tallestLi = Math.max.apply( null, filterListHeights );
-            if(tallestLi > initialHeight){
-                $('.filterList', self.$html).parents('li').height(tallestLi).siblings().height(tallestLi);
-            } else {
-                $('.filterList', self.$html).parents('li').removeAttr('style').siblings().removeAttr('style');
+            if(windowWidth > 400){
+
+                $('.filterList', $html).each(function(i, obj){
+                    filterListHeights.push($(obj).height() + 34); // + 34 header height
+                });
+
+                var tallestLi = Math.max.apply( null, filterListHeights );
+                if(tallestLi > initialHeight){
+                    $('.filterList', $html).parents('li').height(tallestLi).siblings().height(tallestLi);
+                } else {
+                    $('.filterList', $html).parents('li').removeAttr('style').siblings().removeAttr('style');
+                }
             }
-
-
-
-
-
         },
 
         resize: function(){
             var self = this;
             self.adjustFilterHeights();
-
         }
 
     }
@@ -864,6 +866,7 @@
         marshall.configuration.resize();
         marshall.mobile.resize();
         marshall.tabs.resize();
+        marshall.spares.resize();
     };
 
 	marshall.init = function(){
