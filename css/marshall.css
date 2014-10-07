@@ -413,10 +413,11 @@ h1 a {
   display: block;
 }
 .mainbox h2 {
-  font-size: 1.3em;
+  font-size: 18px;
   line-height: 110%;
   padding-bottom: 5px;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  color: #001748;
 }
 
 /* sidebar */
@@ -483,7 +484,7 @@ h1 a {
 /* ================================================ */
 .main-heading {
   color: #001748;
-  padding: 5px 10px 8px 12px;
+  padding: 0 10px 8px 12px;
 }
 
 .mobile .main-heading {
@@ -658,8 +659,7 @@ h1 a {
 
 .breadcrumb {
   width: 960px;
-  margin: 0 auto;
-  margin-bottom: -25px;
+  margin: 0 auto -12px auto;
 }
 .breadcrumb:after {
   content: "";
@@ -1083,6 +1083,9 @@ h1 a {
   text-align: left;
   width: 91px;
   text-decoration: none;
+}
+#results ol > li .container .stretch .pricing li .btn_addBasket:hover {
+  color: #fff;
 }
 #results ol > li .container .stretch .info {
   font-weight: bold;

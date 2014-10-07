@@ -75,7 +75,7 @@
                             <h3>Featured product:</h3>
                             <img src="http://www.marshall-trailers.co.uk/uploads/gallery/featured/170513-1652-7094.jpg" alt="Outside Haulier Loaded With Marshall Machines">
                             <div class="more">
-                                <p> Loaded With Marshall Machines</p>
+                                <p>Loaded With Marshall Machines</p>
                                 <a href="#" class="big-link blue-link">More</a>
                             </div>
                         </div>
