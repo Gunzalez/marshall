@@ -14,12 +14,13 @@
     marshall.environment = {
 
         init: function(){
-            if(Modernizr.touch){
-                marshall.properties.isMobile = true;
-                $('html').addClass('mobile');
-            } else {
-                $('html').addClass('desktop');
-            }
+            //if(Modernizr.touch){
+            //    marshall.properties.isMobile = true;
+            //    $('html').addClass('mobiless');
+            //} else {
+            //    $('html').addClass('desktop');
+            //}
+            // Since I'm now doing it with PHP
 
             marshall.properties.windowWidth = $(window).width();
 
@@ -46,11 +47,12 @@
 
             var newWindowWith = $(window).width();
 
-            if(newWindowWith > marshall.properties.mobileThreshold){
-                $('html').removeClass('mobile').addClass('desktop');
-            } else {
-                $('html').removeClass('desktop').addClass('mobile');
-            }
+            //if(newWindowWith > marshall.properties.mobileThreshold){
+            //    $('html').removeClass('mobile').addClass('desktop');
+            //} else {
+            //    $('html').removeClass('desktop').addClass('mobile');
+            //}
+            // No need since all media query is under .mobile class now, added in php
 
             if(newWindowWith < marshall.properties.desktopThreshold){
                 $('.footer').removeClass('wide');
@@ -107,11 +109,11 @@
                 $minibox.eq(0).css('margin-right','15px');
                 $minibox.eq(0).css('margin-bottom','15px');
                 $minibox.eq(1).css('margin-bottom','15px');
-                $minibox.eq(2).width('100%').css('margin-bottom','15px');
+                $minibox.eq(2).width('100%').css('margin-bottom','0');
             }
 
             if(mainWindowWidth <= 399){
-                $minibox.width('100%').css('margin-right','0').css('margin-bottom','0');
+                $minibox.width('100%').css('margin-right','0').css('margin-bottom','20px');
                 $minibox.eq('2').css('margin-bottom','0');
                 $minibox.eq('2').find('.more').css('background-color','#fff');
             }

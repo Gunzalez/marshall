@@ -489,6 +489,7 @@ h1 a {
 
 .mobile .main-heading {
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  padding-top: 10px;
 }
 
 .main-heading h2 {
@@ -1029,6 +1030,7 @@ h1 a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-right: 10px;
 }
 #results ol {
   margin: 0;
@@ -1051,7 +1053,7 @@ h1 a {
   float: left;
   position: relative;
   width: 100%;
-  min-height: 170px;
+  min-height: 150px;
 }
 #results ol > li .container .spare-thumbnail {
   position: absolute;
@@ -1858,8 +1860,9 @@ h1 a {
 
 .footer .address {
   clear: both;
-  text-align: center;
+  text-align: right;
   padding-top: 15px;
+  padding-right: 10px;
 }
 
 .footer .address a {
@@ -1873,33 +1876,28 @@ h1 a {
   font-size: 11px;
 }
 
-.footer.wide ul {
+.desktop .footer ul {
   clear: left;
   float: left;
   margin-left: 15px;
 }
-
-.footer.wide .aux {
+.desktop .footer .aux {
   margin-right: 100px;
 }
-
-.footer.wide ul a {
+.desktop .footer ul a {
   padding: 8px 4px 4px 4px;
 }
-
-.footer.wide .address {
+.desktop .footer .address {
   float: right;
   width: 285px;
   margin-top: -60px;
   margin-bottom: 20px;
 }
-
-.footer.wide .address p {
+.desktop .footer .address p {
   text-align: right;
   line-height: 160%;
 }
-
-.footer.wide .address p span {
+.desktop .footer .address p span {
   display: block;
 }
 
@@ -2006,125 +2004,153 @@ h1 a {
   color: #000;
 }
 
-/* media queries */
-/* ================================================ */
+.mobile {
+  /* media queries */
+  /* ================================================ */
+  /* standard desktop */
+  /* tablet portrait and mobile landscape */
+  /* mobile portrait */
+}
+.mobile .carousel .bx-controls {
+  padding: 0 15px 15px 0;
+}
+.mobile .carousel .bx-pager-item {
+  display: inline-block;
+  padding-left: 12px;
+}
+.mobile .carousel .bx-pager-item a {
+  text-indent: -9000px;
+  background-color: #999;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.mobile .carousel .bx-pager-item a:hover {
+  background-color: #666;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.mobile .carousel .bx-pager-item a.active,
+.mobile .carousel .bx-pager-item a.active:hover {
+  background-color: #bb1f1d;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
 @media only screen and (max-width: 1000px) {
-  body {
+  .mobile {
+    /* step 5 */
+  }
+  .mobile body {
     background: #ececec;
   }
-
-  .page {
+  .mobile .page {
     width: 100%;
   }
-
-  .header {
+  .mobile .header {
     height: 100px;
     background: #bb1f1d;
   }
-
-  .breadcrumb {
+  .mobile .breadcrumb {
     display: none;
   }
-
-  h1 {
+  .mobile h1 {
     margin-left: 10px;
   }
-
-  .main-nav,
-  #hit-counter {
+  .mobile .main-nav,
+  .mobile #hit-counter {
     display: none;
   }
-
-  .burger-nav {
+  .mobile .burger-nav {
     display: block;
   }
-
-  .content {
+  .mobile .content {
     padding: 0 20px;
   }
-
-  .footer {
+  .mobile .footer {
     margin-bottom: 0;
   }
-
-  /* step 5 */
-  #config_machine .email-option select {
+  .mobile #config_machine .email-option select {
     margin-right: 40px;
   }
-
-  #config_machine .email-option label {
+  .mobile #config_machine .email-option label {
     width: 100%;
     float: left;
     padding: 0 0 4px 0;
   }
-
-  #config_machine .email-option textarea {
+  .mobile #config_machine .email-option textarea {
     width: 100%;
   }
-
-  #config_machine .email-option .column p.error .error {
+  .mobile #config_machine .email-option .column p.error .error {
     margin-left: 0;
     clear: left;
   }
 }
-/* standard desktop */
 @media only screen and (max-width: 769px) {
-  .content {
+  .mobile {
+    /* spares results */
+  }
+  .mobile .content {
     padding: 0 15px;
   }
-
-  .main {
+  .mobile .main {
     margin-top: 15px;
     margin-right: 0;
     width: 100%;
     float: none;
   }
-
-  .main .container {
+  .mobile .main .container {
     margin-right: 0;
   }
-
-  .sidebar {
+  .mobile .sidebar {
     margin-top: 5px;
     width: 100%;
     float: none;
     margin-left: 0;
   }
-  .sidebar.sidebox-3 .sidebox {
+  .mobile .sidebar.sidebox-3 .sidebox {
     float: left;
     width: 33.33%;
   }
-  .sidebar.sidebox-2 .sidebox {
+  .mobile .sidebar.sidebox-2 .sidebox {
     float: left;
     width: 50%;
   }
-  .sidebar .sidebox.news {
+  .mobile .sidebar .sidebox.news {
     clear: left;
     float: none;
     width: 100%;
   }
-  .sidebar .sidebox.news ul li h4 {
+  .mobile .sidebar .sidebox.news ul li h4 {
     font-size: 1.1em;
     line-height: 140%;
   }
-  .sidebar .sidebox.gallery ul {
+  .mobile .sidebar .sidebox.gallery ul {
     padding: 8px 0 0 8px;
   }
-  .sidebar .sidebox.gallery ul li {
+  .mobile .sidebar .sidebox.gallery ul li {
     padding: 0 8px 8px 0;
   }
-
-  .news-detail {
+  .mobile .news-detail {
     text-align: right;
   }
-  .news-detail .content-copy {
+  .mobile .news-detail .content-copy {
     text-align: left;
   }
-  .news-detail .big-link {
+  .mobile .news-detail .big-link {
     margin-top: 10px;
   }
-
-  .news-page-navigation ul li a {
+  .mobile .news-page-navigation ul li a {
     border: 1px solid #ccc;
     padding: 0 10px;
     line-height: 28px;
@@ -2133,326 +2159,241 @@ h1 a {
     -moz-border-radius: 3px;
     border-radius: 3px;
   }
-
-  .carousel .bx-controls {
-    padding: 0 15px 15px 0;
-  }
-
-  .carousel .bx-pager-item {
-    display: inline-block;
-    padding-left: 12px;
-  }
-
-  .carousel .bx-pager-item a {
-    text-indent: -9000px;
-    background-color: #999;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    transition: background 0.5s;
-  }
-
-  .carousel .bx-pager-item a:hover {
-    background-color: #666;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    transition: background 0.5s;
-  }
-
-  .carousel .bx-pager-item a.active,
-  .carousel .bx-pager-item a.active:hover {
-    background-color: #bb1f1d;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    transition: background 0.5s;
-  }
-
-  .carousel .copy .big-link {
+  .mobile .carousel .copy .big-link {
     right: 20px;
     top: 15px;
   }
-
-  .made-by {
+  .mobile .made-by {
     background-color: #dcdcdc;
   }
-
-  .mainbox .minibox {
+  .mobile .mainbox .minibox {
     float: left;
     width: 50%;
   }
-
-  #config_machine .configure-content .img {
+  .mobile #config_machine .configure-content .img {
     position: static;
     width: 100%;
   }
-
-  #config_machine .configure-content .img img {
+  .mobile #config_machine .configure-content .img img {
     width: 100%;
   }
-
-  #config_machine .configure-content .content {
+  .mobile #config_machine .configure-content .content {
     margin-left: 0;
     padding: 0 15px 15px 15px;
   }
-
-  #config_machine .options li {
+  .mobile #config_machine .options li {
     width: 50%;
   }
-
-  .main-heading.hero {
+  .mobile .main-heading.hero {
     height: auto;
   }
-  .main-heading.hero h2 {
+  .mobile .main-heading.hero h2 {
     padding: 8px 15px 5px 15px;
     font-size: 22px;
   }
-  .main-heading.hero p {
+  .mobile .main-heading.hero p {
     padding: 0 15px 15px 15px;
     font-size: 16px;
   }
-
-  .news-page-navigation.bottom ul {
+  .mobile .news-page-navigation.bottom ul {
     display: block;
   }
-
-  .container.product .product-image {
+  .mobile .container.product .product-image {
     margin-right: 0;
     width: 100%;
     float: none;
   }
-  .container.product .product-image .container {
+  .mobile .container.product .product-image .container {
     margin-right: 0 !important;
   }
-  .container.product .product-image .container img {
+  .mobile .container.product .product-image .container img {
     border-top: none;
     width: 100%;
   }
-  .container.product .product-details {
+  .mobile .container.product .product-details {
     width: inherit;
     float: none;
     font-size: 12px;
     line-height: 130%;
   }
-  .container.product .product-details h3 {
+  .mobile .container.product .product-details h3 {
     color: #fff000;
     background: #001748;
     padding: 8px 10px;
     font-size: 15px;
   }
-  .container.product .product-details ul {
+  .mobile .container.product .product-details ul {
     margin: 12px;
   }
-  .container.product .product-details ul li {
+  .mobile .container.product .product-details ul li {
     padding: 5px 8px;
     background-color: #ececec;
     margin-bottom: 3px;
   }
-  .container.product .product-details table {
+  .mobile .container.product .product-details table {
     margin: 0;
     font-size: 12px;
     width: 100%;
     text-align: right;
   }
-  .container.product .product-details table td, .container.product .product-details table th {
+  .mobile .container.product .product-details table td, .mobile .container.product .product-details table th {
     text-align: right;
     vertical-align: top;
     padding: 0 15px 5px 10px;
   }
-  .container.product .product-details .button {
+  .mobile .container.product .product-details .button {
     text-align: right;
     padding: 10px;
   }
-  .container.product .product-details .button:after {
+  .mobile .container.product .product-details .button:after {
     content: "";
     clear: both;
     display: block;
   }
-  .container.product .product-details .button a {
+  .mobile .container.product .product-details .button a {
     float: right;
   }
-
-  /* spares results */
-  #results ol > li .container .info {
+  .mobile #results ol > li .container .info {
     margin-right: 0;
   }
-  #results ol > li .container .info .machines {
+  .mobile #results ol > li .container .info .machines {
     margin-right: 0;
   }
-  #results ol > li .container .pricing {
+  .mobile #results ol > li .container .pricing {
     position: static;
     margin-left: 150px;
-    width: inherit;
   }
-  #results ol > li .container .pricing .add-to-basket {
+  .mobile #results ol > li .container .pricing .add-to-basket {
     text-align: right;
   }
 }
-/* tablet portrait and mobile landscape */
 @media only screen and (max-width: 679px) {
-  .content {
+  .mobile {
+    /* configures steps */
+    /* table styles */
+    /* step 5 */
+    /* product page */
+  }
+  .mobile .content {
     padding: 0;
   }
-  .content .filters {
+  .mobile .content .filters {
     margin: 0;
   }
-
-  .main {
+  .mobile .main {
     margin-top: 0;
   }
-
-  .main-heading.hero {
+  .mobile .main-heading.hero {
     background: #001649;
   }
-
-  h1 {
+  .mobile h1 {
     padding-top: 15px;
   }
-
-  h1 a img {
+  .mobile h1 a img {
     width: 300px;
   }
-
-  #mobile-nav .header span,
-  .burger-nav {
+  .mobile #mobile-nav .header span,
+  .mobile .burger-nav {
     width: 45px;
     height: 40px;
   }
-
-  #mobile-nav .header span,
-  .burger-nav a {
+  .mobile #mobile-nav .header span,
+  .mobile .burger-nav a {
     font-size: 3.5em;
   }
-
-  .sidebar.sidebox-3 .sidebox, .sidebar.sidebox-2 .sidebox {
+  .mobile .sidebar.sidebox-3 .sidebox, .mobile .sidebar.sidebox-2 .sidebox {
     width: 50%;
   }
-  .sidebar.sidebox-3 .sidebox.news, .sidebar.sidebox-2 .sidebox.news {
+  .mobile .sidebar.sidebox-3 .sidebox.news, .mobile .sidebar.sidebox-2 .sidebox.news {
     width: 100%;
   }
-
-  .main-heading {
-    padding: 8px 12px;
-  }
-
-  .mainbox.configure {
+  .mobile .mainbox.configure {
     padding: 10px 15px 15px 100px;
     text-align: right;
   }
-  .mainbox.configure .copy-block {
+  .mobile .mainbox.configure .copy-block {
     min-height: inherit;
     padding: 0;
     border: none;
     text-align: left;
   }
-  .mainbox.configure .copy-block h2 {
+  .mobile .mainbox.configure .copy-block h2 {
     line-height: 110%;
     padding-bottom: 5px;
   }
-  .mainbox.configure .copy-block p {
+  .mobile .mainbox.configure .copy-block p {
     padding-bottom: 10px;
   }
-  .mainbox.configure .big-link {
+  .mobile .mainbox.configure .big-link {
     position: static;
   }
-
-  .mainbox .minibox {
-    float: left;
-    width: 50%;
-  }
-
-  /* configures steps */
-  #config_machine .step {
+  .mobile #config_machine .step {
     font-size: 1.2em;
     padding-left: 46px;
   }
-
-  #config_machine .step > span,
-  #config_machine .step span.text {
+  .mobile #config_machine .step > span,
+  .mobile #config_machine .step span.text {
     display: none;
   }
-
-  #config_machine .step span.fa {
+  .mobile #config_machine .step span.fa {
     font-size: 1.3em;
   }
-
-  /* table styles */
-  #config_machine .basket table td:nth-child(1),
-  #config_machine .basket table th:nth-child(1) {
+  .mobile #config_machine .basket table td:nth-child(1),
+  .mobile #config_machine .basket table th:nth-child(1) {
     display: none;
   }
-
-  #config_machine .basket td {
+  .mobile #config_machine .basket td {
     vertical-align: top;
   }
-
-  /* step 5 */
-  #config_machine .email-option .column input,
-  #config_machine .email-option textarea {
+  .mobile #config_machine .email-option .column input,
+  .mobile #config_machine .email-option textarea {
     width: 100%;
   }
-
-  #config_machine .email-option select {
+  .mobile #config_machine .email-option select {
     margin-right: 0;
   }
-
-  #config_machine .email-option label {
+  .mobile #config_machine .email-option label {
     display: none;
   }
-
-  #config_machine .email-option .body .column {
+  .mobile #config_machine .email-option .body .column {
     width: 100%;
     float: none;
   }
-
-  #config_machine .email-option .body .foot {
+  .mobile #config_machine .email-option .body .foot {
     padding-top: 0;
     border-top: none;
   }
-
-  .carousel .bx-controls {
+  .mobile .carousel .bx-controls {
     padding-right: 0;
     text-align: center;
   }
-
-  .carousel .bx-pager {
+  .mobile .carousel .bx-pager {
     float: none;
   }
-
-  .mainbox.padded {
+  .mobile .mainbox.padded {
     margin-top: 20px;
   }
-
-  .carousel .copy h2 {
+  .mobile .carousel .copy h2 {
     font-size: 16px;
   }
-
-  /* product page */
-  .container .tabs {
+  .mobile .container .tabs {
     float: none;
     width: 100%;
     background: none;
   }
-  .container .tabs .bullets {
+  .mobile .container .tabs .bullets {
     padding: 0;
     margin: 0;
   }
-  .container .tabs .bullets li {
+  .mobile .container .tabs .bullets li {
     padding: 0 0 5px 25px;
     float: none;
   }
-  .container .tabs li {
+  .mobile .container .tabs li {
     float: none;
     padding: 0;
   }
-  .container .tabs li a {
+  .mobile .container .tabs li a {
     float: none;
     padding: 10px 15px;
     text-decoration: none;
@@ -2464,7 +2405,7 @@ h1 a {
     font-size: 12px;
     background-color: #dedede;
   }
-  .container .tabs li.active a {
+  .mobile .container .tabs li.active a {
     padding: 8px 10px;
     color: #fff;
     font-weight: bold;
@@ -2472,78 +2413,115 @@ h1 a {
     border: none;
     font-size: 15px;
   }
-  .container .tabs li.active a:hover {
+  .mobile .container .tabs li.active a:hover {
     color: #fff;
     font-weight: bold;
     background-color: #001e5a;
   }
-  .container .tabs li.active .copy-block {
+  .mobile .container .tabs li.active .copy-block {
     display: block;
     min-height: inherit;
   }
-  .container .tabs .copy-block {
+  .mobile .container .tabs .copy-block {
     display: none;
   }
-  .container .copy-block {
+  .mobile .container .copy-block {
     padding: 15px;
     border: none;
   }
-  .container .tabs-content {
+  .mobile .container .tabs-content {
     display: none;
   }
 }
-/* mobile portrait */
 @media only screen and (max-width: 400px) {
-  .header,
-  #mobile-nav .header {
+  .mobile {
+    /* buttons */
+    /* filers */
+    /* news */
+    /* news detail */
+    /* spares results */
+    /* configures steps */
+    @-webkit-keyframes peakingBasket {
+      0% {
+        margin-top: -71px;
+      }
+
+      25% {
+        margin-top: 0;
+      }
+
+      75% {
+        margin-top: 0;
+      }
+
+      100% {
+        margin-top: -71px;
+      }
+}
+
+    @keyframes peakingBasket {
+      0% {
+        margin-top: -71px;
+      }
+
+      25% {
+        margin-top: 0;
+      }
+
+      75% {
+        margin-top: 0;
+      }
+
+      100% {
+        margin-top: -71px;
+      }
+}
+
+  }
+  .mobile .header,
+  .mobile #mobile-nav .header {
     height: 75px;
   }
-
-  h1 {
+  .mobile h1 {
     padding-top: 15px;
     padding-left: 0;
   }
-
-  h1 a img {
+  .mobile h1 a img {
     width: 200px;
     padding-left: 4px;
   }
-
-  #mobile-nav .header span,
-  .burger-nav {
+  .mobile #mobile-nav .header span,
+  .mobile .burger-nav {
     top: 18px;
     right: 2px;
     width: 40px;
     height: 36px;
   }
-
-  #mobile-nav .header span,
-  .burger-nav a {
+  .mobile #mobile-nav .header span,
+  .mobile .burger-nav a {
     font-size: 2.5em;
   }
-
-  .sidebar.sidebox-3 .sidebox, .sidebar.sidebox-2 .sidebox {
+  .mobile .sidebar.sidebox-3 .sidebox, .mobile .sidebar.sidebox-2 .sidebox {
     width: 100%;
     float: none;
   }
-  .sidebar.sidebox-3 .sidebox.news, .sidebar.sidebox-2 .sidebox.news {
+  .mobile .sidebar.sidebox-3 .sidebox.news, .mobile .sidebar.sidebox-2 .sidebox.news {
     width: 100%;
   }
-  .sidebar .sidebox.configure {
+  .mobile .sidebar .sidebox.configure {
     position: relative;
   }
-  .sidebar .sidebox.configure .more {
+  .mobile .sidebar .sidebox.configure .more {
     position: static;
     width: 100%;
     box-sizing: border-box;
   }
-
-  textarea,
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="number"],
-  select {
+  .mobile textarea,
+  .mobile input[type="text"],
+  .mobile input[type="email"],
+  .mobile input[type="password"],
+  .mobile input[type="number"],
+  .mobile select {
     border-radius: 4px;
     background-color: #fff;
     font-family: 'Tahoma', Helvetica, Arial, sans-serif;
@@ -2556,27 +2534,22 @@ h1 a {
     resize: none;
     font-size: 1.0em;
   }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="number"],
-  select {
+  .mobile input[type="text"],
+  .mobile input[type="email"],
+  .mobile input[type="password"],
+  .mobile input[type="number"],
+  .mobile select {
     font-size: 1.1em;
     padding: 5px 7px !important;
   }
-
-  select {
+  .mobile select {
     background: url("../images/bg-select-schveron.jpg") center right no-repeat white;
     padding: 5px 30px 5px 7px;
   }
-
-  .error select {
+  .mobile .error select {
     background: url("../images/bg-select-schveron-error.jpg") center right no-repeat white;
   }
-
-  /* buttons */
-  .old-mobile .big-link {
+  .mobile .old-mobile .big-link {
     position: relative;
     display: inline-block;
     color: #fff;
@@ -2595,7 +2568,7 @@ h1 a {
     clear: both;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
   }
-  .old-mobile .red-link {
+  .mobile .old-mobile .red-link {
     background: #BB1F1D;
     background-image: -webkit-linear-gradient(top, #bb1f1d, #d20805);
     background-image: -moz-linear-gradient(top, #bb1f1d, #d20805);
@@ -2603,7 +2576,7 @@ h1 a {
     background-image: -o-linear-gradient(top, #bb1f1d, #d20805);
     background-image: linear-gradient(to bottom, #bb1f1d, #d20805);
   }
-  .old-mobile .red-link:active, .old-mobile .red-link:hover {
+  .mobile .old-mobile .red-link:active, .mobile .old-mobile .red-link:hover {
     background: #F20E08;
     background-image: -webkit-linear-gradient(top, #f20e08, #f71102);
     background-image: -moz-linear-gradient(top, #f20e08, #f71102);
@@ -2611,41 +2584,39 @@ h1 a {
     background-image: -o-linear-gradient(top, #f20e08, #f71102);
     background-image: linear-gradient(to bottom, #f20e08, #f71102);
   }
-  .old-mobile .blue-link {
+  .mobile .old-mobile .blue-link {
     background: #001649;
     color: #fff;
   }
-  .old-mobile .blue-link:active, .old-mobile .blue-link:hover {
+  .mobile .old-mobile .blue-link:active, .mobile .old-mobile .blue-link:hover {
     background: #0f82ff;
   }
-
-  /* filers */
-  .filters {
+  .mobile .filters {
     float: left;
     margin: 0 -10px 0 -10px;
     padding: 0;
     list-style: none;
   }
-  .filters li {
+  .mobile .filters li {
     width: 100%;
     margin: 0 0 10px 0;
     float: none;
     height: inherit;
   }
-  .filters li .filterList {
+  .mobile .filters li .filterList {
     margin: 0;
     padding: 0;
     list-style: none;
     float: none;
   }
-  .filters li .filterList li {
+  .mobile .filters li .filterList li {
     width: auto;
     height: inherit;
     background: transparent;
     margin: 0;
     float: none;
   }
-  .filters li .filterList li a {
+  .mobile .filters li .filterList li a {
     text-decoration: none;
     padding: 5px 12px;
     line-height: 14px;
@@ -2656,149 +2627,126 @@ h1 a {
     background: #d4d4d4;
     border-top: 1px solid #fff;
   }
-  .filters li .filterList li a:hover {
+  .mobile .filters li .filterList li a:hover {
     background: #888;
     color: #EEE;
   }
-  .filters li .filterList li a.selected {
+  .mobile .filters li .filterList li a.selected {
     background: #555;
     color: #EEE;
   }
-  .filters li .filterList li a.selected:hover {
+  .mobile .filters li .filterList li a.selected:hover {
     background: #888;
   }
-
-  .carousel .copy h2,
-  .mainbox h2 {
+  .mobile .carousel .copy h2,
+  .mobile .mainbox h2 {
     font-size: 1.2em;
   }
-
-  .main-heading h2 {
+  .mobile .main-heading h2 {
     font-size: 1.5em;
   }
-
-  .main-heading p {
+  .mobile .main-heading p {
     font-size: 1.2em;
   }
-
-  .mainbox.configure {
+  .mobile .mainbox.configure {
     background: #fff;
     padding: 15px;
   }
-
-  .mainbox.configure .big-link {
+  .mobile .mainbox.configure .big-link {
     position: static;
   }
-
-  .carousel .copy {
+  .mobile .carousel .copy {
     padding-bottom: 15px;
   }
-
-  .carousel .copy h2,
-  .carousel .copy p {
+  .mobile .carousel .copy h2,
+  .mobile .carousel .copy p {
     padding-right: 0;
   }
-
-  .carousel .copy .big-link {
+  .mobile .carousel .copy .big-link {
     position: static;
     float: right;
   }
-
-  /* news */
-  .news-items ol li .thumb {
+  .mobile .news-items ol li .thumb {
     display: none;
   }
-
-  .news-items ol li .detail {
+  .mobile .news-items ol li .detail {
     padding-left: 0;
   }
-
-  .news-items ol li .detail a {
+  .mobile .news-items ol li .detail a {
     color: #217cc9;
     text-decoration: none;
   }
-
-  .news-items ol li .detail h3 {
+  .mobile .news-items ol li .detail h3 {
     font-size: 1.0em;
     line-height: 140%;
     margin-bottom: 2px;
   }
-
-  .news-items ol li .detail .date {
+  .mobile .news-items ol li .detail .date {
     color: #333;
     font-weight: bold;
     line-height: 140%;
     font-size: 0.9em;
     margin-bottom: 5px;
   }
-
-  /* news detail */
-  .content-detail img.responsive {
+  .mobile .content-detail img.responsive {
     width: 100% !important;
     margin: 15px 0;
   }
-  .content-detail img.float-left {
+  .mobile .content-detail img.float-left {
     float: none;
   }
-  .content-detail img.float-right {
+  .mobile .content-detail img.float-right {
     float: none;
   }
-  .content-detail img.set-of-two {
+  .mobile .content-detail img.set-of-two {
     width: 100% !important;
   }
-
-  .minibox .more {
+  .mobile .minibox .more {
     padding: 10px 12px;
   }
-
-  /* spares results */
-  #results ol > li .container .spare-thumbnail {
+  .mobile #results ol > li .container .spare-thumbnail {
     position: static;
   }
-  #results ol > li .container .spare-thumbnail img {
+  .mobile #results ol > li .container .spare-thumbnail img {
     width: 100%;
   }
-  #results ol > li .container .info {
+  .mobile #results ol > li .container .info {
     margin: 0;
   }
-  #results ol > li .container .info .machines .title {
+  .mobile #results ol > li .container .info .machines .title {
     position: static;
     padding-left: 0;
   }
-  #results ol > li .container .info .machines .related h4 {
+  .mobile #results ol > li .container .info .machines .related h4 {
     text-decoration: underline;
     margin-bottom: 5px;
     padding-bottom: 5px;
   }
-  #results ol > li .container .info .machines > ul {
+  .mobile #results ol > li .container .info .machines > ul {
     margin: 0 0 20px 0;
   }
-  #results ol > li .container .pricing {
+  .mobile #results ol > li .container .pricing {
     position: static;
     margin-left: 0;
     width: inherit;
   }
-  #results ol > li .container .pricing .add-to-basket {
+  .mobile #results ol > li .container .pricing .add-to-basket {
     text-align: right;
   }
-  #results ol > li .container .pricing li {
+  .mobile #results ol > li .container .pricing li {
     padding: 5px 10px;
   }
-  #results ol > li .container .pricing li.quantity select {
+  .mobile #results ol > li .container .pricing li.quantity select {
     width: 100%;
     margin-top: 10px;
   }
-
-  #configure-machine select {
+  .mobile #configure-machine select {
     width: 100%;
   }
-
-  /* configures steps */
-  #config_machine .step {
+  .mobile #config_machine .step {
     font-size: 1.2em;
   }
-
-  #basket {
+  .mobile #basket {
     top: 0;
     left: 0;
     bottom: 0;
@@ -2810,74 +2758,31 @@ h1 a {
     position: fixed;
     transition: margin 0.5s ease 0s;
   }
-
-  #basket .summary-box h3 {
+  .mobile #basket .summary-box h3 {
     background: none repeat scroll 0 0 #bb1f1d;
     color: #fff;
     padding: 5px 10px;
   }
-
-  #basket .summary-box {
+  .mobile #basket .summary-box {
     float: none;
     padding-bottom: 8px;
     width: 100%;
   }
-
-  #basket .container {
+  .mobile #basket .container {
     width: 100%;
   }
-
-  #basket a {
+  .mobile #basket a {
     display: none;
   }
-
-  #basket .summary-box .detail {
+  .mobile #basket .summary-box .detail {
     min-height: inherit;
     border: 5px solid #bb1f1d;
   }
-
-  #basket.stick-out {
+  .mobile #basket.stick-out {
     width: 100%;
   }
-
-  #basket.stick-out {
+  .mobile #basket.stick-out {
     -webkit-animation: peakingBasket 3s normal ease-out;
     animation: peakingBasket 3s normal ease-out;
   }
-
-  @-webkit-keyframes peakingBasket {
-    0% {
-      margin-top: -71px;
-    }
-
-    25% {
-      margin-top: 0;
-    }
-
-    75% {
-      margin-top: 0;
-    }
-
-    100% {
-      margin-top: -71px;
-    }
-}
-
-  @keyframes peakingBasket {
-    0% {
-      margin-top: -71px;
-    }
-
-    25% {
-      margin-top: 0;
-    }
-
-    75% {
-      margin-top: 0;
-    }
-
-    100% {
-      margin-top: -71px;
-    }
-}
 }

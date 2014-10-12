@@ -1,6 +1,9 @@
+<?php
+require_once('php/Mobile_Detect.php');
+require_once('php/isMobile.php');
+?>
 <!DOCTYPE html>
-<html>
-<head>
+<html<?php echo $mobileCSS; ?>>
     <meta charset="utf-8">
     <title>Marshall Trailers</title>
 
