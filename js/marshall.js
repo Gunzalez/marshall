@@ -79,9 +79,15 @@
     };
 
     marshall.homepage = {
-        // Yes, a bit messy I know, may refactor if time allows
-        // TODO, clean up
-        resize: function(){
+
+        init: function(){
+            var self = this;
+            $(window).load(function(){
+                self.setMiniBoxSizes();
+            });
+        },
+
+        setMiniBoxSizes: function(){
             var $minibox = $('.minibox'),
                 mainboxWidth = $minibox.parent().width(),
                 mainWindowWidth = $(window).width(),
@@ -121,7 +127,13 @@
             // video sidebox
             var sideBoxHeight = $('.sidebox', $sideBar).eq('1').height();
             $videoIframe.height(sideBoxHeight);
+        },
 
+        resize: function(){
+            var self = this;
+            if($('html').hasClass('mobile')){
+                self.setMiniBoxSizes();
+            }
         }
     };
 
@@ -909,6 +921,7 @@
 	marshall.init = function(){
 
         // All initialisations
+        marshall.homepage.init();
         marshall.environment.init();
         marshall.navigation.init();
 		marshall.mobile.init();
