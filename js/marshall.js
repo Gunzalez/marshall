@@ -81,20 +81,42 @@
     marshall.homepage = {
 
         init: function(){
-            var self = this;
+            var self = this,
+                $sideBar = $('.sidebar'),
+                $videoBox = $('.video', $sideBar),
+                $videoIframe = $('iframe', $videoBox);
+
             $(window).load(function(){
                 self.setMiniBoxSizes();
+                self.setSideBarSideBoxPadding();
+
+                // video sidebox
+                var sideBoxHeight = $('.sidebox', $sideBar).eq('1').height();
+                $videoIframe.height(sideBoxHeight);
             });
+        },
+
+        setSideBarSideBoxPadding: function(){
+            var self = this,
+                mainWindowWidth = $(window).width(),
+                $sideBar = $('.sidebar'),
+                $sideBoxes = $('.sidebox', $sideBar),
+                sideBoxesWidth = 0;
+
+            $sideBoxes.removeAttr('style'); // resets 'em
+            if(mainWindowWidth <= 769 && mainWindowWidth > 400){
+                sideBoxesWidth = ($sideBar.width()-30)/3;
+                $sideBoxes.not($('.news', $sideBar)).width(sideBoxesWidth);
+                $sideBoxes.eq(0).css('margin-right', '15px');
+                $sideBoxes.eq(1).css('margin-right', '15px');
+            }
         },
 
         setMiniBoxSizes: function(){
             var $minibox = $('.minibox'),
                 mainboxWidth = $minibox.parent().width(),
                 mainWindowWidth = $(window).width(),
-                miniboxWidth = 0,
-                $sideBar = $('.sidebar'),
-                $videoBox = $('.video', $sideBar),
-                $videoIframe = $('iframe', $videoBox);
+                miniboxWidth = 0;
 
             $minibox.removeAttr('style');
             $minibox.find('.copy').removeAttr('style');
@@ -123,16 +145,13 @@
                 $minibox.eq('2').css('margin-bottom','0');
                 $minibox.eq('2').find('.more').css('background-color','#fff');
             }
-
-            // video sidebox
-            var sideBoxHeight = $('.sidebox', $sideBar).eq('1').height();
-            $videoIframe.height(sideBoxHeight);
         },
 
         resize: function(){
             var self = this;
             if($('html').hasClass('mobile')){
                 self.setMiniBoxSizes();
+                self.setSideBarSideBoxPadding();
             }
         }
     };
