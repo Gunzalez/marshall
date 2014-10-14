@@ -81,18 +81,11 @@
     marshall.homepage = {
 
         init: function(){
-            var self = this,
-                $sideBar = $('.sidebar'),
-                $videoBox = $('.video', $sideBar),
-                $videoIframe = $('iframe', $videoBox);
-
+            var self = this;
             $(window).load(function(){
                 self.setMiniBoxSizes();
                 self.setSideBarSideBoxPadding();
-
-                // video sidebox
-                var sideBoxHeight = $('.sidebox', $sideBar).eq('1').height();
-                $videoIframe.height(sideBoxHeight);
+                self.setVideoBoxSize();
             });
         },
 
@@ -110,6 +103,16 @@
                 $sideBoxes.eq(0).css('margin-right', '15px');
                 $sideBoxes.eq(1).css('margin-right', '15px');
             }
+        },
+
+        setVideoBoxSize: function(){
+            var self = this,
+                $sideBar = $('.sidebar'),
+                $videoBox = $('.video', $sideBar),
+                $videoIframe = $('iframe', $videoBox);
+
+            var sideBoxHeight = $('.sidebox', $sideBar).eq('1').height();
+            $videoIframe.height(sideBoxHeight);
         },
 
         setMiniBoxSizes: function(){
@@ -152,6 +155,7 @@
             if($('html').hasClass('mobile')){
                 self.setMiniBoxSizes();
                 self.setSideBarSideBoxPadding();
+                self.setVideoBoxSize();
             }
         }
     };

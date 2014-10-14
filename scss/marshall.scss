@@ -1430,29 +1430,111 @@ h1 a {
 
 /* Price & Configure styles */
 /* ================================================ */
-#config_machine .step {
-    background: url("../images/heading-pre.png") top left no-repeat #001649;
-    padding-left: 49px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    font-size: 1.4em;
+#config_machine {
+    .step {
+        background: url("../images/heading-pre.png") top left no-repeat #001649;
+        padding-left: 49px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 1.4em;
+
+        span {
+            color: #fff000;
+            font-size: 1.5em;
+
+        }
+    }
 }
 
-#config_machine .step span {
-    color: #fff000;
-}
 
 #config_machine .body {
 
 }
 
 /* step 1 */
-#config_machine .configure {
-    padding: 8px 15px;
-    background: #fff;
-    margin-bottom: 1px;
+.desktop {
+    #config_machine {
+        .configure {
+            float: right;
+            margin-top: 5px;
+            margin-right: 10px;
+            min-width: 385px;
+        }
+        .step {
+            label {
+                color: #fff000;
+                font-size: 13px;
+                font-weight: bold;
+                float: left;
+                width: 120px;
+                text-align: right;
+                line-height: 110%;
+                margin-right: 15px;
+            }
+            select {
+                width: 240px;
+                margin-top: 4px;
+                float: left;
+            }
+        }
+    }
 }
+
+
+
+.mobile {
+    #config_machine {
+        .configure {
+            padding: 15px;
+            background: #fff;
+            margin-bottom: 1px;
+        }
+        label {
+            display: none;
+        }
+        select {
+            width: inherit;
+            padding-right: 15px;
+            margin: 0;
+        }
+    }
+}
+
+
+.desktop {
+    #config_machine {
+
+        .empty-configuration {
+            width: 100%;
+            height: 111px;
+            padding: 0;
+            background: url("../images/select_config.jpg") 510px 0 no-repeat;
+
+            h3 {
+                display: none;
+            }
+        }
+
+        .configure-content {
+            min-height: 240px;
+
+        }
+
+    }
+
+
+}
+
+.mobile {
+    #config_machine {
+        .empty-configuration {
+            padding: 15px;
+        }
+    }
+}
+
+
 
 #config_machine .configure-content {
     background: #fff;
@@ -1460,9 +1542,11 @@ h1 a {
     min-height: 270px;
 }
 
-#config_machine .empty-configuration {
-    padding: 15px;
-}
+
+
+
+
+
 
 #config_machine .configure-content:after {
     @include clearfix;
@@ -1472,7 +1556,6 @@ h1 a {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 15px;
 
     -webkit-appearance: none;
     -webkit-box-sizing: border-box;
@@ -1480,12 +1563,9 @@ h1 a {
     box-sizing: border-box;
 }
 
-#config_machine .configure-content .img img {
-    border: 1px solid #ccc;
-}
 
 #config_machine .configure-content .content {
-    margin-left: 460px;
+    margin-left: 440px;
     padding: 12px 15px 18px 15px;
 }
 
@@ -1493,32 +1573,47 @@ h1 a {
     margin: 0 0 10px 0;
     padding: 0;
     list-style: none;
-    border-bottom: 1px solid #dcdcdc;
 }
 
 #config_machine .configure-content .content .specs li {
     padding: 8px 15px;
     margin-top: 2px;
     background-color: #ececec;
+    color: $anotherblue;
 }
 
 #config_machine .configure-content .content h3 {
     font-size: 1.4em;
     margin-bottom: 7px;
     text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+    color: $anotherblue;
 }
 
 #config_machine .configure-content .content h4 {
-    font-size: 1.4em;
+    font-size: 1.1em;
     text-shadow: 0px 1px 0px rgba(255,255,255,.5);
-    margin-bottom: 40px;
+//    margin-bottom: 40px;
+    float: left;
 }
 
-#config_machine .configure-content .content .big-link {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
+#config_machine {
+    .add-options {
+        width: 177px;
+        height: 43px;
+        background: url("../images/options-btn.png") 0 0 no-repeat;
+        text-decoration: none;
+        text-indent: -9000px;
+        display: block;
+        float: right;
+        margin-top: -3px;
+
+        &:hover {
+            background-position: bottom left;
+        }
+    }
 }
+
+
 
 /* step n */
 /* show and hide */
