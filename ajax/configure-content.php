@@ -14,7 +14,7 @@ if ($machineId % 2 == 0) {
         <li><strong>Pump Size:</strong> 10,000l</li>
     </ul>
     <h4>Basic Price: &pound;14,450.00</h4>
-    <a href="#" id="btnConfigure" class="add-options big-link red-link">Add your options</a>
+    <a href="#" id="btnConfigure" class="add-options">Add your options</a>
 </div>
 
 <?php } else { ?>

@@ -14,13 +14,9 @@
     marshall.environment = {
 
         init: function(){
-            //if(Modernizr.touch){
-            //    marshall.properties.isMobile = true;
-            //    $('html').addClass('mobiless');
-            //} else {
-            //    $('html').addClass('desktop');
-            //}
-            // Since I'm now doing it with PHP
+            if($('html').hasClass('mobile')){
+                marshall.properties.isMobile = true;
+            } // Written in with PHP
 
             marshall.properties.windowWidth = $(window).width();
 
@@ -46,13 +42,6 @@
         resize: function(){
 
             var newWindowWith = $(window).width();
-
-            //if(newWindowWith > marshall.properties.mobileThreshold){
-            //    $('html').removeClass('mobile').addClass('desktop');
-            //} else {
-            //    $('html').removeClass('desktop').addClass('mobile');
-            //}
-            // No need since all media query is under .mobile class now, added in php
 
             if(newWindowWith < marshall.properties.desktopThreshold){
                 $('.footer').removeClass('wide');
@@ -152,7 +141,7 @@
 
         resize: function(){
             var self = this;
-            if($('html').hasClass('mobile')){
+            if(marshall.properties.isMobile){
                 self.setMiniBoxSizes();
                 self.setSideBarSideBoxPadding();
                 self.setVideoBoxSize();
@@ -224,15 +213,15 @@
 
                             // FAKE main product entry
                             var $newRow = $('<tr></tr>');
-                            $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/290313-0832-5148.jpg" alt="QM1200 Monocoque Trailer"></td>');
                             $newRow.append('<td class="name">' +  $('h3', $detail).text()  + ' - Basic price:</td>');
+                            $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/thumbnails/290313-0832-5148.jpg" alt="QM1200 Monocoque Trailer"></td>');
                             $newRow.append('<td class="cost">&pound;12,552.00</td>');
                             self.$configureTable.append($newRow);
 
                             // FAKE delivery cost entry
                             $newRow = $('<tr id="211"></tr>');
-                            $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/delivery_lorry.jpg" alt="Delivery Charge"></td>');
                             $newRow.append('<td class="name">Delivery Charge (000/00-000):</td>');
+                            $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/delivery_lorry.jpg" alt="Delivery Charge"></td>');
                             $newRow.append('<td class="cost">&pound;145.00</td>');
                             self.$configureTable.append($newRow);
                             self.applyTableStripes();
@@ -352,8 +341,8 @@
 
                         // e.g fake new row
                         var $newRow = $('<tr id="119"></tr>');
-                        $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/8 inch Grain Hatch.jpg" alt="8 grain hatch"></td>');
                         $newRow.append('<td class="name">8" Grain Hatch (065/07-8000):</td>');
+                        $newRow.append('<td class="image"><img src="http://www.marshall-trailers.co.uk/uploads/products/optionals/8 inch Grain Hatch.jpg" alt="8 grain hatch"></td>');
                         $newRow.append('<td class="cost">&pound;118.00</td>');
                         self.$configureTable.append($newRow);
 
@@ -383,20 +372,40 @@
             var self = this,
                 $showIcons = $('.show-hide', self.$configureForm);
 
-            $showIcons.each(function(i, obj){
+            if(marshall.properties.isMobile){
+                $showIcons.each(function(i, obj){
 
-                var $showHideHeader = $(obj).parents('h3'),
-                    $mainBox = $(obj).parents('.mainbox');
+                    var $showHideHeader = $(obj).parents('h3'),
+                        $mainBox = $(obj).parents('.mainbox');
 
-                $showHideHeader.on('click', function(){
-                    if($mainBox.hasClass('open')){
-                        $mainBox.removeClass('open').addClass('closed');
-                    } else {
-                        $mainBox.removeClass('closed').addClass('open');
-                    }
-                    self.fixOptionWidths();
+                    $showHideHeader.on('click', function(){
+                        if($mainBox.hasClass('open')){
+                            $mainBox.removeClass('open').addClass('closed');
+                        } else {
+                            $mainBox.removeClass('closed').addClass('open');
+                        }
+                        self.fixOptionWidths();
+                    });
                 });
-            });
+            } else {
+                $showIcons.each(function(i, obj){
+
+                    var $showHideHeader = $(obj).parents('h3'),
+                        $mainBox = $(obj).parents('.mainbox');
+
+                    $showHideHeader.on('click', function(){
+                        if($mainBox.hasClass('open')){
+                            $('.body', $mainBox).slideUp();
+                            $mainBox.removeClass('open').addClass('closed');
+                        } else {
+                            $('.body', $mainBox).slideDown();
+                            $mainBox.removeClass('closed').addClass('open');
+                        }
+                        //self.fixOptionWidths();
+                    });
+                });
+            }
+
 
         },
 

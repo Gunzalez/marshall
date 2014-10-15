@@ -60,6 +60,10 @@ select {
 }
 
 .general-padding {
+  padding: 15px 0;
+}
+
+.mobile .general-padding {
   padding: 15px;
 }
 
@@ -1187,7 +1191,7 @@ h1 a {
 /* Price & Configure styles */
 /* ================================================ */
 #config_machine .step {
-  background: url("../images/heading-pre.png") top left no-repeat #001649;
+  background: url("../images/heading-pre.png") top left no-repeat #01205a;
   padding-left: 49px;
   height: 40px;
   line-height: 40px;
@@ -1238,15 +1242,16 @@ h1 a {
 
 .desktop #config_machine .empty-configuration {
   width: 100%;
-  height: 111px;
+  height: 130px;
   padding: 0;
-  background: url("../images/select_config.jpg") 510px 0 no-repeat;
+  background: url("../images/select_config.jpg") 500px bottom no-repeat;
 }
 .desktop #config_machine .empty-configuration h3 {
   display: none;
 }
 .desktop #config_machine .configure-content {
   min-height: 240px;
+  width: 960px;
 }
 
 .mobile #config_machine .empty-configuration {
@@ -1307,14 +1312,13 @@ h1 a {
 }
 
 #config_machine .add-options {
-  width: 177px;
+  width: 188px;
   height: 43px;
   background: url("../images/options-btn.png") 0 0 no-repeat;
   text-decoration: none;
   text-indent: -9000px;
   display: block;
   float: right;
-  margin-top: -3px;
 }
 #config_machine .add-options:hover {
   background-position: bottom left;
@@ -1322,33 +1326,70 @@ h1 a {
 
 /* step n */
 /* show and hide */
-#config_machine .mainbox .show-hide {
+.mobile #config_machine .mainbox .show-hide {
   text-decoration: none;
   float: right;
   margin-right: 10px;
   cursor: pointer;
 }
-
-#config_machine .mainbox .show-hide span {
+.mobile #config_machine .mainbox .show-hide span {
+  font-size: 18px;
+  display: inline-block;
+  padding-left: 10px;
   color: #ececec;
   font-weight: normal;
 }
-
-#config_machine .mainbox .show-hide span span {
+.mobile #config_machine .mainbox .show-hide span span {
   color: #ffffff;
 }
-
-#config_machine .mainbox.open .body {
+.mobile #config_machine .mainbox .show-hide span.divider {
+  display: none;
+}
+.mobile #config_machine .mainbox.open .body {
   display: block;
 }
-
-#config_machine .mainbox.open .show,
-#config_machine .mainbox.closed .hide {
+.mobile #config_machine .mainbox.open .show {
+  display: none;
+}
+.mobile #config_machine .mainbox.closed .hide {
+  display: none;
+}
+.mobile #config_machine .mainbox.closed .body {
   display: none;
 }
 
-#config_machine .mainbox.closed .body {
+.desktop #config_machine .step {
+  overflow: visible;
+}
+.desktop #config_machine .mainbox .show-hide {
+  text-decoration: none;
+  float: right;
+  margin-right: 10px;
+  background: url("../images/heading-down.png") center 40px no-repeat;
+  padding-bottom: 15px;
+}
+.desktop #config_machine .mainbox .show-hide span {
+  display: inline-block;
+  color: #706b6b;
+  font-weight: bold;
+  font-size: 14px !important;
+}
+.desktop #config_machine .mainbox .show-hide .fa {
   display: none;
+}
+.desktop #config_machine .mainbox .body {
+  float: left;
+}
+.desktop #config_machine .mainbox.open .show-hide .hide .text {
+  color: #fff !important;
+  cursor: pointer;
+}
+.desktop #config_machine .mainbox.closed .show-hide .show .text {
+  color: #fff !important;
+  cursor: pointer;
+}
+.desktop #config_machine .mainbox.can-hide {
+  margin-bottom: 6px;
 }
 
 /* step 2 */
@@ -1361,11 +1402,15 @@ h1 a {
   float: left;
 }
 
+.desktop #config_machine .options {
+  width: 960px;
+}
+
 #config_machine .options li {
   float: left;
   width: 33.33%;
   background-color: #fff;
-  margin-bottom: 15px;
+  margin-top: 15px;
   outline: none;
   cursor: pointer;
 }
@@ -1413,12 +1458,16 @@ h1 a {
   padding: 8px 10px;
   background-color: #dcdcdc;
   font-size: 1.1em;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
   overflow: hidden;
+  text-overflow: ellipsis;
   -webkit-transition: background 0.5s;
   -moz-transition: background 0.5s;
   -o-transition: background 0.5s;
   transition: background 0.5s;
+}
+
+.mobile #config_machine .options li h3 {
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
 }
 
 #config_machine .options li .col {
@@ -1467,40 +1516,34 @@ h1 a {
 
 /* single column styles */
 #config_machine .options.single-column li {
-  float: none;
-  width: 100%;
-  margin-right: 0;
+  float: none !important;
+  width: 100% !important;
+  margin-right: 0 !important;
 }
-
 #config_machine .options.single-column li .col.right {
   float: left;
   width: 100%;
   margin-left: -155px;
   height: inherit;
 }
-
 #config_machine .options.single-column li .col.right p {
   padding-right: 15px;
 }
-
 #config_machine .options.single-column li .col.right * {
   margin-left: 155px;
 }
-
 #config_machine .options.single-column li .col.left {
   width: 155px;
   height: inherit;
 }
-
 #config_machine .options.single-column li .col.left img {
   width: 140px;
 }
 
 /* step 3 */
 #config_machine .basket table {
-  width: 100%;
-  margin-top: 2px;
-  border: 1px solid #ccc;
+  width: 960px;
+  margin-top: 20px;
   background: #fff;
 }
 
@@ -1516,7 +1559,6 @@ h1 a {
 
 #config_machine .basket th {
   padding: 10px 16px;
-  border-bottom: 1px solid #ccc;
 }
 
 #config_machine .basket td.image {
@@ -1534,14 +1576,51 @@ h1 a {
 }
 
 #config_machine .basket table thead {
+  background-color: #d4d4d4;
+  color: #444;
+  font-size: 1.0em;
+  padding: 4px 16px;
+}
+
+#config_machine .basket tfoot td {
+  padding: 16px 16px;
+  font-weight: bold;
+  background: #dcdcdc;
+  color: #000000;
+  font-size: 1.1em;
+}
+
+.mobile #config_machine .basket .body {
+  background-color: #fff;
+}
+.mobile #config_machine .basket .body table {
+  width: 100%;
+  margin-top: 2px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.mobile #config_machine .basket .body table th {
+  padding: 10px 16px;
+  border-bottom: 1px solid #ccc;
+}
+.mobile #config_machine .basket .body table thead {
   background-color: #dcdcdc;
   color: #444;
   font-size: 1.0em;
   padding: 4px 16px;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
 }
-
-#config_machine .basket tfoot td {
+.mobile #config_machine .basket .body textarea {
+  width: 100%;
+  height: 120px;
+}
+.mobile #config_machine .basket .body label {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-bottom: 10px;
+  display: block;
+}
+.mobile #config_machine .basket tfoot td {
   border-top: 1px solid #ccc;
   padding: 16px 16px;
   font-weight: bold;
@@ -1551,24 +1630,24 @@ h1 a {
   font-size: 1.1em;
 }
 
-#config_machine .basket .body {
-  background-color: #fff;
-}
-
-#config_machine .basket .body label {
-  font-size: 1.1em;
-  font-weight: bold;
-  padding-bottom: 10px;
-  display: block;
+.desktop #config_machine .basket .body label {
+  display: none;
 }
 
 #config_machine .basket .body textarea {
-  width: 100%;
-  height: 120px;
+  width: 730px;
+  height: 180px;
 }
 
 /* step 4 */
-#config_machine .save-print-order .body {
+.desktop #config_machine .save-print-order .body {
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mobile #config_machine .save-print-order .body {
   background: #fff;
   padding: 15px;
 }
@@ -2793,6 +2872,13 @@ h1 a {
   }
   .mobile #config_machine .step {
     font-size: 1.2em;
+  }
+  .mobile #config_machine .configure-content .content h3 {
+    margin-top: 10px;
+  }
+  .mobile #config_machine .add-options {
+    margin-top: 15px;
+    width: 167px;
   }
   .mobile #basket {
     top: 0;

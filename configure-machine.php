@@ -69,11 +69,12 @@ require_once('php/isMobile.php');
                                 Add your options
                                 <div class="show-hide">
                                     <span class="show">
-                                        <span class="text">Show</span>
+                                        <span class="text">Open</span>
                                         <span class="fa fa-chevron-down">&nbsp;</span>
                                     </span>
+                                    <span class="divider">/</span>
                                     <span class="hide">
-                                        <span class="text">Hide</span>
+                                        <span class="text">Close</span>
                                         <span class="fa fa-chevron-up">&nbsp;</span>
                                     </span>
                                 </div>
@@ -645,11 +646,12 @@ require_once('php/isMobile.php');
                                 Confirm your specifications
                                 <div class="show-hide">
                                     <span class="show">
-                                        <span class="text">Show</span>
+                                        <span class="text">Open</span>
                                         <span class="fa fa-chevron-down">&nbsp;</span>
                                     </span>
+                                    <span class="divider">/</span>
                                     <span class="hide">
-                                        <span class="text">Hide</span>
+                                        <span class="text">Close</span>
                                         <span class="fa fa-chevron-up">&nbsp;</span>
                                     </span>
                                 </div>
@@ -658,15 +660,14 @@ require_once('php/isMobile.php');
                                 <table cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th class="image">Image</th>
                                             <th class="name">Product name</th>
+                                            <th class="image">Image</th>
                                             <th class="cost">Cost</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <td>&nbsp;</td>
-                                            <td class="total">Retail Price Total ex VAT:</td>
+                                            <td colspan="2" class="total">Retail Price Total ex VAT:</td>
                                             <td class="cost">&pound;<span id="total_cost">12,911.00</span></td>
                                         </tr>
                                     </tfoot>
@@ -687,11 +688,12 @@ require_once('php/isMobile.php');
                                 Order your machine
                                 <div class="show-hide">
                                     <span class="show">
-                                        <span class="text">Show</span>
+                                        <span class="text">Open</span>
                                         <span class="fa fa-chevron-down">&nbsp;</span>
                                     </span>
+                                    <span class="divider">/</span>
                                     <span class="hide">
-                                        <span class="text">Hide</span>
+                                        <span class="text">Close</span>
                                         <span class="fa fa-chevron-up">&nbsp;</span>
                                     </span>
                                 </div>
@@ -707,17 +709,17 @@ require_once('php/isMobile.php');
                             <h3 class="step">
                                 <span>Step 5:</span>
                                 Email enquiry to Marshall
-                                <!-- No need to hide just because user clicks on PDF, me thinks -->
-<!--                                <div class="show-hide">-->
-<!--                                    <span class="show">-->
-<!--                                        <span class="text">Show</span>-->
-<!--                                        <span class="fa fa-chevron-down">&nbsp;</span>-->
-<!--                                    </span>-->
-<!--                                    <span class="hide">-->
-<!--                                        <span class="text">Hide</span>-->
-<!--                                        <span class="fa fa-chevron-up">&nbsp;</span>-->
-<!--                                    </span>-->
-<!--                                </div>-->
+                                <div class="show-hide">
+                                    <span class="show">
+                                        <span class="text">Open</span>
+                                        <span class="fa fa-chevron-down">&nbsp;</span>
+                                    </span>
+                                    <span class="divider">/</span>
+                                    <span class="hide">
+                                        <span class="text">Close</span>
+                                        <span class="fa fa-chevron-up">&nbsp;</span>
+                                    </span>
+                                </div>
                             </h3>
                             <div class="body">
                                 <div class="column left-column">
