@@ -24,6 +24,8 @@ $darkblue: #001e5a;
 $darkerblue: #001848;
 $anotherblue: #001748;
 $yellow: #fff000;
+$red: #bb1f1d;
+$grey: #ececec;
 
 body {
 	margin: 0;
@@ -31,7 +33,7 @@ body {
 	color: #2e2e2e;
     font-family: Arial, Helvetica, sans-serif;
 	-webkit-text-size-adjust: none;
-    background: url("../images/top-gradient.png") left top repeat-x #ececec;
+    background: url("../images/top-gradient.png") left top repeat-x $grey;
     font-size: small;
 }
 
@@ -42,6 +44,7 @@ a {
 a:hover {
 
 }
+
 
 /* -------------- resets ---------------------- */
 h1, h2, h3, h4, h5 {
@@ -70,9 +73,14 @@ select {
     color: #001848;
 }
 
-
-
-
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    border: 1px solid #ccc;
+}
 
 
 
@@ -920,7 +928,7 @@ h1 a {
 }
 
 .news-items ol li {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $grey;
     padding: 15px 0;
     position: relative;
 }
@@ -1588,7 +1596,7 @@ h1 a {
 #config_machine .configure-content .content .specs li {
     padding: 8px 15px;
     margin-top: 2px;
-    background-color: #ececec;
+    background-color: $grey;
     color: $anotherblue;
 }
 
@@ -1639,7 +1647,7 @@ h1 a {
                     font-size: 18px;
                     display: inline-block;
                     padding-left: 10px;
-                    color: #ececec;
+                    color: $grey;
                     font-weight: normal;
 
                     span {
@@ -1701,6 +1709,7 @@ h1 a {
             }
             .body {
                 float: left;
+                margin-top: -3px;
             }
             &.open {
                 .show-hide {
@@ -1763,7 +1772,7 @@ h1 a {
 
 #config_machine .options li:hover h3,
 #config_machine .options li:hover .add {
-    background-color: #c8c8c8;
+    background-color: #e4e4e4;
     -webkit-transition: background 0.5s;
     -moz-transition: background 0.5s;
     -o-transition: background 0.5s;
@@ -1778,7 +1787,7 @@ h1 a {
 
 #config_machine .options li.selected h3,
 #config_machine .options li.selected .add {
-    background-color: #0f82ff;
+    background-color: #01205a;
     color: #fff;
     text-shadow: 0px -1px 0px rgba(0,0,0,.5);
 
@@ -1801,7 +1810,7 @@ h1 a {
 #config_machine .options li h3 {
     height: 40px;
     padding: 8px 10px;
-    background-color: #dcdcdc;
+    background-color: #d4d4d4;
     font-size: 1.1em;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1932,7 +1941,7 @@ h1 a {
 
                 &.even {
                     td {
-                        background: transparent;
+                        background: $grey;
                     }
                 }
             }
@@ -1947,7 +1956,7 @@ h1 a {
 
             tfoot {
                 td {
-                    padding: 16px 16px;
+                    padding: 16px;
                     font-weight: bold;
                     background: #d4d4d4;
                     color: #000000;
@@ -2004,11 +2013,15 @@ h1 a {
                     width: 100%;
                     margin-top: 2px;
                     border: 1px solid #ccc;
-                    background: #fff;
+
+                    .name {
+                        text-align: left;
+                    }
 
                     th {
                         padding: 10px 16px;
                         border-bottom: 1px solid #ccc;
+
                     }
 
                     thead {
@@ -2037,7 +2050,7 @@ h1 a {
             tfoot {
                 td {
                     border-top: 1px solid #ccc;
-                    padding: 16px 16px;
+                    padding: 10px 16px;
                     font-weight: bold;
                     background: #dcdcdc;
                     color: #000000;
@@ -2054,7 +2067,6 @@ h1 a {
         display: none;
     }
 }
-
 
 #config_machine .basket .body textarea {
     width: 730px;
@@ -2094,6 +2106,8 @@ h1 a {
                     clear: right;
                     float: right;
                     font-weight: bold;
+                    font-size: 13px;
+                    font-family: Arial;
                 }
             }
         }
@@ -2108,6 +2122,27 @@ h1 a {
             .body {
                 background: #fff;
                 padding: 15px;
+                text-align: right;
+
+                p {
+                    padding-right: 5px;
+                }
+
+                .long-link {
+                    border: 0;
+                    background: url("../images/quote-option-short.png") 0 0 no-repeat;
+                    width: 219px;
+                    height: 40px;
+                    line-height: 38px;
+                    color: $yellow;
+                    text-align: left;
+                    padding-left: 15px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    margin-left: 10px;
+                    font-size: 13px;
+                    font-family: Arial;
+                }
             }
         }
     }
@@ -2122,78 +2157,169 @@ h1 a {
     margin-bottom: 5px;
 }
 
+
 /* step 5 */
-#config_machine .email-option .body {
-    background: #fff;
-    padding: 15px;
+#config_machine {
+    .email-option {
+        .body {
+            background: #fff;
+            padding: 15px;
+
+            .column {
+                width: 48%;
+                float: left;
+                padding-bottom: 10px;
+
+                &.right-column {
+                    float: right;
+                }
+
+                p {
+                    padding-bottom: 10px;
+                    float: left;
+                    width: 100%;
+
+                    /* validation errors */
+                    /* for mobile */
+                    .error {
+                        color: $red;
+                        clear: left;
+                        float: left;
+                        display: none;
+                    }
+
+                    &.error {
+                        select,
+                        input {
+                            border: 1px solid $red;
+                        }
+
+                        .error {
+                            display: block;
+                            //margin-left: 120px;
+                            font-size: 0.9em;
+                            padding-top: 3px;
+                        }
+                    }
+                }
+
+                select {
+                    float: left;
+                    width: auto;
+                    font-weight: normal;
+                    margin-bottom: 0;
+                }
+
+                input {
+                    float: left;
+                    width: 220px;
+
+                    &.send-email {
+                        background: url('../images/checkout-btn.png') no-repeat;
+                        cursor: pointer;
+                        color: $yellow;
+                        font-weight: bold;
+                        font-family: Arial;
+                        padding: 12px;
+                        width: 107px;
+                        font-size: 14px;
+                        height: 41px;
+                        text-align: left;
+                        border: 0;
+                    }
+                }
+            }
+
+            .foot {
+                clear: both;
+                border-top: 1px solid #eaeaea;
+
+                p {
+                    padding: 15px 0;
+                }
+            }
+        }
+
+        label {
+            width: 120px;
+            float: left;
+            padding-top: 5px;
+        }
+
+        textarea {
+            width: 315px;
+            float: left;
+            height: 80px;
+        }
+
+    }
 }
 
-#config_machine .email-option .body .column {
-    width: 48%;
-    float: left;
-    padding-bottom: 10px;
+.error-div {
+    position: absolute;
+    background: $yellow;
+    border: 1px solid #E1E16D;
+    color: #000;
+    padding: 3px 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 11px;
+    z-index: 300;
+    -moz-box-shadow: 0 0 6px #ddd;
+    -webkit-box-shadow: 0 0 6px #ddd;
 }
 
-#config_machine .email-option .body .right-column {
-    float: right;
+.desktop {
+    #config_machine {
+        .email-option {
+            .body {
+                margin-bottom: 15px;
+                margin-top: 7px;
+
+                .column {
+                    padding-top: 15px;
+
+                    input {
+                        width: 200px;
+
+                        &.send-email {
+                            width: 100px;
+                            margin-left: 119px;
+                        }
+                    }
+                    p {
+                        padding-bottom: 16px;
+
+                        label {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .foot {
+                    border-top: 0;
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            label {
+                padding-top: 2px;
+            }
+
+            textarea {
+                width: 200px;
+                height: 150px;
+            }
+        }
+    }
 }
 
-#config_machine .email-option label {
-    width: 120px;
-    float: left;
-    padding-top: 5px;
-}
 
-#config_machine .email-option .column p {
-    padding-bottom: 10px;
-    float: left;
-    width: 100%;
-}
 
-#config_machine .email-option .column select,
-#config_machine .email-option .column input {
-    float: left;
-}
 
-#config_machine .email-option .column input {
-    width: 220px;
-}
-
-#config_machine .email-option textarea {
-    width: 315px;
-    float: left;
-    height: 80px;
-}
-
-#config_machine .email-option .body .foot {
-    clear: left;
-    padding-top: 15px;
-    text-align: right;
-    border-top: 1px solid #eaeaea;
-}
-
-#config_machine .email-option .body .foot p {
-    float: left;
-}
-
-/* validation errors */
-/* ROBCURLE In your js validate and add .error class to parent p tag, simples */
-#config_machine .email-option .column p .error {
-    color: #BB1F1D;
-    display: none;
-    float: left;
-}
-
-#config_machine .email-option .column p.error select,
-#config_machine .email-option .column p.error input {
-    border: 1px solid #BB1F1D;
-}
-
-#config_machine .email-option .column p.error .error {
-    display: block;
-    margin-left: 120px;
-    font-size: 0.85em;
-}
 
 
 
@@ -2254,7 +2380,7 @@ h1 a {
         background-color: #fff;
 
         .main-heading {
-            background-color: #ececec;
+            background-color: $grey;
         }
 
         .product-image {
@@ -2292,7 +2418,7 @@ h1 a {
 
                 li {
                     padding: 5px 8px;
-                    background-color: #ececec;
+                    background-color: $grey;
                     margin-bottom: 1px;
                 }
             }
@@ -2549,7 +2675,7 @@ h1 a {
 
 .made-by {
     clear: both;
-    background-color: #ececec;
+    background-color: $grey;
     padding: 10px;
     margin-top: 10px;
     color: #407f12;
@@ -2596,7 +2722,7 @@ h1 a {
     right: 0;
     width: 38px;
     margin-top: 176px;
-    border: 2px solid #bb1f1d;
+    border: 2px solid $red;
     color: #444;
     -webkit-appearance: none;
     -webkit-box-sizing: border-box;
@@ -2628,7 +2754,7 @@ h1 a {
     float: left;
     width: 38px;
     height: 93px;
-    background: url("../images/your-marshall.png") top left no-repeat #bb1f1d;
+    background: url("../images/your-marshall.png") top left no-repeat $red;
     text-indent: -9000px;
 }
 
@@ -2640,7 +2766,7 @@ h1 a {
 }
 
 #basket .summary-box h3 {
-    background: #bb1f1d;
+    background: $red;
     color: #fff;
     padding: 5px 10px;
 }
@@ -2697,7 +2823,7 @@ h1 a {
 
         .bx-pager-item a.active,
         .bx-pager-item a.active:hover {
-            background-color: #bb1f1d;
+            background-color: $red;
             -webkit-transition: background 0.5s;
             -moz-transition: background 0.5s;
             -o-transition: background 0.5s;
@@ -2705,12 +2831,105 @@ h1 a {
         }
     }
 
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select {
+        border-radius: 4px;
+        background-color: #fff;
+        font-family: 'Tahoma', Helvetica, Arial, sans-serif;
+        padding: 6px 10px;
+        border: 1px solid #ccc;
+        -webkit-appearance: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        resize: none;
+        font-size: 1.0em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select {
+        font-size: 1.1em;
+        padding: 5px 7px;
+    }
+
+    select {
+        background: url("../images/bg-select-schveron.jpg") center right no-repeat #fff;
+        padding: 5px 30px 5px 7px !important;
+    }
+
+    .error select {
+        background: url("../images/bg-select-schveron-error.jpg") center right no-repeat #fff;
+    }
+
+
+
+
+    /* buttons, not used... yet */
+    .old-mobile {
+        .big-link {
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            padding: 9px 14px;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            text-decoration: none;
+            font-size: 1.0em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            cursor: pointer;
+            clear: both;
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
+        }
+
+        .red-link {
+            background: $red;
+            background-image: -webkit-linear-gradient(top, $red, #D20805);
+            background-image: -moz-linear-gradient(top, $red, #D20805);
+            background-image: -ms-linear-gradient(top, $red, #D20805);
+            background-image: -o-linear-gradient(top, $red, #D20805);
+            background-image: linear-gradient(to bottom, $red, #D20805);
+
+            &:active,
+            &:hover {
+                background: #F20E08;
+                background-image: -webkit-linear-gradient(top, #F20E08, #F71102);
+                background-image: -moz-linear-gradient(top, #F20E08, #F71102);
+                background-image: -ms-linear-gradient(top, #F20E08, #F71102);
+                background-image: -o-linear-gradient(top, #F20E08, #F71102);
+                background-image: linear-gradient(to bottom, #F20E08, #F71102);
+            }
+        }
+
+        .blue-link {
+            background: #001649;
+            color: #fff;
+
+            &:active,
+            &:hover {
+                background: #0f82ff;
+            }
+        }
+    }
+
+
     /* media queries */
     /* ================================================ */
     @media only screen and (max-width: 1000px) {
 
         body {
-            background: #ececec;
+            background: $grey;
         }
 
         .page {
@@ -2719,7 +2938,7 @@ h1 a {
 
         .header {
             height: 100px;
-            background: #bb1f1d;
+            background: $red;
         }
 
         .breadcrumb {
@@ -2962,7 +3181,7 @@ h1 a {
 
                         li {
                             padding: 5px 8px;
-                            background-color: #ececec;
+                            background-color: $grey;
                             margin-bottom: 3px;
                         }
                     }
@@ -3123,8 +3342,8 @@ h1 a {
         }
 
         /* table styles */
-        #config_machine .basket table td:nth-child(1),
-        #config_machine .basket table th:nth-child(1) {
+        #config_machine .basket table td.image,
+        #config_machine .basket table th.image {
             display: none;
         }
 
@@ -3316,96 +3535,6 @@ h1 a {
                         width: 100%;
                         box-sizing: border-box;
                     }
-                }
-            }
-        }
-
-        textarea,
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="number"],
-        select {
-            border-radius: 4px;
-            background-color: #fff;
-            font-family: 'Tahoma', Helvetica, Arial, sans-serif;
-            padding: 6px 10px;
-            border: 1px solid #ccc;
-            -webkit-appearance: none;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            resize: none;
-            font-size: 1.0em;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="number"],
-        select {
-            font-size: 1.1em;
-            padding: 5px 7px !important;
-        }
-
-        select {
-            background: url("../images/bg-select-schveron.jpg") center right no-repeat #fff;
-            padding: 5px 30px 5px 7px;
-        }
-
-        .error select {
-            background: url("../images/bg-select-schveron-error.jpg") center right no-repeat #fff;
-        }
-
-        /* buttons */
-
-        .old-mobile {
-            .big-link {
-                position: relative;
-                display: inline-block;
-                color: #fff;
-                padding: 9px 14px;
-                -moz-box-shadow: none;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-                text-decoration: none;
-                font-size: 1.0em;
-                font-weight: bold;
-                letter-spacing: 2px;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 3px;
-                cursor: pointer;
-                clear: both;
-                text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
-            }
-
-            .red-link {
-                background: #BB1F1D;
-                background-image: -webkit-linear-gradient(top, #BB1F1D, #D20805);
-                background-image: -moz-linear-gradient(top, #BB1F1D, #D20805);
-                background-image: -ms-linear-gradient(top, #BB1F1D, #D20805);
-                background-image: -o-linear-gradient(top, #BB1F1D, #D20805);
-                background-image: linear-gradient(to bottom, #BB1F1D, #D20805);
-
-                &:active,
-                &:hover {
-                    background: #F20E08;
-                    background-image: -webkit-linear-gradient(top, #F20E08, #F71102);
-                    background-image: -moz-linear-gradient(top, #F20E08, #F71102);
-                    background-image: -ms-linear-gradient(top, #F20E08, #F71102);
-                    background-image: -o-linear-gradient(top, #F20E08, #F71102);
-                    background-image: linear-gradient(to bottom, #F20E08, #F71102);
-                }
-            }
-
-            .blue-link {
-                background: #001649;
-                color: #fff;
-
-                &:active,
-                &:hover {
-                    background: #0f82ff;
                 }
             }
         }
@@ -3633,7 +3762,7 @@ h1 a {
 
 
             .add-options {
-                margin-top:  15px;
+                margin-top: 15px;
                 width: 167px;
             }
         }
@@ -3644,7 +3773,7 @@ h1 a {
             left: 0;
             bottom: 0;
             border: none;
-            background-color: #bb1f1d;
+            background-color: $red;
             width: 100%;
             height: 71px;
             margin-top: -71px;
@@ -3653,7 +3782,7 @@ h1 a {
         }
 
         #basket .summary-box h3 {
-            background: none repeat scroll 0 0 #bb1f1d;
+            background: none repeat scroll 0 0 $red;
             color: #fff;
             padding: 5px 10px;
         }
@@ -3674,7 +3803,7 @@ h1 a {
 
         #basket .summary-box .detail {
             min-height: inherit;
-            border: 5px solid #bb1f1d;
+            border: 5px solid $red;
         }
 
         #basket.stick-out {

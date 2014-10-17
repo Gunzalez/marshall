@@ -36,6 +36,15 @@ select {
   color: #001848;
 }
 
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  border: 1px solid #ccc;
+}
+
 * {
   outline: none;
 }
@@ -1379,6 +1388,7 @@ h1 a {
 }
 .desktop #config_machine .mainbox .body {
   float: left;
+  margin-top: -3px;
 }
 .desktop #config_machine .mainbox.open .show-hide .hide .text {
   color: #fff !important;
@@ -1417,7 +1427,7 @@ h1 a {
 
 #config_machine .options li:hover h3,
 #config_machine .options li:hover .add {
-  background-color: #c8c8c8;
+  background-color: #e4e4e4;
   -webkit-transition: background 0.5s;
   -moz-transition: background 0.5s;
   -o-transition: background 0.5s;
@@ -1434,7 +1444,7 @@ h1 a {
 
 #config_machine .options li.selected h3,
 #config_machine .options li.selected .add {
-  background-color: #0f82ff;
+  background-color: #01205a;
   color: #fff;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   -webkit-transition: background 0.5s;
@@ -1456,7 +1466,7 @@ h1 a {
 #config_machine .options li h3 {
   height: 40px;
   padding: 8px 10px;
-  background-color: #dcdcdc;
+  background-color: #d4d4d4;
   font-size: 1.1em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1555,7 +1565,7 @@ h1 a {
   background: #fff;
 }
 #config_machine .basket table tr.even td {
-  background: transparent;
+  background: #ececec;
 }
 #config_machine .basket table thead {
   background-color: #d4d4d4;
@@ -1564,7 +1574,7 @@ h1 a {
   padding: 4px 16px;
 }
 #config_machine .basket table tfoot td {
-  padding: 16px 16px;
+  padding: 16px;
   font-weight: bold;
   background: #d4d4d4;
   color: #000000;
@@ -1605,7 +1615,9 @@ h1 a {
   width: 100%;
   margin-top: 2px;
   border: 1px solid #ccc;
-  background: #fff;
+}
+.mobile #config_machine .basket .body table .name {
+  text-align: left;
 }
 .mobile #config_machine .basket .body table th {
   padding: 10px 16px;
@@ -1630,7 +1642,7 @@ h1 a {
 }
 .mobile #config_machine .basket tfoot td {
   border-top: 1px solid #ccc;
-  padding: 16px 16px;
+  padding: 10px 16px;
   font-weight: bold;
   background: #dcdcdc;
   color: #000000;
@@ -1676,11 +1688,32 @@ h1 a {
   clear: right;
   float: right;
   font-weight: bold;
+  font-size: 13px;
+  font-family: Arial;
 }
 
 .mobile #config_machine .save-print-order .body {
   background: #fff;
   padding: 15px;
+  text-align: right;
+}
+.mobile #config_machine .save-print-order .body p {
+  padding-right: 5px;
+}
+.mobile #config_machine .save-print-order .body .long-link {
+  border: 0;
+  background: url("../images/quote-option-short.png") 0 0 no-repeat;
+  width: 219px;
+  height: 40px;
+  line-height: 38px;
+  color: #fff000;
+  text-align: left;
+  padding-left: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 13px;
+  font-family: Arial;
 }
 
 #config_machine .save-print-order .body p {
@@ -1697,72 +1730,124 @@ h1 a {
   background: #fff;
   padding: 15px;
 }
-
 #config_machine .email-option .body .column {
   width: 48%;
   float: left;
   padding-bottom: 10px;
 }
-
-#config_machine .email-option .body .right-column {
+#config_machine .email-option .body .column.right-column {
   float: right;
 }
-
+#config_machine .email-option .body .column p {
+  padding-bottom: 10px;
+  float: left;
+  width: 100%;
+  /* validation errors */
+  /* for mobile */
+}
+#config_machine .email-option .body .column p .error {
+  color: #bb1f1d;
+  clear: left;
+  float: left;
+  display: none;
+}
+#config_machine .email-option .body .column p.error select,
+#config_machine .email-option .body .column p.error input {
+  border: 1px solid #bb1f1d;
+}
+#config_machine .email-option .body .column p.error .error {
+  display: block;
+  font-size: 0.9em;
+  padding-top: 3px;
+}
+#config_machine .email-option .body .column select {
+  float: left;
+  width: auto;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+#config_machine .email-option .body .column input {
+  float: left;
+  width: 220px;
+}
+#config_machine .email-option .body .column input.send-email {
+  background: url("../images/checkout-btn.png") no-repeat;
+  cursor: pointer;
+  color: #fff000;
+  font-weight: bold;
+  font-family: Arial;
+  padding: 12px;
+  width: 107px;
+  font-size: 14px;
+  height: 41px;
+  text-align: left;
+  border: 0;
+}
+#config_machine .email-option .body .foot {
+  clear: both;
+  border-top: 1px solid #eaeaea;
+}
+#config_machine .email-option .body .foot p {
+  padding: 15px 0;
+}
 #config_machine .email-option label {
   width: 120px;
   float: left;
   padding-top: 5px;
 }
-
-#config_machine .email-option .column p {
-  padding-bottom: 10px;
-  float: left;
-  width: 100%;
-}
-
-#config_machine .email-option .column select,
-#config_machine .email-option .column input {
-  float: left;
-}
-
-#config_machine .email-option .column input {
-  width: 220px;
-}
-
 #config_machine .email-option textarea {
   width: 315px;
   float: left;
   height: 80px;
 }
 
-#config_machine .email-option .body .foot {
-  clear: left;
+.error-div {
+  position: absolute;
+  background: #fff000;
+  border: 1px solid #E1E16D;
+  color: #000;
+  padding: 3px 6px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 11px;
+  z-index: 300;
+  -moz-box-shadow: 0 0 6px #ddd;
+  -webkit-box-shadow: 0 0 6px #ddd;
+}
+
+.desktop #config_machine .email-option .body {
+  margin-bottom: 15px;
+  margin-top: 7px;
+}
+.desktop #config_machine .email-option .body .column {
   padding-top: 15px;
-  text-align: right;
-  border-top: 1px solid #eaeaea;
 }
-
-#config_machine .email-option .body .foot p {
-  float: left;
+.desktop #config_machine .email-option .body .column input {
+  width: 200px;
 }
-
-/* validation errors */
-/* ROBCURLE In your js validate and add .error class to parent p tag, simples */
-#config_machine .email-option .column p .error {
-  color: #BB1F1D;
-  display: none;
-  float: left;
+.desktop #config_machine .email-option .body .column input.send-email {
+  width: 100px;
+  margin-left: 119px;
 }
-
-#config_machine .email-option .column p.error select,
-#config_machine .email-option .column p.error input {
-  border: 1px solid #BB1F1D;
+.desktop #config_machine .email-option .body .column p {
+  padding-bottom: 16px;
 }
-
-#config_machine .email-option .column p.error .error {
-  display: block;
-  margin-left: 120px;
-  font-size: 0.85em;
+.desktop #config_machine .email-option .body .column p label {
+  font-size: 14px;
+}
+.desktop #config_machine .email-option .body .foot {
+  border-top: 0;
+}
+.desktop #config_machine .email-option .body .foot p {
+  font-size: 14px;
+}
+.desktop #config_machine .email-option label {
+  padding-top: 2px;
+}
+.desktop #config_machine .email-option textarea {
+  width: 200px;
+  height: 150px;
 }
 
 /* homepage mini boxes, responsive using JS */
@@ -2163,6 +2248,7 @@ h1 a {
 }
 
 .mobile {
+  /* buttons, not used... yet */
   /* media queries */
   /* ================================================ */
   /* standard desktop */
@@ -2204,6 +2290,81 @@ h1 a {
   -moz-transition: background 0.5s;
   -o-transition: background 0.5s;
   transition: background 0.5s;
+}
+.mobile textarea,
+.mobile input[type="text"],
+.mobile input[type="email"],
+.mobile input[type="password"],
+.mobile input[type="number"],
+.mobile select {
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: 'Tahoma', Helvetica, Arial, sans-serif;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 1.0em;
+}
+.mobile input[type="text"],
+.mobile input[type="email"],
+.mobile input[type="password"],
+.mobile input[type="number"],
+.mobile select {
+  font-size: 1.1em;
+  padding: 5px 7px;
+}
+.mobile select {
+  background: url("../images/bg-select-schveron.jpg") center right no-repeat white;
+  padding: 5px 30px 5px 7px !important;
+}
+.mobile .error select {
+  background: url("../images/bg-select-schveron-error.jpg") center right no-repeat white;
+}
+.mobile .old-mobile .big-link {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  padding: 9px 14px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-decoration: none;
+  font-size: 1.0em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  clear: both;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+.mobile .old-mobile .red-link {
+  background: #bb1f1d;
+  background-image: -webkit-linear-gradient(top, #bb1f1d, #d20805);
+  background-image: -moz-linear-gradient(top, #bb1f1d, #d20805);
+  background-image: -ms-linear-gradient(top, #bb1f1d, #d20805);
+  background-image: -o-linear-gradient(top, #bb1f1d, #d20805);
+  background-image: linear-gradient(to bottom, #bb1f1d, #d20805);
+}
+.mobile .old-mobile .red-link:active, .mobile .old-mobile .red-link:hover {
+  background: #F20E08;
+  background-image: -webkit-linear-gradient(top, #f20e08, #f71102);
+  background-image: -moz-linear-gradient(top, #f20e08, #f71102);
+  background-image: -ms-linear-gradient(top, #f20e08, #f71102);
+  background-image: -o-linear-gradient(top, #f20e08, #f71102);
+  background-image: linear-gradient(to bottom, #f20e08, #f71102);
+}
+.mobile .old-mobile .blue-link {
+  background: #001649;
+  color: #fff;
+}
+.mobile .old-mobile .blue-link:active, .mobile .old-mobile .blue-link:hover {
+  background: #0f82ff;
 }
 @media only screen and (max-width: 1000px) {
   .mobile {
@@ -2496,8 +2657,8 @@ h1 a {
   .mobile #config_machine .step span.fa {
     font-size: 1.3em;
   }
-  .mobile #config_machine .basket table td:nth-child(1),
-  .mobile #config_machine .basket table th:nth-child(1) {
+  .mobile #config_machine .basket table td.image,
+  .mobile #config_machine .basket table th.image {
     display: none;
   }
   .mobile #config_machine .basket td {
@@ -2593,7 +2754,6 @@ h1 a {
 }
 @media only screen and (max-width: 400px) {
   .mobile {
-    /* buttons */
     /* filers */
     /* news */
     /* news detail */
@@ -2673,81 +2833,6 @@ h1 a {
     position: static;
     width: 100%;
     box-sizing: border-box;
-  }
-  .mobile textarea,
-  .mobile input[type="text"],
-  .mobile input[type="email"],
-  .mobile input[type="password"],
-  .mobile input[type="number"],
-  .mobile select {
-    border-radius: 4px;
-    background-color: #fff;
-    font-family: 'Tahoma', Helvetica, Arial, sans-serif;
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    -webkit-appearance: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    resize: none;
-    font-size: 1.0em;
-  }
-  .mobile input[type="text"],
-  .mobile input[type="email"],
-  .mobile input[type="password"],
-  .mobile input[type="number"],
-  .mobile select {
-    font-size: 1.1em;
-    padding: 5px 7px !important;
-  }
-  .mobile select {
-    background: url("../images/bg-select-schveron.jpg") center right no-repeat white;
-    padding: 5px 30px 5px 7px;
-  }
-  .mobile .error select {
-    background: url("../images/bg-select-schveron-error.jpg") center right no-repeat white;
-  }
-  .mobile .old-mobile .big-link {
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    padding: 9px 14px;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-decoration: none;
-    font-size: 1.0em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    cursor: pointer;
-    clear: both;
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
-  }
-  .mobile .old-mobile .red-link {
-    background: #BB1F1D;
-    background-image: -webkit-linear-gradient(top, #bb1f1d, #d20805);
-    background-image: -moz-linear-gradient(top, #bb1f1d, #d20805);
-    background-image: -ms-linear-gradient(top, #bb1f1d, #d20805);
-    background-image: -o-linear-gradient(top, #bb1f1d, #d20805);
-    background-image: linear-gradient(to bottom, #bb1f1d, #d20805);
-  }
-  .mobile .old-mobile .red-link:active, .mobile .old-mobile .red-link:hover {
-    background: #F20E08;
-    background-image: -webkit-linear-gradient(top, #f20e08, #f71102);
-    background-image: -moz-linear-gradient(top, #f20e08, #f71102);
-    background-image: -ms-linear-gradient(top, #f20e08, #f71102);
-    background-image: -o-linear-gradient(top, #f20e08, #f71102);
-    background-image: linear-gradient(to bottom, #f20e08, #f71102);
-  }
-  .mobile .old-mobile .blue-link {
-    background: #001649;
-    color: #fff;
-  }
-  .mobile .old-mobile .blue-link:active, .mobile .old-mobile .blue-link:hover {
-    background: #0f82ff;
   }
   .mobile .filters {
     float: left;

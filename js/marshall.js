@@ -3,6 +3,8 @@
 	
 	var marshall = {};
 
+    marshall.utils = utilities;
+
 	marshall.properties = {
 		isMobile: false,
 		windowWidth: '',
@@ -47,6 +49,12 @@
                 $('.footer').removeClass('wide');
             } else {
                 $('.footer').addClass('wide');
+            }
+
+            if(newWindowWith <= 679){
+                $('#config_machine').find('.basket .total').removeAttr('colspan');
+            } else {
+                $('#config_machine').find('.basket .total').attr('colspan', '2');
             }
 
             // TODO, does not work on iPad
@@ -288,7 +296,7 @@
                 // Shows steps 2 - 4
                 self.$configureOptions.removeClass('selected');                         // clears options
                 self.$configureTable.empty();                                           // clears the table
-                $collapsibleSteps.removeClass('closed, displayNone').addClass('open');  // resets collapsible panels
+                $collapsibleSteps.not('.email-option').removeClass('closed, displayNone').addClass('open');  // resets collapsible panels
                 self.fixOptionWidths();                                                 // adjusts options layout
 
                 // Some fancy slide to options panel
@@ -385,6 +393,7 @@
                             $mainBox.removeClass('closed').addClass('open');
                         }
                         self.fixOptionWidths();
+                        $('.error-div').remove();
                     });
                 });
             } else {
@@ -402,6 +411,8 @@
                             $mainBox.removeClass('closed').addClass('open');
                         }
                         //self.fixOptionWidths();
+
+                        $('.error-div').remove();
                     });
                 });
             }
@@ -429,29 +440,62 @@
             });
         },
 
+        reportError: function($el, msg){
+            if(marshall.properties.isMobile){
+                var $parentTag = $el.parent('p');
+                $parentTag.addClass('error');
+                $('.error', $parentTag).html(msg);
+            } else {
+                var leftPos = $el.offset().left + 205,
+                    topPos =  $el.offset().top,
+                    $errorDiv = $('<div class="error-div">'+msg+'</div>');
+
+                $errorDiv.css({
+                    top: topPos,
+                    left: leftPos
+                });
+                $('body').append($errorDiv);
+            }
+        },
+
         setUpConfigurationEmail: function(){
             var self = this,
                 $formFieldsBox = $('.email-option', self.$configureForm);
 
             self.$configureForm.on('submit', function(){
 
-                var returnValue = true;
+                var isValidForm = true,
+                    $lastNameInput = $('#lastname', $formFieldsBox),
+                    $telephoneInput = $('#telephone', $formFieldsBox),
+                    $emailInput = $('#email', $formFieldsBox);
 
-                // ROBCURLE - TODO, validation, just add .error to parent p tag of the offending form field
+                $('.error-div').remove();
 
+                // ROBCURLE - tweaks as needed
+                if(marshall.utils.isEmptyInputField($lastNameInput)){
+                    self.reportError($lastNameInput, 'Please complete this mandatory field');
+                    isValidForm = false;
+                }
 
+                if(marshall.utils.isEmptyInputField($telephoneInput)){
+                    self.reportError($telephoneInput, 'Please complete this mandatory field');
+                    isValidForm = false;
+                }
 
+                if(marshall.utils.isEmptyInputField($emailInput)){
+                    self.reportError($emailInput, 'Please complete this mandatory field');
+                    isValidForm = false;
+                } else {
+                    if(!marshall.utils.isValidEmailAddress($emailInput)){
+                        self.reportError($emailInput, 'Please enter a valid email address');
+                        isValidForm = false;
+                    }
+                }
 
-
-
-
-
-
-
-                return returnValue; // for normal post
+                return isValidForm; // for normal post
             });
 
-            // cosmetic, clears error when suer clicks on field
+            // cosmetic, clears error when user clicks on field
             $('input', $formFieldsBox).on('focus', function(){
                 $(this).parents('.error').removeClass('error');
             });
@@ -495,6 +539,7 @@
         resize: function(){
             var self = this;
             self.fixOptionWidths();
+            $('.error-div').remove();
         },
 
         init: function(){

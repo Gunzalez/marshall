@@ -1,6 +1,8 @@
 
 var utilities = {
-    // Tests
+    // Validation
+
+    // - mandatory fields
     isEmptyInputField: function($inputField){
         var returnValue = true;
         if($.trim($inputField.val()).length > 0 ){
@@ -8,6 +10,8 @@ var utilities = {
         }
         return returnValue;
     },
+
+    // - email address fields
     isValidEmailAddress: function($inputField){
         var returnValue = true,
             IsEmail = function(email){
@@ -20,16 +24,6 @@ var utilities = {
         };
         return returnValue;
     },
-
-
-
-
-
-
-
-
-
-
 
     // Error reporting
     reportError: function($obj, containerCssClass){

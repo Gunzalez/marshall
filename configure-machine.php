@@ -92,7 +92,7 @@ require_once('php/isMobile.php');
                                             <p>Essential for carrying silage. Comes complete with silage attachments for hydraulic door. Cubic capacity: 1013 cu.ft / 28.7 cu.mtrs</p>
                                         </div>
                                         <div class="add">
-                                            <label for="option 41">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>                                            
+                                            <label for="option 41">Click to <span class="add-option">add</span><span class="remove-option">remove</span> this option</label>
                                             <input type="checkbox" name="option[]" value="41" class="optionCheckbox">
                                         </div>
                                     </li>
@@ -643,7 +643,7 @@ require_once('php/isMobile.php');
                         <div class="mainbox basket can-hide displayNone open">
                             <h3 class="step">
                                 <span class="number">Step 3:</span>
-                                <?php  writeTextContent('Check your chosen specs:','Check your chosen specification / quote:'); ?>
+                                <?php writeTextContent('Check your chosen specs:','Check your chosen specification / quote:'); ?>
                                 <div class="show-hide">
                                     <span class="show">
                                         <span class="text">Open</span>
@@ -660,9 +660,9 @@ require_once('php/isMobile.php');
                                 <table cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th class="name">Product name</th>
-                                            <th class="image">Image</th>
-                                            <th class="cost">Cost</th>
+                                            <th class="name">Product name:</th>
+                                            <th class="image">Image:</th>
+                                            <th class="cost">Cost:</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -675,7 +675,6 @@ require_once('php/isMobile.php');
                                 </table>
 
                                 <div class="general-padding">
-                                    <label for="notes">Notes</label>
                                     <textarea id="notes" name="notes" placeholder="Add order notes / numbers to this box"></textarea>
                                 </div>
 
@@ -685,7 +684,7 @@ require_once('php/isMobile.php');
                         <div class="mainbox save-print-order can-hide displayNone open">
                             <h3 class="step">
                                 <span class="number">Step 4:</span>
-                                <?php  writeTextContent('Save / print / order:','Save / print / order your machine:'); ?>
+                                <?php writeTextContent('Save / print / order:','Save / print / order your machine:'); ?>
                                 <div class="show-hide">
                                     <span class="show">
                                         <span class="text">Open</span>
@@ -700,22 +699,15 @@ require_once('php/isMobile.php');
                             </h3>
                             <div class="body">
                                 <p>Choose one of the following options:</p>
-                                <?php
-                                    $mobileButton = '<input type="button" id="email_enquiry" class="long-link" value="Email enquiry to Marshall">';
-                                    $desktopButton = '<input type="button" id="email_enquiry" class="long-link" value="Email enquiry to Marshall &amp; send copy to yourself">';
-                                    writeTextContent($mobileButton, $desktopButton);
-
-                                    $mobileButton = '<input type="button" id="pdf_enquiry" class="long-link" value="Save / Download">';
-                                    $desktopButton = '<input type="button" id="pdf_enquiry" class="long-link" value="Save / Download quote to your desktop in PDF">';
-                                    writeTextContent($mobileButton, $desktopButton);
-                                ?>
+                                <input type="button" id="email_enquiry" class="long-link" value="<?php writeTextContent('Email enquiry to Marshall', 'Email enquiry to Marshall &amp; send copy to yourself'); ?>">
+                                <input type="button" id="email_enquiry" class="long-link" value="<?php writeTextContent('Save / Download', 'Save / Download quote to your desktop in PDF'); ?>">
                             </div>
                         </div>
 
-                        <div class="mainbox email-option can-hide displayNone">
+                        <div class="mainbox email-option can-hide displayNone open">
                             <h3 class="step">
                                 <span class="number">Step 5:</span>
-                                <?php writeTextContent('Email Marshall:','Email enquiry to Marshall & send copy to yourself:'); ?>
+                                <?php writeTextContent('Email Marshall:','Email enquiry to Marshall &amp; send copy to yourself:'); ?>
                                 <div class="show-hide">
                                     <span class="show">
                                         <span class="text">Open</span>
@@ -730,10 +722,10 @@ require_once('php/isMobile.php');
                             </h3>
                             <div class="body">
                                 <div class="column left-column">
-                                    <p class="error">
+                                    <p>
                                         <label for="title">Title *</label>
                                         <select id="title" name="title" required="required">
-                                            <option value="NaN">Select... *</option>
+<!--                                        <option value="NaN">Select... *</option>-->
                                             <option value="Mr">Mr</option>
                                             <option value="Mrs">Mrs</option>
                                             <option value="Ms">Ms</option>
@@ -744,39 +736,39 @@ require_once('php/isMobile.php');
                                             <option value="Sir">Sir</option>
                                             <option value="Other">Other</option>
                                         </select>
-                                        <span class="error">Please pick an option</span>
+                                        <span class="error"></span>
                                     </p>
                                     <p>
                                         <label for="firstname">Firstname</label>
-                                        <input type="text" id="firstname" name="firstname" placeholder="First name">
+                                        <input type="text" id="firstname" name="firstname"<?php writeTextContent(' placeholder="First name"', ''); ?>>
                                     </p>
-                                    <p class="error">
+                                    <p>
                                         <label for="lastname">Lastname *</label>
-                                        <input type="text" id="lastname" name="lastname" required="required" placeholder="Last name *">
-                                        <span class="error">Please pick an option</span>
+                                        <input type="text" id="lastname" name="lastname"<?php writeTextContent(' placeholder="Last name *"', ''); ?>>
+                                        <span class="error"></span>
                                     </p>
                                     <p>
                                         <label for="address">Address</label>
-                                        <textarea id="address" name="address" placeholder="Address details"></textarea>
+                                        <textarea id="address" name="address"<?php writeTextContent(' placeholder="Address details"', ''); ?>></textarea>
                                     </p>
                                 </div>
                                 <div class="column right-column">
-                                    <p class="error">
-                                        <label for="telephone">Telephone *</label><input type="number" id="telephone" name="telephone" required="required" placeholder="Phone number *">
-                                        <span class="error">Please pick an option</span>
+                                    <p>
+                                        <label for="telephone">Telephone *</label><input type="number" id="telephone" name="telephone"<?php writeTextContent(' placeholder="Phone number *"', ''); ?>>
+                                        <span class="error"></span>
                                     </p>
-                                    <p class="error">
-                                        <label for="email">Email *</label><input type="email" id="email" name="email" required="required" placeholder="Email address *">
-                                        <span class="error">Please pick an option</span>
+                                    <p>
+                                        <label for="email">Email *</label><input type="email" id="email" name="email"<?php writeTextContent(' placeholder="Email address *"', ''); ?>>
+                                        <span class="error"></span>
                                     </p>
                                     <p>
                                         <label for="message">Message</label>
-                                        <textarea id="message" name="message" placeholder="Additional message"></textarea>
+                                        <textarea id="message" name="message"<?php writeTextContent(' placeholder="Additional message"', ''); ?>></textarea>
                                     </p>
+                                    <p><input type="submit" id="go" class="send-email" value="SEND"></p>
                                 </div>
                                 <div class="foot">
-                                    <p>* Denotes mandatory fields</p>
-                                    <input type="submit" id="go" class="big-link red-link" value="Send email">
+                                    <p>* denotes required fields</p>
                                 </div>
                             </div>
                         </div>
