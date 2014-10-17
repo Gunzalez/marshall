@@ -972,7 +972,7 @@ h1 a {
   background: url("../images/btn-bgs.png") no-repeat;
   padding: 9px 13px 9px;
   display: block;
-  color: #FFF000;
+  color: #fff000;
   margin: 0;
   font-family: Arial;
   font-weight: bold;
@@ -1143,7 +1143,7 @@ h1 a {
   top: 0;
 }
 #results ol > li .container .info .related ul li div.add a {
-  color: #FFF000;
+  color: #fff000;
   background-color: #01205a;
   padding: 3px 5px;
   text-decoration: none;
@@ -1174,7 +1174,7 @@ h1 a {
   background: url("../images/btn-bgs.png") no-repeat;
   padding: 9px 13px 9px;
   display: inline-block;
-  color: #FFF000;
+  color: #fff000;
   font-family: Arial;
   font-weight: bold;
   font-size: 13px;
@@ -1198,7 +1198,7 @@ h1 a {
   color: #fff;
   font-size: 1.4em;
 }
-#config_machine .step span {
+#config_machine .step span.number {
   color: #fff000;
   font-size: 1.5em;
 }
@@ -1299,7 +1299,7 @@ h1 a {
 }
 
 #config_machine .configure-content .content h3 {
-  font-size: 1.4em;
+  font-size: 20px;
   margin-bottom: 7px;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
   color: #001748;
@@ -1541,53 +1541,61 @@ h1 a {
 }
 
 /* step 3 */
+#config_machine .basket img {
+  width: 61px;
+  height: 49px;
+  display: block;
+  margin: auto;
+}
 #config_machine .basket table {
   width: 960px;
   margin-top: 20px;
+}
+#config_machine .basket table tr td {
   background: #fff;
 }
-
-#config_machine .basket table tr.even {
-  background: #f2f2f2;
+#config_machine .basket table tr.even td {
+  background: transparent;
 }
-
-#config_machine .basket td,
-#config_machine .basket th {
-  padding: 7px 16px;
-  text-align: left;
-}
-
-#config_machine .basket th {
-  padding: 10px 16px;
-}
-
-#config_machine .basket td.image {
-  width: 72px;
-}
-
-#config_machine .basket img {
-  width: 70px;
-  height: 55px;
-}
-
-#config_machine .basket .cost {
-  text-align: right;
-  width: 100px;
-}
-
 #config_machine .basket table thead {
   background-color: #d4d4d4;
   color: #444;
   font-size: 1.0em;
   padding: 4px 16px;
 }
-
-#config_machine .basket tfoot td {
+#config_machine .basket table tfoot td {
   padding: 16px 16px;
   font-weight: bold;
-  background: #dcdcdc;
+  background: #d4d4d4;
   color: #000000;
   font-size: 1.1em;
+}
+#config_machine .basket table tfoot .total {
+  border-right: 1px solid #fff;
+}
+#config_machine .basket table tfoot .cost {
+  text-align: right;
+  width: 100px;
+}
+#config_machine .basket table th {
+  padding: 10px 16px;
+  text-align: right;
+}
+#config_machine .basket table th.name, #config_machine .basket table th.image {
+  border-right: 1px solid #fff;
+}
+#config_machine .basket table td {
+  padding: 7px 16px;
+  text-align: right;
+  font-weight: bold;
+}
+#config_machine .basket table td.image {
+  width: 72px;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+#config_machine .basket table td.name {
+  border-right: 1px solid #fff;
 }
 
 .mobile #config_machine .basket .body {
@@ -1645,6 +1653,29 @@ h1 a {
   padding: 15px;
   width: 100%;
   box-sizing: border-box;
+  margin: 10px 0 15px 0;
+}
+.desktop #config_machine .save-print-order .body p {
+  width: 520px;
+  float: left;
+  text-align: right;
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.desktop #config_machine .save-print-order .body .long-link {
+  border: 0;
+  background: url("../images/quote-option.png") 0 0 no-repeat;
+  width: 382px;
+  height: 40px;
+  line-height: 38px;
+  color: #fff000;
+  text-align: left;
+  padding-left: 15px;
+  cursor: pointer;
+  clear: right;
+  float: right;
+  font-weight: bold;
 }
 
 .mobile #config_machine .save-print-order .body {
@@ -2306,7 +2337,7 @@ h1 a {
   }
   .mobile #config_machine .configure-content .content {
     margin-left: 0;
-    padding: 0 15px 15px 15px;
+    padding: 15px;
   }
   .mobile #config_machine .options li {
     width: 50%;
@@ -2872,9 +2903,6 @@ h1 a {
   }
   .mobile #config_machine .step {
     font-size: 1.2em;
-  }
-  .mobile #config_machine .configure-content .content h3 {
-    margin-top: 10px;
   }
   .mobile #config_machine .add-options {
     margin-top: 15px;

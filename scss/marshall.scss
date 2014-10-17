@@ -23,6 +23,7 @@
 $darkblue: #001e5a;
 $darkerblue: #001848;
 $anotherblue: #001748;
+$yellow: #fff000;
 
 body {
 	margin: 0;
@@ -398,7 +399,7 @@ h1 a {
     font-size: 13px;
     line-height: 35px;
     font-weight: bold;
-    color: #fff000 !important;
+    color: $yellow !important;
     cursor: pointer;
     text-align: left;
     text-decoration: none;
@@ -611,11 +612,11 @@ h1 a {
 }
 
 .main-heading.hero h2 {
-    color: #fff000;
+    color: $yellow;
     text-shadow: 0px -1px 0px rgba(0,0,0,.5);
     margin: 0;
     padding: 5px 10px 0 10px;
-    color: #fff000;
+    color: $yellow;
     font-size: 25px;
 }
 
@@ -1169,7 +1170,7 @@ h1 a {
                 background: url('../images/btn-bgs.png') no-repeat;
                 padding: 9px 13px 9px;
                 display: block;
-                color: #FFF000;
+                color: $yellow;
                 margin: 0;
                 font-family: Arial;
                 font-weight: bold;
@@ -1363,7 +1364,7 @@ h1 a {
                                         top: 0;
 
                                         a {
-                                            color: #FFF000;
+                                            color: $yellow;
                                             background-color: #01205a;
                                             padding: 3px 5px;
                                             text-decoration: none;
@@ -1407,7 +1408,7 @@ h1 a {
                             background: url('../images/btn-bgs.png') no-repeat;
                             padding: 9px 13px 9px;
                             display: inline-block;
-                            color: #FFF000;
+                            color: $yellow;
                             font-family: Arial;
                             font-weight: bold;
                             font-size: 13px;
@@ -1446,9 +1447,11 @@ h1 a {
         font-size: 1.4em;
 
         span {
-            color: #fff000;
-            font-size: 1.5em;
 
+            &.number {
+                color: $yellow;
+                font-size: 1.5em;
+            }
         }
     }
 }
@@ -1469,7 +1472,7 @@ h1 a {
         }
         .step {
             label {
-                color: #fff000;
+                color: $yellow;
                 font-size: 13px;
                 font-weight: bold;
                 float: left;
@@ -1590,7 +1593,7 @@ h1 a {
 }
 
 #config_machine .configure-content .content h3 {
-    font-size: 1.4em;
+    font-size: 20px;
     margin-bottom: 7px;
     text-shadow: 0px 1px 0px rgba(255,255,255,.5);
     color: $anotherblue;
@@ -1909,58 +1912,86 @@ h1 a {
 
 
 /* step 3 */
+#config_machine {
+    .basket {
+        img {
+            width: 61px;
+            height: 49px;
+            display: block;
+            margin: auto;
+        }
 
-#config_machine .basket table {
-    width: 960px;
-    margin-top: 20px;
-    background: #fff;
+        table {
+            width: 960px;
+            margin-top: 20px;
+
+            tr {
+                td {
+                    background: #fff;
+                }
+
+                &.even {
+                    td {
+                        background: transparent;
+                    }
+                }
+            }
+
+            thead {
+                background-color: #d4d4d4;
+                color: #444;
+                font-size: 1.0em;
+                padding: 4px 16px;
+
+            }
+
+            tfoot {
+                td {
+                    padding: 16px 16px;
+                    font-weight: bold;
+                    background: #d4d4d4;
+                    color: #000000;
+                    font-size: 1.1em;
+                }
+
+                .total {
+                    border-right: 1px solid #fff;
+                }
+
+                .cost {
+                    text-align: right;
+                    width: 100px;
+                }
+            }
+
+            th {
+                padding: 10px 16px;
+                text-align: right;
+
+                &.name,
+                &.image {
+                    border-right: 1px solid #fff;
+                }
+            }
+
+            td {
+                padding: 7px 16px;
+                text-align: right;
+                font-weight: bold;
+
+                &.image {
+                    width: 72px;
+                    text-align:  center;
+                    border-right: 1px solid #fff;
+                }
+                &.name {
+                    border-right: 1px solid #fff;
+                }
+            }
+        }
+    }
 }
 
-
-
-
-#config_machine .basket table tr.even {
-    background: #f2f2f2;
-}
-
-#config_machine .basket td,
-#config_machine .basket th {
-    padding: 7px 16px;
-    text-align: left;
-}
-
-#config_machine .basket th {
-    padding: 10px 16px;
-}
-
-#config_machine .basket td.image {
-    width: 72px;
-}
-
-#config_machine .basket img {
-    width: 70px;
-    height: 55px;
-}
-
-#config_machine .basket .cost {
-    text-align: right;
-    width: 100px;
-}
-
-#config_machine .basket table thead {
-    background-color: #d4d4d4;
-    color: #444;
-    font-size: 1.0em;
-    padding: 4px 16px;
-}
-
-#config_machine .basket tfoot td {
-    padding: 16px 16px;
-    font-weight: bold;
-    background: #dcdcdc;
-    color: #000000;
-    font-size: 1.1em;
-}
 
 
 .mobile {
@@ -2039,6 +2070,31 @@ h1 a {
                 padding: 15px;
                 width: 100%;
                 box-sizing: border-box;
+                margin: 10px 0 15px 0;
+
+                p {
+                    width: 520px;
+                    float: left;
+                    text-align: right;
+                    font-weight: bold;
+                    padding-top: 10px;
+                    font-size: 14px;
+                }
+
+                .long-link {
+                    border: 0;
+                    background: url("../images/quote-option.png") 0 0 no-repeat;
+                    width: 382px;
+                    height: 40px;
+                    line-height: 38px;
+                    color: $yellow;
+                    text-align: left;
+                    padding-left: 15px;
+                    cursor: pointer;
+                    clear: right;
+                    float: right;
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -2223,7 +2279,7 @@ h1 a {
             line-height: 130%;
 
             h3 {
-                color: #fff000;
+                color: $yellow;
                 background: $anotherblue;
                 padding: 8px 10px 8px 20px;
                 font-size: 15px;
@@ -2841,7 +2897,7 @@ h1 a {
 
         #config_machine .configure-content .content {
             margin-left: 0;
-            padding: 0 15px 15px 15px;
+            padding: 15px;
         }
 
         #config_machine .options li {
@@ -2895,7 +2951,7 @@ h1 a {
                     line-height: 130%;
 
                     h3 {
-                        color: #fff000;
+                        color: $yellow;
                         background: $anotherblue;
                         padding: 8px 10px;
                         font-size: 15px;
@@ -3574,13 +3630,7 @@ h1 a {
                 font-size: 1.2em;
             }
 
-            .configure-content {
-                .content {
-                    h3 {
-                        margin-top: 10px;
-                    }
-                }
-            }
+
 
             .add-options {
                 margin-top:  15px;

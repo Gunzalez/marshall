@@ -41,7 +41,7 @@ require_once('php/isMobile.php');
 
                         <div class="mainbox">
                             <h3 class="step">
-                                <span>Step 1:</span>
+                                <span class="number">Step 1:</span>
                                 Choose basic machine spec:
                                 <?php
                                 if (!$detect->isMobile()){
@@ -65,7 +65,7 @@ require_once('php/isMobile.php');
 
                         <div class="mainbox configure-options can-hide displayNone open">
                             <h3 class="step">
-                                <span>Step 2:</span>
+                                <span class="number">Step 2:</span>
                                 Add your options
                                 <div class="show-hide">
                                     <span class="show">
@@ -642,8 +642,8 @@ require_once('php/isMobile.php');
 
                         <div class="mainbox basket can-hide displayNone open">
                             <h3 class="step">
-                                <span>Step 3:</span>
-                                Confirm your specifications
+                                <span class="number">Step 3:</span>
+                                <?php  writeTextContent('Check your chosen specs:','Check your chosen specification / quote:'); ?>
                                 <div class="show-hide">
                                     <span class="show">
                                         <span class="text">Open</span>
@@ -684,8 +684,8 @@ require_once('php/isMobile.php');
 
                         <div class="mainbox save-print-order can-hide displayNone open">
                             <h3 class="step">
-                                <span>Step 4:</span>
-                                Order your machine
+                                <span class="number">Step 4:</span>
+                                <?php  writeTextContent('Save / print / order:','Save / print / order your machine:'); ?>
                                 <div class="show-hide">
                                     <span class="show">
                                         <span class="text">Open</span>
@@ -699,16 +699,23 @@ require_once('php/isMobile.php');
                                 </div>
                             </h3>
                             <div class="body">
-                                <p>Now you can save, print or order your machine, simply pick from the following options</p>
-                                <p><a href="#" id="email-option" class="big-link red-link">Email enquiry to Marshall</a><br />(A copy will be sent to you)</p>
-                                <p><a href="#" id="pdf-option" class="big-link red-link">Download a PDF of your quote</a><br />(May require an app if on a mobile device)</p>
+                                <p>Choose one of the following options:</p>
+                                <?php
+                                    $mobileButton = '<input type="button" id="email_enquiry" class="long-link" value="Email enquiry to Marshall">';
+                                    $desktopButton = '<input type="button" id="email_enquiry" class="long-link" value="Email enquiry to Marshall &amp; send copy to yourself">';
+                                    writeTextContent($mobileButton, $desktopButton);
+
+                                    $mobileButton = '<input type="button" id="pdf_enquiry" class="long-link" value="Save / Download">';
+                                    $desktopButton = '<input type="button" id="pdf_enquiry" class="long-link" value="Save / Download quote to your desktop in PDF">';
+                                    writeTextContent($mobileButton, $desktopButton);
+                                ?>
                             </div>
                         </div>
 
-                        <div class="mainbox email-option displayNone">
+                        <div class="mainbox email-option can-hide displayNone">
                             <h3 class="step">
-                                <span>Step 5:</span>
-                                Email enquiry to Marshall
+                                <span class="number">Step 5:</span>
+                                <?php writeTextContent('Email Marshall:','Email enquiry to Marshall & send copy to yourself:'); ?>
                                 <div class="show-hide">
                                     <span class="show">
                                         <span class="text">Open</span>

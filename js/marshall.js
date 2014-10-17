@@ -412,7 +412,7 @@
         setLinksInStepFour: function(){
             var self = this;
 
-            $('#email-option', self.$configureForm).on('click', function(evt){
+            $('#email_enquiry', self.$configureForm).on('click', function(evt){
                 evt.preventDefault();
 
                 $('.email-option', self.$configureForm).removeClass('displayNone');
@@ -422,8 +422,10 @@
                 }, 500);
             });
 
-            $('#pdf-option', self.$configureForm).on('click', function(evt){
+            $('#pdf_enquiry', self.$configureForm).on('click', function(evt){
                 evt.preventDefault();
+
+                // do your magic here
             });
         },
 
