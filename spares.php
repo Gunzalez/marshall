@@ -30,10 +30,8 @@ require_once('php/isMobile.php');
                 </ul>
             </div>
 
-
             <div class="main">
-
-                    <div class="container">
+                <div class="container">
 
                         <div class="main-heading">
                             <h2>Order spare parts online.</h2>
@@ -599,26 +597,27 @@ require_once('php/isMobile.php');
                                 </ol>
                             </form>
                         </div>
-
                     </div>
-
-
             </div>
-
         </div>
-
 
         <?php include_once('includes/footer.php'); ?>
         <div id="mobile-nav"></div>
+
     </div>
+
     <div id="basket">
         <div class="container">
             <a href="#" class="show-hide">Your Marshall</a>
             <div class="summary-box">
-                <h3>Summary</h3>
+                <h3>Your basket</h3>
                 <div class="detail">
-                    <strong>&pound;<span class="total">0.00</span> </strong>ex&nbsp;VAT<br>
-                    <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">
+                    <strong>
+                        <span id="num_items">Basket is empty</span>
+                        &pound;<span class="total">0.00</span>
+                    </strong>
+                    <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait...">
+                    <a href="/basket" title="Proceed to the checkout to send your order...." class="btn_checkout">Checkout</a>
                 </div>
             </div>
         </div>

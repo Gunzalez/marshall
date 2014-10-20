@@ -2245,6 +2245,21 @@ h1 a {
   font-weight: bold;
   color: #444;
 }
+#basket .container .summary-box .detail .btn_checkout {
+  background: url("../images/btn-bgs.png") no-repeat;
+  padding: 9px 13px 9px;
+  display: block;
+  color: #fff000;
+  margin-top: 5px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  border: 0;
+  text-align: left;
+  width: 91px;
+  text-decoration: none;
+}
 #basket .container .summary-box strong {
   color: #000;
   display: block;

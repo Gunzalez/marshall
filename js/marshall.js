@@ -184,17 +184,6 @@
         $configureOptions: $('#options li', this.$configureForm),
         $configureTable: $('#quote', this.$configureForm),
 
-        basketActions: {
-            $stickyBasket: $('#basket'),
-            pushOut: function(){
-                this.$stickyBasket.addClass('stick-out');
-            },
-            pushIn: function(){
-                this.$stickyBasket.removeClass('stick-out');
-                this.$stickyBasket.removeClass('displayNone');
-            }
-        },
-
         attachConfigureAction: function(){
             var self = this;
             self.$configureSelect.on('change', function(){
@@ -210,7 +199,7 @@
                     // Add cost to basket, and stick it out
                     var $stickyBasket = $('#basket');
                     $('.total', $stickyBasket).text('0');
-                    self.basketActions.pushIn();
+                    marshall.stickyBaskest.pushOut();
 
                 } else {
 
@@ -219,7 +208,7 @@
                         // Add cost to basket, and push it out
                         var $stickyBasket = $('#basket');
                         $('.total', $stickyBasket).text('12,552.00');
-                        self.basketActions.pushOut();
+                        marshall.stickyBaskest.pushOut();
 
                         // Attach action to open options
                         $('#btnConfigure', self.$configureContent).on('click', function(evt){
@@ -340,7 +329,7 @@
 
                         //var $stickyBasket = $('#basket');
                         //$('.total', $stickyBasket).text('X.XX');
-                        self.basketActions.pushOut();
+                        marshall.stickyBaskest.pushOut();
 
 
 
@@ -367,7 +356,7 @@
 
                         //var $stickyBasket = $('#basket');
                         //$('.total', $stickyBasket).text('X.XX');
-                        self.basketActions.pushOut();
+                        marshall.stickyBaskest.pushOut();
 
 
 
@@ -516,29 +505,60 @@
 
         },
 
+        resize: function(){
+            var self = this;
+            self.fixOptionWidths();
+            $('.error-div').remove();
+        },
+
+        init: function(){
+            var self = this;
+            if(self.$configureForm.length > 0){
+                self.attachConfigureAction();
+                self.attachShowHideAction();
+                self.attachOptionsAction();
+                self.setLinksInStepFour();
+                self.setUpConfigurationEmail();
+            }
+        }
+    };
+
+    marshall.stickyBaskest = {
+        $stickyBasket: $('#basket'),
+
+        pushOut: function(){
+            var self = this;
+            self.$stickyBasket.addClass('stick-out');
+        },
+
+        pushIn: function(){
+            var self = this;
+            self.$stickyBasket.removeClass('stick-out');
+            self.$stickyBasket.removeClass('displayNone');
+        },
+
         setUpStickyBasket: function(){
             var self = this,
                 initialPos = 176,
-                stickyPos = 18,
-                $stickyBasket = $('#basket');
+                stickyPos = 18;
 
             $(window).scroll(function(){
 
                 if($(window).width() > 678){
                     if( $(this).scrollTop() > initialPos ) {
-                        $stickyBasket.css('top', $(this).scrollTop() + stickyPos);
+                        self.$stickyBasket.css('top', $(this).scrollTop() + stickyPos);
                     } else {
-                        $stickyBasket.css('top', $(this).scrollTop() + initialPos);
+                        self.$stickyBasket.css('top', $(this).scrollTop() + initialPos);
                     }
                 }
             });
 
-            $('.show-hide', $stickyBasket).on('click',function(evt){
+            $('.show-hide', self.$stickyBasket).on('click',function(evt){
                 evt.preventDefault();
-                if($stickyBasket.hasClass('stick-out')){
-                    self.basketActions.pushIn();
+                if(self.$stickyBasket.hasClass('stick-out')){
+                    self.pushIn();
                 } else {
-                    self.basketActions.pushOut();
+                    self.pushOut();
                 }
             });
 
@@ -546,23 +566,14 @@
 
         resize: function(){
             var self = this;
-            self.fixOptionWidths();
-            $('.error-div').remove();
-            self.basketActions.pushIn();
+            self.pushIn();
             $('#basket').removeAttr('style');
         },
 
         init: function(){
             var self = this;
-            if(self.$configureForm.length > 0){
-
-                self.attachConfigureAction();
-                self.attachShowHideAction();
-                self.attachOptionsAction();
-                self.setLinksInStepFour();
-                self.setUpConfigurationEmail();
+            if($('#basket').length > 0){
                 self.setUpStickyBasket();
-
             }
         }
     };
@@ -1004,6 +1015,7 @@
         marshall.mobile.resize();
         marshall.tabs.resize();
         marshall.spares.resize();
+        marshall.stickyBaskest.resize();
     };
 
 	marshall.init = function(){
@@ -1017,6 +1029,7 @@
         marshall.configuration.init();
         marshall.tabs.init();
         marshall.spares.init();
+        marshall.stickyBaskest.init();
 
         // Resize triggers
 		$(window).on('resize',function(){
