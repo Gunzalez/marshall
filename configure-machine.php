@@ -661,8 +661,8 @@ require_once('php/isMobile.php');
                                     <thead>
                                         <tr>
                                             <th class="name">Product name:</th>
-                                            <th class="image">Image:</th>
-                                            <th class="cost">Cost:</th>
+                                            <th class="image"<?php writeTextContent('',' width="100"'); ?>>Image:</th>
+                                            <th class="cost"<?php writeTextContent('','width="150"'); ?>>Cost:</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -784,13 +784,14 @@ require_once('php/isMobile.php');
         <?php include_once('includes/footer.php'); ?>
         <div id="mobile-nav"></div>
     </div>
+
     <div id="basket">
         <div class="container">
             <a href="#" class="show-hide">Your Marshall</a>
             <div class="summary-box">
                 <h3>Summary</h3>
                 <div class="detail">
-                    <strong>&pound;<span class="total">0.00</span> </strong>ex&nbsp;VAT<br>
+                    <strong>&pound;<span class="total">0</span> </strong>ex&nbsp;VAT<br>
                     <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">
                 </div>
             </div>

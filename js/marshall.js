@@ -166,19 +166,18 @@
         basketActions: {
             $stickyBasket: $('#basket'),
             pushOut: function(){
-
                 this.$stickyBasket.addClass('stick-out');
-                if($(window).width() < 401){
-                    this.$stickyBasket.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
-                        function(e) {
-                            this.$stickyBasket.removeClass('stick-out');
-                        });
-
-//                    var timer = setTimeout(function(){
-//                        marshall.configuration.basketActions.$stickyBasket.removeClass('stick-out');
-//                        clearTimeout(timer);
-//                    }, 3000);
-                }
+                //if($(window).width() < 401){
+                //    this.$stickyBasket.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+                //        function(e) {
+                //            this.$stickyBasket.removeClass('stick-out');
+                //        });
+                //
+                //    var timer = setTimeout(function(){
+                //        marshall.configuration.basketActions.$stickyBasket.removeClass('stick-out');
+                //        clearTimeout(timer);
+                //    }, 3000);
+                //}
             },
             pushIn: function(){
                 this.$stickyBasket.removeClass('stick-out');
@@ -199,7 +198,7 @@
 
                     // Add cost to basket, and stick it out
                     var $stickyBasket = $('#basket');
-                    $('.total', $stickyBasket).text('0.00');
+                    $('.total', $stickyBasket).text('0');
                     self.basketActions.pushIn();
 
                 } else {
@@ -510,16 +509,16 @@
         setUpStickyBasket: function(){
             var self = this,
                 initialPos = 176,
-                stickyPos = 20,
+                stickyPos = 18,
                 $stickyBasket = $('#basket');
 
             $(window).scroll(function(){
 
                 if($(window).width() > 400){
                     if( $(this).scrollTop() > initialPos ) {
-                        $stickyBasket.css('margin-top', $(this).scrollTop() + stickyPos);
+                        $stickyBasket.css('top', $(this).scrollTop() + stickyPos);
                     } else {
-                        $stickyBasket.css('margin-top', $(this).scrollTop() + initialPos);
+                        $stickyBasket.css('top', $(this).scrollTop() + initialPos);
                     }
                 }
 

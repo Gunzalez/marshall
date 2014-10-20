@@ -1,7 +1,7 @@
 <div id="configure-machine" class="configure">
-    <label>Choose machine to configure</label>
+    <label class="configure-label">Choose machine to configure</label>
     <select id="machine" name="machine" required="required">
-        <option value="NaN">Choose machine to configure</option>
+        <option value="NaN"><?php writeTextContent('Choose machine to configure','Please select...'); ?></option>
         <optgroup label="Monocoque Trailers">
             <option value="4">QM/6</option>
             <option value="6">QM/8</option>
