@@ -163,24 +163,14 @@
         $configureContent: $('#configure-content', this.$configureForm),
         $configureOptions: $('#options li', this.$configureForm),
         $configureTable: $('#quote', this.$configureForm),
+
         basketActions: {
             $stickyBasket: $('#basket'),
             pushOut: function(){
                 this.$stickyBasket.addClass('stick-out');
-                //if($(window).width() < 401){
-                //    this.$stickyBasket.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
-                //        function(e) {
-                //            this.$stickyBasket.removeClass('stick-out');
-                //        });
-                //
-                //    var timer = setTimeout(function(){
-                //        marshall.configuration.basketActions.$stickyBasket.removeClass('stick-out');
-                //        clearTimeout(timer);
-                //    }, 3000);
-                //}
             },
             pushIn: function(){
-                this.$stickyBasket.removeClass('stick-out');
+                this.$stickyBasket.removeClass('stick-out').removeAttr('style');
             }
         },
 
@@ -505,7 +495,6 @@
 
         },
 
-
         setUpStickyBasket: function(){
             var self = this,
                 initialPos = 176,
@@ -521,7 +510,6 @@
                         $stickyBasket.css('top', $(this).scrollTop() + initialPos);
                     }
                 }
-
             });
 
             $('.show-hide', $stickyBasket).on('click',function(evt){
@@ -539,6 +527,7 @@
             var self = this;
             self.fixOptionWidths();
             $('.error-div').remove();
+            self.basketActions.pushIn();
         },
 
         init: function(){

@@ -792,7 +792,7 @@ require_once('php/isMobile.php');
                 <h3>Summary</h3>
                 <div class="detail">
                     <strong>&pound;<span class="total">0</span> </strong>ex&nbsp;VAT<br>
-                    <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait..." class="displayNone">
+                    <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait...">
                 </div>
             </div>
         </div>

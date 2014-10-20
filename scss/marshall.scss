@@ -3816,81 +3816,73 @@ h1 a {
 
 
         #basket {
-            top: 0;
+            top: -76px;
             left: 0;
             bottom: 0;
             border: none;
-            background-color: $red;
             width: 100%;
-            height: 71px;
-            margin-top: -71px;
+            height: 76px;
             position: fixed;
-            transition: margin 0.5s ease 0s;
-        }
+            overflow: inherit;
+            background: #fff;
 
-        #basket .summary-box h3 {
-            background: none repeat scroll 0 0 $red;
-            color: #fff;
-            padding: 5px 10px;
-        }
+            -webkit-transition: top 250ms;
+            -moz-transition: top 250ms;
+            -o-transition: top 250ms;
+            transition: top 250ms;
 
-        #basket .summary-box {
-            float: none;
-            padding-bottom: 8px;
-            width: 100%;
-        }
+            -webkit-box-shadow: 0px 6px 5px -3px #575657;
+            -moz-box-shadow: 0px 6px 5px -3px #575657;
+            box-shadow: 0px 6px 5px -3px #575657;
 
-        #basket .container {
-            width: 100%;
-        }
+            .container {
+                width: 100%;
 
-        #basket a {
-            display: none;
-        }
+                .summary-box {
+                    float: none;
+                    width: 100%;
+                    border: none;
 
-        #basket .summary-box .detail {
-            min-height: inherit;
-            border: 5px solid $red;
-        }
+                    h3 {
+                        background: #e4e4e4;
+                        color: #000;
+                        padding: 5px 10px;
+                        margin: 5px 5px 0 5px;
+                    }
 
-        #basket.stick-out {
-            width: 100%;
-        }
+                    .detail {
+                        min-height: inherit;
+                        border: 1px solid #ccc;
+                        position: relative;
+                        background: #fff;
+                        margin: 5px;
 
-        #basket.stick-out {
-            -webkit-animation: peakingBasket 3s normal ease-out;
-            animation: peakingBasket 3s normal ease-out;
-        }
-        @-webkit-keyframes peakingBasket {
-            0% {
-                margin-top: -71px;
+                        strong {
+                            display: inline;
+                        }
+
+                        img {
+                            position: absolute;
+                            top: 5px;
+                            right: 10px;
+                        }
+                    }
+                }
             }
-            25% {
-                margin-top: 0;
+
+            a {
+                display: none;
             }
-            75% {
-                margin-top: 0;
-            }
-            100% {
-                margin-top: -71px;
-            }
-        }
-        @keyframes peakingBasket {
-            0% {
-                margin-top: -71px;
-            }
-            25% {
-                margin-top: 0;
-            }
-            75% {
-                margin-top: 0;
-            }
-            100% {
-                margin-top: -71px;
+
+            &.stick-out {
+                top: 0;
+
+                -webkit-transition: top 250ms;
+                -moz-transition: top 250ms;
+                -o-transition: top 250ms;
+                transition: top 250ms;
             }
         }
-
     }
-
 }
 	
