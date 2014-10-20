@@ -190,7 +190,8 @@
                 this.$stickyBasket.addClass('stick-out');
             },
             pushIn: function(){
-                this.$stickyBasket.removeClass('stick-out, displayNone').removeAttr('style');
+                this.$stickyBasket.removeClass('stick-out');
+                this.$stickyBasket.removeClass('displayNone');
             }
         },
 
@@ -548,6 +549,7 @@
             self.fixOptionWidths();
             $('.error-div').remove();
             self.basketActions.pushIn();
+            $('#basket').removeAttr('style');
         },
 
         init: function(){
