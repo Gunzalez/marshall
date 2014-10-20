@@ -8,9 +8,13 @@
 	marshall.properties = {
 		isMobile: false,
 		windowWidth: '',
-        mobileThreshold: 768,
-        desktopThreshold: 960,
-        handHeldThreshold: 400
+        deviceWidth: {
+            desktop: 960,
+            tablet: 768,
+            phablet: 678,
+            phone: 400
+        }
+
 	};
 
     marshall.environment = {
@@ -39,19 +43,35 @@
 
             $(".fancybox").fancybox(fancyBoxOptions);
             $('.gallery a').fancybox(fancyBoxOptions);
+
+
+            $('#backToTop').on('click', function(){
+                $('html, body').animate({ scrollTop: 0 }, '2000');
+            });
+
+            $(window).on('scroll', function(){
+                if( $(this).scrollTop() > 568 ) {
+                    $('#backToTop').addClass('onScreen');
+                    $('body').css('margin-bottom', $('#backToTop').height());
+                } else {
+                    $('#backToTop').removeClass('onScreen');
+                    $('body').css('margin-bottom', '0');
+                }
+            });
+
         },
 
         resize: function(){
 
             var newWindowWith = $(window).width();
 
-            if(newWindowWith < marshall.properties.desktopThreshold){
+            if( newWindowWith < marshall.properties.deviceWidth.desktop ){
                 $('.footer').removeClass('wide');
             } else {
                 $('.footer').addClass('wide');
             }
 
-            if(newWindowWith <= 679){
+            if( newWindowWith <= marshall.properties.deviceWidth.phablet ){ // PS: This works together with some media query show/hide
                 $('#config_machine').find('.basket .total').removeAttr('colspan');
             } else {
                 $('#config_machine').find('.basket .total').attr('colspan', '2');
@@ -94,7 +114,7 @@
                 sideBoxesWidth = 0;
 
             $sideBoxes.removeAttr('style'); // resets 'em
-            if(mainWindowWidth <= 769 && mainWindowWidth > 400){
+            if( mainWindowWidth <= marshall.properties.deviceWidth.tablet && mainWindowWidth > marshall.properties.deviceWidth.phone ){
                 sideBoxesWidth = ($sideBar.width()-30)/3;
                 $sideBoxes.not($('.news', $sideBar)).width(sideBoxesWidth);
                 $sideBoxes.eq(0).css('margin-right', '15px');
@@ -122,7 +142,7 @@
             $minibox.find('.copy').removeAttr('style');
             $minibox.find('.more').removeAttr('style');
 
-            if(mainWindowWidth >= 960){
+            if( mainWindowWidth >= marshall.properties.deviceWidth.desktop ){
                 miniboxWidth = (mainboxWidth-30)/3;
                 $minibox.width(miniboxWidth);
                 $minibox.eq(0).css('margin-right','15px');
@@ -131,7 +151,7 @@
                 $minibox.eq(2).find('.copy').height(imageHeight);
             }
 
-            if(mainWindowWidth < 960 && mainWindowWidth > 400){
+            if( mainWindowWidth < marshall.properties.deviceWidth.desktop  && mainWindowWidth > marshall.properties.deviceWidth.phone ){
                 miniboxWidth = (mainboxWidth-15)/2;
                 $minibox.width(miniboxWidth);
                 $minibox.eq(0).css('margin-right','15px');
@@ -140,7 +160,7 @@
                 $minibox.eq(2).width('100%').css('margin-bottom','0');
             }
 
-            if(mainWindowWidth <= 399){
+            if( mainWindowWidth <= marshall.properties.deviceWidth.phone ){
                 $minibox.width('100%').css('margin-right','0').css('margin-bottom','20px');
                 $minibox.eq('2').css('margin-bottom','0');
                 $minibox.eq('2').find('.more').css('background-color','#fff');
@@ -503,7 +523,7 @@
 
             $(window).scroll(function(){
 
-                if($(window).width() > 400){
+                if($(window).width() > 678){
                     if( $(this).scrollTop() > initialPos ) {
                         $stickyBasket.css('top', $(this).scrollTop() + stickyPos);
                     } else {
@@ -833,7 +853,7 @@
                 self.$filterContainer2.load('ajax/filters.php', function(){
                     var $nextHeader = self.$filterContainer2;
                     $nextHeader.parents('li').addClass('selected');
-                    if($(window).width() < 400){
+                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
                         $('html, body').animate({
                             scrollTop: $($nextHeader).offset().top - 30
                         }, 500);
@@ -853,7 +873,7 @@
                 self.$filterContainer3.load('ajax/filters.php', function(){
                     var $nextHeader = self.$filterContainer3;
                     $nextHeader.parents('li').addClass('selected');
-                    if($(window).width() < 400){
+                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
                         $('html, body').animate({
                             scrollTop: $($nextHeader).offset().top - 30
                         }, 500);
@@ -873,7 +893,7 @@
                 self.$filterContainer4.load('ajax/filters-tall.php', function(){
                     var $nextHeader = self.$filterContainer4;
                     $nextHeader.parents('li').addClass('selected');
-                    if($(window).width() < 400){
+                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
                         $('html, body').animate({
                             scrollTop: $($nextHeader).offset().top - 30
                         }, 500);
@@ -892,7 +912,7 @@
                 self.$filterContainer5.load('ajax/filters.php', function(){
                     var $nextHeader = self.$filterContainer5;
                     $nextHeader.parents('li').addClass('selected');
-                    if($(window).width() < 400){
+                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
                         $('html, body').animate({
                             scrollTop: $($nextHeader).offset().top - 30
                         }, 500);
@@ -911,7 +931,7 @@
                 self.$filterContainer6.load('ajax/filters.php', function(){
                     var $nextHeader = self.$filterContainer6;
                     $nextHeader.parents('li').addClass('selected').removeClass('displayNone');
-                    if($(window).width() < 400){
+                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
                         $('html, body').animate({
                             scrollTop: $($nextHeader).offset().top - 30
                         }, 500);
@@ -930,7 +950,7 @@
                 self.$filterContainer7.load('ajax/filters.php', function(){
                     var $nextHeader = self.$filterContainer7;
                     $nextHeader.parents('li').addClass('selected').removeClass('displayNone');
-                    if($(window).width() < 400){
+                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
                         $('html, body').animate({
                             scrollTop: $('#results').offset().top - 30
                         }, 500);
@@ -950,7 +970,7 @@
             // clear all styles
             $('.filterList', $html).parents('li').removeAttr('style').siblings().removeAttr('style');
 
-            if(windowWidth > 400){
+            if( windowWidth > marshall.properties.deviceWidth.phone ){
 
                 $('.filterList', $html).each(function(i, obj){
                     filterListHeights.push($(obj).height() + 34); // + 34 header height
