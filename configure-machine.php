@@ -785,7 +785,7 @@ require_once('php/isMobile.php');
         <div id="mobile-nav"></div>
     </div>
 
-    <div id="basket">
+    <div id="basket" class="displayNone">
         <div class="container">
             <a href="#" class="show-hide">Your Marshall</a>
             <div class="summary-box">

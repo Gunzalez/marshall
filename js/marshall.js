@@ -170,7 +170,7 @@
                 this.$stickyBasket.addClass('stick-out');
             },
             pushIn: function(){
-                this.$stickyBasket.removeClass('stick-out').removeAttr('style');
+                this.$stickyBasket.removeClass('stick-out, displayNone').removeAttr('style');
             }
         },
 
@@ -796,7 +796,6 @@
 
         }
     };
-
 
     marshall.spares = {
 
