@@ -13,6 +13,12 @@
     transition: background $speed;
 }
 
+@mixin border-radius($radius: 0px){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
 @mixin clearfix {
     content: "";
     clear: both;
@@ -26,6 +32,10 @@ $anotherblue: #001748;
 $yellow: #fff000;
 $red: #bb1f1d;
 $grey: #ececec;
+$darkgrey: #cccccc;
+$black: #000000;
+$offblack: #444444;
+$white: #ffffff;
 
 body {
 	margin: 0;
@@ -44,7 +54,6 @@ a {
 a:hover {
 
 }
-
 
 /* -------------- resets ---------------------- */
 h1, h2, h3, h4, h5 {
@@ -83,19 +92,10 @@ input[type="email"],
 input[type="password"],
 input[type="number"],
 select {
-    border: 1px solid #ccc;
+    border: 1px solid $darkgrey;
 }
 
-
-
-
-
-
-
-
 * { outline: none; }
-
-
 
 .text-section h1 {
     display: none;
@@ -170,18 +170,18 @@ h1 a {
     width: 168px;
     float: right;
     font-size: 34px;
-    background: #000 url('../images/counter-gradient.png') repeat-x;
+    background: $black url('../images/counter-gradient.png') repeat-x;
     line-height: 1;
     height: 35px;
     list-style: none;
-    color: #FFF;
+    color: $white;
 }
 
 #hit-counter li {
     float: left;
     width: 22px;
     text-align: center;
-    border-right: 2px solid #000;
+    border-right: 2px solid $black;
 }
 
 #hit-counter li.last-child {
@@ -248,7 +248,7 @@ h1 a {
 
 .main-nav ul li.hover a,
 .main-nav ul li a:hover {
-    color: #fff;
+    color: $white;
 }
 
 .main-nav ul ul {
@@ -263,7 +263,7 @@ h1 a {
     float: none;
     position: relative;
     background: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $darkgrey;
 }
 
 .main-nav ul ul li a {
@@ -322,14 +322,14 @@ h1 a {
 }
 
 .burger-nav a {
-    color: #fff;
+    color: $white;
     font-size: 4.5em;
     display: block;
     text-decoration: none;
 }
 
 #mobile-nav {
-    background-color: #000;
+    background-color: $black;
     display: none;
 }
 
@@ -339,7 +339,7 @@ h1 a {
 }
 
 #mobile-nav .header span {
-    color: #fff;
+    color: $white;
     font-size: 4.5em;
     display: block;
     text-decoration: none;
@@ -365,12 +365,12 @@ h1 a {
     font-weight: bold;
     padding: 18px 16px;
     font-size: 1.2em;
-    color: #fff;
+    color: $white;
     text-decoration: none;
     text-transform: uppercase;
     background-color: $darkerblue;
 
-    color: #ffffff;
+    color: $white;
     background: -moz-linear-gradient(
         top,
         #292929 0%,
@@ -497,9 +497,9 @@ h1 a {
 
 .mainbox {
     margin-bottom: 20px;
-    /*-webkit-box-shadow: 0 8px 6px -6px #ccc;*/
-    /*-moz-box-shadow: 0 8px 6px -6px #ccc;*/
-    /*box-shadow: 0 8px 6px -6px #ccc;*/
+    /*-webkit-box-shadow: 0 8px 6px -6px $darkgrey;*/
+    /*-moz-box-shadow: 0 8px 6px -6px $darkgrey;*/
+    /*box-shadow: 0 8px 6px -6px $darkgrey;*/
 
     &:after {
         @include clearfix;
@@ -527,14 +527,14 @@ h1 a {
 
     .sidebox  {
         margin-bottom: 20px;
-        background-color: #fff;
+        background-color: $white;
 
         &:after {
             @include clearfix;
         }
 
         h3 {
-            color: #fff;
+            color: $white;
             background: $anotherblue;
             padding: 8px 10px;
             font-size: 15px;
@@ -557,7 +557,7 @@ h1 a {
 
                 li {
                     padding: 8px 12px;
-                    background-color: #fff;
+                    background-color: $white;
 
                     h4 {
                         font-size: 12px;
@@ -583,7 +583,7 @@ h1 a {
         }
 
         &.video {
-            background-color: #000;
+            background-color: $black;
 
             iframe {
                 display: block;
@@ -635,7 +635,7 @@ h1 a {
 .main-heading p {
     margin: 0;
     padding: 3px 10px 5px 10px;
-    color: #fff;
+    color: $white;
     font-size: 20px;
     font-weight: bold;
 }
@@ -643,7 +643,7 @@ h1 a {
 /* carousel */
 /* ================================================ */
 .carousel {
-    background-color: #fff;
+    background-color: $white;
 }
 
 .carousel img {
@@ -659,7 +659,7 @@ h1 a {
 .carousel {
     .copy {
         padding: 10px;
-        background-color: #fff;
+        background-color: $white;
         position: relative;
 
         p {
@@ -673,7 +673,7 @@ h1 a {
         h2 {
             margin: 0;
             padding: 0 90px 5px 0;
-            color: #000;
+            color: $black;
             font-size: 25px;
 
         }
@@ -774,7 +774,7 @@ h1 a {
 /* ================================================ */
 .mainbox {
     &.configure {
-        background: url("../images/logo-on-white.png") 12px 12px no-repeat #fff;
+        background: url("../images/logo-on-white.png") 12px 12px no-repeat $white;
         min-height: 65px;
         padding: 12px 0 12px 100px;
         position: relative;
@@ -861,7 +861,7 @@ h1 a {
 
 /* news page */
 .news-page-navigation {
-    background-color: #fff;
+    background-color: $white;
 }
 
 .news-page-navigation.bottom {
@@ -893,7 +893,7 @@ h1 a {
 
 .news-page-navigation ul li a {
     display: block;
-    background-color: #fff;
+    background-color: $white;
     border: 1px solid #eee;
     color: #666;
     padding: 4px 5px;
@@ -905,16 +905,16 @@ h1 a {
 
 .news-page-navigation ul li a:hover {
     background-color: $darkerblue;
-    color: #fff;
+    color: $white;
 }
 
 .news-page-navigation ul li a.active {
-    color: #000;
+    color: $black;
     background-color: #eaeaea;
 
     &:hover {
         background-color: $darkerblue;
-        color: #fff;
+        color: $white;
     }
 }
 
@@ -922,7 +922,7 @@ h1 a {
 
 
 .news-items {
-    background-color: #fff;
+    background-color: $white;
 }
 
 .news-items ol {
@@ -986,7 +986,7 @@ h1 a {
 
 
 .content-detail {
-    background-color: #fff;
+    background-color: $white;
     padding: 15px;
 }
 
@@ -1028,7 +1028,7 @@ h1 a {
             color: $anotherblue;
             margin: 0 0 10px 0;
             padding: 0 0 5px 0;
-            border-bottom: solid 1px #ccc;
+            border-bottom: solid 1px $darkgrey;
         }
     }
 
@@ -1063,7 +1063,7 @@ h1 a {
         color: $anotherblue;
         margin: 0 0 10px 0;
         padding: 0 0 5px 0;
-        border-bottom: solid 1px #ccc;
+        border-bottom: solid 1px $darkgrey;
     }
     ol {
         list-style: none;
@@ -1098,10 +1098,10 @@ h1 a {
         margin: 0 10px 20px 10px;
         float: left;
         height: 375px;
-        background-color: #fff;
+        background-color: $white;
 
         h3 {
-            color: #FFF;
+            color: $white;
             margin: 0;
             padding-left: 45px;
             line-height: 37px;
@@ -1113,7 +1113,7 @@ h1 a {
         h4 {
             margin: 0 0 10px;
             font-size: 13px;
-            border-bottom: 1px solid #FFF;
+            border-bottom: 1px solid $white;
             padding-bottom: 5px;
             color: #001848;
         }
@@ -1163,8 +1163,6 @@ h1 a {
                     margin: 0;
                 }
             }
-
-
         }
 
         #part_no {
@@ -1179,7 +1177,7 @@ h1 a {
             padding-bottom: 0;
 
             input {
-                background: url('../images/btn-bgs.png') no-repeat;
+                background: url('../images/btn-bgs.png') 0 bottom no-repeat;
                 padding: 9px 13px 9px;
                 display: block;
                 color: $yellow;
@@ -1191,10 +1189,8 @@ h1 a {
                 border: 0;
                 text-align: left;
                 height: 35px;
-                background-position: 0 bottom;
                 width: 100px;
                 max-width: 100px;
-
             }
         }
 
@@ -1218,9 +1214,9 @@ h1 a {
                     display: block;
                     font-weight: bold;
                     font-size: 13px;
-                    color: #444;
+                    color: $offblack;
                     background: #d4d4d4;
-                    border-top: 1px solid #fff;
+                    border-top: 1px solid $white;
 
                     &:hover {
                         background: #888;
@@ -1241,6 +1237,14 @@ h1 a {
     }
 }
 
+.mobile {
+    #part_no,
+    #keyword {
+        float: left;
+        margin-left: 10px;
+    }
+}
+
 #results {
     clear: left;
 
@@ -1249,7 +1253,7 @@ h1 a {
         padding-left: 49px;
         height: 40px;
         line-height: 40px;
-        color: #fff;
+        color: $white;
         font-size: 1.4em;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -1263,7 +1267,7 @@ h1 a {
         list-style: none;
 
         > li {
-            background-color: #FFF;
+            background-color: $white;
             overflow: hidden;
             margin: 0 0 20px;
             padding-bottom: 10px;
@@ -1291,7 +1295,7 @@ h1 a {
                 .info {
                     font-weight: bold;
                     font-size: 13px;
-                    color: #444;
+                    color: $offblack;
                     float: left;
                     margin-left: 150px;
                     margin-right: 200px;
@@ -1361,7 +1365,7 @@ h1 a {
 
                                         a {
                                             text-decoration: none;
-                                            color: #444;
+                                            color: $offblack;
                                         }
 
                                         &:hover {
@@ -1383,7 +1387,7 @@ h1 a {
                                             display: inline-block;
 
                                             &:hover {
-                                                color: #fff;
+                                                color: $white;
                                             }
                                         }
                                     }
@@ -1400,7 +1404,7 @@ h1 a {
                     width: 200px;
 
                     font-weight: bold;
-                    color: #444;
+                    color: $offblack;
                     font-size: 13px;
 
                     position: absolute;
@@ -1431,7 +1435,7 @@ h1 a {
                             text-decoration: none;
 
                             &:hover {
-                                color: #fff;
+                                color: $white;
                             }
                         }
                     }
@@ -1455,7 +1459,7 @@ h1 a {
         padding-left: 49px;
         height: 40px;
         line-height: 40px;
-        color: #fff;
+        color: $white;
         font-size: 1.4em;
 
         span {
@@ -1497,13 +1501,11 @@ h1 a {
     }
 }
 
-
-
 .mobile {
     #config_machine {
         .configure {
             padding: 15px;
-            background: #fff;
+            background: $white;
             margin-bottom: 1px;
         }
         .configure-label {
@@ -1516,7 +1518,6 @@ h1 a {
         }
     }
 }
-
 
 .desktop {
     #config_machine {
@@ -1546,19 +1547,11 @@ h1 a {
     }
 }
 
-
-
 #config_machine .configure-content {
-    background: #fff;
+    background: $white;
     position: relative;
     min-height: 270px;
 }
-
-
-
-
-
-
 
 #config_machine .configure-content:after {
     @include clearfix;
@@ -1574,7 +1567,6 @@ h1 a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 
 #config_machine .configure-content .content {
     margin-left: 440px;
@@ -1604,7 +1596,6 @@ h1 a {
 #config_machine .configure-content .content h4 {
     font-size: 1.1em;
     text-shadow: 0px 1px 0px rgba(255,255,255,.5);
-//    margin-bottom: 40px;
     float: left;
 }
 
@@ -1645,8 +1636,7 @@ h1 a {
                     font-weight: normal;
 
                     span {
-                        color: #ffffff;
-
+                        color: $white;
                     }
 
                     &.divider {
@@ -1759,7 +1749,7 @@ h1 a {
 #config_machine .options li {
     float: left;
     width: 33.33%;
-    background-color: #fff;
+    background-color: $white;
     margin-top: 15px;
     outline: none;
     cursor: pointer;
@@ -1777,13 +1767,13 @@ h1 a {
     background-color: #fcfcfc;
 }
 #config_machine .options li:hover p {
-    color: #000;
+    color: $black;
 }
 
 #config_machine .options li.selected h3,
 #config_machine .options li.selected .add {
     background-color: #01205a;
-    color: #fff;
+    color: $white;
     text-shadow: 0px -1px 0px rgba(0,0,0,.5);
 
     -webkit-transition: background 0.5s;
@@ -1855,7 +1845,7 @@ h1 a {
 #config_machine .options li .col.left img {
     width: 90%;
     margin: 10px 5px 10px 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $darkgrey;
 }
 
 .desktop {
@@ -1955,7 +1945,7 @@ h1 a {
 
             tr {
                 td {
-                    background: #fff;
+                    background: $white;
                 }
 
                 &.even {
@@ -1967,7 +1957,7 @@ h1 a {
 
             thead {
                 background-color: #d4d4d4;
-                color: #444;
+                color: $offblack;
                 font-size: 1.0em;
                 padding: 4px 16px;
 
@@ -1978,12 +1968,12 @@ h1 a {
                     padding: 16px;
                     font-weight: bold;
                     background: #d4d4d4;
-                    color: #000000;
+                    color: $black;
                     font-size: 1.1em;
                 }
 
                 .total {
-                    border-right: 1px solid #fff;
+                    border-right: 1px solid $white;
                 }
 
                 .cost {
@@ -1999,7 +1989,7 @@ h1 a {
 
                 &.name,
                 &.image {
-                    border-right: 1px solid #fff;
+                    border-right: 1px solid $white;
                 }
             }
 
@@ -2011,10 +2001,10 @@ h1 a {
                 &.image {
                     width: 72px;
                     text-align:  center;
-                    border-right: 1px solid #fff;
+                    border-right: 1px solid $white;
                 }
                 &.name {
-                    border-right: 1px solid #fff;
+                    border-right: 1px solid $white;
                 }
             }
         }
@@ -2027,12 +2017,12 @@ h1 a {
     #config_machine {
         .basket {
             .body {
-                background-color: #fff;
+                background-color: $white;
 
                 table {
                     width: 100%;
                     margin-top: 2px;
-                    border: 1px solid #ccc;
+                    border: 1px solid $darkgrey;
 
                     .name {
                         text-align: left;
@@ -2040,13 +2030,13 @@ h1 a {
 
                     th {
                         padding: 10px 16px;
-                        border-bottom: 1px solid #ccc;
+                        border-bottom: 1px solid $darkgrey;
 
                     }
 
                     thead {
                         background-color: #dcdcdc;
-                        color: #444;
+                        color: $offblack;
                         font-size: 1.0em;
                         padding: 4px 16px;
                         text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
@@ -2069,11 +2059,11 @@ h1 a {
             }
             tfoot {
                 td {
-                    border-top: 1px solid #ccc;
+                    border-top: 1px solid $darkgrey;
                     padding: 10px 16px;
                     font-weight: bold;
                     background: #dcdcdc;
-                    color: #000000;
+                    color: $black;
                     text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
                     font-size: 1.1em;
                 }
@@ -2098,7 +2088,7 @@ h1 a {
     #config_machine {
         .save-print-order {
             .body {
-                background: #fff;
+                background: $white;
                 padding: 15px;
                 width: 100%;
                 box-sizing: border-box;
@@ -2140,7 +2130,7 @@ h1 a {
     #config_machine {
         .save-print-order {
             .body {
-                background: #fff;
+                background: $white;
                 padding: 15px;
                 text-align: right;
 
@@ -2182,7 +2172,7 @@ h1 a {
 #config_machine {
     .email-option {
         .body {
-            background: #fff;
+            background: $white;
             padding: 15px;
 
             .column {
@@ -2279,11 +2269,9 @@ h1 a {
     position: absolute;
     background: $yellow;
     border: 1px solid #E1E16D;
-    color: #000;
+    color: $black;
     padding: 3px 6px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    @include border-radius(3px);
     font-size: 11px;
     z-index: 300;
     -moz-box-shadow: 0 0 6px #ddd;
@@ -2350,11 +2338,11 @@ h1 a {
 .minibox {
     float: left;
     width: 33.33%;
-    background-color: #fff;
+    background-color: $white;
 }
 
 .minibox h3 {
-    color: #fff;
+    color: $white;
     background-color: $darkblue;
     margin: 0;
     padding: 7px 10px;
@@ -2379,7 +2367,7 @@ h1 a {
 }
 
 .minibox .more p {
-    color: #000;
+    color: $black;
     padding: 0 80px 0 0;
     font-size: 1.0em;
 }
@@ -2397,7 +2385,7 @@ h1 a {
 
 .container {
     &.product {
-        background-color: #fff;
+        background-color: $white;
 
         .main-heading {
             background-color: $grey;
@@ -2487,14 +2475,14 @@ h1 a {
                 float: left;
                 padding: 10px 15px;
                 text-decoration: none;
-                color: #000;
-                border: 1px solid #ccc;
+                color: $black;
+                border: 1px solid $darkgrey;
                 border-bottom: none;
                 position: relative;
                 bottom: 1px;
                 margin-top: 8px;
                 font-size: 12px;
-                background-color: #fff;
+                background-color: $white;
                 @include transition-background(0.2s);
 
                 &:hover {
@@ -2505,16 +2493,16 @@ h1 a {
 
             &.active {
                 a {
-                    background-color: #fff;
+                    background-color: $white;
                     position: relative;
                     bottom: 0;
                     padding: 14px 18px;
-                    color: #000;
+                    color: $black;
                     margin-top: 0;
                     cursor: default;
 
                     &:hover {
-                        background-color: #fff;
+                        background-color: $white;
                     }
                 }
             }
@@ -2526,11 +2514,11 @@ h1 a {
 
     }
     .copy-block {
-        background-color: #fff;
+        background-color: $white;
         padding: 15px;
         min-height: 290px;
         box-sizing: content-box;
-        border: 1px solid #ccc;
+        border: 1px solid $darkgrey;
         border-top: none;
 
         .feature-list {
@@ -2551,7 +2539,7 @@ h1 a {
                     top: 0;
 
                     img {
-                        border: 1px solid #ccc;
+                        border: 1px solid $darkgrey;
                         margin-bottom: 10px;
                     }
                 }
@@ -2607,7 +2595,7 @@ h1 a {
     background-color: $darkerblue;
     margin-bottom: 20px;
     font-size: 0.85em;
-    color: #ccc;
+    color: $darkgrey;
     text-align: left;
 }
 
@@ -2647,7 +2635,7 @@ h1 a {
 }
 
 .footer .address a {
-    color: #fff;
+    color: $white;
 }
 
 .footer .address p {
@@ -2723,9 +2711,7 @@ h1 a {
 
 /* lightbox overrides */
 .fancybox-skin {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
+    @include border-radius(0);
 }
 .fancybox-title {
     text-align: center;
@@ -2768,14 +2754,14 @@ h1 a {
         }
 
         .summary-box {
-            background: #fff;
+            background: $white;
             float: left;
             width: 134px;
             border-left: 3px solid $red;
 
             h3 {
                 background: $red;
-                color: #fff;
+                color: $white;
                 padding: 7px 9px;
                 font-size: 14px;
             }
@@ -2787,8 +2773,44 @@ h1 a {
                 min-height: 47px;
                 border-bottom: 3px solid $red;
                 font-weight: bold;
-                color: #444;
+                color: $offblack;
+            }
 
+            strong {
+                color: $black;
+                display: block;
+                font-size: 15px;
+            }
+
+            img {
+                padding: 5px 0 0 0;
+                display: block;
+            }
+        }
+    }
+
+    &.stick-out {
+        width: 172px;
+
+        -webkit-transition: all 250ms;
+        -moz-transition: all 250ms;
+        -o-transition: all 250ms;
+        transition: all 250ms;
+
+        .container {
+            .show-hide {
+                width: 35px;
+                background: url("../images/your-marshall.png") top right no-repeat $red;
+            }
+        }
+
+    }
+}
+
+.desktop {
+    #basket {
+        .container {
+            .detail {
                 .btn_checkout {
                     background: url('../images/btn-bgs.png') no-repeat;
                     padding: 9px 13px 9px;
@@ -2803,38 +2825,12 @@ h1 a {
                     text-align: left;
                     width: 91px;
                     text-decoration: none;
+
+                    .icon {
+                        display: none;
+                    }
                 }
             }
-
-            strong {
-                color: #000;
-                display: block;
-                font-size: 15px;
-                color: #000;
-            }
-
-            img {
-                padding: 5px 0 0 0;
-                display: block;
-            }
-        }
-
-    }
-}
-
-
-#basket.stick-out {
-    width: 172px;
-
-    -webkit-transition: all 250ms;
-    -moz-transition: all 250ms;
-    -o-transition: all 250ms;
-    transition: all 250ms;
-
-    .container {
-        .show-hide {
-            width: 35px;
-            background: url("../images/your-marshall.png") top right no-repeat $red;
         }
     }
 }
@@ -2845,10 +2841,7 @@ h1 a {
     }
 }
 
-
-
 .mobile {
-
     .carousel {
         .bx-controls {
             padding: 0 15px 15px 0;
@@ -2865,9 +2858,7 @@ h1 a {
             display: inline-block;
             width: 20px;
             height: 20px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
+            @include border-radius(50%);
             -webkit-transition: background 0.5s;
             -moz-transition: background 0.5s;
             -o-transition: background 0.5s;
@@ -2899,10 +2890,10 @@ h1 a {
     input[type="number"],
     select {
         border-radius: 4px;
-        background-color: #fff;
+        background-color: $white;
         font-family: 'Tahoma', Helvetica, Arial, sans-serif;
         padding: 6px 10px;
-        border: 1px solid #ccc;
+        border: 1px solid $darkgrey;
         -webkit-appearance: none;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -2921,12 +2912,12 @@ h1 a {
     }
 
     select {
-        background: url("../images/bg-select-schveron.jpg") center right no-repeat #fff;
+        background: url("../images/bg-select-schveron.jpg") center right no-repeat $white;
         padding: 5px 30px 5px 7px !important;
     }
 
     .error select {
-        background: url("../images/bg-select-schveron-error.jpg") center right no-repeat #fff;
+        background: url("../images/bg-select-schveron-error.jpg") center right no-repeat $white;
     }
 
 
@@ -2937,7 +2928,7 @@ h1 a {
         .big-link {
             position: relative;
             display: inline-block;
-            color: #fff;
+            color: $white;
             padding: 9px 14px;
             -moz-box-shadow: none;
             -webkit-box-shadow: none;
@@ -2946,9 +2937,7 @@ h1 a {
             font-size: 1.0em;
             font-weight: bold;
             letter-spacing: 2px;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            border-radius: 3px;
+            @include border-radius(3px);
             cursor: pointer;
             clear: both;
             text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
@@ -2975,7 +2964,7 @@ h1 a {
 
         .blue-link {
             background: #001649;
-            color: #fff;
+            color: $white;
 
             &:active,
             &:hover {
@@ -3001,7 +2990,7 @@ h1 a {
         transition: bottom 250ms;
 
         span {
-            color: #fff;
+            color: $white;
             text-decoration: none;
             padding: 6px 12px;
             text-transform: uppercase;
@@ -3184,13 +3173,11 @@ h1 a {
             ul {
                 li {
                     a {
-                        border: 1px solid #ccc;
+                        border: 1px solid $darkgrey;
                         padding: 0 10px;
                         line-height: 28px;
                         text-decoration: none;
-                        -webkit-border-radius: 3px;
-                        -moz-border-radius: 3px;
-                        border-radius: 3px;
+                        @include border-radius(3px);
                     }
                 }
             }
@@ -3399,8 +3386,6 @@ h1 a {
             }
         }
 
-
-
         .mainbox {
             &.configure {
                 padding: 10px 15px 15px 100px;
@@ -3534,7 +3519,7 @@ h1 a {
                         padding: 10px 15px;
                         text-decoration: none;
                         border: none;
-                        border-bottom: 1px solid #fff;
+                        border-bottom: 1px solid $white;
                         position: relative;
                         bottom: 0;
                         margin-top: 0;
@@ -3554,14 +3539,14 @@ h1 a {
                     &.active {
                         a {
                             padding: 8px 10px;
-                            color: #fff;
+                            color: $white;
                             font-weight: bold;
                             background-color: $darkblue;
                             border: none;
                             font-size: 15px;
 
                             &:hover {
-                                color: #fff;
+                                color: $white;
                                 font-weight: bold;
                                 background-color: $darkblue;
                             }
@@ -3597,7 +3582,7 @@ h1 a {
             height: 76px;
             position: fixed;
             overflow: inherit;
-            background: #fff;
+            background: $white;
 
             -webkit-transition: top 250ms;
             -moz-transition: top 250ms;
@@ -3617,18 +3602,18 @@ h1 a {
                     border: none;
 
                     h3 {
-                        background: #e4e4e4;
-                        color: #000;
+                        background: $darkblue;
+                        color: $white;
                         padding: 5px 10px;
                         margin: 5px 5px 0 5px;
                     }
 
                     .detail {
                         min-height: inherit;
-                        border: 1px solid #ccc;
-                        position: relative;
-                        background: #fff;
+                        border: 1px solid $darkgrey;
+                        background: $white;
                         margin: 5px;
+                        position: relative;
 
                         strong {
                             display: inline;
@@ -3637,13 +3622,31 @@ h1 a {
                         img {
                             position: absolute;
                             top: 5px;
-                            right: 10px;
+                            right: 46px;
+                        }
+
+                        .btn_checkout {
+                            top: 3px;
+                            right: 4px;
+                            position: absolute;
+
+                            color: $white;
+                            text-decoration: none;
+                            font-size: 20px;
+                            font-weight: bold;
+                            padding: 3px 7px 4px 4px;
+                            background: $red;
+                            @include border-radius(3px);
+
+                            .text {
+                                display: none;
+                            }
                         }
                     }
                 }
             }
 
-            a {
+            .show-hide {
                 display: none;
             }
 
@@ -3656,8 +3659,8 @@ h1 a {
                 transition: top 250ms;
             }
         }
-
     }
+
 
     /* mobile portrait */
     @media only screen and (max-width: 400px) {
@@ -3750,9 +3753,9 @@ h1 a {
                             display: block;
                             font-weight: bold;
                             font-size: 13px;
-                            color: #444;
+                            color: $offblack;
                             background: #d4d4d4;
-                            border-top: 1px solid #fff;
+                            border-top: 1px solid $white;
 
                             &:hover {
                                 background: #888;
@@ -3787,7 +3790,7 @@ h1 a {
         }
 
         .mainbox.configure {
-            background: #fff;
+            background: $white;
             padding: 15px;
         }
 

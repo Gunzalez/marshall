@@ -606,18 +606,21 @@ require_once('php/isMobile.php');
 
     </div>
 
-    <div id="basket">
+    <div id="basket" class="spares">
         <div class="container">
             <a href="#" class="show-hide">Your Marshall</a>
             <div class="summary-box">
-                <h3>Your basket</h3>
+                <h3>Your Basket</h3>
                 <div class="detail">
                     <strong>
                         <span id="num_items">Basket is empty</span>
                         &pound;<span class="total">0.00</span>
                     </strong>
                     <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait...">
-                    <a href="/basket" title="Proceed to the checkout to send your order...." class="btn_checkout">Checkout</a>
+                    <a href="/basket" title="Proceed to the checkout to send your order...." class="btn_checkout">
+                        <span class="text">Checkout</span>
+                        <span class="icon fa fa-shopping-cart"></span>
+                    </a>
                 </div>
             </div>
         </div>

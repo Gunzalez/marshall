@@ -20,13 +20,15 @@
     marshall.environment = {
 
         init: function(){
+
+            // mobile/desktop
             if($('html').hasClass('mobile')){
                 marshall.properties.isMobile = true;
             } // Written in with PHP
 
             marshall.properties.windowWidth = $(window).width();
 
-            // Overlays
+            // overlays
             var fancyBoxOptions = {
                 'nextEffect': 'fade',
                 'prevEffect': 'fade',
@@ -41,14 +43,16 @@
                 }
             }
 
+            // fancy box
             $(".fancybox").fancybox(fancyBoxOptions);
             $('.gallery a').fancybox(fancyBoxOptions);
 
-
+            // Back to top
             $('#backToTop').on('click', function(){
                 $('html, body').animate({ scrollTop: 0 }, '2000');
             });
 
+            // scroll activated back-to-top
             $(window).on('scroll', function(){
                 if( $(this).scrollTop() > 568 ) {
                     $('#backToTop').addClass('onScreen');
@@ -65,12 +69,14 @@
 
             var newWindowWith = $(window).width();
 
+            // TODO: check if still needed
             if( newWindowWith < marshall.properties.deviceWidth.desktop ){
                 $('.footer').removeClass('wide');
             } else {
                 $('.footer').addClass('wide');
             }
 
+            // basket layout
             if( newWindowWith <= marshall.properties.deviceWidth.phablet ){ // PS: This works together with some media query show/hide
                 $('#config_machine').find('.basket .total').removeAttr('colspan');
             } else {
@@ -151,7 +157,7 @@
                 $minibox.eq(2).find('.copy').height(imageHeight);
             }
 
-            if( mainWindowWidth < marshall.properties.deviceWidth.desktop  && mainWindowWidth > marshall.properties.deviceWidth.phone ){
+            if( mainWindowWidth < marshall.properties.deviceWidth.desktop && mainWindowWidth > marshall.properties.deviceWidth.phone ){
                 miniboxWidth = (mainboxWidth-15)/2;
                 $minibox.width(miniboxWidth);
                 $minibox.eq(0).css('margin-right','15px');
@@ -196,10 +202,10 @@
                     var $welcomeScreen = $('<div class="empty-configuration"><h3>Select a machine from the options</h3></div>');
                     self.$configureContent.html($welcomeScreen);
 
-                    // Add cost to basket, and stick it out
+                    // Reset basket cost, push it back (if you like)
                     var $stickyBasket = $('#basket');
                     $('.total', $stickyBasket).text('0');
-                    marshall.stickyBaskest.pushOut();
+                    marshall.stickyBaskest.pushIn();
 
                 } else {
 
@@ -544,7 +550,7 @@
 
             $(window).scroll(function(){
 
-                if($(window).width() > 678){
+                if( $(window).width() > marshall.properties.deviceWidth.phablet ){
                     if( $(this).scrollTop() > initialPos ) {
                         self.$stickyBasket.css('top', $(this).scrollTop() + stickyPos);
                     } else {
@@ -848,6 +854,7 @@
                 // TODO Ajax for results
                 //
                 //
+                marshall.stickyBaskest.pushOut();
                 $('#range', self.$html).removeClass('displayNone');
             });
 

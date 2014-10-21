@@ -783,6 +783,7 @@ require_once('php/isMobile.php');
 
         <?php include_once('includes/footer.php'); ?>
         <div id="mobile-nav"></div>
+
     </div>
 
     <div id="basket" class="displayNone">
