@@ -741,7 +741,7 @@ h1 a {
 .news-page-navigation ul li a {
   display: block;
   background-color: white;
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee;
   color: #666;
   padding: 4px 5px;
   text-align: center;
@@ -1022,11 +1022,11 @@ h1 a {
 }
 .filters li .filterList li a:hover {
   background: #888;
-  color: #EEE;
+  color: #eeeeee;
 }
 .filters li .filterList li a.selected {
   background: #555;
-  color: #EEE;
+  color: #eeeeee;
 }
 .filters li .filterList li a.selected:hover {
   background: #888;
@@ -2290,7 +2290,7 @@ h1 a {
   display: none;
 }
 
-.desktop #backToTop {
+.desktop #back-to-top {
   display: none;
 }
 
@@ -2413,36 +2413,37 @@ h1 a {
 .mobile .old-mobile .blue-link:active, .mobile .old-mobile .blue-link:hover {
   background: #0f82ff;
 }
-.mobile #backToTop {
+.mobile #back-to-top {
   left: 0;
   bottom: -45px;
   border: none;
   width: 100%;
-  height: 45px;
+  height: 36px;
   position: fixed;
-  background: #666;
   text-align: right;
   -webkit-transition: bottom 250ms;
   -moz-transition: bottom 250ms;
   -o-transition: bottom 250ms;
   transition: bottom 250ms;
+  color: #fff;
+  background: white;
+  background: rgba(255, 255, 255, 0.4);
 }
-.mobile #backToTop span {
+.mobile #back-to-top span {
   color: white;
   text-decoration: none;
-  padding: 6px 12px;
-  text-transform: uppercase;
-}
-.mobile #backToTop span .text {
+  padding: 5px 6px;
+  font-size: 1.2em;
   display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
-.mobile #backToTop span span {
-  font-size: 1.9em;
-  font-weight: bold;
-  display: inline-block;
-}
-.mobile #backToTop.onScreen {
+.mobile #back-to-top.onScreen {
   bottom: 0;
   -webkit-transition: bottom 250ms;
   -moz-transition: bottom 250ms;
@@ -2992,11 +2993,11 @@ h1 a {
   }
   .mobile .filters li .filterList li a:hover {
     background: #888;
-    color: #EEE;
+    color: #eeeeee;
   }
   .mobile .filters li .filterList li a.selected {
     background: #555;
-    color: #EEE;
+    color: #eeeeee;
   }
   .mobile .filters li .filterList li a.selected:hover {
     background: #888;

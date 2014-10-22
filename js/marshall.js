@@ -48,17 +48,17 @@
             $('.gallery a').fancybox(fancyBoxOptions);
 
             // Back to top
-            $('#backToTop').on('click', function(){
+            $('#back-to-top').on('click', function(){
                 $('html, body').animate({ scrollTop: 0 }, '2000');
             });
 
             // scroll activated back-to-top
             $(window).on('scroll', function(){
                 if( $(this).scrollTop() > 568 ) {
-                    $('#backToTop').addClass('onScreen');
-                    $('body').css('margin-bottom', $('#backToTop').height());
+                    $('#back-to-top').addClass('onScreen');
+                    $('body').css('margin-bottom', $('#back-to-top').height());
                 } else {
-                    $('#backToTop').removeClass('onScreen');
+                    $('#back-to-top').removeClass('onScreen');
                     $('body').css('margin-bottom', '0');
                 }
             });
