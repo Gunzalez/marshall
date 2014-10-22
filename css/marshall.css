@@ -1053,6 +1053,9 @@ h1 a {
   overflow: hidden;
   padding-right: 10px;
 }
+#results h2 strong {
+  color: #fff000;
+}
 #results ol {
   margin: 0;
   padding: 0;
@@ -1203,6 +1206,28 @@ h1 a {
 }
 #results ol > li .container .pricing li .btn_addBasket:hover {
   color: white;
+}
+
+.mobile #results ol > li h3 {
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+}
+.mobile #results .info .machines > ul li a {
+  padding: 6px 8px !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.mobile #results .info .machines .related ul li {
+  margin-bottom: 10px;
+}
+.mobile #results .info .machines .related ul li .part {
+  margin-bottom: 5px;
+}
+.mobile #results .info .machines .related ul li .add a {
+  padding: 6px 8px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 /* Price & Configure styles */
@@ -2879,7 +2904,7 @@ h1 a {
   .mobile #basket .container .summary-box .detail img {
     position: absolute;
     top: 5px;
-    right: 46px;
+    right: 5px;
   }
   .mobile #basket .container .summary-box .detail .btn_checkout {
     top: 3px;
@@ -2907,6 +2932,9 @@ h1 a {
     -moz-transition: top 250ms;
     -o-transition: top 250ms;
     transition: top 250ms;
+  }
+  .mobile #basket.spares .summary-box .detail img {
+    right: 46px;
   }
 }
 @media only screen and (max-width: 400px) {

@@ -230,7 +230,7 @@ require_once('php/isMobile.php');
                             </li>
                         </ol>
 
-                        <div class="step" id="results"><h2><strong>Your search has returned:</strong> <span>10 results.</span></h2>
+                        <div class="step" id="results"><h2><strong><?php writeTextContent('Search returned:','Your search has returned:'); ?></strong> <span>10 results.</span></h2>
                             <form>
                                 <ol>
                                     <li>

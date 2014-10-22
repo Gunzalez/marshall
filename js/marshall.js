@@ -846,6 +846,21 @@
         $filterContainer6: $('#filter6', this.$html),
         $filterContainer7: $('#filter7', this.$html),
 
+        getData: function($container, url){
+            var self = this;
+            $container.load(url, function(){
+                var $nextHeader = $container;
+                $nextHeader.parents('li').addClass('selected').removeClass('displayNone');
+                if( $(window).width() < marshall.properties.deviceWidth.phone ){
+                    $('html, body').animate({
+                        scrollTop: $($nextHeader).offset().top - 30
+                    }, 500);
+                } else {
+                    self.adjustFilterHeights();
+                }
+            });
+        },
+
         init: function(){
             var self = this;
 
@@ -854,8 +869,9 @@
                 // TODO Ajax for results
                 //
                 //
-                marshall.stickyBaskest.pushOut();
+                //
                 $('#range', self.$html).removeClass('displayNone');
+                marshall.stickyBaskest.pushOut();
             });
 
             $('#range', self.$html).on('change', function(){
@@ -864,22 +880,16 @@
                 //
                 //
                 $('#model', self.$html).removeClass('displayNone');
+                marshall.stickyBaskest.pushOut();
             });
 
             $('#model', self.$html).on('change', function(){
                 // TODO Ajax for results
                 //
                 //
-                self.$filterContainer2.load('ajax/filters.php', function(){
-                    var $nextHeader = self.$filterContainer2;
-                    $nextHeader.parents('li').addClass('selected');
-                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
-                        $('html, body').animate({
-                            scrollTop: $($nextHeader).offset().top - 30
-                        }, 500);
-                        self.adjustFilterHeights();
-                    }
-                });
+                //
+                self.getData(self.$filterContainer2, 'ajax/filters.php');
+                marshall.stickyBaskest.pushOut();
             });
 
             // Link delegates
@@ -890,16 +900,9 @@
                 // TODO Ajax for results
                 //
                 //
-                self.$filterContainer3.load('ajax/filters.php', function(){
-                    var $nextHeader = self.$filterContainer3;
-                    $nextHeader.parents('li').addClass('selected');
-                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
-                        $('html, body').animate({
-                            scrollTop: $($nextHeader).offset().top - 30
-                        }, 500);
-                        self.adjustFilterHeights();
-                    }
-                });
+                //
+                self.getData(self.$filterContainer3, 'ajax/filters.php');
+                marshall.stickyBaskest.pushOut();
             });
 
 
@@ -910,16 +913,9 @@
                 // TODO Ajax for results
                 //
                 //
-                self.$filterContainer4.load('ajax/filters-tall.php', function(){
-                    var $nextHeader = self.$filterContainer4;
-                    $nextHeader.parents('li').addClass('selected');
-                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
-                        $('html, body').animate({
-                            scrollTop: $($nextHeader).offset().top - 30
-                        }, 500);
-                        self.adjustFilterHeights();
-                    }
-                });
+                //
+                self.getData(self.$filterContainer4, 'ajax/filters-tall.php');
+                marshall.stickyBaskest.pushOut();
             });
 
             $(self.$filterContainer4).on('click', 'a', function(evt){
@@ -929,16 +925,9 @@
                 // TODO Ajax for results
                 //
                 //
-                self.$filterContainer5.load('ajax/filters.php', function(){
-                    var $nextHeader = self.$filterContainer5;
-                    $nextHeader.parents('li').addClass('selected');
-                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
-                        $('html, body').animate({
-                            scrollTop: $($nextHeader).offset().top - 30
-                        }, 500);
-                        self.adjustFilterHeights();
-                    }
-                });
+                //
+                self.getData(self.$filterContainer5, 'ajax/filters.php');
+                marshall.stickyBaskest.pushOut();
             });
 
             $(self.$filterContainer5).on('click', 'a', function(evt){
@@ -948,35 +937,32 @@
                 // TODO Ajax for results
                 //
                 //
-                self.$filterContainer6.load('ajax/filters.php', function(){
-                    var $nextHeader = self.$filterContainer6;
-                    $nextHeader.parents('li').addClass('selected').removeClass('displayNone');
-                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
-                        $('html, body').animate({
-                            scrollTop: $($nextHeader).offset().top - 30
-                        }, 500);
-                        self.adjustFilterHeights();
-                    }
-                });
+                //
+                marshall.stickyBaskest.pushOut();
+                self.getData(self.$filterContainer6, 'ajax/filters.php');
             });
 
             $(self.$filterContainer6).on('click', 'a', function(evt){
+                evt.preventDefault();
+                $('a', self.$filterContainer6).removeClass('selected');
+                $(this).addClass('selected');
+                // TODO Ajax for results
+                //
+                //
+                //
+                marshall.stickyBaskest.pushOut();
+                self.getData(self.$filterContainer7, 'ajax/filters.php');
+            });
+
+            $(self.$filterContainer7).on('click', 'a', function(evt){
                 evt.preventDefault();
                 $('a', self.$filterContainer7).removeClass('selected');
                 $(this).addClass('selected');
                 // TODO Ajax for results
                 //
                 //
-                self.$filterContainer7.load('ajax/filters.php', function(){
-                    var $nextHeader = self.$filterContainer7;
-                    $nextHeader.parents('li').addClass('selected').removeClass('displayNone');
-                    if( $(window).width() < marshall.properties.deviceWidth.phone ){
-                        $('html, body').animate({
-                            scrollTop: $('#results').offset().top - 30
-                        }, 500);
-                        self.adjustFilterHeights();
-                    }
-                });
+                //
+                marshall.stickyBaskest.pushOut();
             });
         },
 
@@ -1009,7 +995,6 @@
             var self = this;
             self.adjustFilterHeights();
         }
-
     }
 
     marshall.resize = function(){
