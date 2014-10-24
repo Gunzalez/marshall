@@ -568,6 +568,11 @@
                 }
             });
 
+            $('.hide-me', self.$stickyBasket).on('click',function(evt){
+                evt.preventDefault();
+                self.pushIn();
+            });
+
         },
 
         resize: function(){
@@ -871,6 +876,7 @@
                 //
                 //
                 $('#range', self.$html).removeClass('displayNone');
+                self.adjustFilterHeights();
                 marshall.stickyBaskest.pushOut();
             });
 
@@ -880,6 +886,7 @@
                 //
                 //
                 $('#model', self.$html).removeClass('displayNone');
+                self.adjustFilterHeights();
                 marshall.stickyBaskest.pushOut();
             });
 
@@ -974,13 +981,15 @@
                 windowWidth = $(window).width();
 
             // clear all styles
-            $('.filterList', $html).parents('li').removeAttr('style').siblings().removeAttr('style');
+            $('> li', $html).removeAttr('style');
 
             if( windowWidth > marshall.properties.deviceWidth.phone ){
 
                 $('.filterList', $html).each(function(i, obj){
-                    filterListHeights.push($(obj).height() + 34); // + 34 header height
+                    filterListHeights.push($(obj).height()+ 34 ); // + 34 header height
                 });
+
+                console.log(filterListHeights);
 
                 var tallestLi = Math.max.apply( null, filterListHeights );
                 if(tallestLi > initialHeight){

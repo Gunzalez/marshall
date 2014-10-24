@@ -40,7 +40,7 @@ require_once('php/isMobile.php');
                         <ol class="filters">
                             <li class="first-child selected">
                                 <h3>Filter 1:</h3>
-                                <form id="search-filter" method="post">
+                                <form id="search-filter" class="filterList" method="post">
                                     <fieldset id="fields">
                                         <h4>Select part category:</h4>
                                         <select id="filter1">
@@ -622,6 +622,7 @@ require_once('php/isMobile.php');
                         <span class="icon fa fa-shopping-cart"></span>
                     </a>
                 </div>
+                <a href="#" class="hide-me fa fa-times"></a>
             </div>
         </div>
     </div>

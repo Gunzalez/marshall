@@ -795,6 +795,7 @@ require_once('php/isMobile.php');
                     <strong>&pound;<span class="total">0</span> </strong>ex&nbsp;VAT<br>
                     <img src="http://www.marshall-trailers.co.uk/images/progress_grey.gif" id="progress" alt="Please wait...">
                 </div>
+                <a href="#" class="hide-me fa fa-times"></a>
             </div>
         </div>
     </div>

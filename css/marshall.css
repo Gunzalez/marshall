@@ -1000,6 +1000,9 @@ h1 a {
   margin: 0;
   padding: 0;
   list-style: none;
+  content: "";
+  clear: both;
+  display: block;
   float: none;
 }
 .filters li .filterList li {
@@ -2284,6 +2287,9 @@ h1 a {
   padding: 5px 0 0 0;
   display: block;
 }
+#basket .container .summary-box .hide-me {
+  display: none;
+}
 #basket.stick-out {
   width: 172px;
   -webkit-transition: all 250ms;
@@ -2296,7 +2302,7 @@ h1 a {
   background: url("../images/your-marshall.png") top right no-repeat #bb1f1d;
 }
 
-.desktop #basket .container .detail .btn_checkout {
+#basket .container .detail .btn_checkout {
   background: url("../images/btn-bgs.png") no-repeat;
   padding: 9px 13px 9px;
   display: block;
@@ -2311,7 +2317,7 @@ h1 a {
   width: 91px;
   text-decoration: none;
 }
-.desktop #basket .container .detail .btn_checkout .icon {
+#basket .container .detail .btn_checkout .icon {
   display: none;
 }
 
@@ -2522,6 +2528,11 @@ h1 a {
   .mobile #config_machine .email-option .column p.error .error {
     margin-left: 0;
     clear: left;
+  }
+  .mobile .filters li {
+    width: 30%;
+    margin: 0 10px 20px 10px;
+    height: 375px;
   }
 }
 @media only screen and (max-width: 769px) {
@@ -2860,12 +2871,17 @@ h1 a {
   .mobile .container .tabs-content {
     display: none;
   }
+  .mobile .filters li {
+    width: 45%;
+    margin: 0 10px 20px 10px;
+    height: 375px;
+  }
   .mobile #basket {
-    top: -76px;
+    top: -82px;
     left: 0;
     border: none;
     width: 100%;
-    height: 76px;
+    height: 82px;
     position: fixed;
     overflow: inherit;
     background: white;
@@ -2884,12 +2900,22 @@ h1 a {
     float: none;
     width: 100%;
     border: none;
+    position: relative;
   }
   .mobile #basket .container .summary-box h3 {
     background: #001e5a;
     color: white;
-    padding: 5px 10px;
+    padding: 8px 10px;
     margin: 5px 5px 0 5px;
+  }
+  .mobile #basket .container .summary-box .hide-me {
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.2em;
   }
   .mobile #basket .container .summary-box .detail {
     min-height: inherit;
@@ -2916,12 +2942,17 @@ h1 a {
     font-weight: bold;
     padding: 3px 7px 4px 4px;
     background: #bb1f1d;
+    width: auto;
+    margin-top: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
   }
   .mobile #basket .container .summary-box .detail .btn_checkout .text {
     display: none;
+  }
+  .mobile #basket .container .summary-box .detail .btn_checkout .icon {
+    display: block;
   }
   .mobile #basket .show-hide {
     display: none;
