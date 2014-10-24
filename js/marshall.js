@@ -102,17 +102,21 @@
     };
 
     marshall.homepage = {
+        $html: $('#homepage-template'),
 
         init: function(){
             var self = this;
-            $(window).load(function(){
-                self.setMiniBoxSizes();
-                self.setSideBarSideBoxPadding();
-                self.setVideoBoxSize();
-            });
+            if(self.$html.length > 0){
+                $(window).load(function(){
+                    self.setMiniBoxSizes();
+                    self.setSideBarSideBoxPadding();
+                    self.setVideoBoxSize();
+                });
+            }
         },
 
         setSideBarSideBoxPadding: function(){
+
             var self = this,
                 mainWindowWidth = $(window).width(),
                 $sideBar = $('.sidebar'),
@@ -175,10 +179,12 @@
 
         resize: function(){
             var self = this;
-            if(marshall.properties.isMobile){
-                self.setMiniBoxSizes();
-                self.setSideBarSideBoxPadding();
-                self.setVideoBoxSize();
+            if(self.$html.length > 0) {
+                if (marshall.properties.isMobile) {
+                    self.setMiniBoxSizes();
+                    self.setSideBarSideBoxPadding();
+                    self.setVideoBoxSize();
+                }
             }
         }
     };
@@ -988,8 +994,6 @@
                 $('.filterList', $html).each(function(i, obj){
                     filterListHeights.push($(obj).height()+ 34 ); // + 34 header height
                 });
-
-                console.log(filterListHeights);
 
                 var tallestLi = Math.max.apply( null, filterListHeights );
                 if(tallestLi > initialHeight){

@@ -16,17 +16,15 @@ require_once('php/isMobile.php');
     <link rel="stylesheet" type="text/css" href="css/marshall.css">
     <script src="js/modernizr-2.6.1.min.js"></script>
 </head>
-<body>
+<body id="homepage-template">
 
     <div class="page">
         <?php include_once('includes/header.php'); ?>
 
         <div class="content">
 
-
             <div class="main homepage">
                 <div class="container">
-
 
                     <div class="main-heading hero">
                         <h2>Marshall Trailers</h2>
