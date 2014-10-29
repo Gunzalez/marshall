@@ -3006,6 +3006,9 @@ h1 a {
   .mobile .sidebar.sidebox-3 .sidebox.news, .mobile .sidebar.sidebox-2 .sidebox.news {
     width: 100%;
   }
+  .mobile .sidebar.sidebox-3 .configure, .mobile .sidebar.sidebox-2 .configure {
+    display: none;
+  }
   .mobile .sidebar .sidebox.configure {
     position: relative;
   }
