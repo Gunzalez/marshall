@@ -641,22 +641,29 @@
 			// bind click actions to the controls
 			slider.controls.next.bind('click', clickNextBind);
 			slider.controls.prev.bind('click', clickPrevBind);
-			// if nextSlector was supplied, populate it
+			// if nextSelector was supplied, populate it
 			if(slider.settings.nextSelector){
 				$(slider.settings.nextSelector).append(slider.controls.next);
 			}
-			// if prevSlector was supplied, populate it
+			// if prevSelector was supplied, populate it
 			if(slider.settings.prevSelector){
 				$(slider.settings.prevSelector).append(slider.controls.prev);
 			}
+
 			// if no custom selectors were supplied
 			if(!slider.settings.nextSelector && !slider.settings.prevSelector){
 				// add the controls to the DOM
 				slider.controls.directionEl = $('<div class="bx-controls-direction" />');
+
 				// add the control elements to the directionEl
-				slider.controls.directionEl.append(slider.controls.prev).append(slider.controls.next);
+				// SK: removed slider.controls.directionEl.append(slider.controls.prev).append(slider.controls.next);
+
+                // Added controls to outer div, SK
+                slider.controls.el.append(slider.controls.prev);
+                slider.controls.el.prepend(slider.controls.next);
+
 				// slider.viewport.append(slider.controls.directionEl);
-				slider.controls.el.addClass('bx-has-controls-direction').append(slider.controls.directionEl);
+				// SK: removed slider.controls.el.addClass('bx-has-controls-direction').append(slider.controls.directionEl);
 			}
 		}
 

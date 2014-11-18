@@ -54,12 +54,10 @@
 
             // scroll activated back-to-top
             $(window).on('scroll', function(){
-                if( $(this).scrollTop() > 568 ) {
+                if( $(this).scrollTop() > 300 ) {
                     $('#back-to-top').addClass('onScreen');
-                    $('body').css('margin-bottom', $('#back-to-top').height());
                 } else {
                     $('#back-to-top').removeClass('onScreen');
-                    $('body').css('margin-bottom', '0');
                 }
             });
 

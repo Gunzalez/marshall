@@ -57,6 +57,22 @@ require_once('php/isMobile.php');
                                     <a href="product.php" class="big-link blue-link">More</a>
                                 </div>
                             </li>
+                            <li>
+                                <img src="http://www.marshall-trailers.co.uk/uploads/homepage/270614-1609-1591.jpg" />
+                                <div class="copy">
+                                    <h2>New 2014 Silage Sides</h2>
+                                    <p>Updated, improved and ready for the silage season...</p>
+                                    <a href="product.php" class="big-link blue-link">More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="http://www.marshall-trailers.co.uk/uploads/homepage/270614-1609-1591.jpg" />
+                                <div class="copy">
+                                    <h2>New 2014 Silage Sides</h2>
+                                    <p>Updated, improved and ready for the silage season...</p>
+                                    <a href="product.php" class="big-link blue-link">More</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
