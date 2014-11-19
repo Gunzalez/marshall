@@ -2748,7 +2748,11 @@ h1 a {
 }
 
 
-
+.desktop {
+    .hasBasket {
+        overflow-x: hidden;
+    }
+}
 
 
 
@@ -3057,6 +3061,7 @@ h1 a {
         .header {
             height: 100px;
             background: $red;
+            margin-bottom: 0;
         }
 
         .breadcrumb {
@@ -3206,10 +3211,25 @@ h1 a {
                 li {
                     a {
                         border: 1px solid $darkgrey;
-                        padding: 0 10px;
+                        padding: 0;
+                        width: 29px;
                         line-height: 28px;
                         text-decoration: none;
                         @include border-radius(3px);
+
+                        background: rgba(204,204,204,1);
+                        background: -moz-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(237,237,237,1) 100%);
+                        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(204,204,204,1)), color-stop(100%, rgba(237,237,237,1)));
+                        background: -webkit-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(237,237,237,1) 100%);
+                        background: -o-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(237,237,237,1) 100%);
+                        background: -ms-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(237,237,237,1) 100%);
+                        background: linear-gradient(to bottom, rgba(204,204,204,1) 0%, rgba(237,237,237,1) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ededed', GradientType=0 );
+
+                        &.active {
+                            background: #333;
+                            color: #fff;
+                        }
                     }
                 }
             }

@@ -61,6 +61,12 @@
                 }
             });
 
+            if($('#basket').length > 0){
+                $('body').addClass('hasBasket')
+            }
+
+
+
         },
 
         resize: function(){

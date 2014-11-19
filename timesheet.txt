@@ -52,6 +52,8 @@ Guesstimation - plus 25 hrs
 Makes a total of 67 hrs (42 + 25)
 This took another 51 hrs, that be 42 + 51, it be 93 hrs
 
+93 + 4.5 = 97.5
+
 
 TODO:
 Same height issue on news landing page
