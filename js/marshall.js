@@ -87,21 +87,25 @@
                 $('#config_machine').find('.basket .total').attr('colspan', '2');
             }
 
-            // TODO, does not work on iPad
-//            $('.sidebox-2').each(function(){
-//                var $sidebox1 = $('.sidebox', $(this)).eq(0),
-//                    $sidebox2 = $('.sidebox', $(this)).eq(1);
-//
-//                if(newWindowWith < marshall.properties.mobileThreshold && newWindowWith > marshall.properties.handHeldThreshold){
-//                    var timer = setTimeout(function(){
-//                        $sidebox1.height($sidebox2.height());
-//                        clearTimeout(timer);
-//                    }, 100);
-//                } else {
-//                    $sidebox1.removeAttr('style');
-//                    $sidebox2.removeAttr('style');
-//                }
-//            })
+            $('.sidebox-2').each(function(){
+                var $sidebox1 = $('.sidebox', $(this)).eq(0),
+                    $sidebox2 = $('.sidebox', $(this)).eq(1),
+                    margin = 20;
+
+                $sidebox1.removeAttr('style');
+                $sidebox2.removeAttr('style');
+
+                if(newWindowWith <= marshall.properties.deviceWidth.tablet && newWindowWith > marshall.properties.deviceWidth.phone){
+                    var $parent = $sidebox1.parent('.sidebar'),
+                        sideBoxWidth = ($parent.width() - margin)/2;
+
+                    $sidebox1.css({
+                        width:sideBoxWidth,
+                        'margin-right': margin + 'px'
+                    });
+                    $sidebox2.css('width',sideBoxWidth);
+                }
+            })
         }
     };
 
