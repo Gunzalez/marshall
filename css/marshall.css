@@ -1428,6 +1428,111 @@ h1 a {
   margin-bottom: 6px;
 }
 
+.variable-text .long-text {
+  display: inline-block;
+}
+.variable-text .short-text {
+  display: none;
+}
+@media only screen and (max-width: 850px) and (min-width: 770px) {
+  .variable-text .long-text {
+    display: none;
+  }
+  .variable-text .short-text {
+    display: inline-block;
+  }
+}
+
+.additional-equipment {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  float: left;
+}
+.additional-equipment li {
+  float: left;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.additional-equipment li h3 {
+  height: 40px;
+  padding: 8px 10px;
+  background-color: #d4d4d4;
+  font-size: 1.1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.additional-equipment li img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.additional-equipment li .col {
+  float: left;
+  width: 56%;
+  padding: 10px 0;
+  height: 220px;
+  overflow: hidden;
+}
+.additional-equipment li .col.left {
+  padding-top: 0;
+  width: 44%;
+}
+.additional-equipment li .col h4 {
+  padding: 0 10px;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+.additional-equipment li .col p {
+  padding: 0 10px;
+  font-size: 0.9em;
+}
+.additional-equipment li .col p.pricing {
+  padding-top: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.additional-equipment.single-column li {
+  position: relative;
+  min-height: 270px;
+}
+.additional-equipment.single-column li img {
+  width: 150px !important;
+}
+.additional-equipment.single-column li .col {
+  float: left;
+  width: auto;
+  padding-left: 170px;
+  height: inherit !important;
+  overflow: auto !important;
+}
+.additional-equipment.single-column li .col.left {
+  float: none;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  padding: 0 !important;
+  width: 170px;
+}
+.additional-equipment.single-column li .col h4 {
+  padding: 0 10px;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+.additional-equipment.single-column li .col p {
+  padding: 0 10px;
+  font-size: 0.9em;
+}
+.additional-equipment.single-column li .col p.pricing {
+  padding-top: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
 /* step 2 */
 /* Configure options, responsive using JS */
 /* ================================================ */
@@ -2011,7 +2116,7 @@ h1 a {
 .container .tabs li a {
   display: block;
   float: left;
-  padding: 10px 15px;
+  padding: 8px 10px;
   text-decoration: none;
   color: black;
   border: 1px solid #cccccc;
@@ -2037,7 +2142,7 @@ h1 a {
   background-color: white;
   position: relative;
   bottom: 0;
-  padding: 14px 18px;
+  padding: 12px 14px;
   color: black;
   margin-top: 0;
   cursor: default;

@@ -1753,7 +1753,132 @@ h1 a {
     }
 }
 
+.variable-text {
+    .long-text {
+        display: inline-block;
+    }
+    .short-text {
+        display: none;
+    }
+    @media only screen and (max-width: 850px) and (min-width: 770px) {
+        .long-text {
+            display: none;
+        }
+        .short-text {
+            display: inline-block;
+        }
+    }
+}
 
+
+.additional-equipment {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    float: left;
+
+    li {
+        float: left;
+        border: 1px solid $lightgrey;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+
+        h3 {
+            height: 40px;
+            padding: 8px 10px;
+            background-color: #d4d4d4;
+            font-size: 1.1em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-transition: background 0.5s;
+            -moz-transition: background 0.5s;
+            -o-transition: background 0.5s;
+            transition: background 0.5s;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .col {
+            float: left;
+            width: 56%;
+            padding: 10px 0;
+            height: 220px;
+            overflow: hidden;
+
+            &.left {
+                padding-top: 0;
+                width: 44%;
+            }
+
+            h4 {
+                padding: 0 10px;
+                font-weight: normal;
+                font-size: 0.9em;
+            }
+
+            p {
+                padding: 0 10px;
+                font-size: 0.9em;
+
+                &.pricing {
+                    padding-top: 10px;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    &.single-column {
+
+        li {
+            position: relative;
+            min-height: 270px;
+
+            img {
+                width: 150px !important;
+            }
+
+            .col {
+                float: left;
+                width: auto;
+                padding-left: 170px;
+                height: inherit !important;
+                overflow: auto !important;
+
+                &.left {
+                    float: none;
+                    position: absolute;
+                    top: 56px;
+                    left: 0;
+                    padding: 0 !important;
+                    width: 170px;
+                }
+
+                h4 {
+                    padding: 0 10px;
+                    font-weight: normal;
+                    font-size: 0.9em;
+                }
+
+                p {
+                    padding: 0 10px;
+                    font-size: 0.9em;
+
+                    &.pricing {
+                        padding-top: 10px;
+                        font-size: 1.1em;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+    }
+}
 
 
 /* step 2 */
@@ -2504,7 +2629,7 @@ h1 a {
             a {
                 display: block;
                 float: left;
-                padding: 10px 15px;
+                padding: 8px 10px;
                 text-decoration: none;
                 color: $black;
                 border: 1px solid $darkgrey;
@@ -2527,7 +2652,7 @@ h1 a {
                     background-color: $white;
                     position: relative;
                     bottom: 0;
-                    padding: 14px 18px;
+                    padding: 12px 14px;
                     color: $black;
                     margin-top: 0;
                     cursor: default;

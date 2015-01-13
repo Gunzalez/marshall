@@ -134,19 +134,91 @@ require_once('php/isMobile.php');
                                 <a href="#">Machine &amp; Prices</a>
                                 <div class="copy-block">
                                     <p>3 bi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                                </div></li>
+                                </div>
+                            </li>
                             <li>
                                 <a href="#">Owners Info</a>
                                 <div class="copy-block">
                                     <p>4  44444get, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat elei</p>
                                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                                </div></li>
-                            <li class="last-child">
+                                </div>
+                            </li>
+                            <li>
                                 <a href="#">FAQ's</a>
                                 <div class="copy-block">
                                     <p>5. abitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies egetegestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                                 </div>
                             </li>
+
+                            <li class="last-child">
+                                <a href="#" class="variable-text">
+                                    <span class="long-text">Additional Equipment</span>
+                                    <span class="short-text">Extra</span>
+                                </a>
+                                <div class="copy-block">
+
+                                    <ul class="additional-equipment">
+                                        <li>
+                                            <h3>Silage Sides c/w Swinging Door</h3>
+                                            <div class="col left">
+
+                                                <img src="http://www.marshall-trailers.co.uk//uploads/products/optionals/14.04.01 QM12SS - New Style Silage Sides (13) (web).jpg" alt="Silage Sides c/w Hyd Door Silage Attachments">
+
+                                                <h4>Part No.<br>065/03-0545</h4>
+                                                <p class="pricing">£1,648.00</p>
+                                            </div>
+                                            <div class="col right">
+                                                <p>Essential for carrying silage. Comes with swinging door and hydraulic latches. Cubic capacity: 1152 cu.ft / 32.6 cu.mtrs</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3>Silage Sides c/w Swinging Door</h3>
+                                            <div class="col left">
+
+                                                <img src="http://www.marshall-trailers.co.uk//uploads/products/optionals/Springs.jpg" alt="Spring Suspension">
+
+                                                <h4>Part No.<br>065/03-0545</h4>
+                                                <p class="pricing">£1,648.00</p>
+                                            </div>
+                                            <div class="col right">
+                                                <p>Essential for carrying silage. Comes with swinging door and hydraulic latches. Cubic capacity: 1152 cu.ft / 32.6 cu.mtrs</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3>Silage Sides c/w Swinging Door</h3>
+                                            <div class="col left">
+
+                                                <img src="http://www.marshall-trailers.co.uk//uploads/products/optionals/14.04.01 QM12SS - New Style Silage Sides (13) (web).jpg" alt="Silage Sides c/w Hyd Door Silage Attachments">
+
+                                                <h4>Part No.<br>065/03-0545</h4>
+                                                <p class="pricing">£1,648.00</p>
+                                            </div>
+                                            <div class="col right">
+                                                <p>Essential for carrying silage. Comes with swinging door and hydraulic latches. Cubic capacity: 1152 cu.ft / 32.6 cu.mtrs</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3>Silage Sides c/w Swinging Door</h3>
+                                            <div class="col left">
+
+                                                <img src="http://www.marshall-trailers.co.uk//uploads/products/optionals/Springs.jpg" alt="Spring Suspension">
+
+                                                <h4>Part No.<br>065/03-0545</h4>
+                                                <p class="pricing">£1,648.00</p>
+                                            </div>
+                                            <div class="col right">
+                                                <p>Essential for carrying silage. Comes with swinging door and hydraulic latches. Cubic capacity: 1152 cu.ft / 32.6 cu.mtrs</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div style="clear: left;"></div>
+
+
+                                </div>
+                            </li>
+
+
+
                         </ul>
 
                         <div class="tabs-content"></div>

@@ -849,8 +849,24 @@
             $firstLi.addClass('active');
             self.$html.content.html($clonedCopy);
 
+            marshall.tabs.resize();
+
         },
         resize: function(){
+            var self = this;
+
+            // Additional Equipment padding JS controlled
+            if(self.$html.content.width() > 710){
+                $('.additional-equipment').removeClass('single-column');
+                var newWidth = (self.$html.content.width() - 48)/2;
+                $('.additional-equipment li').css('width', newWidth + 'px');
+                $('.additional-equipment li:even').css('margin-right','16px');
+            }
+
+            if(self.$html.content.width() < 711){
+                $('.additional-equipment').addClass('single-column');
+                $('.additional-equipment li').removeAttr('style');
+            }
 
         }
     };
